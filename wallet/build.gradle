@@ -129,28 +129,3 @@ android {
         exclude 'META-INF/services/org.xmlpull.v1.XmlPullParserFactory'
     }
 }
-
-task buildNativeScrypt(type: GradleBuild) {
-    buildFile = '../native-scrypt/build.gradle'
-    tasks = ['copy']
-}
-
-task buildNativeX11(type: GradleBuild) {
-    buildFile = '../native-x11/build.gradle'
-    tasks = ['copy']
-}
-
-preBuild.dependsOn 'buildNativeScrypt'
-preBuild.dependsOn 'buildNativeX11'
-
-clean {
-    file('src/main/jniLibs').deleteDir()
-}
-
-/*task svgToPngMipmap(type: fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask) {
-    from = files('graphics/mipmap')
-    to = file('res')
-    targetedDensities = ['hdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi']
-    outputFormat = 'PNG'
-    outputType = 'mipmap'
-}*/
