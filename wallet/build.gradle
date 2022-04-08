@@ -167,6 +167,7 @@ android {
     dexOptions {
         preDexLibraries true
     }
+    ndkVersion '22.1.7171670'
 }
 
 clean {
