@@ -6,10 +6,7 @@
     android:versionCode="51710"
     android:versionName="5.17.5" >
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="25"
-        tools:ignore="OldTargetApi" />
+    <uses-sdk tools:ignore="OldTargetApi" />
 
     <!-- normal permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
