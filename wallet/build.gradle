@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    archivesBaseName = 'dash-wallet'
+    archivesBaseName = 'pozoqo-wallet'
 }
 repositories {
     mavenLocal()
@@ -159,7 +159,7 @@ dependencies {
 
 
 ext {
-    archivesBaseName = 'dash-wallet'
+    archivesBaseName = 'pozoqo-wallet'
 }
 
 kapt {
