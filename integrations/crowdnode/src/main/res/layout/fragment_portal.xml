@@ -174,7 +174,7 @@
                     android:gravity="center_horizontal"
                     android:textAlignment="gravity"
                     app:layout_constraintTop_toBottomOf="@id/deposit_subtitle"
-                    tools:text="Deposit 0.21 DASH more to start earning"
+                    tools:text="Deposit 0.21 PZQ more to start earning"
                     tools:background="@color/text_highlight_blue_bg" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

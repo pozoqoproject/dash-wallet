@@ -724,7 +724,7 @@ class ExploreViewModel @Inject constructor(
     fun trackFilterEvents(dashPaymentOn: Boolean, giftCardPaymentOn: Boolean) {
         if (exploreTopic == ExploreTopic.Merchants) {
             if (dashPaymentOn) {
-                logEvent(AnalyticsConstants.Explore.FILTER_MERCHANT_SELECT_DASH)
+                logEvent(AnalyticsConstants.Explore.FILTER_MERCHANT_SELECT_PZQ)
             }
 
             if (giftCardPaymentOn) {

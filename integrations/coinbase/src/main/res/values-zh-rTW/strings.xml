@@ -32,13 +32,13 @@
     <string name="balance_on_coinbase">Coinbase 上的結餘</string>
     <string name="sending_to">發送到</string>
     <string name="dash_wallet_device">此設備上的達世幣錢包</string>
-    <string name="exchange_rate_template">%1$s DASH = %2$s</string>
+    <string name="exchange_rate_template">%1$s PZQ = %2$s</string>
     <string name="payment_method">付款方式</string>
     <string name="purchase">購買</string>
     <string name="coinbase_fee">Coinbase 費用</string>
     <string name="total">總共</string>
     <string name="order_preview">訂單預覽</string>
-    <string name="you_will_receive_dash_on_your_dash_wallet">您將在此設備上的達世錢包中收到 %s Dash。請注意，完成轉帳最多可能需要 2-3 分鐘。</string>
+    <string name="you_will_receive_dash_on_your_dash_wallet">您將在此設備上的達世錢包中收到 %s Pozoqo。請注意，完成轉帳最多可能需要 2-3 分鐘。</string>
     <string name="amount_in_dash">達世幣金額</string>
     <string name="cancel">取消</string>
     <string name="confirm_sec">確認 (%ss)</string>
@@ -60,7 +60,7 @@
     <string name="conversion_failed">兌換失敗</string>
     <string name="transfer_failed_msg">達世幣已成功存入您的 Coinbase 帳戶。但是把達世幣轉賬到此設備上的達世幣錢包時出現問題。</string>
     <string name="purchase_failed_msg">出了些問題</string>
-    <string name="it_could_take_up_to_2_3_minutes">最多可能需要 2-3 分鐘才能將 Dash 轉帳到您在此設備上的達世幣錢包。</string>
+    <string name="it_could_take_up_to_2_3_minutes">最多可能需要 2-3 分鐘才能將 Pozoqo 轉帳到您在此設備上的達世幣錢包。</string>
     <string name="it_could_take_up_to_5_minutes">從Coinbase 帳戶中的 %s  轉換為這設備上達世幣錢包中的達世幣最多可能需要 5 分鐘。</string>
     <string name="it_could_take_up_to_5_minutes_to_coinbase">“最多可能需要 5 分鐘才能將達世幣從這設備上的達世幣錢包轉換為您在 Coinbase 帳戶中的 %s 。</string>
     <string name="contact_coinbase_support">聯繫 Coinbase 支援服務</string>
@@ -89,7 +89,7 @@
     <string name="change_withdrawal_limit">您可以隨時通過在達世幣錢包中登出您的 Coinbase 帳戶並重新登錄來更改它。</string>
     <string name="got_it">明白了</string>
     <string name="send_to_wallet_error">您所設定的金額超過軟件的限制，因此無法發送此金額</string>
-    <string name="dont_have_any_dash">您的達世幣錢包中沒有任何 Dash。</string>
+    <string name="dont_have_any_dash">您的達世幣錢包中沒有任何 Pozoqo。</string>
     <string name="transfer_wallet_not_synced">在錢包同步完成之前，無法從達世幣錢包轉賬到 Coinbase。</string>
     <string name="disconnected">斷開連接</string>
 

@@ -73,7 +73,7 @@
              "message":"You will have sufficient funds by 2021-11-24T03:38:58.663Z",
              "args":{
                "availableAt":"2021-11-24T03:38:58.663Z",
-               "currency":"DASH",
+               "currency":"PZQ",
                "missing":"6.21186161",
                "restrictions":["ach-deposit-settlement","ach-deposit-cooldown"]
              }

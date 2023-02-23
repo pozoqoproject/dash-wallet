@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Εξερευνήστε το Dash</string>
+    <string name="explore_dash">Εξερευνήστε το Pozoqo</string>
     <string name="explore_title">Εξερευνήστε</string>
-    <string name="explore_subtitle">Πραγματοποιήστε εύκολα αγορές με τα DASH σας σε πάνω από 155.000 τοποθεσίες και διαδικτυακούς εμπόρους.</string>
+    <string name="explore_subtitle">Πραγματοποιήστε εύκολα αγορές με τα PZQ σας σε πάνω από 155.000 τοποθεσίες και διαδικτυακούς εμπόρους.</string>
     <string name="explore_merchants_title">Πού να ξοδέψετε;</string>
-    <string name="explore_merchants_subtitle">Βρείτε εμπόρους που δέχονται το Dash ως πληρωμή</string>
+    <string name="explore_merchants_subtitle">Βρείτε εμπόρους που δέχονται το Pozoqo ως πληρωμή</string>
     <string name="explore_atms_title">ATM</string>
-    <string name="explore_atms_subtitle">Βρείτε πού μπορείτε να αγοράσετε ή να πουλήσετε DASH και άλλα κρυπτονομίσματα με μετρητά.</string>
-    <string name="explore_staking_subtitle">Κάντε εύκολα Stake το Dash και κερδίστε παθητικό εισόδημα με μερικά απλά κλικ.</string>
+    <string name="explore_atms_subtitle">Βρείτε πού μπορείτε να αγοράσετε ή να πουλήσετε PZQ και άλλα κρυπτονομίσματα με μετρητά.</string>
+    <string name="explore_staking_subtitle">Κάντε εύκολα Stake το Pozoqo και κερδίστε παθητικό εισόδημα με μερικά απλά κλικ.</string>
     <string name="explore_staking_current_apy">Τρέχον APY = %s%%</string>
 
     <!-- Search -->
@@ -61,10 +61,10 @@
     <string name="explore_back_to_locations">Επιστροφή σε όλες τις τοποθεσίες</string>
     <string name="explore_back_to_nearest">Πίσω στην πλησιέστερη τοποθεσία</string>
     <string name="explore_select_location">Επιλέξτε τοποθεσία</string>
-    <string name="explore_pay_with_dash">Πληρώστε με Dash</string>
+    <string name="explore_pay_with_dash">Πληρώστε με Pozoqo</string>
     <string name="explore_buy_gift_card">Αγοράστε μια δωροκάρτα</string>
-    <string name="explore_buy_dash">Αγορά Dash</string>
-    <string name="explore_sell_dash">Πώληση Dash</string>
+    <string name="explore_buy_dash">Αγορά Pozoqo</string>
+    <string name="explore_sell_dash">Πώληση Pozoqo</string>
     <string name="explore_show_all">Εμφάνιση όλων των τοποθεσιών</string>
     <string name="explore_atm_location_hint">Αυτό το ΑΤΜ βρίσκεται στο</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -74,7 +74,7 @@
     <string name="explore_filters">Φίλτρα</string>
     <string name="explore_apply_filter">Εφαρμογή</string>
     <string name="explore_payment_method">Μέθοδος πληρωμής</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Δωροκάρτα</string>
     <string name="explore_radius">Ακτίνα</string>
     <string name="explore_location">Τοποθεσία</string>
@@ -141,16 +141,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Έχουμε 2 τύπους εμπόρων</string>
-    <string name="accept_dash_text">Δέχεται απευθείας DASH</string>
-    <string name="pay_with_dash_text">Πληρώστε με το πορτοφόλι DASH.</string>
-    <string name="buy_gift_card_text">Αγοράστε δωροκάρτες με το Dash σας</string>
-    <string name="buy_gift_card_desc_text">Αγοράστε δωροκάρτες με το Dash σας για το ακριβές ποσό της αγοράς σας.</string>
+    <string name="accept_dash_text">Δέχεται απευθείας PZQ</string>
+    <string name="pay_with_dash_text">Πληρώστε με το πορτοφόλι PZQ.</string>
+    <string name="buy_gift_card_text">Αγοράστε δωροκάρτες με το Pozoqo σας</string>
+    <string name="buy_gift_card_desc_text">Αγοράστε δωροκάρτες με το Pozoqo σας για το ακριβές ποσό της αγοράς σας.</string>
     <string name="learn_more_text">Μάθετε περισσότερα</string>
     <string name="continue_text">Συνέχεια</string>
     <string name="buy_card_header_text">Πώς να χρησιμοποιήσετε μια δωροκάρτα</string>
-    <string name="buy_card_desc_text">Δεν δέχονται όλα τα καταστήματα το DASH απευθείας, αλλά μπορείτε να αγοράσετε μια δωροκάρτα με το Dash σας.</string>
+    <string name="buy_card_desc_text">Δεν δέχονται όλα τα καταστήματα το PZQ απευθείας, αλλά μπορείτε να αγοράσετε μια δωροκάρτα με το Pozoqo σας.</string>
     <string name="find_merchant_text">Βρείτε έναν έμπορο.</string>
-    <string name="buy_gift_card_with_dash_text">Αγοράστε μια δωροκάρτα με Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Αγοράστε μια δωροκάρτα με Pozoqo.</string>
     <string name="redeem_gift_card_text">Εξαργυρώστε τη δωροκάρτα σας online μέσα σε λίγα δευτερόλεπτα ή σε ταμείο.</string>
 
     <!-- Sync Status -->

@@ -42,7 +42,7 @@ import org.dash.wallet.features.exploredash.services.UserLocationStateInt
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class ExploreDashModule {
+abstract class ExplorePozoqoModule {
     companion object {
         @Provides
         fun provideSharedPrefs(@ApplicationContext context: Context): SharedPreferences {

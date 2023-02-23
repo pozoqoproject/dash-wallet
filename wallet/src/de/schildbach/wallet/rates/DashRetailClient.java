@@ -15,42 +15,42 @@ import retrofit2.Response;
 import retrofit2.converter.moshi.MoshiConverterFactory;
 import retrofit2.http.GET;
 
-public class DashRetailClient extends RetrofitClient implements ExchangeRatesClient {
+public class PozoqoRetailClient extends RetrofitClient implements ExchangeRatesClient {
 
-    private static final String DASH_CURRENCY_SYMBOL = "DASH";
+    private static final String PZQ_CURRENCY_SYMBOL = "PZQ";
 
-    private static DashRetailClient instance;
+    private static PozoqoRetailClient instance;
 
-    public static DashRetailClient getInstance() {
+    public static PozoqoRetailClient getInstance() {
         if (instance == null) {
-            instance = new DashRetailClient("https://rates2.dashretail.org/");
+            instance = new PozoqoRetailClient("https://rates2.dashretail.org/");
         }
         return instance;
     }
 
-    private DashRetailService service;
+    private PozoqoRetailService service;
 
-    private DashRetailClient(String baseUrl) {
+    private PozoqoRetailClient(String baseUrl) {
         super(baseUrl);
 
         Moshi moshi = moshiBuilder.add(new BigDecimalAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
-        service = retrofit.create(DashRetailService.class);
+        service = retrofit.create(PozoqoRetailService.class);
     }
 
     @Nullable
     @Override
     public List<ExchangeRate> getRates() throws Exception {
-        Response<List<DashRetailRate>> response = service.getRates().execute();
-        List<DashRetailRate> rates = response.body();
+        Response<List<PozoqoRetailRate>> response = service.getRates().execute();
+        List<PozoqoRetailRate> rates = response.body();
 
         if (rates == null || rates.isEmpty()) {
-            throw new IllegalStateException("Failed to fetch prices from DashRetail");
+            throw new IllegalStateException("Failed to fetch prices from PozoqoRetail");
         }
 
         List<ExchangeRate> exchangeRates = new ArrayList<>();
-        for (DashRetailRate rate : rates) {
-            if (DASH_CURRENCY_SYMBOL.equals(rate.getBaseCurrency())) {
+        for (PozoqoRetailRate rate : rates) {
+            if (PZQ_CURRENCY_SYMBOL.equals(rate.getBaseCurrency())) {
                 exchangeRates.add(new ExchangeRate(rate.getQuoteCurrency(), rate.getPrice().toPlainString()));
             }
         }
@@ -58,9 +58,9 @@ public class DashRetailClient extends RetrofitClient implements ExchangeRatesCli
         return exchangeRates;
     }
 
-    private interface DashRetailService {
+    private interface PozoqoRetailService {
         @GET("rates?source=dashretail")
-        Call<List<DashRetailRate>> getRates();
+        Call<List<PozoqoRetailRate>> getRates();
     }
 
 }

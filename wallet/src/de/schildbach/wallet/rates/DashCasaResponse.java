@@ -7,16 +7,16 @@ import java.math.BigDecimal;
 /**
  * @author Samuel Barbosa
  */
-public class DashCasaResponse {
+public class PozoqoCasaResponse {
 
     @Json(name = "dashrate")
     private final BigDecimal dashVesPrice;
 
-    public DashCasaResponse(BigDecimal dashVesPrice) {
+    public PozoqoCasaResponse(BigDecimal dashVesPrice) {
         this.dashVesPrice = dashVesPrice;
     }
 
-    public BigDecimal getDashVesPrice() {
+    public BigDecimal getPozoqoVesPrice() {
         return dashVesPrice;
     }
 

@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Zur Adresse senden</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Kaufe / Verkaufe Dash</string>
+    <string name="shortcut_buy_sell">Kaufe / Verkaufe Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Empfangen</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Schließen</string>
 
     <string name="scan_to_pay_error_dialog_title">Zum Senden scannen</string>
-    <string name="scan_to_pay_error_dialog_message">Keine gültige Dash-Adresse oder URL-Anfrage im Zwischenspeicher:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Keine gültige Dash-Adresse oder URL-Anfrage im Zwischenspeicher.</string>
-    <string name="pay_to_confirm_address">Handelt es sich hierbei um die Dash-Adresse, an die die Zahlung erfolgen soll?</string>
+    <string name="scan_to_pay_error_dialog_message">Keine gültige Pozoqo-Adresse oder URL-Anfrage im Zwischenspeicher:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Keine gültige Pozoqo-Adresse oder URL-Anfrage im Zwischenspeicher.</string>
+    <string name="pay_to_confirm_address">Handelt es sich hierbei um die Pozoqo-Adresse, an die die Zahlung erfolgen soll?</string>
 
     <string name="receive_title">Empfangen</string>
     <string name="receive_enter_amount_message">Zu empfangenen Betrag festsetzen</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">Wiederherstellungsphrase ansehen</string>
     <string name="import_keys_dialog_title_from_seed">Mithilfe der Phrase wiederherstellen</string>
     <string name="backup_to_seed_wallet_dialog_message">Das ist deine Wiederherstellungsphrase. Bitte schreibe diese nieder.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Lasse niemanden Deine Wiederherstellungsphrase sehen, sonst könnten Deine Dash gestohlen werden.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Lasse niemanden Deine Wiederherstellungsphrase sehen, sonst könnten Deine Pozoqo gestohlen werden.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Deine Wallet wird durch einen Zahlungs-PIN gesichert. Gib Deinen PIN ein um Deine Wiederherstellungsphrase zu sehen.</string>
     <string name="import_keys_from_seed_dialog_message">Gib hier deine Wiederherstellungsphrase ein.</string>
     <string name="import_export_keys_dialog_password_phrase">Hier bitte die Wiederherstellungsphrase eingeben.</string>
     <string name="preferences_report_issue_summary">Informationen über das Problem sammeln und an die Entwickler weiterleiten.</string>
     <string name="navigation_configuration">Konfiguration</string>
-    <string name="request_coins_clipboard_address_msg">Dash-Adresse in die Zwischenablage kopiert</string>
+    <string name="request_coins_clipboard_address_msg">Pozoqo-Adresse in die Zwischenablage kopiert</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Zeigen</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" ist kein Wort aus der Wiederherstellungs-Wortfolge</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Wiederherstellungs-Wortfolge muss 12 Wörter haben</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Keine Netzwerk-Gebühr zahlen. Verwende das nur, wenn die Bestätigungszeit für dich nicht relevant ist.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Die App %s möchte auf deinen Master Public Key zugreifen. Dadurch kann deine Wallet eingesehen werden, es können jedoch keine Dash verschoben werden.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Die App %s möchte auf deinen Master Public Key zugreifen. Dadurch kann deine Wallet eingesehen werden, es können jedoch keine Pozoqo verschoben werden.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Die App %s erfragt eine Adresse, damit du eine Zahlung erhalten kannst. Möchtest du dies autorisieren?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">Entsperre deine Wallet</string>
     <string name="wallet_lock_unlock_dialog_message">Deine Wallet wird durch einen Zahlungs-PIN geschützt. Gib nun den PIN ein und tippe auf Entsperren, um fortzufahren.</string>
     <string name="wallet_lock_reset_wallet_title">Wallet zurücksetzen</string>
-    <string name="wallet_lock_reset_wallet_message">Bist du sicher? Die Wallet wird gelöscht und der Inhalt wird verloren gehen.\n\nDie Dash können danach nur noch über eine Backup-Datei oder eine Wiederherstellungsphrase wiederhergestellt werden.</string>
+    <string name="wallet_lock_reset_wallet_message">Bist du sicher? Die Wallet wird gelöscht und der Inhalt wird verloren gehen.\n\nDie Pozoqo können danach nur noch über eine Backup-Datei oder eine Wiederherstellungsphrase wiederhergestellt werden.</string>
 
     <string name="wallet_lock_wallet_disabled">Wallet deaktiviert</string>
     <string name="wallet_lock_try_again">Versuches es wieder in %1$d %2$s</string>
@@ -181,11 +181,11 @@
     <string name="notification_synchronization_channel_name">Synchronisierung</string>
     <string name="notification_synchronization_channel_description">Eine Benachrichtigung anzeigen, wenn die App sich mit dem Netzwerk synchronisiert.</string>
     <string name="notification_generic_channel_name">Allgemeine Benachrichtigungen</string>
-    <string name="notification_generic_channel_description">Andere Dash Wallet Ereignisse</string>
+    <string name="notification_generic_channel_description">Andere Pozoqo Wallet Ereignisse</string>
     <string name="notification_push_channel_name">Push-Benachrichtigungen</string>
-    <string name="notification_push_channel_description">Zeigt Push-Benachrichtigungen an, die dir von Dash gesendet wurden</string>
+    <string name="notification_push_channel_description">Zeigt Push-Benachrichtigungen an, die dir von Pozoqo gesendet wurden</string>
     <string name="notification_settings_title">Benachrichtigungen</string>
-    <string name="notification_explainer_title">Dash Wallet möchte dir Benachrichtigungen schicken</string>
+    <string name="notification_explainer_title">Pozoqo Wallet möchte dir Benachrichtigungen schicken</string>
     <string name="notification_explainer_message">Die Benachrichtigungen umfassen Warnungen, Töne und Symbolabzeichen. Diese können in den Telefoneinstellungen konfiguriert werden.</string>
 
     <string name="net_type_indicator" />
@@ -258,10 +258,10 @@
     <string name="authenticate_switch_to_fingerprint">Fingerabdruck verwenden</string>
     <string name="authenticate_switch_to_pin">PIN verwenden</string>
 
-    <string name="menu_buy_and_sell_title">Kaufe &amp; Verkaufe Dash</string>
+    <string name="menu_buy_and_sell_title">Kaufe &amp; Verkaufe Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Mit Drittanbieter-Börsen verknüpfen</string>
-    <string name="liquid_unavailable">Die Integrierung von Liquid in der Dash Wallet ist nicht mehr verfügbar</string>
-    <string name="liquid_unavailable_details">Wenn du Fragen zu deinem Dash Bestand bei Liquid hast, kontaktiere bitte das Liquid Support Center</string>
+    <string name="liquid_unavailable">Die Integrierung von Liquid in der Pozoqo Wallet ist nicht mehr verfügbar</string>
+    <string name="liquid_unavailable_details">Wenn du Fragen zu deinem Pozoqo Bestand bei Liquid hast, kontaktiere bitte das Liquid Support Center</string>
     <string name="menu_security_title">Sicherheit</string>
     <string name="menu_security_subtitle">Passphrase anzeigen, Wallet sichern...</string>
     <string name="menu_settings_title">Einstellungen</string>
@@ -273,7 +273,7 @@
     <string name="menu_contact_support_title">Support kontaktieren</string>
     <string name="menu_contact_support_subtitle">Ein Problem melden</string>
     <string name="menu_explore_title">Explore</string>
-    <string name="menu_explore_subtitle">Bei über 155.000 Händlern mit DASH einkaufen</string>
+    <string name="menu_explore_subtitle">Bei über 155.000 Händlern mit PZQ einkaufen</string>
 
     <string name="tools_address_book">Adressbuch</string>
     <string name="tools_import_private_key">Privaten Schlüssel importieren</string>
@@ -284,11 +284,11 @@
     <string name="about_review_and_rate">Bewerte und beurteile die App</string>
     <string name="about_contact_support">Support kontaktieren</string>
     <string name="about_fork_disclaimer">Dies ist eine Open Source App, die von der Bitcoin Wallet geforked wurde</string>
-    <string name="about_copyright">Copyright © 2023 Dash Core</string>
+    <string name="about_copyright">Copyright © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
-    <string name="about_last_explore_device_sync">Letzte Explore Dash Gerätesynchronisierung</string>
-    <string name="about_last_explore_server_update">Letztes Explore Dash Serverupdate</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
+    <string name="about_last_explore_device_sync">Letzte Explore Pozoqo Gerätesynchronisierung</string>
+    <string name="about_last_explore_server_update">Letztes Explore Pozoqo Serverupdate</string>
     <string name="about_firebase_installation_id">Firebase Installations-ID</string>
     <string name="about_fcm_token">Firebase Cloud Messaging Token</string>
     <string name="about_last_explore_dash_update_error">nicht abrufbar</string>
@@ -302,7 +302,7 @@
     <string name="block_info">Block-Info</string>
 
     <string name="scan_private_key">Privaten Schlüssel scannen</string>
-    <string name="scan_private_key_intro_1">Du bist im Betreff, Guthaben von einer Dash Paper Wallet zu transferieren.</string>
+    <string name="scan_private_key_intro_1">Du bist im Betreff, Guthaben von einer Pozoqo Paper Wallet zu transferieren.</string>
     <string name="scan_private_key_intro_2">Hierdurch werden alle Coins von dieser Wallet an die Wallet auf deinem Gerät versandt.</string>
     <string name="scan_private_key_intro_3">Sobald die Transaktion bestätigt ist, ist die andere Wallet wertlos und sollte aus Sicherheitsgründen nicht wieder verwendet werden.</string>
     <string name="confirm">Bestätigen</string>
@@ -340,7 +340,7 @@
     <string name="welcome_screen_subtitle_3">Habe die volle Kontrolle über deine Wallet und passe sie an deine Bedürfnisse an</string>
 
     <string name="sync_status_wait">Bitte bis zum Ende der Synchronisierung warten</string>
-    <string name="sync_status_syncing_sub_title">mit der Dash-Blockchain</string>
+    <string name="sync_status_syncing_sub_title">mit der Pozoqo-Blockchain</string>
     <string name="sync_status_unable_to_connect">Verbindung fehlgeschlagen</string>
     <string name="sync_status_check_connection">Verbindung überprüfen</string>
     <string name="sync_status_sync_title">Synchronisiere</string>
@@ -361,9 +361,9 @@
     <string name="payment_request_paid_to">Gezahlt an</string>
 
     <string name="import_image_not_valid_qr_code">Kein gültiger QR-Code</string>
-    <string name="import_image_please_use_valid_qr_code">Bitte verwende einen gültigen Dash QR-Code</string>
+    <string name="import_image_please_use_valid_qr_code">Bitte verwende einen gültigen Pozoqo QR-Code</string>
     <string name="import_image_no_private_key_copied">Kein privater Schlüssel kopiert</string>
-    <string name="import_image_import_valid_private_key">Kopiere einen gültigen privaten Schlüssel, um Dash von ihm zu importieren</string>
+    <string name="import_image_import_valid_private_key">Kopiere einen gültigen privaten Schlüssel, um Pozoqo von ihm zu importieren</string>
     <string name="import_image_invalid_private">Ungültiger privater Schlüssel</string>
 
     <string name="today">Heute</string>
@@ -379,7 +379,7 @@
     <string name="set_pin_error_missing_wallet_message">Die Wallet ist nicht vorhanden. Bitte melde dies dem Support Desk.</string>
     <string name="wallet_encryption_error_title">Fehler bei der Wallet-Erstellung</string>
     <string name="wallet_encryption_error_message">Es gibt ein Problem bei der Erstellung der Wallet. Bitte melde dies an den Support Desk.</string>
-    <string name="wallet_not_encrypted_error_message">Es liegt ein Problem mit deiner Wallet vor.\n\nWenn du kein Dash in dieser Wallet hast, dann deinstalliere die App und installiere sie neu. Anschließend erstellst du eine neue Wallet.\n\nWenn du eine Wiederherstellungsphrase oder eine Sicherungsdatei hast, deinstalliere diese App und installiere sie neu.\n\nAnsonsten melde dies bitte dem Support Desk.</string>
+    <string name="wallet_not_encrypted_error_message">Es liegt ein Problem mit deiner Wallet vor.\n\nWenn du kein Pozoqo in dieser Wallet hast, dann deinstalliere die App und installiere sie neu. Anschließend erstellst du eine neue Wallet.\n\nWenn du eine Wiederherstellungsphrase oder eine Sicherungsdatei hast, deinstalliere diese App und installiere sie neu.\n\nAnsonsten melde dies bitte dem Support Desk.</string>
 
     <string name="reset_wallet_title">Möchtest du die Wallet wirklich zurücksetzen?</string>
     <string name="reset_wallet_message">Wenn du die Wallet zurücksetzt, kannst du die Wallet nur über die Wiederherstellungsphrase wiederherstellen.</string>

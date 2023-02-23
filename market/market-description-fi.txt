@@ -1,22 +1,22 @@
-<b>Pidä Dashisi aina mukana taskussasi!</b> Voit maksaa nopeasti skannaamalla QR-koodin. Kauppiaana saat maksut turvallisesti ja välittömästi. Dash Wallet on ensimmäinen Dash-mobiilisovellus ja luultavimmin myös kaikista turvallisin!
+<b>Pidä Pozoqoisi aina mukana taskussasi!</b> Voit maksaa nopeasti skannaamalla QR-koodin. Kauppiaana saat maksut turvallisesti ja välittömästi. Pozoqo Wallet on ensimmäinen Pozoqo-mobiilisovellus ja luultavimmin myös kaikista turvallisin!
 
 
 <b>OMINAISUUDET</b>
 
 • Ei vaadi rekisteröintiä, verkkopalveluja tai pilvitallennusta! Tämä lompakko on hajautettu ja suorayhteyksinen.
-• Mahdollisuus näyttää Dash-varat määrissä DASH, mDASH ja µDASH.
+• Mahdollisuus näyttää Pozoqo-varat määrissä PZQ, mPZQ ja µPZQ.
 • Yksikkömuunnos valtioiden valuuttojen välillä.
-• Dashien lähettäminen ja vastaanottaminen NFC, QR-koodien tai Dash-URL-osotteiden avulla.
-• Osoitekirja säännöllisesti käytettyjä Dash-osoitteita varten.
+• Pozoqoien lähettäminen ja vastaanottaminen NFC, QR-koodien tai Pozoqo-URL-osotteiden avulla.
+• Osoitekirja säännöllisesti käytettyjä Pozoqo-osoitteita varten.
 • Kun et ole verkkoyhteyden ulottuvilla, voit silti maksaa Bluetoothin välityksellä.
-• Järjestelmän ilmoitus vastaanotetuille Dasheille.
+• Järjestelmän ilmoitus vastaanotetuille Pozoqoeille.
 • Paperisen lompakon pyyhkäisymahdollisuus (esim. näitä käytetään "kylmissä varastoissa").
-• Android-sovellus Dash-varojen hallintaan.
+• Android-sovellus Pozoqo-varojen hallintaan.
 
 
 <b>OSALLISTU</b>
 
-Dash Wallet on <b>avointa lähdekoodia</b> ja <b>vapaa ohjelmisto</b>. Lisenssi: GPLv3
+Pozoqo Wallet on <b>avointa lähdekoodia</b> ja <b>vapaa ohjelmisto</b>. Lisenssi: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Lähdekoodi saatavilla GitHub:sta:

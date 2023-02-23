@@ -41,8 +41,8 @@ import java.util.*
 class ItemDetails(context: Context, attrs: AttributeSet): LinearLayout(context, attrs) {
     private val binding = ItemDetailsViewBinding.inflate(LayoutInflater.from(context), this)
 
-    private var onSendDashClicked: ((isPayingWithDash: Boolean) -> Unit)? = null
-    private var onReceiveDashClicked: (() -> Unit)? = null
+    private var onSendPozoqoClicked: ((isPayingWithPozoqo: Boolean) -> Unit)? = null
+    private var onReceivePozoqoClicked: (() -> Unit)? = null
     private var onShowAllLocationsClicked: (() -> Unit)? = null
     private var onBackButtonClicked: (() -> Unit)? = null
     private var onNavigationButtonClicked: (() -> Unit)? = null
@@ -64,16 +64,16 @@ class ItemDetails(context: Context, attrs: AttributeSet): LinearLayout(context, 
         }
     }
 
-    fun setOnSendDashClicked(listener: (Boolean) -> Unit) {
-        onSendDashClicked = listener
+    fun setOnSendPozoqoClicked(listener: (Boolean) -> Unit) {
+        onSendPozoqoClicked = listener
     }
 
     fun setOnShowAllLocationsClicked(listener: () -> Unit) {
         onShowAllLocationsClicked = listener
     }
 
-    fun setOnReceiveDashClicked(listener: () -> Unit) {
-        onReceiveDashClicked = listener
+    fun setOnReceivePozoqoClicked(listener: () -> Unit) {
+        onReceivePozoqoClicked = listener
     }
 
     fun setOnBackButtonClicked(listener: () -> Unit) {
@@ -155,17 +155,17 @@ class ItemDetails(context: Context, attrs: AttributeSet): LinearLayout(context, 
             itemAddress.isVisible = !isOnline
             showAllBtn.isVisible = !isOnline && isGrouped && merchant.physicalAmount > 1
 
-            val isDash = merchant.paymentMethod?.trim()?.lowercase() == PaymentMethod.DASH
+            val isPozoqo = merchant.paymentMethod?.trim()?.lowercase() == PaymentMethod.PZQ
             val drawable = ResourcesCompat.getDrawable(
                 resources,
-                if (isDash) R.drawable.ic_dash else R.drawable.ic_gift_card, null
+                if (isPozoqo) R.drawable.ic_dash else R.drawable.ic_gift_card, null
             )
             payBtn.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
 
-            if (isDash) {
+            if (isPozoqo) {
                 payBtn.isVisible = true
                 payBtn.text = context.getText(R.string.explore_pay_with_dash)
-                payBtn.setOnClickListener { onSendDashClicked?.invoke(true) }
+                payBtn.setOnClickListener { onSendPozoqoClicked?.invoke(true) }
             } else {
                 payBtn.isVisible = !merchant.deeplink.isNullOrBlank()
                 payBtn.text = context.getText(R.string.explore_buy_gift_card)
@@ -203,8 +203,8 @@ class ItemDetails(context: Context, attrs: AttributeSet): LinearLayout(context, 
             showAllBtn.isVisible = false
             backButton.isVisible = false
 
-            sellBtn.setOnClickListener { onSendDashClicked?.invoke(false) }
-            buyBtn.setOnClickListener { onReceiveDashClicked?.invoke() }
+            sellBtn.setOnClickListener { onSendPozoqoClicked?.invoke(false) }
+            buyBtn.setOnClickListener { onReceivePozoqoClicked?.invoke() }
 
             buyBtn.isVisible = atm.type != AtmType.SELL
             sellBtn.isVisible = atm.type != AtmType.BUY

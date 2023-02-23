@@ -14,33 +14,33 @@ import retrofit2.http.GET;
 /**
  * @author Samuel Barbosa
  */
-public class DashCasaClient extends RetrofitClient {
+public class PozoqoCasaClient extends RetrofitClient {
 
-    private static DashCasaClient instance;
-    private DashCasaService service;
+    private static PozoqoCasaClient instance;
+    private PozoqoCasaService service;
 
-    public static DashCasaClient getInstance() {
+    public static PozoqoCasaClient getInstance() {
         if (instance == null) {
-            instance = new DashCasaClient("https://dash.casa/");
+            instance = new PozoqoCasaClient("https://dash.casa/");
         }
         return instance;
     }
 
-    private DashCasaClient(String baseUrl) {
+    private PozoqoCasaClient(String baseUrl) {
         super(baseUrl);
 
         Moshi moshi = moshiBuilder.add(new BigDecimalAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
-        service = retrofit.create(DashCasaService.class);
+        service = retrofit.create(PozoqoCasaService.class);
     }
 
-    public Response<DashCasaResponse> getRates() throws IOException {
+    public Response<PozoqoCasaResponse> getRates() throws IOException {
         return service.getRates().execute();
     }
 
-    private interface DashCasaService {
+    private interface PozoqoCasaService {
         @GET("api/?cur=VES")
-        Call<DashCasaResponse> getRates();
+        Call<PozoqoCasaResponse> getRates();
     }
 
 }

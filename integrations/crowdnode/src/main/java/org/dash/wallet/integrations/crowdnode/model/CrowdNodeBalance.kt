@@ -20,7 +20,7 @@ package org.dash.wallet.integrations.crowdnode.model
 import com.google.gson.annotations.SerializedName
 
 data class CrowdNodeBalance (
-    @SerializedName("DashAddress")
+    @SerializedName("PozoqoAddress")
     val dashAddress : String,
     @SerializedName("TotalBalance")
     val totalBalance : Double,

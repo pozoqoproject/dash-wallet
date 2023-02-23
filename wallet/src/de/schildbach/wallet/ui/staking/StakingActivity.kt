@@ -77,9 +77,9 @@ class StakingActivity : LockScreenActivity() {
             NavigationRequest.RestoreWallet -> {
                 ResetWalletDialog.newInstance().show(supportFragmentManager, "reset_wallet_dialog")
             }
-            NavigationRequest.BuyDash -> {
+            NavigationRequest.BuyPozoqo -> {
                 // TODO: replace with navController navigation when Staking is integrated into nav_home
-                setResult(Constants.USER_BUY_SELL_DASH)
+                setResult(Constants.USER_BUY_SELL_PZQ)
                 finish()
             }
             NavigationRequest.SendReport -> {

@@ -45,7 +45,7 @@
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/peer_list_row_height"
-        tools:text="/Dash Core:0.12.3.2/\nprotocol: 70210" />
+        tools:text="/Pozoqo Core:0.12.3.2/\nprotocol: 70210" />
 
     <TextView
         android:id="@+id/peer_list_row_ping"

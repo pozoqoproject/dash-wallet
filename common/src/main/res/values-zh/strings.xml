@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">网络不可用</string>
     <string name="network_unavailable_check_connection">请检查您的网络连接</string>
     <string name="network_unavailable_balance_not_accurate">由于连接断开, 余额显示可能不准确</string>
-    <string name="buy_dash">购买Dash</string>
+    <string name="buy_dash">购买Pozoqo</string>
     <string name="copied">已复制</string>
     <string name="staking_title">质押</string>
     <string name="email">邮箱</string>
     <string name="email_placeholder">例 johndoe@mail.com</string>
     <string name="error">错误</string>
     <string name="select_a_coin">选择一个币种</string>
-    <string name="request_coins_share_dialog_title">分享接收Dash的请求…</string>
-    <string name="buy_with_fiat">通过法币购买Dash</string>
-    <string name="buy_and_convert">购买并以其他加密货币兑换Dash</string>
-    <string name="transfer_dash">转账 Dash</string>
+    <string name="request_coins_share_dialog_title">分享接收Pozoqo的请求…</string>
+    <string name="buy_with_fiat">通过法币购买Pozoqo</string>
+    <string name="buy_and_convert">购买并以其他加密货币兑换Pozoqo</string>
+    <string name="transfer_dash">转账 Pozoqo</string>
     <string name="login_error_title">无法登录您%s的账户</string>
     <string name="login_error_message">当登录您%s的账户时发生了一个错误.</string>
     <string name="balance">余额:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">借记卡/信用卡</string>
     <string name="max">最大</string>
     <string name="select_the_coin">选择币种</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Dash 钱包</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Pozoqo 钱包</string>
     <string name="from">来自</string>
     <string name="to">到</string>
     <string name="select_currency">选择货币</string>
     <string name="send_coins_error_dusty_send">该金额太小, 无法支付</string>
     <string name="send_coins_error_insufficient_money">资金不足</string>
 
-    <string name="empty_wallet_warning_title">看起来您正在清空Dash钱包</string>
-    <string name="empty_wallet_crowdnode_warning">请注意, 您需要增加余额至 0.0003 Dash才能够从CrowdNode账户中提币到此钱包.</string>
+    <string name="empty_wallet_warning_title">看起来您正在清空Pozoqo钱包</string>
+    <string name="empty_wallet_crowdnode_warning">请注意, 您需要增加余额至 0.0003 Pozoqo才能够从CrowdNode账户中提币到此钱包.</string>
     <string name="syncing">正在同步</string>
 </resources>

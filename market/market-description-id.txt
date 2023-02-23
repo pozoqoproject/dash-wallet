@@ -1,29 +1,29 @@
 ﻿DESKRIPSI UTAMA
 
-Dash Wallet is the reference Android wallet maintained by Dash Core Group for Dash - Digital Cash - an innovative alternative to Bitcoin which is explicitly designed for payments.
+Pozoqo Wallet is the reference Android wallet maintained by Pozoqo Core Group for Pozoqo - Digital Cash - an innovative alternative to Bitcoin which is explicitly designed for payments.
 
-Dash adalah mata uang digital yang berupaya memperbaiki kekurangan yang dimiliki oleh mata uang digital lainnya. Dash bergantung pada jaringan masternodes untuk memungkinkan hal-hal seperti privasi opsional, transaksi instan, dan mekanisme pendanaan langsung untuk mempromosikan pertumbuhan jaringan.
+Pozoqo adalah mata uang digital yang berupaya memperbaiki kekurangan yang dimiliki oleh mata uang digital lainnya. Pozoqo bergantung pada jaringan masternodes untuk memungkinkan hal-hal seperti privasi opsional, transaksi instan, dan mekanisme pendanaan langsung untuk mempromosikan pertumbuhan jaringan.
 
-Intuitif dan aman, Dash Wallet memberi Anda kendali penuh atas uang digital Anda. Kirim dan terima pembayaran cepat, dengan dompet seluler teraman yang tersedia.
+Intuitif dan aman, Pozoqo Wallet memberi Anda kendali penuh atas uang digital Anda. Kirim dan terima pembayaran cepat, dengan dompet seluler teraman yang tersedia.
 
-Dompet Dash terhubung langsung ke jaringan Dash. Ini berarti bahwa tidak ada server untuk diretas atau dihancurkan - dana Anda selalu aman. Bahkan jika ponsel Anda hilang, rusak atau dicuri, Anda dapat dengan mudah memulihkan dana menggunakan frasa pemulihan pribadi.
+Dompet Pozoqo terhubung langsung ke jaringan Pozoqo. Ini berarti bahwa tidak ada server untuk diretas atau dihancurkan - dana Anda selalu aman. Bahkan jika ponsel Anda hilang, rusak atau dicuri, Anda dapat dengan mudah memulihkan dana menggunakan frasa pemulihan pribadi.
 
 Fitur:
 
-* Kirim dan terima pembayaran Dash cepat dalam hitungan detik, online atau secara langsung
+* Kirim dan terima pembayaran Pozoqo cepat dalam hitungan detik, online atau secara langsung
 * Pembayaran satu tombol untuk pedagang dan situs web yang menerimanya
 * Bayar cepat dengan otentikasi biometrik
 * Menyapu dompet kertas (misalnya yang digunakan untuk cold storage)
-* Integrasi pihak ke-3 untuk memungkinkan pengguna membeli dan menjual Dash
+* Integrasi pihak ke-3 untuk memungkinkan pengguna membeli dan menjual Pozoqo
 * Frasa pemulihan sederhana memungkinkan Anda untuk memulihkan dana saat perangkat Anda hilang atau berubah
 * Pengaturan fleksibel untuk memenuhi berbagai preferensi keamanan khusus
-* Klien jaringan langsung Dash - tidak ada server pusat untuk diretas atau mati
+* Klien jaringan langsung Pozoqo - tidak ada server pusat untuk diretas atau mati
 
-Dash Wallet adalah sumber terbuka dan gratis. Biaya jaringan lebih rendah daripada kebanyakan cryptocurrency dan tidak ada biaya terpusat tambahan. Kirim sejumlah uang kepada siapa pun di dunia dalam hitungan detik. Terima pembayaran dengan andal dan instan di bisnis Anda. Beginilah seharusnya uang.
+Pozoqo Wallet adalah sumber terbuka dan gratis. Biaya jaringan lebih rendah daripada kebanyakan cryptocurrency dan tidak ada biaya terpusat tambahan. Kirim sejumlah uang kepada siapa pun di dunia dalam hitungan detik. Terima pembayaran dengan andal dan instan di bisnis Anda. Beginilah seharusnya uang.
 
 MENYUMBANG
 
-Dash Wallet adalah sumber terbuka dan perangkat lunak bebas. Lisensi: GPLv3
+Pozoqo Wallet adalah sumber terbuka dan perangkat lunak bebas. Lisensi: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Kode sumber kami tersedia di GitHub:
@@ -32,8 +32,8 @@ https://github.com/dashevo/dash-wallet
 Semua terjemahan dikelola melalui Transifex:
 https://www.transifex.com/dash/dash-mobile-wallets/
 
-Anda dapat menemukan lebih banyak tentang Dash di
+Anda dapat menemukan lebih banyak tentang Pozoqo di
 https://www.dash.org/
 
 Upgrade v7.0.0
-Dash Dompet v7.0 membawa serta pengalaman yang sepenuhnya didesain ulang yang bertujuan untuk meningkatkan kemudahan penggunaan dengan cara yang intuitif dan akrab di semua perangkat Anda. Kami menata ulang proses verifikasi frasa pemulihan untuk menyoroti pentingnya menjaga informasi untuk pemulihan dompet selanjutnya, dan pengguna kini dapat memutuskan kapan mereka ingin meluangkan waktu untuk menuliskan frasa pemulihan 12 kata mereka. Kami juga telah menambahkan pintasan ke layar beranda untuk akses yang lebih cepat ke fitur-fitur yang umum digunakan dan menu kami telah diposisikan ulang di aplikasi dan diorganisir untuk membantu pengguna mengonfigurasi dompet mereka lebih cepat dan lebih efisien. Pengguna sekarang memiliki kontrol yang lebih luas atas pengaturan keamanan mereka dan kemampuan untuk memutuskan seberapa sering mereka harus memasukkan kode pin mereka.
+Pozoqo Dompet v7.0 membawa serta pengalaman yang sepenuhnya didesain ulang yang bertujuan untuk meningkatkan kemudahan penggunaan dengan cara yang intuitif dan akrab di semua perangkat Anda. Kami menata ulang proses verifikasi frasa pemulihan untuk menyoroti pentingnya menjaga informasi untuk pemulihan dompet selanjutnya, dan pengguna kini dapat memutuskan kapan mereka ingin meluangkan waktu untuk menuliskan frasa pemulihan 12 kata mereka. Kami juga telah menambahkan pintasan ke layar beranda untuk akses yang lebih cepat ke fitur-fitur yang umum digunakan dan menu kami telah diposisikan ulang di aplikasi dan diorganisir untuk membantu pengguna mengonfigurasi dompet mereka lebih cepat dan lebih efisien. Pengguna sekarang memiliki kontrol yang lebih luas atas pengaturan keamanan mereka dan kemampuan untuk memutuskan seberapa sering mereka harus memasukkan kode pin mereka.

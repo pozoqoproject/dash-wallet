@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">发送至地址</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">买 / 卖 Dash</string>
+    <string name="shortcut_buy_sell">买 / 卖 Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">接收</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">关闭</string>
 
     <string name="scan_to_pay_error_dialog_title">扫描发送</string>
-    <string name="scan_to_pay_error_dialog_message">剪切板没有包含有效的Dash地址或链接:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">剪切板没有包含有效的Dash地址或链接</string>
-    <string name="pay_to_confirm_address">这是您想要发送付款的Dash地址吗?</string>
+    <string name="scan_to_pay_error_dialog_message">剪切板没有包含有效的Pozoqo地址或链接:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">剪切板没有包含有效的Pozoqo地址或链接</string>
+    <string name="pay_to_confirm_address">这是您想要发送付款的Pozoqo地址吗?</string>
 
     <string name="receive_title">接收</string>
     <string name="receive_enter_amount_message">指定收款数额</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">查看助记词</string>
     <string name="import_keys_dialog_title_from_seed">使用助记词复原</string>
     <string name="backup_to_seed_wallet_dialog_message">这是您的助记词. 请记录下来.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">请不要让任何人看到您的助记词, 否则他们将可以使用您的Dash.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">请不要让任何人看到您的助记词, 否则他们将可以使用您的Pozoqo.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">资金密码可以保护您的钱包. 输入密码并点击显示, 浏览您的助记词.</string>
     <string name="import_keys_from_seed_dialog_message">在这里输入您的助记词.</string>
     <string name="import_export_keys_dialog_password_phrase">这里是您的助记词.</string>
     <string name="preferences_report_issue_summary">请描述您所遇到的问题并通过邮箱给开发者发送报告.</string>
     <string name="navigation_configuration">恭喜</string>
-    <string name="request_coins_clipboard_address_msg">Dash地址已复制</string>
+    <string name="request_coins_clipboard_address_msg">Pozoqo地址已复制</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">显示</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" 不是一个助记词</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">助记词必须包括 12 个词</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">不支付任何交易手续费. 仅在您不在意确认时间长短的情况下使用此选项.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">应用程序 %s 想要获取您的主公钥. 这可以被用来追踪您的钱包, 但无法支配您的Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">应用程序 %s 想要获取您的主公钥. 这可以被用来追踪您的钱包, 但无法支配您的Pozoqo.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">应用程序 %s 正在请求一个地址以用来向您发送交易.  您是否同意?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">解锁您的钱包</string>
     <string name="wallet_lock_unlock_dialog_message">您的钱包受到密码保护. 输入您的PIN码并按解锁以继续.</string>
     <string name="wallet_lock_reset_wallet_title">重置钱包</string>
-    <string name="wallet_lock_reset_wallet_message">您确定吗? 您的钱包将会被删除, 您所有的Dash将会丢失.\n\n找回您Dash的唯一途径是通过备份文件或助记词.</string>
+    <string name="wallet_lock_reset_wallet_message">您确定吗? 您的钱包将会被删除, 您所有的Pozoqo将会丢失.\n\n找回您Pozoqo的唯一途径是通过备份文件或助记词.</string>
 
     <string name="wallet_lock_wallet_disabled">钱包被禁用</string>
     <string name="wallet_lock_try_again">请在 %1$d %2$s 后再试</string>
@@ -178,11 +178,11 @@
     <string name="notification_synchronization_channel_name">同步</string>
     <string name="notification_synchronization_channel_description">当app正在同步网络时显示通知.</string>
     <string name="notification_generic_channel_name">一般通知</string>
-    <string name="notification_generic_channel_description"> 其他Dash钱包活动</string>
+    <string name="notification_generic_channel_description"> 其他Pozoqo钱包活动</string>
     <string name="notification_push_channel_name">推送通知</string>
-    <string name="notification_push_channel_description">显示由Dash发送给您的推送通知</string>
+    <string name="notification_push_channel_description">显示由Pozoqo发送给您的推送通知</string>
     <string name="notification_settings_title">通知</string>
-    <string name="notification_explainer_title">Dash钱包想向您发送通知</string>
+    <string name="notification_explainer_title">Pozoqo钱包想向您发送通知</string>
     <string name="notification_explainer_message">通知可能包括警报, 声音和图标标记. 这些可以在手机设置中进行配置.</string>
 
     <string name="net_type_indicator" />
@@ -209,7 +209,7 @@
     <string name="verify_it_is_important_subtitle">我们即将向您显示您钱包的私钥.</string>
     <string name="verify_info_text_1">此助记词是您获取本钱包中资金的方法.</string>
     <string name="verify_info_text_2">我们不会存储此助记词.</string>
-    <string name="verify_info_text_3">如果此设备丢失, 损坏或意外从该设备卸载了Dash钱包, 则需要此助记词来找回您的资金.</string>
+    <string name="verify_info_text_3">如果此设备丢失, 损坏或意外从该设备卸载了Pozoqo钱包, 则需要此助记词来找回您的资金.</string>
     <string name="verify_skip">跳过</string>
     <string name="verify_secure_now_btn">立刻保护</string>
     <string name="verify_secure_now_message">如果您丢失此设备, 您将丢失您的资金. 获取您助记词以便在其他设备能够恢复您的钱包.</string>
@@ -255,10 +255,10 @@
     <string name="authenticate_switch_to_fingerprint">使用指纹</string>
     <string name="authenticate_switch_to_pin">使用PIN</string>
 
-    <string name="menu_buy_and_sell_title">买 &amp; 卖 Dash</string>
+    <string name="menu_buy_and_sell_title">买 &amp; 卖 Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">与第三方交易所连接</string>
-    <string name="liquid_unavailable">Liquid 与 Dash钱包的整合功能已经不能再使用</string>
-    <string name="liquid_unavailable_details">如果您对您再 Liquid的 Dash持仓有任何问题, 请联系 Liquid客服中心</string>
+    <string name="liquid_unavailable">Liquid 与 Pozoqo钱包的整合功能已经不能再使用</string>
+    <string name="liquid_unavailable_details">如果您对您再 Liquid的 Pozoqo持仓有任何问题, 请联系 Liquid客服中心</string>
     <string name="menu_security_title">安全</string>
     <string name="menu_security_subtitle">查看密码, 备份钱包...</string>
     <string name="menu_settings_title">设置</string>
@@ -270,7 +270,7 @@
     <string name="menu_contact_support_title">联系支持</string>
     <string name="menu_contact_support_subtitle">报告问题</string>
     <string name="menu_explore_title">探索</string>
-    <string name="menu_explore_subtitle">在超过155,000家商户使用Dash购物</string>
+    <string name="menu_explore_subtitle">在超过155,000家商户使用Pozoqo购物</string>
 
     <string name="tools_address_book">地址簿</string>
     <string name="tools_import_private_key">导入私钥</string>
@@ -281,9 +281,9 @@
     <string name="about_review_and_rate">对app评价并评分</string>
     <string name="about_contact_support">联系支持</string>
     <string name="about_fork_disclaimer">这是从比特币钱包分叉而来的开源应用程序</string>
-    <string name="about_copyright">版权所有 © 2023 Dash Core</string>
+    <string name="about_copyright">版权所有 © 2023 Pozoqo Core</string>
     <string name="about_license">GNU 公共通用许可 v3.0</string>
-    <string name="about_version_name">Dash钱包 %s</string>
+    <string name="about_version_name">Pozoqo钱包 %s</string>
     <string name="about_last_explore_device_sync">最后一次探索设备同步</string>
     <string name="about_last_explore_server_update">最后一次探索服务器更新</string>
     <string name="about_firebase_installation_id">Firebase安装 ID</string>
@@ -299,7 +299,7 @@
     <string name="block_info">区块信息</string>
 
     <string name="scan_private_key">扫描私钥</string>
-    <string name="scan_private_key_intro_1">您即将从一个Dash纸钱包来清除资金.</string>
+    <string name="scan_private_key_intro_1">您即将从一个Pozoqo纸钱包来清除资金.</string>
     <string name="scan_private_key_intro_2">这会从另一钱包中将所有币移动到本设备的钱包中.</string>
     <string name="scan_private_key_intro_3">当交易被确认后, 另一个钱包将会分文不值, 并且出于安全原因不应当再被使用.</string>
     <string name="confirm">确认</string>
@@ -337,7 +337,7 @@
     <string name="welcome_screen_subtitle_3">完全控制并根据需求定制您的钱包</string>
 
     <string name="sync_status_wait">请等待同步完成</string>
-    <string name="sync_status_syncing_sub_title">以Dash区块链</string>
+    <string name="sync_status_syncing_sub_title">以Pozoqo区块链</string>
     <string name="sync_status_unable_to_connect">无法连接</string>
     <string name="sync_status_check_connection">检查您的连接</string>
     <string name="sync_status_sync_title">同步</string>
@@ -358,9 +358,9 @@
     <string name="payment_request_paid_to">支付给</string>
 
     <string name="import_image_not_valid_qr_code">不是一个有效的二维码</string>
-    <string name="import_image_please_use_valid_qr_code">请使用有效的Dash二维码</string>
+    <string name="import_image_please_use_valid_qr_code">请使用有效的Pozoqo二维码</string>
     <string name="import_image_no_private_key_copied">未复制私钥</string>
-    <string name="import_image_import_valid_private_key">复制一个有效的私钥并将其中的Dash导入</string>
+    <string name="import_image_import_valid_private_key">复制一个有效的私钥并将其中的Pozoqo导入</string>
     <string name="import_image_invalid_private">无效的私钥</string>
 
     <string name="today">今天</string>
@@ -376,7 +376,7 @@
     <string name="set_pin_error_missing_wallet_message">钱包丢失. 请将此报告提交给服务与支持平台.</string>
     <string name="wallet_encryption_error_title">钱包创建错误</string>
     <string name="wallet_encryption_error_message">创建钱包时出现问题. 请将此报告提交给帮助与支持平台.</string>
-    <string name="wallet_not_encrypted_error_message">您的钱包有问题.\n\n如果您钱包中没有Dash, 请卸载并重新安装此应用. 然后创建一个新钱包.\n\n如果您有助记词或备份文件, 那么请卸载此应用后重新安装.\n\n否则, 请向支持与服务平台报告.</string>
+    <string name="wallet_not_encrypted_error_message">您的钱包有问题.\n\n如果您钱包中没有Pozoqo, 请卸载并重新安装此应用. 然后创建一个新钱包.\n\n如果您有助记词或备份文件, 那么请卸载此应用后重新安装.\n\n否则, 请向支持与服务平台报告.</string>
 
     <string name="reset_wallet_title">您确定想要重置钱包吗?</string>
     <string name="reset_wallet_message">如果您重置了钱包, 唯一能够再访问它的方法就是通过助记词来找回钱包.</string>

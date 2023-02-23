@@ -31,13 +31,13 @@ public class CryptoCompareClient extends RetrofitClient {
         super(baseUrl);
 
         Moshi moshi = moshiBuilder.add(new BigDecimalAdapter())
-                .add(new CryptoCompareDashBtcRateAdapter()).build();
+                .add(new CryptoComparePozoqoBtcRateAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
         service = retrofit.create(CryptoCompareService.class);
     }
 
-    public Response<Rate> getDashCustomAverage() throws IOException {
-        return service.getDashCustomAverage().execute();
+    public Response<Rate> getPozoqoCustomAverage() throws IOException {
+        return service.getPozoqoCustomAverage().execute();
     }
 
     public Response<CryptoCompareVesBtcRate> getVESBTCRate() throws IOException {
@@ -45,8 +45,8 @@ public class CryptoCompareClient extends RetrofitClient {
     }
 
     private interface CryptoCompareService {
-        @GET("data/generateAvg?fsym=DASH&tsym=BTC&e=Binance,Kraken,Poloniex,Bitfinex")
-        Call<Rate> getDashCustomAverage();
+        @GET("data/generateAvg?fsym=PZQ&tsym=BTC&e=Binance,Kraken,Poloniex,Bitfinex")
+        Call<Rate> getPozoqoCustomAverage();
 
         @GET("data/price?fsym=BTC&tsyms=VES")
         Call<CryptoCompareVesBtcRate> getVESBTCRate();

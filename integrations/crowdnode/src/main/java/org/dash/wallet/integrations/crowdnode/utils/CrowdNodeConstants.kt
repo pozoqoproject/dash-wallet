@@ -32,13 +32,13 @@ object CrowdNodeConstants {
     private const val MAINNET_LOGIN_URL = "https://login.crowdnode.io"
     private const val TESTNET_LOGIN_URL = "https://logintest.crowdnode.io"
 
-    val MINIMUM_REQUIRED_DASH: Coin = Coin.valueOf(1000000)
-    val REQUIRED_FOR_SIGNUP: Coin = MINIMUM_REQUIRED_DASH - Coin.valueOf(100000)
+    val MINIMUM_REQUIRED_PZQ: Coin = Coin.valueOf(1000000)
+    val REQUIRED_FOR_SIGNUP: Coin = MINIMUM_REQUIRED_PZQ - Coin.valueOf(100000)
     val API_OFFSET: Coin = Coin.valueOf(20000)
-    val MINIMUM_DASH_DEPOSIT: Coin = Coin.COIN.div(2)
-    val DASH_FORMAT: MonetaryFormat = MonetaryFormat.BTC.minDecimals(1)
+    val MINIMUM_PZQ_DEPOSIT: Coin = Coin.COIN.div(2)
+    val PZQ_FORMAT: MonetaryFormat = MonetaryFormat.BTC.minDecimals(1)
         .repeatOptionalDecimals(1, 3).postfixCode()
-    val API_CONFIRMATION_DASH_AMOUNT: Coin = Coin.valueOf(54321)
+    val API_CONFIRMATION_PZQ_AMOUNT: Coin = Coin.valueOf(54321)
     val MINIMUM_LEFTOVER_BALANCE: Coin = Coin.valueOf(30000)
 
     object WithdrawalLimits {

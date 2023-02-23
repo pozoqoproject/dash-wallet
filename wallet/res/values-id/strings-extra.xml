@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Kirim ke alamat</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Beli / Jual Dash</string>
+    <string name="shortcut_buy_sell">Beli / Jual Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Terima</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Tutup</string>
 
     <string name="scan_to_pay_error_dialog_title">Pindai untuk mengirim</string>
-    <string name="scan_to_pay_error_dialog_message">Bukan Alamat Dash atau permintaan URL di clipboard yang valid:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Bukan Alamat Dash atau permintaan URL di clipboard yang valid.</string>
-    <string name="pay_to_confirm_address">Apakah ini alamat Dash yang ingin Anda kirimi pembayaran?</string>
+    <string name="scan_to_pay_error_dialog_message">Bukan Alamat Pozoqo atau permintaan URL di clipboard yang valid:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Bukan Alamat Pozoqo atau permintaan URL di clipboard yang valid.</string>
+    <string name="pay_to_confirm_address">Apakah ini alamat Pozoqo yang ingin Anda kirimi pembayaran?</string>
 
     <string name="receive_title">Terima</string>
     <string name="receive_enter_amount_message">Tentukan jumlah yang akan diterima</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">Lihat frasa pemulihan</string>
     <string name="import_keys_dialog_title_from_seed">Pulihkan dari frasa pemulihan</string>
     <string name="backup_to_seed_wallet_dialog_message">Ini adalah frasa pemulihan anda. Tolong Catat.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">JANGAN biarkan siapa pun melihat frasa pemulihan Anda atau mereka dapat menghabiskan Dash Anda.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">JANGAN biarkan siapa pun melihat frasa pemulihan Anda atau mereka dapat menghabiskan Pozoqo Anda.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Dompet Anda dilindungi oleh PIN. Masukkan PIN Anda dan tekan Tampil untuk melihat frasa pemulihan Anda.</string>
     <string name="import_keys_from_seed_dialog_message">Masukkan frasa pemulihan anda disini.</string>
     <string name="import_export_keys_dialog_password_phrase">Frasa pemulihan ada di sini.</string>
     <string name="preferences_report_issue_summary">Kumpulkan informasi masalah Anda dan kirimkan laporan Anda ke pengembang.</string>
     <string name="navigation_configuration">Konfigurasi</string>
-    <string name="request_coins_clipboard_address_msg">Alamat Dash disalin</string>
+    <string name="request_coins_clipboard_address_msg">Alamat Pozoqo disalin</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Tunjukkan</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" bukan kata frasa pemulihan</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Frasa pemulihan harus memiliki 12 kata</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Tidak ada biaya yang akan dibayarkan. Gunakan \'tanpa biaya\' hanya jika Anda tidak peduli tentang waktu konfirmasi.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Aplikasi %s  ingin menerima Master Public Key Anda. Ini dapat digunakan untuk melacak dompet Anda, ini tidak dapat digunakan untuk memindahkan Dash Anda.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Aplikasi %s  ingin menerima Master Public Key Anda. Ini dapat digunakan untuk melacak dompet Anda, ini tidak dapat digunakan untuk memindahkan Pozoqo Anda.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Aplikasi %s  meminta alamat agar dapat membayar Anda. Apakah Anda ingin mengesahkan ini?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">Buka kunci dompet Anda</string>
     <string name="wallet_lock_unlock_dialog_message">Dompet Anda dilindungi oleh PIN. Masukkan PIN Anda dan tekan Buka Kunci untuk melanjutkan.</string>
     <string name="wallet_lock_reset_wallet_title">Atur ulang dompet</string>
-    <string name="wallet_lock_reset_wallet_message">Apakah kamu yakin? Dompet Anda akan dihapus dan semua Dash Anda akan hilang.\n\n Satu-satunya cara untuk memulihkan Dash Anda adalah dengan file cadangan atau frasa pemulihan.</string>
+    <string name="wallet_lock_reset_wallet_message">Apakah kamu yakin? Dompet Anda akan dihapus dan semua Pozoqo Anda akan hilang.\n\n Satu-satunya cara untuk memulihkan Pozoqo Anda adalah dengan file cadangan atau frasa pemulihan.</string>
 
     <string name="wallet_lock_wallet_disabled">Dompet dinonaktifkan</string>
     <string name="wallet_lock_try_again">Coba lagi dalam %1$d %2$s</string>
@@ -178,11 +178,11 @@
     <string name="notification_synchronization_channel_name">Sinkronisasi</string>
     <string name="notification_synchronization_channel_description">Perlihatkan pemberitahuan saat aplikasi menyinkronkan dengan jaringan.</string>
     <string name="notification_generic_channel_name">Pemberitahuan umum</string>
-    <string name="notification_generic_channel_description">Acara Dash Wallet lainnya</string>
+    <string name="notification_generic_channel_description">Acara Pozoqo Wallet lainnya</string>
     <string name="notification_push_channel_name">Notifikasi Dorong</string>
-    <string name="notification_push_channel_description">Menunjukkan pemberitahuan push yang dikirimkan kepada Anda oleh Dash</string>
+    <string name="notification_push_channel_description">Menunjukkan pemberitahuan push yang dikirimkan kepada Anda oleh Pozoqo</string>
     <string name="notification_settings_title">Pemberitahuan</string>
-    <string name="notification_explainer_title">Dash Wallet ingin mengirimi Anda pemberitahuan</string>
+    <string name="notification_explainer_title">Pozoqo Wallet ingin mengirimi Anda pemberitahuan</string>
     <string name="notification_explainer_message">Pemberitahuan dapat mencakup peringatan, suara, dan lencana ikon. Ini dapat dikonfigurasi di Pengaturan telepon.</string>
 
     <string name="net_type_indicator" />
@@ -209,7 +209,7 @@
     <string name="verify_it_is_important_subtitle">Kami akan menunjukkan kepada Anda kunci rahasia ke dompet Anda.</string>
     <string name="verify_info_text_1">Frasa pemulihan ini adalah akses Anda ke dana di dompet ini.</string>
     <string name="verify_info_text_2">Kami TIDAK menyimpan frasa pemulihan ini.</string>
-    <string name="verify_info_text_3">Anda akan memerlukan frasa pemulihan ini untuk mengakses dana Anda jika perangkat ini hilang, rusak, atau jika Dash Wallet secara tidak sengaja dihapus dari perangkat ini.</string>
+    <string name="verify_info_text_3">Anda akan memerlukan frasa pemulihan ini untuk mengakses dana Anda jika perangkat ini hilang, rusak, atau jika Pozoqo Wallet secara tidak sengaja dihapus dari perangkat ini.</string>
     <string name="verify_skip">Lewati</string>
     <string name="verify_secure_now_btn">Amankan sekarang</string>
     <string name="verify_secure_now_message">Jika Anda kehilangan perangkat ini, Anda akan kehilangan dana Anda. Dapatkan UniqueSecretKey Anda sehingga Anda dapat memulihkan dompet di perangkat lain.</string>
@@ -255,10 +255,10 @@
     <string name="authenticate_switch_to_fingerprint">Gunakan sidik jari </string>
     <string name="authenticate_switch_to_pin">Gunakan PIN</string>
 
-    <string name="menu_buy_and_sell_title">Beli &amp; Jual Dash</string>
+    <string name="menu_buy_and_sell_title">Beli &amp; Jual Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Terhubung dengan pertukaran pihak ketiga</string>
-    <string name="liquid_unavailable">Integrasi Liquid dengan Dash Wallet tidak lagi tersedia</string>
-    <string name="liquid_unavailable_details">Jika Anda memiliki pertanyaan tentang kepemilikan Dash Anda di Liquid, silakan hubungi pusat dukungan Liquid</string>
+    <string name="liquid_unavailable">Integrasi Liquid dengan Pozoqo Wallet tidak lagi tersedia</string>
+    <string name="liquid_unavailable_details">Jika Anda memiliki pertanyaan tentang kepemilikan Pozoqo Anda di Liquid, silakan hubungi pusat dukungan Liquid</string>
     <string name="menu_security_title">Keamanan</string>
     <string name="menu_security_subtitle">Lihat frasa sandi, cadangkan domept...</string>
     <string name="menu_settings_title">Pengaturan</string>
@@ -270,7 +270,7 @@
     <string name="menu_contact_support_title">Hubungi Dukungan</string>
     <string name="menu_contact_support_subtitle">Laporkan masalah</string>
     <string name="menu_explore_title">Jelajahi</string>
-    <string name="menu_explore_subtitle">Berbelanja dengan DASH di lebih dari 155.000 pedagang</string>
+    <string name="menu_explore_subtitle">Berbelanja dengan PZQ di lebih dari 155.000 pedagang</string>
 
     <string name="tools_address_book">Buku alamat</string>
     <string name="tools_import_private_key">Impor kunci pribadi</string>
@@ -281,9 +281,9 @@
     <string name="about_review_and_rate">Tinjau dan beri peringkat aplikasi</string>
     <string name="about_contact_support">Hubungi Dukungan</string>
     <string name="about_fork_disclaimer">Ini adalah aplikasi open source yang bercabang dari Bitcoin Wallet</string>
-    <string name="about_copyright">Hak Cipta © 2023 Dash Core</string>
+    <string name="about_copyright">Hak Cipta © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="about_last_explore_device_sync">Sinkronisasi perangkat Explore Terakhir</string>
     <string name="about_last_explore_server_update">Pembaruan server Explore terakhir</string>
     <string name="about_firebase_installation_id">ID penginstalan Firebase</string>
@@ -299,7 +299,7 @@
     <string name="block_info">Info Blok</string>
 
     <string name="scan_private_key">Pindai Kunci Pribadi</string>
-    <string name="scan_private_key_intro_1">Anda akan menyapu dana dari dompet kertas Dash.</string>
+    <string name="scan_private_key_intro_1">Anda akan menyapu dana dari dompet kertas Pozoqo.</string>
     <string name="scan_private_key_intro_2">Ini akan memindahkan semua koin dari dompet itu ke dompet Anda di perangkat ini.</string>
     <string name="scan_private_key_intro_3">Ketika transaksi dikonfirmasi, dompet lainnya tidak akan berharga dan tidak boleh digunakan kembali untuk alasan keamanan.</string>
     <string name="confirm">Memastikan</string>
@@ -337,7 +337,7 @@
     <string name="welcome_screen_subtitle_3">Memiliki kendali penuh dan sesuaikan dompet Anda berdasarkan kebutuhan Anda</string>
 
     <string name="sync_status_wait">Harap tunggu sampai sinkronisasi selesai</string>
-    <string name="sync_status_syncing_sub_title">dengan Dash blockchain</string>
+    <string name="sync_status_syncing_sub_title">dengan Pozoqo blockchain</string>
     <string name="sync_status_unable_to_connect">Tidak dapat terhubung</string>
     <string name="sync_status_check_connection">Periksa koneksi anda</string>
     <string name="sync_status_sync_title">Sync</string>
@@ -358,9 +358,9 @@
     <string name="payment_request_paid_to">Dibayarkan kepada</string>
 
     <string name="import_image_not_valid_qr_code">Bukan Kode QR yang valid</string>
-    <string name="import_image_please_use_valid_qr_code">Harap gunakan Kode QR Dash yang valid</string>
+    <string name="import_image_please_use_valid_qr_code">Harap gunakan Kode QR Pozoqo yang valid</string>
     <string name="import_image_no_private_key_copied">Tidak ada kunci pribadi yang disalin</string>
-    <string name="import_image_import_valid_private_key">Salin kunci pribadi yang valid untuk mengimpor Dash darinya</string>
+    <string name="import_image_import_valid_private_key">Salin kunci pribadi yang valid untuk mengimpor Pozoqo darinya</string>
     <string name="import_image_invalid_private">Kunci Pribadi Tidak Valid</string>
 
     <string name="today">Hari ini</string>
@@ -376,7 +376,7 @@
     <string name="set_pin_error_missing_wallet_message">Dompetnya hilang. Harap laporkan hal ini ke Bagian Dukungan.</string>
     <string name="wallet_encryption_error_title">Kesalahan Pembuatan Dompet</string>
     <string name="wallet_encryption_error_message">Ada masalah saat membuat dompet. Harap laporkan hal ini ke Bagian Dukungan.</string>
-    <string name="wallet_not_encrypted_error_message">Ada masalah dengan dompet Anda.\n\nJika Anda tidak memiliki Dash di dompet ini, copot dan instal ulang aplikasi ini. Kemudian buat dompet baru.\n\nJika Anda memiliki frasa pemulihan atau file cadangan, hapus instalan aplikasi ini dan instal ulang.\n\nJika tidak, laporkan hal ini ke Bagian Dukungan.</string>
+    <string name="wallet_not_encrypted_error_message">Ada masalah dengan dompet Anda.\n\nJika Anda tidak memiliki Pozoqo di dompet ini, copot dan instal ulang aplikasi ini. Kemudian buat dompet baru.\n\nJika Anda memiliki frasa pemulihan atau file cadangan, hapus instalan aplikasi ini dan instal ulang.\n\nJika tidak, laporkan hal ini ke Bagian Dukungan.</string>
 
     <string name="reset_wallet_title">Apakah Anda yakin ingin mengatur ulang dompet?</string>
     <string name="reset_wallet_message">Jika Anda mengatur ulang dompet Anda, satu-satunya cara untuk mendapatkan aksesnya adalah memulihkan dompet dengan frasa pemulihan.</string>

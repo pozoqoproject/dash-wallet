@@ -240,7 +240,7 @@
                 android:textSize="13sp"
                 app:layout_constraintEnd_toStartOf="@id/fee_dash_icon"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="-0.00000239 Dash" />
+                tools:text="-0.00000239 Pozoqo" />
 
             <ImageView
                 android:id="@+id/fee_dash_icon"

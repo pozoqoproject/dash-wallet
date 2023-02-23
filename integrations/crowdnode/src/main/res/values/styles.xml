@@ -33,7 +33,7 @@
         <item name="cornerRadius">12dp</item>
     </style>
 
-    <style name="DashAddressBackground">
+    <style name="PozoqoAddressBackground">
         <item name="backgroundColor">@color/ultra_light_gray</item>
         <item name="strokeColor">@color/ultra_light_gray</item>
         <item name="cornerRadius">12dp</item>
@@ -45,7 +45,7 @@
         <item name="cornerRadius">8dp</item>
     </style>
 
-    <style name="DashQRLogo" parent="SecondaryBackground">
+    <style name="PozoqoQRLogo" parent="SecondaryBackground">
         <item name="cornerRadius">35dp</item>
     </style>
 </resources>

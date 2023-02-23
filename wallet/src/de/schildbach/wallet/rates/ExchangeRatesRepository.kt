@@ -32,11 +32,11 @@ class ExchangeRatesRepository private constructor(): ExchangeRatesProvider {
         if (!exchangeRatesClients.isEmpty()) {
             exchangeRatesClients.clear()
         }
-        exchangeRatesClients.push(DashRatesSecondFallback.getInstance())
+        exchangeRatesClients.push(PozoqoRatesSecondFallback.getInstance())
         //These sources do not return valid data (TODO: Remove these or replace these?)
-        //exchangeRatesClients.push(DashRatesFirstFallback.getInstance());
-        //exchangeRatesClients.push(DashRatesClient.getInstance());
-        exchangeRatesClients.push(DashRetailClient.getInstance())
+        //exchangeRatesClients.push(PozoqoRatesFirstFallback.getInstance());
+        //exchangeRatesClients.push(PozoqoRatesClient.getInstance());
+        exchangeRatesClients.push(PozoqoRetailClient.getInstance())
     }
 
     private fun refreshRates(forceRefresh: Boolean = false) {

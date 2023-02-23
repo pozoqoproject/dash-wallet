@@ -29,13 +29,13 @@ import org.dash.wallet.common.ui.dialogs.OffsetDialogFragment
 import org.dash.wallet.common.ui.viewBinding
 import org.dash.wallet.common.util.dialogSafeNavigate
 import org.dash.wallet.features.exploredash.R
-import org.dash.wallet.features.exploredash.databinding.ExploreDashMainInfoBinding
+import org.dash.wallet.features.exploredash.databinding.ExplorePozoqoMainInfoBinding
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ExploreDashInfoDialog : OffsetDialogFragment() {
+class ExplorePozoqoInfoDialog : OffsetDialogFragment() {
 
-    private val binding by viewBinding(ExploreDashMainInfoBinding::bind)
+    private val binding by viewBinding(ExplorePozoqoMainInfoBinding::bind)
     @Inject
     lateinit var analyticsService: AnalyticsService
 
@@ -52,9 +52,9 @@ class ExploreDashInfoDialog : OffsetDialogFragment() {
 
         binding.learnMoreLabel.setOnClickListener {
             analyticsService.logEvent(AnalyticsConstants.Explore.LEARN_MORE, bundleOf())
-            dialogSafeNavigate(ExploreDashInfoDialogDirections.infoToGiftCardDetail())
+            dialogSafeNavigate(ExplorePozoqoInfoDialogDirections.infoToGiftCardDetail())
         }
-        binding.exploreDashInfoContinueBtn.setOnClickListener {
+        binding.explorePozoqoInfoContinueBtn.setOnClickListener {
             analyticsService.logEvent(AnalyticsConstants.Explore.CONTINUE, bundleOf())
             dismissAllowingStateLoss()
         }

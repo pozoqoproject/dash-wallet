@@ -32,7 +32,7 @@
     <string name="balance_on_coinbase">코인베이스 잔고</string>
     <string name="sending_to">다음에 전송합니다</string>
     <string name="dash_wallet_device">이 기기의 대시 지갑</string>
-    <string name="exchange_rate_template">%1$s DASH = %2$s</string>
+    <string name="exchange_rate_template">%1$s PZQ = %2$s</string>
     <string name="payment_method">지불 방법</string>
     <string name="purchase">매수하기</string>
     <string name="coinbase_fee">코인베이스 수수료</string>

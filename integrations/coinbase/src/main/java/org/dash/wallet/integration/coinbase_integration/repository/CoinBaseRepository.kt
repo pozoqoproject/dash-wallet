@@ -53,7 +53,7 @@ class CoinBaseRepository @Inject constructor(
         val apiResponse = servicesApi.getUserAccounts()
         userAccountInfo = apiResponse?.data ?: listOf()
         val userAccountData = userAccountInfo.firstOrNull {
-            it.balance?.currency?.equals(Constants.DASH_CURRENCY) ?: false
+            it.balance?.currency?.equals(Constants.PZQ_CURRENCY) ?: false
         }
         userAccountData?.also {
             userPreferences.setCoinBaseUserAccountId(it.id)
@@ -68,18 +68,18 @@ class CoinBaseRepository @Inject constructor(
             }
 
             val exchangeRates = servicesApi.getExchangeRates(exchangeCurrencyCode)?.data
-            val currencyToDashExchangeRate = exchangeRates?.rates?.get(Constants.DASH_CURRENCY).orEmpty()
+            val currencyToPozoqoExchangeRate = exchangeRates?.rates?.get(Constants.PZQ_CURRENCY).orEmpty()
             val currencyToUSDExchangeRate = exchangeRates?.rates?.get(Constants.USD_CURRENCY).orEmpty()
 
             return@safeApiCall userAccountInfo.map {
                 val currencyToCryptoCurrencyExchangeRate = exchangeRates?.rates?.get(it.currency?.code).orEmpty()
-                val cryptoCurrencyToDashExchangeRate = (BigDecimal(currencyToDashExchangeRate) / BigDecimal(currencyToCryptoCurrencyExchangeRate)).toString()
+                val cryptoCurrencyToPozoqoExchangeRate = (BigDecimal(currencyToPozoqoExchangeRate) / BigDecimal(currencyToCryptoCurrencyExchangeRate)).toString()
 
                 CoinBaseUserAccountDataUIModel(
                     it,
                     currencyToCryptoCurrencyExchangeRate,
-                    currencyToDashExchangeRate,
-                    cryptoCurrencyToDashExchangeRate,
+                    currencyToPozoqoExchangeRate,
+                    cryptoCurrencyToPozoqoExchangeRate,
                     currencyToUSDExchangeRate
                 )
             }
@@ -161,25 +161,25 @@ class CoinBaseRepository @Inject constructor(
         WithdrawalLimitUIModel(userPreferences.coinbaseUserWithdrawalLimitAmount, userPreferences.coinbaseSendLimitCurrency)
     }
 
-    override suspend fun getExchangeRateFromCoinbase(): ResponseResource<CoinbaseToDashExchangeRateUIModel> = safeApiCall {
+    override suspend fun getExchangeRateFromCoinbase(): ResponseResource<CoinbaseToPozoqoExchangeRateUIModel> = safeApiCall {
         if (userAccountInfo.isEmpty()) {
             getUserAccount()
         }
 
         val userAccountData = userAccountInfo.firstOrNull {
-            it.balance?.currency?.equals(Constants.DASH_CURRENCY) ?: false
+            it.balance?.currency?.equals(Constants.PZQ_CURRENCY) ?: false
         }
         val exchangeRates = userPreferences.exchangeCurrencyCode?.let { servicesApi.getExchangeRates(it)?.data }
 
         return@safeApiCall userAccountData?.let {
-            val currencyToDashExchangeRate = exchangeRates?.rates?.get(Constants.DASH_CURRENCY).orEmpty()
+            val currencyToPozoqoExchangeRate = exchangeRates?.rates?.get(Constants.PZQ_CURRENCY).orEmpty()
             val currencyToUSDExchangeRate = exchangeRates?.rates?.get(Constants.USD_CURRENCY).orEmpty()
-            CoinbaseToDashExchangeRateUIModel(
+            CoinbaseToPozoqoExchangeRateUIModel(
                 it,
-                currencyToDashExchangeRate,
+                currencyToPozoqoExchangeRate,
                 currencyToUSDExchangeRate
             )
-        } ?: CoinbaseToDashExchangeRateUIModel.EMPTY
+        } ?: CoinbaseToPozoqoExchangeRateUIModel.EMPTY
     }
 
     override suspend fun createAddress() = safeApiCall {
@@ -208,7 +208,7 @@ interface CoinBaseRepositoryInt {
     suspend fun commitSwapTrade(buyOrderId: String): ResponseResource<SwapTradeUIModel>
     suspend fun completeCoinbaseAuthentication(authorizationCode: String): ResponseResource<Boolean>
     suspend fun getWithdrawalLimit(): ResponseResource<WithdrawalLimitUIModel>
-    suspend fun getExchangeRateFromCoinbase(): ResponseResource<CoinbaseToDashExchangeRateUIModel>
+    suspend fun getExchangeRateFromCoinbase(): ResponseResource<CoinbaseToPozoqoExchangeRateUIModel>
 }
 
 data class WithdrawalLimitUIModel(

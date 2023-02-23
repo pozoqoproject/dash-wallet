@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Verken Dash</string>
+    <string name="explore_dash">Verken Pozoqo</string>
     <string name="explore_title">Verken</string>
-    <string name="explore_subtitle">Winkel eenvoudig met je DASH bij meer dan 155.000 locaties en online acceptanten</string>
+    <string name="explore_subtitle">Winkel eenvoudig met je PZQ bij meer dan 155.000 locaties en online acceptanten</string>
     <string name="explore_merchants_title">Waar uit te geven?</string>
-    <string name="explore_merchants_subtitle">Vind acceptanten die Dash als aannemen.</string>
+    <string name="explore_merchants_subtitle">Vind acceptanten die Pozoqo als aannemen.</string>
     <string name="explore_atms_title">Geldautomaten</string>
-    <string name="explore_atms_subtitle">Vind waar je DASH en andere cryptovaluta\'s kan kopen of verkopen voor cash.</string>
-    <string name="explore_staking_subtitle">Stake makkelijk Dash en verdien passief inkomen met een paar eenvoudige kliks.</string>
+    <string name="explore_atms_subtitle">Vind waar je PZQ en andere cryptovaluta\'s kan kopen of verkopen voor cash.</string>
+    <string name="explore_staking_subtitle">Stake makkelijk Pozoqo en verdien passief inkomen met een paar eenvoudige kliks.</string>
     <string name="explore_staking_current_apy">Huidige jaarlijks rendement = %s%%</string>
 
     <!-- Search -->
@@ -61,10 +61,10 @@
     <string name="explore_back_to_locations">Terig naar alle locaties</string>
     <string name="explore_back_to_nearest">Terug naar dichtsbijzijnde locatie</string>
     <string name="explore_select_location">Selecteer een locatie</string>
-    <string name="explore_pay_with_dash">Betaal met Dash</string>
+    <string name="explore_pay_with_dash">Betaal met Pozoqo</string>
     <string name="explore_buy_gift_card">Koop een geschenkbon</string>
-    <string name="explore_buy_dash">Koop Dash</string>
-    <string name="explore_sell_dash">Verkoop Dash</string>
+    <string name="explore_buy_dash">Koop Pozoqo</string>
+    <string name="explore_sell_dash">Verkoop Pozoqo</string>
     <string name="explore_show_all">Toon alle locaties</string>
     <string name="explore_atm_location_hint">Deze geldautomaat is te vinden in de</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -74,7 +74,7 @@
     <string name="explore_filters">Filters</string>
     <string name="explore_apply_filter">Pas toe</string>
     <string name="explore_payment_method">Betalingsmethode</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Geschenkbon</string>
     <string name="explore_radius">Straal</string>
     <string name="explore_location">Locatie</string>
@@ -141,16 +141,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">We hebben 2 typen acceptanten</string>
-    <string name="accept_dash_text">Accepteert DASH direct</string>
-    <string name="pay_with_dash_text">Betaal met de DASH-portemonnee</string>
-    <string name="buy_gift_card_text">Koop geschenkbonnen met je Dash</string>
-    <string name="buy_gift_card_desc_text">Koop geschenkbonnen met je Dash voor het exacte bedrag van je aankoop.</string>
+    <string name="accept_dash_text">Accepteert PZQ direct</string>
+    <string name="pay_with_dash_text">Betaal met de PZQ-portemonnee</string>
+    <string name="buy_gift_card_text">Koop geschenkbonnen met je Pozoqo</string>
+    <string name="buy_gift_card_desc_text">Koop geschenkbonnen met je Pozoqo voor het exacte bedrag van je aankoop.</string>
     <string name="learn_more_text">Lees verder</string>
     <string name="continue_text">Doorgaan</string>
     <string name="buy_card_header_text">Hoe een geschenkbon te gebruiken</string>
-    <string name="buy_card_desc_text">Niet alle winkels accepteren direct DASH, maar je kan een geschenkbon kopen met je Dash.</string>
+    <string name="buy_card_desc_text">Niet alle winkels accepteren direct PZQ, maar je kan een geschenkbon kopen met je Pozoqo.</string>
     <string name="find_merchant_text">Vind een acceptant</string>
-    <string name="buy_gift_card_with_dash_text">Koop een geschenkbon met Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Koop een geschenkbon met Pozoqo.</string>
     <string name="redeem_gift_card_text">Wissel je geschenkbon online in binnen een paar seconden of bij de kassa. </string>
 
     <!-- Sync Status -->

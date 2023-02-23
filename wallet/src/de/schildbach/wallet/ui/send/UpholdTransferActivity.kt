@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group.
+ * Copyright 2019 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -91,9 +91,9 @@ class UpholdTransferActivity : InteractionAwareActivity() {
                     .replace(R.id.container, fragment)
                     .commitNow()
 
-            val drawableDash = ResourcesCompat.getDrawable(resources, R.drawable.ic_dash_d_black, null)
-            drawableDash!!.setBounds(0, 0, 38, 38)
-            val dashSymbol = ImageSpan(drawableDash, ImageSpan.ALIGN_BASELINE)
+            val drawablePozoqo = ResourcesCompat.getDrawable(resources, R.drawable.ic_dash_d_black, null)
+            drawablePozoqo!!.setBounds(0, 0, 38, 38)
+            val dashSymbol = ImageSpan(drawablePozoqo, ImageSpan.ALIGN_BASELINE)
             val builder = SpannableStringBuilder()
             builder.appendLine(intent.getStringExtra(EXTRA_MESSAGE))
             builder.append("  ")

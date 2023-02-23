@@ -62,9 +62,9 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@+id/convertFromDash_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/convertFromPozoqo_icon"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/convertFromDash_icon">
+            app:layout_constraintTop_toTopOf="@id/convertFromPozoqo_icon">
 
             <ProgressBar
                 android:id="@+id/progress_ring"
@@ -82,41 +82,41 @@
 
 
         <ImageView
-            android:id="@+id/convertFromDash_icon"
+            android:id="@+id/convertFromPozoqo_icon"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="@+id/convertFromDash_subtitle"
+            app:layout_constraintBottom_toBottomOf="@+id/convertFromPozoqo_subtitle"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/convertFromDash_title"
+            app:layout_constraintTop_toTopOf="@id/convertFromPozoqo_title"
             tools:src="@drawable/ic_dash_blue_filled" />
 
         <TextView
-            android:id="@+id/convertFromDash_title"
+            android:id="@+id/convertFromPozoqo_title"
             style="@style/Body2.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            app:layout_constraintStart_toEndOf="@+id/convertFromDash_icon"
+            app:layout_constraintStart_toEndOf="@+id/convertFromPozoqo_icon"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/currency_BTC" />
 
         <TextView
-            android:id="@+id/convertFromDash_subtitle"
+            android:id="@+id/convertFromPozoqo_subtitle"
             style="@style/Caption.Secondary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:lineSpacingExtra="2sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/convertFromDash_title"
-            app:layout_constraintTop_toBottomOf="@+id/convertFromDash_title"
-            tools:text="Dash Wallet" />
+            app:layout_constraintStart_toStartOf="@+id/convertFromPozoqo_title"
+            app:layout_constraintTop_toBottomOf="@+id/convertFromPozoqo_title"
+            tools:text="Pozoqo Wallet" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/from_data_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="convertFromDash_icon,convertFromDash_title,convertFromDash_subtitle"
+            app:constraint_referenced_ids="convertFromPozoqo_icon,convertFromPozoqo_title,convertFromPozoqo_subtitle"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </merge>

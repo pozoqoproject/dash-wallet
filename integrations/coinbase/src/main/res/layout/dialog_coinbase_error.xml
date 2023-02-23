@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coinbase_dialog_title"
-        tools:text="Please use a valid Dash QR code" />
+        tools:text="Please use a valid Pozoqo QR code" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/coinbase_dialog_positive_button"

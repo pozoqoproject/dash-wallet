@@ -61,7 +61,7 @@ class ReceiveInfoView(context: Context, attrs: AttributeSet?) : ConstraintLayout
 
             val qrPreviewScale = attrsArray.getFloat(R.styleable.ReceiveInfoView_ri_qr_code_scale, 1.0f)
             (binding.qrPreviewBg.layoutParams as LayoutParams).matchConstraintPercentWidth = qrPreviewScale
-            (binding.qrDashLogo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 4.8f)
+            (binding.qrPozoqoLogo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 4.8f)
         } finally {
             attrsArray.recycle()
         }
@@ -142,9 +142,9 @@ class ReceiveInfoView(context: Context, attrs: AttributeSet?) : ConstraintLayout
             val clipboardManager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
 
             if (amount != null && paymentRequestUri.isNotEmpty()) {
-                clipboardManager.setPrimaryClip(ClipData.newPlainText("Dash payment request", paymentRequestUri))
+                clipboardManager.setPrimaryClip(ClipData.newPlainText("Pozoqo payment request", paymentRequestUri))
             } else {
-                clipboardManager.setPrimaryClip(ClipData.newPlainText("Dash address", address.toBase58()))
+                clipboardManager.setPrimaryClip(ClipData.newPlainText("Pozoqo address", address.toBase58()))
             }
 
             Toast.makeText(context, R.string.copied, Toast.LENGTH_SHORT).show()

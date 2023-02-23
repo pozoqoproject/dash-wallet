@@ -13,7 +13,7 @@ public class LocalBitcoinsResponse {
         this.vesRate = vesRate;
     }
 
-    public BigDecimal getDashVesPrice() {
+    public BigDecimal getPozoqoVesPrice() {
         if (vesRate.avg1h != null) {
             return vesRate.avg1h;
         } else if (vesRate.avg6h != null) {

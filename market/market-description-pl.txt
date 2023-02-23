@@ -1,29 +1,29 @@
 ﻿GŁÓWNY OPIS
 
-Dash Wallet jest odniesieniem do portfela androidowego utrzymywanego przez Dash Core Group dla Dash - Digital Cash - innowacyjna alternatywa dla Bitcoin, który jest wyraźnie przeznaczony dla płatności.
+Pozoqo Wallet jest odniesieniem do portfela androidowego utrzymywanego przez Pozoqo Core Group dla Pozoqo - Digital Cash - innowacyjna alternatywa dla Bitcoin, który jest wyraźnie przeznaczony dla płatności.
 
-Dash jest kryptowalutą, która stara się naprawić wady, na które cierpią inne kryptowaluty. Opiera się na sieci Masternodów, aby umożliwić takie rzeczy, jak opcjonalna prywatność, natychmiastowe transakcje i mechanizm bezpośredniego finansowania w celu promowania rozwoju sieci.
+Pozoqo jest kryptowalutą, która stara się naprawić wady, na które cierpią inne kryptowaluty. Opiera się na sieci Masternodów, aby umożliwić takie rzeczy, jak opcjonalna prywatność, natychmiastowe transakcje i mechanizm bezpośredniego finansowania w celu promowania rozwoju sieci.
 
-Intuicyjny i bezpieczny, Dash Wallet zapewnia Ci pełną kontrolę nad cyfrową gotówką. Natychmiastowe wysyłanie i odbieranie płatności za pomocą najbezpieczniejszego dostępnego portfela mobilnego.
+Intuicyjny i bezpieczny, Pozoqo Wallet zapewnia Ci pełną kontrolę nad cyfrową gotówką. Natychmiastowe wysyłanie i odbieranie płatności za pomocą najbezpieczniejszego dostępnego portfela mobilnego.
 
-Dash Wallet łączy się bezpośrednio z siecią Dash. Oznacza to, że nie ma serwerów, które mogłyby zostać zhakowane lub wyłączone - twoje fundusze są zawsze bezpieczne. Nawet jeśli telefon zostanie zgubiony, uszkodzony lub skradziony, możesz łatwo odzyskać swoje środki, używając swojej osobistej frazy odzyskiwania portfela.
+Pozoqo Wallet łączy się bezpośrednio z siecią Pozoqo. Oznacza to, że nie ma serwerów, które mogłyby zostać zhakowane lub wyłączone - twoje fundusze są zawsze bezpieczne. Nawet jeśli telefon zostanie zgubiony, uszkodzony lub skradziony, możesz łatwo odzyskać swoje środki, używając swojej osobistej frazy odzyskiwania portfela.
 
 Funkcje:
 
 * Wysyłaj i odbieraj płatności w ciągu kilku sekund, online lub osobiście
-* Płatności za pomocą jednego przycisku dla handlowców i stron internetowych akceptujących Dash
+* Płatności za pomocą jednego przycisku dla handlowców i stron internetowych akceptujących Pozoqo
 * Zapłać szybko z użyciem biometrycznej autoryzacji
 • Wczytywanie portfeli papierowych (np. używanych jako cold storage).
-* Integracje stron trzecich, aby umożliwić użytkownikom kupowanie i sprzedawanie Dash
+* Integracje stron trzecich, aby umożliwić użytkownikom kupowanie i sprzedawanie Pozoqo
 * Prosta fraza odzyskiwania umożliwia odzyskanie środków w przypadku zagubienia lub zmiany urządzenia
 * Elastyczne ustawienia w celu spełnienia szeregu niestandardowych preferencji bezpieczeństwa
 * Bezpośredni klient sieci - nie ma serwerów, które można zhakować lub wyłączyć
 
-Dash Wallet jest oparty o otwarte źródło i bezpłatny. Opłaty sieciowe są niższe niż w przypadku większości kryptowalut i nie ma dodatkowych scentralizowanych kosztów. Wyślij dowolną ilość pieniędzy do każdego na świecie w kilka sekund. Przyjmuj płatności w sposób niezawodny i natychmiastowy w swojej firmie. Tak właśnie powinny wyglądać pieniądze.
+Pozoqo Wallet jest oparty o otwarte źródło i bezpłatny. Opłaty sieciowe są niższe niż w przypadku większości kryptowalut i nie ma dodatkowych scentralizowanych kosztów. Wyślij dowolną ilość pieniędzy do każdego na świecie w kilka sekund. Przyjmuj płatności w sposób niezawodny i natychmiastowy w swojej firmie. Tak właśnie powinny wyglądać pieniądze.
 
 WSPÓŁPRACUJ
 
-Dash Wallet jest  otwartym źródłem i darmowym oprogramowaniem. Licencja: GPLv3
+Pozoqo Wallet jest  otwartym źródłem i darmowym oprogramowaniem. Licencja: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Kod źródłowy jest dostępny na GitHub:
@@ -32,8 +32,8 @@ https://github.com/dashevo/dash-wallet
 Do zarządzania tłumaczeniami wykorzystano portal Transifex:
 https://www.transifex.com/dash/dash-mobile-wallets/
 
-Dowiedz się wiecej o Dash na
+Dowiedz się wiecej o Pozoqo na
 https://www.dash.org/
 
 v7.0.0 Aktualizacja
-Dash Wallet v7.0 niesie ze sobą całkowicie przeprojektowane doświadczenie, które ma na celu zwiększenie łatwości użytkowania w intuicyjny i znajomy sposób na wszystkich urządzeniach. Ponownie opracowaliśmy proces weryfikacji frazy odzyskiwania, aby podkreślić znaczenie ochrony tych informacji w celu późniejszego odzyskania portfela, a użytkownicy mogą teraz zdecydować, kiedy chcą poświęcić czas na zapisanie 12-wyrazowej frazy odzyskiwania. Dodaliśmy również skróty do ekranu głównego, aby szybciej uzyskać dostęp do często używanych funkcji, a nasze menu zostało zmienione w aplikacji i zorganizowane, aby pomóc użytkownikom w szybszym i bardziej wydajnym konfigurowaniu portfela. Użytkownicy mają teraz znacznie szerszą kontrolę nad ustawieniami zabezpieczeń i możliwość decydowania o tym, jak często muszą wprowadzać swój kod PIN.
+Pozoqo Wallet v7.0 niesie ze sobą całkowicie przeprojektowane doświadczenie, które ma na celu zwiększenie łatwości użytkowania w intuicyjny i znajomy sposób na wszystkich urządzeniach. Ponownie opracowaliśmy proces weryfikacji frazy odzyskiwania, aby podkreślić znaczenie ochrony tych informacji w celu późniejszego odzyskania portfela, a użytkownicy mogą teraz zdecydować, kiedy chcą poświęcić czas na zapisanie 12-wyrazowej frazy odzyskiwania. Dodaliśmy również skróty do ekranu głównego, aby szybciej uzyskać dostęp do często używanych funkcji, a nasze menu zostało zmienione w aplikacji i zorganizowane, aby pomóc użytkownikom w szybszym i bardziej wydajnym konfigurowaniu portfela. Użytkownicy mają teraz znacznie szerszą kontrolę nad ustawieniami zabezpieczeń i możliwość decydowania o tym, jak często muszą wprowadzać swój kod PIN.

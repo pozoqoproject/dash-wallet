@@ -197,7 +197,7 @@ open class CrowdNodeBlockchainApi @Inject constructor(
     open fun getApiAddressConfirmationTx(): Transaction? {
         val apiConfirmationFilter = CoinsReceivedTxFilter(
             walletData.transactionBag,
-            CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT
+            CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT
         ) // account address is unknown at this point
 
         val potentialApiConfirmationTxs = walletData.getTransactions(apiConfirmationFilter)
@@ -224,11 +224,11 @@ open class CrowdNodeBlockchainApi @Inject constructor(
 
     suspend fun resendConfirmationTx(confirmationTx: Transaction) {
         val selector = ExactOutputsSelector(
-            listOf(confirmationTx.outputs.first { it.value == CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT })
+            listOf(confirmationTx.outputs.first { it.value == CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT })
         )
         val resentTx = paymentService.sendCoins(
             CrowdNodeConstants.getCrowdNodeAddress(params),
-            CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT,
+            CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT,
             selector,
             emptyWallet = true,
             checkBalanceConditions = false

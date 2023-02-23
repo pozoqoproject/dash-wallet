@@ -50,7 +50,7 @@ class AmountView(context: Context, attrs: AttributeSet) : ConstraintLayout(conte
         .noCode().minDecimals(2).optionalDecimals()
 
     private var onCurrencyToggleClicked: (() -> Unit)? = null
-    private var onDashToFiatChanged: ((Boolean) -> Unit)? = null
+    private var onPozoqoToFiatChanged: ((Boolean) -> Unit)? = null
     private var onAmountChanged: ((Coin) -> Unit)? = null
 
     private var currencySymbol = "$"
@@ -78,15 +78,15 @@ class AmountView(context: Context, attrs: AttributeSet) : ConstraintLayout(conte
             field = value
             updateCurrency()
             updateAmount()
-            updateDashSymbols()
+            updatePozoqoSymbols()
         }
 
     var dashToFiat: Boolean = false
         set(value) {
             if (field != value) {
                 field = value
-                updateDashSymbols()
-                onDashToFiatChanged?.invoke(value)
+                updatePozoqoSymbols()
+                onPozoqoToFiatChanged?.invoke(value)
 
                 if (value) {
                     input = dashFormat.minDecimals(0)
@@ -136,8 +136,8 @@ class AmountView(context: Context, attrs: AttributeSet) : ConstraintLayout(conte
         onCurrencyToggleClicked = listener
     }
 
-    fun setOnDashToFiatChanged(listener: (Boolean) -> Unit) {
-        onDashToFiatChanged = listener
+    fun setOnPozoqoToFiatChanged(listener: (Boolean) -> Unit) {
+        onPozoqoToFiatChanged = listener
     }
 
     fun setOnAmountChanged(listener: (Coin) -> Unit) {
@@ -194,22 +194,22 @@ class AmountView(context: Context, attrs: AttributeSet) : ConstraintLayout(conte
         return Pair(dashAmount, fiatAmount)
     }
 
-    private fun updateDashSymbols() {
+    private fun updatePozoqoSymbols() {
         binding.inputCurrencyToggle.isVisible = showCurrencySelector && !dashToFiat
         binding.resultCurrencyToggle.isVisible = showCurrencySelector && dashToFiat
 
         if (dashToFiat) {
-            binding.inputSymbolDash.isVisible = isCurrencySymbolFirst
-            binding.inputSymbolDashPostfix.isVisible = !isCurrencySymbolFirst
+            binding.inputSymbolPozoqo.isVisible = isCurrencySymbolFirst
+            binding.inputSymbolPozoqoPostfix.isVisible = !isCurrencySymbolFirst
 
-            binding.resultSymbolDash.isVisible = false
-            binding.resultSymbolDashPostfix.isVisible = false
+            binding.resultSymbolPozoqo.isVisible = false
+            binding.resultSymbolPozoqoPostfix.isVisible = false
         } else {
-            binding.resultSymbolDash.isVisible = isCurrencySymbolFirst
-            binding.resultSymbolDashPostfix.isVisible = !isCurrencySymbolFirst
+            binding.resultSymbolPozoqo.isVisible = isCurrencySymbolFirst
+            binding.resultSymbolPozoqoPostfix.isVisible = !isCurrencySymbolFirst
 
-            binding.inputSymbolDash.isVisible = false
-            binding.inputSymbolDashPostfix.isVisible = false
+            binding.inputSymbolPozoqo.isVisible = false
+            binding.inputSymbolPozoqoPostfix.isVisible = false
         }
     }
 

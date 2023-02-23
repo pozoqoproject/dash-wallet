@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Versturen naar adres</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Koop / verkoop Dash</string>
+    <string name="shortcut_buy_sell">Koop / verkoop Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Ontvang</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Sluiten</string>
 
     <string name="scan_to_pay_error_dialog_title">Scan om te verzenden</string>
-    <string name="scan_to_pay_error_dialog_message">Geen geldig Dash adres of URL verzoek op klembord:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Geen geldig Dash adres of URL verzoek op klembord.</string>
-    <string name="pay_to_confirm_address">Is dit het Dash adres waarnaar je de betaling wilt sturen?</string>
+    <string name="scan_to_pay_error_dialog_message">Geen geldig Pozoqo adres of URL verzoek op klembord:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Geen geldig Pozoqo adres of URL verzoek op klembord.</string>
+    <string name="pay_to_confirm_address">Is dit het Pozoqo adres waarnaar je de betaling wilt sturen?</string>
 
     <string name="receive_title">Ontvangen</string>
     <string name="receive_enter_amount_message">Specificeer het te ontvangen bedrag</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">Toon herstelzin</string>
     <string name="import_keys_dialog_title_from_seed">Herstel met herstelzin</string>
     <string name="backup_to_seed_wallet_dialog_message">Dit is je herstelzin. Schrijf deze a.u.b. op.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Laat NIEMAND je herstelzin zien, anders kunnen anderen je Dash uitgeven.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Laat NIEMAND je herstelzin zien, anders kunnen anderen je Pozoqo uitgeven.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Betalingen vanuit je portemonnee zijn beschermd met een pin. Voer je pin in en kies Toon om je herstelzin te bekijken.</string>
     <string name="import_keys_from_seed_dialog_message">Voer je herstelzin hier in.</string>
     <string name="import_export_keys_dialog_password_phrase">Voer hier je herstelzin in.</string>
     <string name="preferences_report_issue_summary">Vergaar informatie over je probleem en verstuur via e-mail een melding aan de ontwikkelaars.</string>
     <string name="navigation_configuration">Configuratie</string>
-    <string name="request_coins_clipboard_address_msg">Dash-adres is gekopieerd naar het klembord</string>
+    <string name="request_coins_clipboard_address_msg">Pozoqo-adres is gekopieerd naar het klembord</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Toon</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" is geen herstelzinwoord</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Herstelzin moet 12 woorden hebben</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Geen kosten zullen worden betaald. Gebruik \'geen kosten\' alleen als de bevestigingstijd niet van belang is.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Applicatie %s wil je Master Public Key verkrijgen. Deze kan worden gebruikt om je portemonnee te volgen, maar kan niet gebruikt worden om Dash over te maken.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Applicatie %s wil je Master Public Key verkrijgen. Deze kan worden gebruikt om je portemonnee te volgen, maar kan niet gebruikt worden om Pozoqo over te maken.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Applicatie %s verzoekt een adres om je op te betalen. Wil je dit autoriseren?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">Ontgrendel je portemonnee</string>
     <string name="wallet_lock_unlock_dialog_message">Betalingen vanuit je portemonnee zijn beschermd met een pin. Voer je pin in en kies Ontgrendel om verder te gaan.</string>
     <string name="wallet_lock_reset_wallet_title">Portemonnee resetten</string>
-    <string name="wallet_lock_reset_wallet_message">Weet je het zeker? Je portemonnee wordt verwijderd en al je Dash gaat verloren.\n\nDe enige manier om je Dash te herstellen is met een back-upbestand of herstelzin.</string>
+    <string name="wallet_lock_reset_wallet_message">Weet je het zeker? Je portemonnee wordt verwijderd en al je Pozoqo gaat verloren.\n\nDe enige manier om je Pozoqo te herstellen is met een back-upbestand of herstelzin.</string>
 
     <string name="wallet_lock_wallet_disabled">Portemonnee uitgeschakeld</string>
     <string name="wallet_lock_try_again">Probeer nogmaals over %1$d %2$s</string>
@@ -181,11 +181,11 @@
     <string name="notification_synchronization_channel_name">Synchronisatie</string>
     <string name="notification_synchronization_channel_description">Toont een notificatie als de app met het netwerk aan het synchroniseren is.</string>
     <string name="notification_generic_channel_name">Algemene meldingen</string>
-    <string name="notification_generic_channel_description">Andere Dashportemonnee-evenementen</string>
+    <string name="notification_generic_channel_description">Andere Pozoqoportemonnee-evenementen</string>
     <string name="notification_push_channel_name">Push notificaties</string>
-    <string name="notification_push_channel_description">Toont push meldingen die door Dash naar je zijn verzonden</string>
+    <string name="notification_push_channel_description">Toont push meldingen die door Pozoqo naar je zijn verzonden</string>
     <string name="notification_settings_title">Notificaties</string>
-    <string name="notification_explainer_title">Dash Wallet wil je graag meldingen sturen</string>
+    <string name="notification_explainer_title">Pozoqo Wallet wil je graag meldingen sturen</string>
     <string name="notification_explainer_message">Meldingen kunnen waarschuwingen, geluiden en pictogrambadges bevatten. Deze kunnen worden geconfigureerd in de telefooninstellingen.</string>
 
     <string name="net_type_indicator" />
@@ -212,10 +212,10 @@
     <string name="verify_it_is_important_subtitle">We gaan u de geheime sleutel van je portemonnee laten zien.</string>
     <string name="verify_info_text_1">Deze herstelzin is je toegang tot het saldo in deze portemonnee.</string>
     <string name="verify_info_text_2">Je herstelzin wordt NIET opgeslagen</string>
-    <string name="verify_info_text_3">U hebt deze herstelzin nodig om toegang te krijgen tot je saldo als dit apparaat is verloren of beschadigd, of als Dash Wallet ooit per ongeluk van dit apparaat wordt verwijderd.</string>
+    <string name="verify_info_text_3">U hebt deze herstelzin nodig om toegang te krijgen tot je saldo als dit apparaat is verloren of beschadigd, of als Pozoqo Wallet ooit per ongeluk van dit apparaat wordt verwijderd.</string>
     <string name="verify_skip">Overslaan</string>
     <string name="verify_secure_now_btn">Beveilig nu</string>
-    <string name="verify_secure_now_message">Als u dit apparaat verliest, verliest je je Dash. Download de herstelzin zodat je je portemonnee op een ander apparaat kunt herstellen.</string>
+    <string name="verify_secure_now_message">Als u dit apparaat verliest, verliest je je Pozoqo. Download de herstelzin zodat je je portemonnee op een ander apparaat kunt herstellen.</string>
     <string name="verify_seed_title">Schrijf het a.u.b op</string>
     <string name="verify_seed_write_down_confirmation">ik heb het opgeschreven</string>
     <string name="verify_seed_buttons_tip">Tik a.u.b. op de woorden van je herstelzin in de juiste volgorde</string>
@@ -258,10 +258,10 @@
     <string name="authenticate_switch_to_fingerprint">Vingerafdruk gebruiken</string>
     <string name="authenticate_switch_to_pin">gebruik PIN</string>
 
-    <string name="menu_buy_and_sell_title">Koop &amp; verkoop Dash</string>
+    <string name="menu_buy_and_sell_title">Koop &amp; verkoop Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Verbind met beurzen van derden</string>
-    <string name="liquid_unavailable">Liquid integratie met Dash portemonnee is niet langer beschikbaar</string>
-    <string name="liquid_unavailable_details">Als je vragen heeft over je bezit in Dash bij Liquid, neem dan contact op met het ondersteuningscentrum van Liquid </string>
+    <string name="liquid_unavailable">Liquid integratie met Pozoqo portemonnee is niet langer beschikbaar</string>
+    <string name="liquid_unavailable_details">Als je vragen heeft over je bezit in Pozoqo bij Liquid, neem dan contact op met het ondersteuningscentrum van Liquid </string>
     <string name="menu_security_title">Beveiliging</string>
     <string name="menu_security_subtitle">Bekijk wachtwoord, maak back-up van portemonnee...</string>
     <string name="menu_settings_title">Instellingen</string>
@@ -273,7 +273,7 @@
     <string name="menu_contact_support_title">Neem contact op</string>
     <string name="menu_contact_support_subtitle">Meld een probleem</string>
     <string name="menu_explore_title">Verken</string>
-    <string name="menu_explore_subtitle">Winkel met DASH bij meer dan 155.000 acceptanten</string>
+    <string name="menu_explore_subtitle">Winkel met PZQ bij meer dan 155.000 acceptanten</string>
 
     <string name="tools_address_book">Adresboek</string>
     <string name="tools_import_private_key">Importeer persoonlijke sleutel</string>
@@ -284,9 +284,9 @@
     <string name="about_review_and_rate">Schrijf een recensie en beoordeel de app</string>
     <string name="about_contact_support">Neem contact op</string>
     <string name="about_fork_disclaimer">Dit is een open source app afgesplitst van de Bitcoin portemonnee</string>
-    <string name="about_copyright">Copyright © 2023 Dash Core</string>
+    <string name="about_copyright">Copyright © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash portemonnee%s</string>
+    <string name="about_version_name">Pozoqo portemonnee%s</string>
     <string name="about_last_explore_device_sync">Laatste Explore-apparaatsynchronisatie</string>
     <string name="about_last_explore_server_update">Laatste Explore-serverupdate</string>
     <string name="about_firebase_installation_id">Firebase-installatie-ID</string>
@@ -302,7 +302,7 @@
     <string name="block_info">Block info</string>
 
     <string name="scan_private_key">Scan persoonlijke sleutel</string>
-    <string name="scan_private_key_intro_1">U staat op het punt het saldo van een papieren Dash portemonnee op te nemen.</string>
+    <string name="scan_private_key_intro_1">U staat op het punt het saldo van een papieren Pozoqo portemonnee op te nemen.</string>
     <string name="scan_private_key_intro_2">Hiermee worden het saldo van die portemonnee naar je portemonnee op dit apparaat verplaatst.</string>
     <string name="scan_private_key_intro_3">Wanneer de transactie is bevestigd, is de andere portemonnee waardeloos en mag deze om veiligheidsredenen niet opnieuw worden gebruikt.</string>
     <string name="confirm">Bevestig</string>
@@ -340,7 +340,7 @@
     <string name="welcome_screen_subtitle_3">Heb volledige controle en pas je portemonnee aan op basis van je behoeften</string>
 
     <string name="sync_status_wait">Wacht a.u.b. tot de synchronisatie is voltooid</string>
-    <string name="sync_status_syncing_sub_title">met Dash blockchain</string>
+    <string name="sync_status_syncing_sub_title">met Pozoqo blockchain</string>
     <string name="sync_status_unable_to_connect">Kan geen verbinding maken</string>
     <string name="sync_status_check_connection">Controleer je verbinding</string>
     <string name="sync_status_sync_title">Synchorniseer</string>
@@ -363,7 +363,7 @@
     <string name="import_image_not_valid_qr_code">Ongeldige QR-code</string>
     <string name="import_image_please_use_valid_qr_code">Gebruik a.u.b. een geldige QR-code</string>
     <string name="import_image_no_private_key_copied">persoonlijke sleutel niet gekopieerd</string>
-    <string name="import_image_import_valid_private_key">Kopieer een geldige persoonlijke sleutel om de Dash er van te importeren</string>
+    <string name="import_image_import_valid_private_key">Kopieer een geldige persoonlijke sleutel om de Pozoqo er van te importeren</string>
     <string name="import_image_invalid_private">Ongeldige persoonlijke sleutel</string>
 
     <string name="today">Vandaag</string>
@@ -379,7 +379,7 @@
     <string name="set_pin_error_missing_wallet_message">De portemonnee is zoek. Meld dit bij de Support Desk.</string>
     <string name="wallet_encryption_error_title">Fout bij aanmaken portemonnee</string>
     <string name="wallet_encryption_error_message">Er is een probleem opgetreden bij het maken van de portemonnee. Meld dit bij de Support Desk.</string>
-    <string name="wallet_not_encrypted_error_message">Er is een probleem met je portemonnee.\n\nAls je geen Dash in deze portemonnee hebt, verwijder dan deze app en installeer hem opnieuw. Maak vervolgens een nieuwe portemonnee.\n\nAls je een herstelzin of een back-upbestand hebt, verwijder dan deze app en installeer hem opnieuw.\n\nAnders meld je dit bij de Support Desk.</string>
+    <string name="wallet_not_encrypted_error_message">Er is een probleem met je portemonnee.\n\nAls je geen Pozoqo in deze portemonnee hebt, verwijder dan deze app en installeer hem opnieuw. Maak vervolgens een nieuwe portemonnee.\n\nAls je een herstelzin of een back-upbestand hebt, verwijder dan deze app en installeer hem opnieuw.\n\nAnders meld je dit bij de Support Desk.</string>
 
     <string name="reset_wallet_title">Weet je zeker dat je je portemonnee wil resetten?</string>
     <string name="reset_wallet_message">Als je je portemonnee reset is de enige manier om er nog toegang tot te krijgen is om die te herstellen met de herstelzin.</string>

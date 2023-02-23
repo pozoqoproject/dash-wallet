@@ -1,29 +1,29 @@
 ﻿HLAVNÝ POPIS
 
-Dash Wallet je referenčná peňaženka pre Android, ktorú spravuje Dash Core Group pre Dash - Digitálna hotovosť - inovatívna alternatíva k Bitcoinu, ktorá je špecificky určená na platby.
+Pozoqo Wallet je referenčná peňaženka pre Android, ktorú spravuje Pozoqo Core Group pre Pozoqo - Digitálna hotovosť - inovatívna alternatíva k Bitcoinu, ktorá je špecificky určená na platby.
 
-Dash je kryptomena, ktorá sa snaží napraviť nedostatky, ktorým trpia iné kryptomeny. Spolieha sa na sieť Masternódov, ktorá povoľuje napríklad voliteľné súkromie, okamžité transakcie a mechanizmus priameho financovania na podporu zlepšovania siete.
+Pozoqo je kryptomena, ktorá sa snaží napraviť nedostatky, ktorým trpia iné kryptomeny. Spolieha sa na sieť Masternódov, ktorá povoľuje napríklad voliteľné súkromie, okamžité transakcie a mechanizmus priameho financovania na podporu zlepšovania siete.
 
-Intuitívne a bezpečne, Dash Wallet vám poskytuje úplnú kontrolu nad vašou digitálnou hotovosťou. Okamžite odosielajte a prijímajte Dash platby s najbezpečnejšou mobilnou peňaženkou, ktorá je k dispozícii.
+Intuitívne a bezpečne, Pozoqo Wallet vám poskytuje úplnú kontrolu nad vašou digitálnou hotovosťou. Okamžite odosielajte a prijímajte Pozoqo platby s najbezpečnejšou mobilnou peňaženkou, ktorá je k dispozícii.
 
-Dash Wallet sa pripája priamo sieti Dash. To znamená, že neexistujú žiadne servery, ktoré by sa dali hacknúť alebo vypnúť - vaše prostriedky sú vždy v bezpečí. Aj keby príde k strate, poškodeniu alebo krádeži telefónu, môžete svoje prostriedky ľahko získať späť pomocou osobnej frázy pre obnovenie účtu.
+Pozoqo Wallet sa pripája priamo sieti Pozoqo. To znamená, že neexistujú žiadne servery, ktoré by sa dali hacknúť alebo vypnúť - vaše prostriedky sú vždy v bezpečí. Aj keby príde k strate, poškodeniu alebo krádeži telefónu, môžete svoje prostriedky ľahko získať späť pomocou osobnej frázy pre obnovenie účtu.
 
 Vlastnosti:
 
-* Odosielajte a prijímajte Dash platby v priebehu niekoľkých sekúnd, online alebo osobne
-* Platby pomocou jedného tlačidla obchodníkom a webovým stránkam prijímajúcim Dash
+* Odosielajte a prijímajte Pozoqo platby v priebehu niekoľkých sekúnd, online alebo osobne
+* Platby pomocou jedného tlačidla obchodníkom a webovým stránkam prijímajúcim Pozoqo
 * Plaťte rýchlo pomocou biometrickej autentifikácie
 * Výber z papierových peňaženiek (napr. tých, ktoré sú uložené offline).
-* Integrácie tretích strán, ktoré používateľom umožňujú kupovať a predávať Dash
+* Integrácie tretích strán, ktoré používateľom umožňujú kupovať a predávať Pozoqo
 * Jednoduchá fráza pre obnovenie vám umožňuje získať prostriedky späť v prípade straty alebo zmeny zariadenia
 * Flexibilné nastavenia, aby spĺňali celý rad vlastných preferencií zabezpečenia
-* Priamy sieťový Dash klient - žiadny centrálny server, ktorý by mohol byť napadnutý alebo znefunkčnený
+* Priamy sieťový Pozoqo klient - žiadny centrálny server, ktorý by mohol byť napadnutý alebo znefunkčnený
 
-Dash Wallet má otvorený zdrojový kód a je zadarmo. Sieťové poplatky sú nižšie u väčšiny kryptomien, bez ďalších centralizovaných nákladov. Pošlite akékoľvek množstvo peňazí komukoľvek na svete v priebehu niekoľkých sekúnd. Pri vašom podnikaní prijímajte platby spoľahlivo a okamžite. Takéto by mali byť peniaze.
+Pozoqo Wallet má otvorený zdrojový kód a je zadarmo. Sieťové poplatky sú nižšie u väčšiny kryptomien, bez ďalších centralizovaných nákladov. Pošlite akékoľvek množstvo peňazí komukoľvek na svete v priebehu niekoľkých sekúnd. Pri vašom podnikaní prijímajte platby spoľahlivo a okamžite. Takéto by mali byť peniaze.
 
 ZAPOJTE SA
 
-Peňaženka Dash má otvorený zdrojový kód a je to bezplatný softwér. Licencia: GPLv3
+Peňaženka Pozoqo má otvorený zdrojový kód a je to bezplatný softwér. Licencia: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Náš zdrojový kód je dostupný na GitHube:
@@ -32,8 +32,8 @@ https://github.com/dashevo/dash-wallet
 Všetky preklady prebiehajú cez Transifex:
 https://www.transifex.com/dash/dash-mobile-wallets/
 
-O Dash sa môžete dozvedieť viac na
+O Pozoqo sa môžete dozvedieť viac na
 https://www.dash.org/
 
 Aktualizácia v7.0.0
-Dash Wallet vo verzii 7.0 so sebou prináša úplne prepracovaný zážitok, ktorého cieľom je zvýšiť jednoduchosť používania intuitívnym a známym spôsobom na všetkých vašich zariadeniach. Inovovali sme náš postup verifikácie frázy pre obnovenie, aby sme zdôraznili dôležitosť zabezpečenia týchto informácií pre neskoršie obnovenie peňaženky. Používatelia sa teraz môžu rozhodnúť, kedy si chcú nechať čas na zapísanie svojej 12-slovnej frázy pre obnovenie. Na domovskú obrazovku sme tiež pridali odkazy na rýchlejší prístup k bežne používaným funkciám a naše menu bolo v aplikácií premiestnené a usporiadané tak, aby používateľom pomohlo rýchlejšie a efektívnejšie nakonfigurovať svoju peňaženku. Používatelia majú teraz oveľa širšiu kontrolu nad svojimi nastaveniami zabezpečenia a schopnosť rozhodnúť sa, ako často musia zadávať svoj PIN kód.
+Pozoqo Wallet vo verzii 7.0 so sebou prináša úplne prepracovaný zážitok, ktorého cieľom je zvýšiť jednoduchosť používania intuitívnym a známym spôsobom na všetkých vašich zariadeniach. Inovovali sme náš postup verifikácie frázy pre obnovenie, aby sme zdôraznili dôležitosť zabezpečenia týchto informácií pre neskoršie obnovenie peňaženky. Používatelia sa teraz môžu rozhodnúť, kedy si chcú nechať čas na zapísanie svojej 12-slovnej frázy pre obnovenie. Na domovskú obrazovku sme tiež pridali odkazy na rýchlejší prístup k bežne používaným funkciám a naše menu bolo v aplikácií premiestnené a usporiadané tak, aby používateľom pomohlo rýchlejšie a efektívnejšie nakonfigurovať svoju peňaženku. Používatelia majú teraz oveľa širšiu kontrolu nad svojimi nastaveniami zabezpečenia a schopnosť rozhodnúť sa, ako často musia zadávať svoj PIN kód.

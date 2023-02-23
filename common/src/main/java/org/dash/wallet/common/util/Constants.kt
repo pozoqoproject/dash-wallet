@@ -31,7 +31,7 @@ object Constants {
     const val PREFIX_ALMOST_EQUAL_TO = CHAR_ALMOST_EQUAL_TO.toString() + CHAR_THIN_SPACE
 
     const val REQUEST_CODE_BUY_SELL = 100
-    const val USER_BUY_SELL_DASH = 101
+    const val USER_BUY_SELL_PZQ = 101
     const val RESULT_CODE_GO_HOME = 100
     const val COIN_BASE_AUTH = 102
 
@@ -44,6 +44,6 @@ object Constants {
     lateinit var EXPLORE_GC_FILE_PATH: String
     var DEEP_LINK_PREFIX = "android-app://hashengineering.darkcoin.wallet"
 
-    const val DASH_CURRENCY = "DASH"
+    const val PZQ_CURRENCY = "PZQ"
     const val USD_CURRENCY = "USD"
 }

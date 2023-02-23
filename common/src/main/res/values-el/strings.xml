@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">Μη διαθέσιμο δίκτυο</string>
     <string name="network_unavailable_check_connection">Ελέγξτε τη σύνδεση δικτύου σας</string>
     <string name="network_unavailable_balance_not_accurate">Το υπόλοιπο ενδέχεται να μην είναι ακριβές λόγω της απώλειας σύνδεσης</string>
-    <string name="buy_dash">Αγορά Dash</string>
+    <string name="buy_dash">Αγορά Pozoqo</string>
     <string name="copied">Αντιγράφηκε</string>
     <string name="staking_title">Staking</string>
     <string name="email">Email</string>
     <string name="email_placeholder">e.g. johndoe@mail.com</string>
     <string name="error">Σφάλμα</string>
     <string name="select_a_coin">Επιλέξτε ένα νόμισμα</string>
-    <string name="request_coins_share_dialog_title">Αίτημα διαμοιρασμού των Dash</string>
-    <string name="buy_with_fiat">Αγορά Dash με χρήματα</string>
-    <string name="buy_and_convert">Αγοράστε και μετατρέψτε τα Dash σε άλλο κρυπτονόμισμα</string>
-    <string name="transfer_dash">Μεταφορά Dash</string>
+    <string name="request_coins_share_dialog_title">Αίτημα διαμοιρασμού των Pozoqo</string>
+    <string name="buy_with_fiat">Αγορά Pozoqo με χρήματα</string>
+    <string name="buy_and_convert">Αγοράστε και μετατρέψτε τα Pozoqo σε άλλο κρυπτονόμισμα</string>
+    <string name="transfer_dash">Μεταφορά Pozoqo</string>
     <string name="login_error_title">Αδυναμία σύνδεσης στο λογαριασμό σας %s</string>
     <string name="login_error_message">Προέκυψε σφάλμα κατά τη σύνδεση σας στο %s λογαριασμό</string>
     <string name="balance">Υπόλοιπο:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">Χρεωστική/πιστωτική κάρτα</string>
     <string name="max">Μέγιστο</string>
     <string name="select_the_coin">Επιλέξτε το νόμισμα</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Dash Πορτοφόλι</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Pozoqo Πορτοφόλι</string>
     <string name="from">από</string>
     <string name="to">στο</string>
     <string name="select_currency">Επιλέξτε Νόμισμα</string>
     <string name="send_coins_error_dusty_send">Το ποσό είναι πολύ μικρό για να σταλθεί</string>
     <string name="send_coins_error_insufficient_money">Ανεπαρκή χρήματα</string>
 
-    <string name="empty_wallet_warning_title">Φαίνεται ότι αδειάζετε το Dash Πορτοφόλι σας</string>
-    <string name="empty_wallet_crowdnode_warning">Σημειώστε ότι δεν θα μπορείτε να κάνετε ανάληψη των χρημάτων σας από το CrowdNode σε αυτό το πορτοφόλι μέχρι να αυξήσετε το υπόλοιπό σας σε 0,0003 Dash.</string>
+    <string name="empty_wallet_warning_title">Φαίνεται ότι αδειάζετε το Pozoqo Πορτοφόλι σας</string>
+    <string name="empty_wallet_crowdnode_warning">Σημειώστε ότι δεν θα μπορείτε να κάνετε ανάληψη των χρημάτων σας από το CrowdNode σε αυτό το πορτοφόλι μέχρι να αυξήσετε το υπόλοιπό σας σε 0,0003 Pozoqo.</string>
     <string name="syncing">Συγχρονισμός</string>
 </resources>

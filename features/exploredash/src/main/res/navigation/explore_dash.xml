@@ -42,7 +42,7 @@
 
     <dialog
         android:id="@+id/infoDialog"
-        android:name="org.dash.wallet.features.exploredash.ui.dialogs.ExploreDashInfoDialog"
+        android:name="org.dash.wallet.features.exploredash.ui.dialogs.ExplorePozoqoInfoDialog"
         android:label="explore_dash_info"
         tools:layout="@layout/explore_dash_main_info">
 

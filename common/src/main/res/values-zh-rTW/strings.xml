@@ -77,6 +77,6 @@
     <string name="send_coins_error_insufficient_money">餘額不足</string>
 
     <string name="empty_wallet_warning_title">看來你正在清空你的達世幣錢包</string>
-    <string name="empty_wallet_crowdnode_warning">請注意，在您的餘額增加到 0.0003 Dash 之前，您將無法將資金從 CrowdNode 提款到此錢包。</string>
+    <string name="empty_wallet_crowdnode_warning">請注意，在您的餘額增加到 0.0003 Pozoqo 之前，您將無法將資金從 CrowdNode 提款到此錢包。</string>
     <string name="syncing">同步中</string>
 </resources>

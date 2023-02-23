@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022. Dash Core Group.
+ * Copyright (c) 2022. Pozoqo Core Group.
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -37,10 +37,10 @@ class TaxBitExporter(
         CSVColumn("Transaction Type", taxCategory),
         CSVColumn("Sent Quantity", sentValueOnly),
         CSVColumn("Sent Currency", currency),
-        CSVColumn("Sending Source", sourceDashWallet),
+        CSVColumn("Sending Source", sourcePozoqoWallet),
         CSVColumn("Received Quantity", receivedValueOnly),
         CSVColumn("Received Currency", currency),
-        CSVColumn("Receiving Destination", sourceDashWallet),
+        CSVColumn("Receiving Destination", sourcePozoqoWallet),
         CSVColumn("Fee", emptyField),
         CSVColumn("Fee Currency", emptyField),
         CSVColumn("Exchange Transaction ID", emptyField),

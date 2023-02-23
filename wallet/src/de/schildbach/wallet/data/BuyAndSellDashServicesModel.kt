@@ -39,16 +39,16 @@ enum class ServiceType(
 }
 
 @Parcelize
-data class BuyAndSellDashServicesModel(
+data class BuyAndSellPozoqoServicesModel(
     val serviceType: ServiceType,
     val serviceStatus: ServiceStatus,
     val balance: Coin? = null,
     val localBalance: Fiat? = null
 ): Parcelable {
     companion object {
-        fun getBuyAndSellDashServicesList() = listOf(
-            BuyAndSellDashServicesModel(ServiceType.UPHOLD, ServiceStatus.IDLE),
-            BuyAndSellDashServicesModel(ServiceType.COINBASE, ServiceStatus.IDLE)
+        fun getBuyAndSellPozoqoServicesList() = listOf(
+            BuyAndSellPozoqoServicesModel(ServiceType.UPHOLD, ServiceStatus.IDLE),
+            BuyAndSellPozoqoServicesModel(ServiceType.COINBASE, ServiceStatus.IDLE)
         )
     }
 

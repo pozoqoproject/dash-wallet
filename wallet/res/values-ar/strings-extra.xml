@@ -197,7 +197,7 @@
     <string name="notification_push_channel_name">الاشعارات المنبثقة</string>
     <string name="notification_push_channel_description">تظهر الاشعارات المنبثقة المرسلة لك من قبل داش</string>
     <string name="notification_settings_title">الاشعارات</string>
-    <string name="notification_explainer_title">تود Dash Wallet إرسال إشعارات إليك</string>
+    <string name="notification_explainer_title">تود Pozoqo Wallet إرسال إشعارات إليك</string>
     <string name="notification_explainer_message">قد تتضمن الإخطارات التنبيهات والأصوات وشارات الرموز. يمكن تهيئتها في إعدادات الهاتف.</string>
 
     <string name="net_type_indicator" />

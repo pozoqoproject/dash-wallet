@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Ipadala sa address</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Bumili/ Magbenta ng Dash</string>
+    <string name="shortcut_buy_sell">Bumili/ Magbenta ng Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Tumanggap</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Sarado</string>
 
     <string name="scan_to_pay_error_dialog_title">I-scan para magpadala</string>
-    <string name="scan_to_pay_error_dialog_message">Hindi wastong Dash Address or hiling na URL sa clipboard:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Hindi wastong Dash Address or hiling na URL sa clipboard.</string>
-    <string name="pay_to_confirm_address">Ito ba ang Dash address na gusto mong padalhan ng bayad?</string>
+    <string name="scan_to_pay_error_dialog_message">Hindi wastong Pozoqo Address or hiling na URL sa clipboard:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Hindi wastong Pozoqo Address or hiling na URL sa clipboard.</string>
+    <string name="pay_to_confirm_address">Ito ba ang Pozoqo address na gusto mong padalhan ng bayad?</string>
 
     <string name="receive_title">Tumanggap</string>
     <string name="receive_enter_amount_message">Tukuyin ang halaga na matatanggap</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">Ipakita ang parirala ng muling pagbawi</string>
     <string name="import_keys_dialog_title_from_seed">Manumbalik sa dating kalagayan mula sa parirala ng muling pagbawi</string>
     <string name="backup_to_seed_wallet_dialog_message">Ito ang iyong parirala ng muling pagbawi. Pakisulat sa ibaba.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">WAG hayaang may makakita ng iyong parirala ng muling pagbawi dahil maaari nilang magastos ang iyong Dash.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">WAG hayaang may makakita ng iyong parirala ng muling pagbawi dahil maaari nilang magastos ang iyong Pozoqo.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Ang iyong pitaka ay protektado ng spending PIN. Itala ang iyong PIN at pindutin ang Show para makita ang iyong parirala ng muling pagbawi.</string>
     <string name="import_keys_from_seed_dialog_message">Itala ang iyong parirala ng muling pagbawi dito.</string>
     <string name="import_export_keys_dialog_password_phrase">Ang parirala ng muling pagbawi ay napupunta dito.</string>
     <string name="preferences_report_issue_summary">Tipunin ang mga impormasyon tungkol sa iyong suliranin at ipadala ang reklamo sa mga developer.</string>
     <string name="navigation_configuration">Pagsasaayos</string>
-    <string name="request_coins_clipboard_address_msg">Ang Dash address ay nakopya na sa clipboard</string>
+    <string name="request_coins_clipboard_address_msg">Ang Pozoqo address ay nakopya na sa clipboard</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Ipakita</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" ay hindi isang recovery phrase na salita</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Ang recovery phrase ay dapat mayroong 12 mga salita</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Walang bayad ang piliin sa pagbayad. Gamitin lamang ang \'walang bayad\' kung wala kang pakialam sa oras ng kumpirmasyon.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Ang aplikasyon %s ay gustong matanggap ang iyong Master Public Key. Ito ay maaaring magamit upang maantabayanan ang iyong pitaka, ito ay hindi maaaring magamit upang ilipat ang iyong Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Ang aplikasyon %s ay gustong matanggap ang iyong Master Public Key. Ito ay maaaring magamit upang maantabayanan ang iyong pitaka, ito ay hindi maaaring magamit upang ilipat ang iyong Pozoqo.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Ang aplkasyon %s ay nanghihingi ng address para mabayaran ka. Gusto mo bang pahintulutan ito?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">I-unlock ang iyong pitaka</string>
     <string name="wallet_lock_unlock_dialog_message">Ang iyong pitaka ay protektado ng spending PIN. Itala ang iyong PIN at pindutin ang I-unlock para magpatuloy.</string>
     <string name="wallet_lock_reset_wallet_title">I-reset ang pitaka</string>
-    <string name="wallet_lock_reset_wallet_message">Sigurado ka ba? Ang iyong pitaka ay mabubura at ang lahat ng iyong Dash ay mawawala.\n\nAng tanging paraan para maibalik ang iyong Dash ay sa pamamagitan ng backup na file o recovery phrase.</string>
+    <string name="wallet_lock_reset_wallet_message">Sigurado ka ba? Ang iyong pitaka ay mabubura at ang lahat ng iyong Pozoqo ay mawawala.\n\nAng tanging paraan para maibalik ang iyong Pozoqo ay sa pamamagitan ng backup na file o recovery phrase.</string>
 
     <string name="wallet_lock_wallet_disabled">Naka-disabled ang iyong pitaka</string>
     <string name="wallet_lock_try_again">Subukan ulit sa loob ng %1$d %2$s</string>
@@ -181,11 +181,11 @@
     <string name="notification_synchronization_channel_name">Pagtutugma</string>
     <string name="notification_synchronization_channel_description">Magpakita ng notipikasyon kapag ang app ay tumugma sa network.</string>
     <string name="notification_generic_channel_name">Pangkalahatang abiso</string>
-    <string name="notification_generic_channel_description">Iba pang mga kaganapan sa Dash Wallet</string>
+    <string name="notification_generic_channel_description">Iba pang mga kaganapan sa Pozoqo Wallet</string>
     <string name="notification_push_channel_name">Mga Push Notification</string>
-    <string name="notification_push_channel_description">Nagpapakita ng mga push notification na ipinadala sa iyo ni Dash</string>
+    <string name="notification_push_channel_description">Nagpapakita ng mga push notification na ipinadala sa iyo ni Pozoqo</string>
     <string name="notification_settings_title">Mga Notipikasyon</string>
-    <string name="notification_explainer_title">Gustong magpadala sa iyo ng mga notification ang Dash Wallet</string>
+    <string name="notification_explainer_title">Gustong magpadala sa iyo ng mga notification ang Pozoqo Wallet</string>
     <string name="notification_explainer_message">Maaaring kasama sa mga notification ang mga alerto, tunog, at icon na mga badge. Maaaring i-configure ang mga ito sa Mga Setting ng telepono.</string>
 
     <string name="net_type_indicator" />
@@ -212,7 +212,7 @@
     <string name="verify_it_is_important_subtitle">Ngayon ay ipapakita namin sa iyo ang sekretong susi ng iyong wallet.</string>
     <string name="verify_info_text_1">Ang recovery phrase na ito ay kinakailangan upang ma-access ang pondo sa wallet.</string>
     <string name="verify_info_text_2">HINDI namim itatabi ang iyong recovery phrase.</string>
-    <string name="verify_info_text_3">Kakailanganin mo ang recovery phrase para mabuksan ang iyong pondo kung sakaling mawala ang device, masira o kaya hindi sinasadyang ma-uninstall mo sa deviceang Dash Wallet.</string>
+    <string name="verify_info_text_3">Kakailanganin mo ang recovery phrase para mabuksan ang iyong pondo kung sakaling mawala ang device, masira o kaya hindi sinasadyang ma-uninstall mo sa deviceang Pozoqo Wallet.</string>
     <string name="verify_skip">Laktawan</string>
     <string name="verify_secure_now_btn">Protektahan ngayon</string>
     <string name="verify_secure_now_message">Kapag nawala mo itong device, mawawala mo rin ang iyong pondo. Kumuha ng recovery phrase upang ma-restore ang pitaka sa ibang device.</string>
@@ -258,10 +258,10 @@
     <string name="authenticate_switch_to_fingerprint">Gamitin ang Fingerprint</string>
     <string name="authenticate_switch_to_pin">Gamitin ang PIN</string>
 
-    <string name="menu_buy_and_sell_title">Bumili at magbenta ng Dash</string>
+    <string name="menu_buy_and_sell_title">Bumili at magbenta ng Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Ikonekta sa mga third party na palitan</string>
-    <string name="liquid_unavailable">Hindi na available ang liquid integration sa Dash Wallet</string>
-    <string name="liquid_unavailable_details">Kung mayroon kang anumang mga tanong tungkol sa iyong mga hawak sa Dash sa Liquid, mangyaring makipag-ugnayan sa Liquid support center</string>
+    <string name="liquid_unavailable">Hindi na available ang liquid integration sa Pozoqo Wallet</string>
+    <string name="liquid_unavailable_details">Kung mayroon kang anumang mga tanong tungkol sa iyong mga hawak sa Pozoqo sa Liquid, mangyaring makipag-ugnayan sa Liquid support center</string>
     <string name="menu_security_title">Seguridad</string>
     <string name="menu_security_subtitle">Ipakita ang passphrase, backup wallet…</string>
     <string name="menu_settings_title">Settings</string>
@@ -273,7 +273,7 @@
     <string name="menu_contact_support_title">Contact Support</string>
     <string name="menu_contact_support_subtitle">I-report ang Isyu</string>
     <string name="menu_explore_title">Galugarin</string>
-    <string name="menu_explore_subtitle">Mamili gamit ang DASH sa mahigit 155,000 merchant</string>
+    <string name="menu_explore_subtitle">Mamili gamit ang PZQ sa mahigit 155,000 merchant</string>
 
     <string name="tools_address_book">Adresbuk</string>
     <string name="tools_import_private_key">I-import ang private key</string>
@@ -284,9 +284,9 @@
     <string name="about_review_and_rate">Suriin at i-rate ang app</string>
     <string name="about_contact_support">Contact Support</string>
     <string name="about_fork_disclaimer">Ito ay open source app forked mula sa Bitcoin Wallet</string>
-    <string name="about_copyright">Copyright © 2023 Dash Core</string>
+    <string name="about_copyright">Copyright © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="about_last_explore_device_sync">Pag-sync ng device sa huling Explore</string>
     <string name="about_last_explore_server_update">Huling pag-update ng server ng Explore</string>
     <string name="about_firebase_installation_id">Firebase installation ID</string>
@@ -302,7 +302,7 @@
     <string name="block_info">Block Info</string>
 
     <string name="scan_private_key">I-scan ang Pribadong Susi</string>
-    <string name="scan_private_key_intro_1">Ikaw ay kasalukuyan ng mags-sweep ng pondo mula sa Dash paper wallet.</string>
+    <string name="scan_private_key_intro_1">Ikaw ay kasalukuyan ng mags-sweep ng pondo mula sa Pozoqo paper wallet.</string>
     <string name="scan_private_key_intro_2">Ang lahat ng barya mula sa wallet na iyon ay malilipat sa wallet dito sa device.</string>
     <string name="scan_private_key_intro_3">Kapag ang transaksyon ay nakumpirma, ang ibang wallet ay mawawalan ng bisa at hindi na pwedeng gamitin ulit para sa panseguridad. </string>
     <string name="confirm">Kumpirmahin</string>
@@ -340,7 +340,7 @@
     <string name="welcome_screen_subtitle_3">Magkaroon ng kumpletong kontrol at pinasadyang pitaka base sa iyong nais</string>
 
     <string name="sync_status_wait">Pakihintay na mag-sync upang makumpleto</string>
-    <string name="sync_status_syncing_sub_title">kasama ang Dash blockchain</string>
+    <string name="sync_status_syncing_sub_title">kasama ang Pozoqo blockchain</string>
     <string name="sync_status_unable_to_connect">Hindi maka-konekta</string>
     <string name="sync_status_check_connection">Suriin ang koneksyon</string>
     <string name="sync_status_sync_title">Sync</string>
@@ -361,9 +361,9 @@
     <string name="payment_request_paid_to">Nabayaran kay</string>
 
     <string name="import_image_not_valid_qr_code">Hindi wastong QR Code</string>
-    <string name="import_image_please_use_valid_qr_code">Mangyaring gumamit ng wastong Dash QR Code</string>
+    <string name="import_image_please_use_valid_qr_code">Mangyaring gumamit ng wastong Pozoqo QR Code</string>
     <string name="import_image_no_private_key_copied">Walang nakopya ang private key</string>
-    <string name="import_image_import_valid_private_key">Kopyahin ang isang wastong private key upang mai-import ang Dash mula rito</string>
+    <string name="import_image_import_valid_private_key">Kopyahin ang isang wastong private key upang mai-import ang Pozoqo mula rito</string>
     <string name="import_image_invalid_private">Di-wastong Private Key</string>
 
     <string name="today">Ngayon</string>
@@ -379,7 +379,7 @@
     <string name="set_pin_error_missing_wallet_message">Nawawala ang wallet. Mangyaring iulat ito sa Support Desk.</string>
     <string name="wallet_encryption_error_title">Error sa Paggawa ng Wallet</string>
     <string name="wallet_encryption_error_message">May problema sa paggawa ng wallet. Mangyaring iulat ito sa Support Desk.</string>
-    <string name="wallet_not_encrypted_error_message">May problema sa iyong wallet.\n\nKung wala kang Dash sa wallet na ito, i-uninstall at muling i-install ang app na ito. Pagkatapos ay gumawa ng bagong wallet.\n\nKung mayroon kang recovery phrase o backup na file, i-uninstall ang app na ito at muling i-install ito.\n\nKung hindi, mangyaring iulat ito sa Support Desk.</string>
+    <string name="wallet_not_encrypted_error_message">May problema sa iyong wallet.\n\nKung wala kang Pozoqo sa wallet na ito, i-uninstall at muling i-install ang app na ito. Pagkatapos ay gumawa ng bagong wallet.\n\nKung mayroon kang recovery phrase o backup na file, i-uninstall ang app na ito at muling i-install ito.\n\nKung hindi, mangyaring iulat ito sa Support Desk.</string>
 
     <string name="reset_wallet_title">Sigurado ka bang gusto mong i-reset ang wallet?</string>
     <string name="reset_wallet_message">Kung ni-reset mo ang iyong wallet ang tanging paraan upang makakuha ng access dito ay ang pagbawi ng wallet na may recovery phrase.</string>

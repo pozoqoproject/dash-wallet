@@ -219,7 +219,7 @@ class WalletFragmentTest {
     }
 
     @Test
-    fun handlePaste_inputWithDashAddress_confirmsAndStartsSendCoins() {
+    fun handlePaste_inputWithPozoqoAddress_confirmsAndStartsSendCoins() {
         val confirmDialogTitle = "CONFIRM_DIALOG_TITLE"
         val dashAddress = if (Constants.NETWORK_PARAMETERS == MainNetParams.get()) {
             "XjBya4EnibUyxubEA8D2Y8KSrBMW1oHq5U"

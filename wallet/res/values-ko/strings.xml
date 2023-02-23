@@ -252,11 +252,11 @@
     <string name="preferences_category_labs">실험실</string>
     <string name="preferences_precision_title">액면 변경 및 표시할 자리수 </string>
     <string name="preferences_precision_summary">금액을 표시하기 위한 단위입니다. 이는 계산에 영향을 미치지 않습니다.</string>
-    <string name="preferences_precision_labels_8">DASH, 소수 8자리</string>
-    <string name="preferences_precision_labels_6">DASH, 소수 6자리</string>
-    <string name="preferences_precision_labels_4">DASH, 소수 4자리</string>
-    <string name="preferences_precision_labels_2_3">mDASH, 소수 2자리</string>
-    <string name="preferences_precision_labels_0_6">µDASH, 소수 표시안함</string>
+    <string name="preferences_precision_labels_8">PZQ, 소수 8자리</string>
+    <string name="preferences_precision_labels_6">PZQ, 소수 6자리</string>
+    <string name="preferences_precision_labels_4">PZQ, 소수 4자리</string>
+    <string name="preferences_precision_labels_2_3">mPZQ, 소수 2자리</string>
+    <string name="preferences_precision_labels_0_6">µPZQ, 소수 표시안함</string>
     <string name="preferences_own_name_title">이름</string>
     <string name="preferences_own_name_summary">결제 요청에 추가될 당신의 이름입니다. 짧게 입력해주세요.</string>
     <string name="preferences_send_coins_autoclose_title">송금 대화창을 자동으로 닫기</string>
@@ -314,7 +314,7 @@
     <string name="about_license_title">라이선스</string>
     <string name="about_source_title">소스 코드</string>
     <string name="about_category_credits">이 어플은 다음을 사용합니다...</string>
-    <string name="about_credits_bitcoinj_title">dashj %s , 대쉬 프로토콜 구현</string>
+    <string name="about_credits_bitcoinj_title">pozoqoj %s , 대쉬 프로토콜 구현</string>
     <string name="about_credits_zxing_title">ZXing의 QR코드 처리 라이브러리</string>
     <string name="about_credits_icon_title">이 앱은 \'bitboy\'의 아이콘을 사용합니다</string>
     <string name="about_credits_scrypt_title">Scrypt, Will Glozer와 Colin Percival 구현</string>

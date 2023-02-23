@@ -12,34 +12,34 @@ import retrofit2.http.GET;
 /**
  * @author Samuel Barbosa
  */
-public class DashCentralClient extends RetrofitClient {
+public class PozoqoCentralClient extends RetrofitClient {
 
-    private static DashCentralClient instance;
+    private static PozoqoCentralClient instance;
 
-    public static DashCentralClient getInstance() {
+    public static PozoqoCentralClient getInstance() {
         if (instance == null) {
-            instance = new DashCentralClient("https://www.dashcentral.org/");
+            instance = new PozoqoCentralClient("https://www.dashcentral.org/");
         }
         return instance;
     }
 
-    private DashCentralService service;
+    private PozoqoCentralService service;
 
-    private DashCentralClient(String baseUrl) {
+    private PozoqoCentralClient(String baseUrl) {
         super(baseUrl);
 
-        Moshi moshi = moshiBuilder.add(new DashCentralRateAdapter()).build();
+        Moshi moshi = moshiBuilder.add(new PozoqoCentralRateAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
-        service = retrofit.create(DashCentralService.class);
+        service = retrofit.create(PozoqoCentralService.class);
     }
 
-    public Response<Rate> getDashBtcPrice() throws IOException {
-        return service.getDashBtcPrice().execute();
+    public Response<Rate> getPozoqoBtcPrice() throws IOException {
+        return service.getPozoqoBtcPrice().execute();
     }
 
-    private interface DashCentralService {
+    private interface PozoqoCentralService {
         @GET("api/v1/public")
-        Call<Rate> getDashBtcPrice();
+        Call<Rate> getPozoqoBtcPrice();
     }
 
 }

@@ -10,19 +10,19 @@ import java.util.List;
 /**
  * @author Samuel Barbosa
  */
-public class DashRatesFirstFallback implements ExchangeRatesClient {
+public class PozoqoRatesFirstFallback implements ExchangeRatesClient {
 
-    private static DashRatesFirstFallback instance;
+    private static PozoqoRatesFirstFallback instance;
     private static final String VES_CURRENCY_CODE = "VES";
 
-    public static DashRatesFirstFallback getInstance() {
+    public static PozoqoRatesFirstFallback getInstance() {
         if (instance == null) {
-            instance = new DashRatesFirstFallback();
+            instance = new PozoqoRatesFirstFallback();
         }
         return instance;
     }
 
-    private DashRatesFirstFallback() {
+    private PozoqoRatesFirstFallback() {
 
     }
 
@@ -33,9 +33,9 @@ public class DashRatesFirstFallback implements ExchangeRatesClient {
         CryptoCompareClient cryptoCompareClient = CryptoCompareClient.getInstance();
 
         List<ExchangeRate> rates = btcAvgClient.getGlobalIndices().body();
-        Rate dashBtcRate = cryptoCompareClient.getDashCustomAverage().body();
+        Rate dashBtcRate = cryptoCompareClient.getPozoqoCustomAverage().body();
 
-        BigDecimal dashVesPrice = DashCasaClient.getInstance().getRates().body().getDashVesPrice();
+        BigDecimal dashVesPrice = PozoqoCasaClient.getInstance().getRates().body().getPozoqoVesPrice();
 
         if (rates == null || rates.isEmpty() || dashBtcRate == null || dashVesPrice == null) {
             throw new IllegalStateException("Failed to fetch prices from Fallback1");

@@ -27,9 +27,9 @@ import kotlin.coroutines.suspendCoroutine
 val UpholdClient.hasValidCredentials
     get() = UpholdConstants.hasValidCredentials()
 
-suspend fun UpholdClient.getDashBalance(): BigDecimal {
+suspend fun UpholdClient.getPozoqoBalance(): BigDecimal {
     return suspendCoroutine { continuation ->
-        this.getDashBalance(object : UpholdClient.Callback<BigDecimal> {
+        this.getPozoqoBalance(object : UpholdClient.Callback<BigDecimal> {
             override fun onSuccess(data: BigDecimal) {
                 continuation.resume(data)
             }

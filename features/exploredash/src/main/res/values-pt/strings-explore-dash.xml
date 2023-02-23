@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Explorar Dash</string>
+    <string name="explore_dash">Explorar Pozoqo</string>
     <string name="explore_title">Explorar</string>
-    <string name="explore_subtitle">Compre facilmente com seu DASH em mais de 155.000 locais e comércios online</string>
+    <string name="explore_subtitle">Compre facilmente com seu PZQ em mais de 155.000 locais e comércios online</string>
     <string name="explore_merchants_title">Onde gastar?</string>
-    <string name="explore_merchants_subtitle">Encontre comércios que aceitam Dash como pagamento.</string>
+    <string name="explore_merchants_subtitle">Encontre comércios que aceitam Pozoqo como pagamento.</string>
     <string name="explore_atms_title">Caixas Eletrônicos</string>
-    <string name="explore_atms_subtitle">Encontre onde comprar ou vender DASH e outras criptomoedas por dinheiro.</string>
-    <string name="explore_staking_subtitle">Realize facilmente operações de stake no Dash e ganhe renda passiva com apenas alguns cliques.</string>
+    <string name="explore_atms_subtitle">Encontre onde comprar ou vender PZQ e outras criptomoedas por dinheiro.</string>
+    <string name="explore_staking_subtitle">Realize facilmente operações de stake no Pozoqo e ganhe renda passiva com apenas alguns cliques.</string>
     <string name="explore_staking_current_apy">APY atual = %s%%</string>
 
     <!-- Search -->
@@ -63,10 +63,10 @@
     <string name="explore_back_to_locations">Voltar para todos os locais</string>
     <string name="explore_back_to_nearest">Voltar para o local mais próximo</string>
     <string name="explore_select_location">Selecionar local</string>
-    <string name="explore_pay_with_dash">Pagar com Dash</string>
+    <string name="explore_pay_with_dash">Pagar com Pozoqo</string>
     <string name="explore_buy_gift_card">Comprar um Vale-presente</string>
-    <string name="explore_buy_dash">Comprar Dash</string>
-    <string name="explore_sell_dash">Vender Dash</string>
+    <string name="explore_buy_dash">Comprar Pozoqo</string>
+    <string name="explore_sell_dash">Vender Pozoqo</string>
     <string name="explore_show_all">Mostrar todos os locais</string>
     <string name="explore_atm_location_hint">Este caixa eletrônico está localizado em</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -76,7 +76,7 @@
     <string name="explore_filters">Filtros</string>
     <string name="explore_apply_filter">Aplicar</string>
     <string name="explore_payment_method">Método de Pagamento</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Vale-presente</string>
     <string name="explore_radius">Raio</string>
     <string name="explore_location">Localização</string>
@@ -145,16 +145,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Temos 2 tipos de comércios</string>
-    <string name="accept_dash_text">Aceita DASH diretamente</string>
-    <string name="pay_with_dash_text">Pagar com a carteira DASH.</string>
-    <string name="buy_gift_card_text">Compre cartões presente com seu Dash</string>
-    <string name="buy_gift_card_desc_text">Compre cartões presente com seu Dash pelo valor exato de sua compra.</string>
+    <string name="accept_dash_text">Aceita PZQ diretamente</string>
+    <string name="pay_with_dash_text">Pagar com a carteira PZQ.</string>
+    <string name="buy_gift_card_text">Compre cartões presente com seu Pozoqo</string>
+    <string name="buy_gift_card_desc_text">Compre cartões presente com seu Pozoqo pelo valor exato de sua compra.</string>
     <string name="learn_more_text">Saiba mais</string>
     <string name="continue_text">Continuar</string>
     <string name="buy_card_header_text">Como Usar um Cartão Presente</string>
-    <string name="buy_card_desc_text">Nem todas as lojas aceitam DASH diretamente, mas você pode comprar um cartão presente com seu Dash.</string>
+    <string name="buy_card_desc_text">Nem todas as lojas aceitam PZQ diretamente, mas você pode comprar um cartão presente com seu Pozoqo.</string>
     <string name="find_merchant_text">Encontre um comércio</string>
-    <string name="buy_gift_card_with_dash_text">Compre um cartão presente com Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Compre um cartão presente com Pozoqo.</string>
     <string name="redeem_gift_card_text">Resgate seu cartão presente on-line em segundos ou no caixa.</string>
 
     <!-- Sync Status -->

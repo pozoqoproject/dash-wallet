@@ -41,7 +41,7 @@ import java.text.DecimalFormatSymbols
 class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
     companion object {
         private const val ARG_INITIAL_AMOUNT = "initial_amount"
-        private const val ARG_DASH_TO_FIAT = "dash_to_fiat"
+        private const val ARG_PZQ_TO_FIAT = "dash_to_fiat"
         private const val ARG_MAX_BUTTON_VISIBLE = "max_visible"
         private const val ARG_SHOW_CURRENCY_SELECTOR_BUTTON = "show_currency_selector"
 
@@ -53,7 +53,7 @@ class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
             showCurrencySelector: Boolean = true
         ): EnterAmountFragment {
             val args = bundleOf(
-                ARG_DASH_TO_FIAT to dashToFiat,
+                ARG_PZQ_TO_FIAT to dashToFiat,
                 ARG_MAX_BUTTON_VISIBLE to isMaxButtonVisible,
                 ARG_SHOW_CURRENCY_SELECTOR_BUTTON to showCurrencySelector
             )
@@ -77,7 +77,7 @@ class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
         val args = requireArguments()
         binding.maxButtonWrapper.isVisible = args.getBoolean(ARG_MAX_BUTTON_VISIBLE)
         binding.amountView.showCurrencySelector = args.getBoolean(ARG_SHOW_CURRENCY_SELECTOR_BUTTON)
-        val dashToFiat = args.getBoolean(ARG_DASH_TO_FIAT)
+        val dashToFiat = args.getBoolean(ARG_PZQ_TO_FIAT)
         binding.amountView.dashToFiat = dashToFiat
 
         if (args.containsKey(ARG_INITIAL_AMOUNT)) {
@@ -101,7 +101,7 @@ class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
 
         viewModel.selectedExchangeRate.observe(viewLifecycleOwner) { rate ->
             binding.amountView.exchangeRate = if (rate != null) {
-                binding.currencyOptions.provideOptions(listOf(rate.currencyCode, Constants.DASH_CURRENCY))
+                binding.currencyOptions.provideOptions(listOf(rate.currencyCode, Constants.PZQ_CURRENCY))
                 ExchangeRate(Coin.COIN, rate.fiat)
             } else {
                 null
@@ -150,11 +150,11 @@ class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
     }
 
     private fun setupAmountView(dashToFiat: Boolean) {
-        val currencyOptions = listOf(Constants.USD_CURRENCY, Constants.DASH_CURRENCY)
+        val currencyOptions = listOf(Constants.USD_CURRENCY, Constants.PZQ_CURRENCY)
         binding.currencyOptions.pickedOptionIndex = if (dashToFiat) 1 else 0
         binding.currencyOptions.provideOptions(currencyOptions)
         binding.currencyOptions.setOnOptionPickedListener { currency, _ ->
-            binding.amountView.dashToFiat = currency == Constants.DASH_CURRENCY
+            binding.amountView.dashToFiat = currency == Constants.PZQ_CURRENCY
         }
 
         binding.maxButton.setOnClickListener {
@@ -170,8 +170,8 @@ class EnterAmountFragment: Fragment(R.layout.fragment_enter_amount) {
             }
         }
 
-        binding.amountView.setOnDashToFiatChanged { isDashToFiat ->
-            binding.currencyOptions.pickedOptionIndex = if (isDashToFiat) 1 else 0
+        binding.amountView.setOnPozoqoToFiatChanged { isPozoqoToFiat ->
+            binding.currencyOptions.pickedOptionIndex = if (isPozoqoToFiat) 1 else 0
             viewModel._dashToFiatDirection.value = binding.amountView.dashToFiat
         }
 

@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Дослідити Dash</string>
+    <string name="explore_dash">Дослідити Pozoqo</string>
     <string name="explore_title">Дослідити</string>
-    <string name="explore_subtitle">Здійснюйте покупки використовуючи DASH у більш ніж 155 000 магазинах та онлайн</string>
+    <string name="explore_subtitle">Здійснюйте покупки використовуючи PZQ у більш ніж 155 000 магазинах та онлайн</string>
     <string name="explore_merchants_title">Де витратити?</string>
-    <string name="explore_merchants_subtitle">Знайдіть місця де приймають DASH в якості оплати.</string>
+    <string name="explore_merchants_subtitle">Знайдіть місця де приймають PZQ в якості оплати.</string>
     <string name="explore_atms_title">Банкомати</string>
-    <string name="explore_atms_subtitle">Знайдіть, де купити або продати DASH та інші криптовалюти за готівку.</string>
-    <string name="explore_staking_subtitle">Застейкайте Dash і отримайте пасивний дохід за кілька кліків.</string>
+    <string name="explore_atms_subtitle">Знайдіть, де купити або продати PZQ та інші криптовалюти за готівку.</string>
+    <string name="explore_staking_subtitle">Застейкайте Pozoqo і отримайте пасивний дохід за кілька кліків.</string>
     <string name="explore_staking_current_apy">Поточний APY = %s%%</string>
 
     <!-- Search -->
@@ -65,10 +65,10 @@
     <string name="explore_back_to_locations">Повернутися до всіх локацій</string>
     <string name="explore_back_to_nearest">Повернутися до найближчої точки</string>
     <string name="explore_select_location">Вибрати локацію</string>
-    <string name="explore_pay_with_dash">Сплатити за допомогою Dash</string>
+    <string name="explore_pay_with_dash">Сплатити за допомогою Pozoqo</string>
     <string name="explore_buy_gift_card">Купити подарункову карту</string>
-    <string name="explore_buy_dash">Купити Dash</string>
-    <string name="explore_sell_dash">Продати Dash</string>
+    <string name="explore_buy_dash">Купити Pozoqo</string>
+    <string name="explore_sell_dash">Продати Pozoqo</string>
     <string name="explore_show_all">Показати всі точки</string>
     <string name="explore_atm_location_hint">Цей банкомат розташований в</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -78,7 +78,7 @@
     <string name="explore_filters">Фільтри</string>
     <string name="explore_apply_filter">Застосувати</string>
     <string name="explore_payment_method">Спосіб оплати</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Подарункова карта</string>
     <string name="explore_radius">Радіус</string>
     <string name="explore_location">Місцезнаходження</string>
@@ -149,16 +149,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">У нас є 2 види продавців</string>
-    <string name="accept_dash_text">Приймають DASH безпосередньо</string>
-    <string name="pay_with_dash_text">Платіть через DASH гаманець.</string>
-    <string name="buy_gift_card_text">Купуйте подарункові картки за допомогою Dash</string>
-    <string name="buy_gift_card_desc_text">Купуйте подарункові картки за допомогою Dash на точну суму покупки.</string>
+    <string name="accept_dash_text">Приймають PZQ безпосередньо</string>
+    <string name="pay_with_dash_text">Платіть через PZQ гаманець.</string>
+    <string name="buy_gift_card_text">Купуйте подарункові картки за допомогою Pozoqo</string>
+    <string name="buy_gift_card_desc_text">Купуйте подарункові картки за допомогою Pozoqo на точну суму покупки.</string>
     <string name="learn_more_text">Дізнатися більше</string>
     <string name="continue_text">Продовжити</string>
     <string name="buy_card_header_text">Як використовувати подарункову карту</string>
-    <string name="buy_card_desc_text">Не всі магазини приймають DASH напряму, але ви можете купити подарункову картку за допомогою Dash.</string>
+    <string name="buy_card_desc_text">Не всі магазини приймають PZQ напряму, але ви можете купити подарункову картку за допомогою Pozoqo.</string>
     <string name="find_merchant_text">Знайти продавця.</string>
-    <string name="buy_gift_card_with_dash_text">Купити подарункову картку за допомогою Dash</string>
+    <string name="buy_gift_card_with_dash_text">Купити подарункову картку за допомогою Pozoqo</string>
     <string name="redeem_gift_card_text">Отримайте свою подарункову картку онлайн за лічені секунди або в касі.</string>
 
     <!-- Sync Status -->

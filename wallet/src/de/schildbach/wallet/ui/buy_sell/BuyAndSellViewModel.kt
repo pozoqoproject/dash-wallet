@@ -21,7 +21,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import de.schildbach.wallet.data.BuyAndSellDashServicesModel
+import de.schildbach.wallet.data.BuyAndSellPozoqoServicesModel
 import de.schildbach.wallet.data.ServiceStatus
 import de.schildbach.wallet.data.ServiceType
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -40,7 +40,7 @@ import org.dash.wallet.integration.coinbase_integration.network.ResponseResource
 import org.dash.wallet.integration.coinbase_integration.repository.CoinBaseRepository
 import org.dash.wallet.integration.coinbase_integration.utils.CoinbaseConfig
 import org.dash.wallet.integration.uphold.api.UpholdClient
-import org.dash.wallet.integration.uphold.api.getDashBalance
+import org.dash.wallet.integration.uphold.api.getPozoqoBalance
 import org.dash.wallet.integration.uphold.api.hasValidCredentials
 import javax.inject.Inject
 
@@ -65,8 +65,8 @@ class BuyAndSellViewModel @Inject constructor(
 
     private var currentExchangeRate: org.dash.wallet.common.data.ExchangeRate? = null
 
-    private val _servicesList = MutableLiveData(BuyAndSellDashServicesModel.getBuyAndSellDashServicesList())
-    val servicesList: LiveData<List<BuyAndSellDashServicesModel>>
+    private val _servicesList = MutableLiveData(BuyAndSellPozoqoServicesModel.getBuyAndSellPozoqoServicesList())
+    val servicesList: LiveData<List<BuyAndSellPozoqoServicesModel>>
         get() = _servicesList
 
     val isUpholdAuthenticated: Boolean
@@ -95,12 +95,12 @@ class BuyAndSellViewModel @Inject constructor(
         }
     }
 
-    private fun setDashServiceList(list: List<BuyAndSellDashServicesModel>) {
+    private fun setPozoqoServiceList(list: List<BuyAndSellPozoqoServicesModel>) {
         _servicesList.value = list.sortedBy { it.serviceStatus }
     }
 
     fun updateServicesStatus() {
-        setDashServiceList(
+        setPozoqoServiceList(
             (_servicesList.value ?: listOf()).map { model ->
                 val serviceStatus = getItemStatus(model.serviceType)
                 if (serviceStatus != model.serviceStatus) {
@@ -174,7 +174,7 @@ class BuyAndSellViewModel @Inject constructor(
                 model
             }
         }
-        setDashServiceList(list)
+        setPozoqoServiceList(list)
     }
 
     private fun updateCoinbaseBalance() {
@@ -194,7 +194,7 @@ class BuyAndSellViewModel @Inject constructor(
     private fun updateUpholdBalance() {
         viewModelScope.launch {
             try {
-                val balance = upholdClient.getDashBalance()
+                val balance = upholdClient.getPozoqoBalance()
                 config.lastUpholdBalance = balance.toString()
                 showRowBalance(
                     ServiceType.UPHOLD,

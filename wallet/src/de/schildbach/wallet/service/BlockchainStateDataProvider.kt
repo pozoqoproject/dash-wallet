@@ -25,7 +25,7 @@ import kotlin.math.min
  * Blockchain state data provider
  *
  * @property blockchainStateDao
- * @property walletDataProvider is used to determine the network parameters and DashJ Context
+ * @property walletDataProvider is used to determine the network parameters and PozoqoJ Context
  * @property configuration is used to save some information
  *
  */
@@ -42,11 +42,11 @@ class BlockchainStateDataProvider @Inject constructor(
          *  NetworkParameters.TARGET_SPACING is 2.5 min, but the DGW algorithm targets 2.625 min
          *  See [org.bitcoinj.params.AbstractBitcoinNetParams.DarkGravityWave]
          */
-        const val BLOCK_TARGET_SPACING = 2.625 * 60 // seconds
+        const val BLOCK_TARGET_SPACING = 1 * 60 // seconds
         const val DAYS_PER_YEAR = 365.242199
         const val SECONDS_PER_DAY = 24 * 60 * 60
         val MASTERNODE_COST: Coin = Coin.valueOf(1000, 0)
-        const val MASTERNODE_COUNT = 3800
+        const val MASTERNODE_COUNT = 340
     }
 
     override suspend fun getState(): BlockchainState? {
@@ -125,7 +125,7 @@ class BlockchainStateDataProvider @Inject constructor(
         600 // Period 19: 60%
     )
 
-    // this could very well be a part of DashJ
+    // this could very well be a part of PozoqoJ
     // the masternode APY will
     // * decrease by about 7% per year
     // * increase every three months according to the periods list above
@@ -134,7 +134,7 @@ class BlockchainStateDataProvider @Inject constructor(
         height: Int,
         blockValue: Coin
     ): Coin {
-        var ret = blockValue.div(5) // start at 20%
+        var ret = blockValue.div(1) // start at 20%
 
         val increaseBlockHeight: Int
         val period: Int
@@ -143,7 +143,7 @@ class BlockchainStateDataProvider @Inject constructor(
             NetworkParameters.ID_MAINNET -> {
                 increaseBlockHeight = 158000
                 period = 576 * 30
-                brrHeight = 1374912
+                brrHeight = 13749129
             }
             NetworkParameters.ID_TESTNET -> {
                 increaseBlockHeight = 4030
@@ -157,25 +157,6 @@ class BlockchainStateDataProvider @Inject constructor(
                 brrHeight = 300
             }
         }
-        // mainnet:
-        if (height > increaseBlockHeight) ret =
-            ret.add(blockValue.div(20)) // 158000 - 25.0% - 2014-10-24
-        if (height > increaseBlockHeight + period) ret =
-            ret.add(blockValue.div(20)) // 175280 - 30.0% - 2014-11-25
-        if (height > increaseBlockHeight + period * 2) ret =
-            ret.add(blockValue.div(20)) // 192560 - 35.0% - 2014-12-26
-        if (height > increaseBlockHeight + period * 3) ret =
-            ret.add(blockValue.div(40)) // 209840 - 37.5% - 2015-01-26
-        if (height > increaseBlockHeight + period * 4) ret =
-            ret.add(blockValue.div(40)) // 227120 - 40.0% - 2015-02-27
-        if (height > increaseBlockHeight + period * 5) ret =
-            ret.add(blockValue.div(40)) // 244400 - 42.5% - 2015-03-30
-        if (height > increaseBlockHeight + period * 6) ret =
-            ret.add(blockValue.div(40)) // 261680 - 45.0% - 2015-05-01
-        if (height > increaseBlockHeight + period * 7) ret =
-            ret.add(blockValue.div(40)) // 278960 - 47.5% - 2015-06-01
-        if (height > increaseBlockHeight + period * 9) ret =
-            ret.add(blockValue.div(40)) // 313520 - 50.0% - 2015-08-03
         if (height < brrHeight) {
             // Block Reward Realocation is not activated yet, nothing to do
             return ret

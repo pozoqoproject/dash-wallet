@@ -32,7 +32,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Изпрати до адрес</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Купи/Продай Dash</string>
+    <string name="shortcut_buy_sell">Купи/Продай Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Получаване</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -57,8 +57,8 @@
     <string name="perm_lock_close_app">Затвори</string>
 
     <string name="scan_to_pay_error_dialog_title">Сканиране за изпращане</string>
-    <string name="scan_to_pay_error_dialog_message">Не валиден Dash адреса или URL заявка в клипборда:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Не валиден Dash адреса или URL заявка в клипборда.</string>
+    <string name="scan_to_pay_error_dialog_message">Не валиден Pozoqo адреса или URL заявка в клипборда:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Не валиден Pozoqo адреса или URL заявка в клипборда.</string>
     <string name="receive_title">Получаване</string>
     <string name="receive_enter_amount_message">Посочете  сумата за получаване</string>
     <string name="receive_enter_amount_button">Посочете сума</string>
@@ -103,13 +103,13 @@
     <string name="export_keys_dialog_title_to_seed">Виж фразата за възстановяване</string>
     <string name="import_keys_dialog_title_from_seed">Възстановяване от фразата за възстановяване</string>
     <string name="backup_to_seed_wallet_dialog_message">Това е вашата фраза за възстановяване. Моля, напишете я.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">НЕ позволявайте на никого да види фразата Ви за възстановяване тъй като в възможно да похарчи вашите Dash.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">НЕ позволявайте на никого да види фразата Ви за възстановяване тъй като в възможно да похарчи вашите Pozoqo.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Портфейлът Ви е защитен от ПИН . Въведете своя ПИН и натиснете Покажи, за да видите фразата си за възстановяване.</string>
     <string name="import_keys_from_seed_dialog_message">Въведете фразата си за възстановяване тук.</string>
     <string name="import_export_keys_dialog_password_phrase">Фразата за възстановяване отива тук.</string>
     <string name="preferences_report_issue_summary">Съберете информацията за проблема си и я изпратете  до разработчиците.</string>
     <string name="navigation_configuration">Конфигурация</string>
-    <string name="request_coins_clipboard_address_msg">Dash е копиран в клипборда</string>
+    <string name="request_coins_clipboard_address_msg">Pozoqo е копиран в клипборда</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Покажи</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" не е фраза за възстановяване</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Фразата за възстановяване трябва да има 12 думи</string>
@@ -120,7 +120,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Няма да бъде платена такса. Използвайте \"без такса\" само ако не ви е грижа за времето за потвърждение.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Приложението %s би желало да получи вашият Главен публичен ключ.  Той може да бъде използвано за да проследи вашият портфейл, но не може да бъде използван за преместването на вашите  Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Приложението %s би желало да получи вашият Главен публичен ключ.  Той може да бъде използвано за да проследи вашият портфейл, но не може да бъде използван за преместването на вашите  Pozoqo.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Приложението %s изисква адрес за да Ви бъде платено.  Бихте ли желали да позволите това?</string>
 
@@ -131,7 +131,7 @@
     <string name="wallet_lock_unlock_dialog_title">Отключете портфейла си</string>
     <string name="wallet_lock_unlock_dialog_message">Портфейлът Ви е защитен от ПИН за  похарчване. Въведете своя ПИН и натиснете Отключи за да продължите.</string>
     <string name="wallet_lock_reset_wallet_title">Нулиране на портфейл</string>
-    <string name="wallet_lock_reset_wallet_message">Сигурен ли си? Твоят портфейл ще бъде изтрит и всичкият Dash ще бъдат изгубен.\n\nЕдинственият начин да възстановиш твоят Dash е, чрез резервен архив или възстановяваща фраза.</string>
+    <string name="wallet_lock_reset_wallet_message">Сигурен ли си? Твоят портфейл ще бъде изтрит и всичкият Pozoqo ще бъдат изгубен.\n\nЕдинственият начин да възстановиш твоят Pozoqo е, чрез резервен архив или възстановяваща фраза.</string>
 
     <string name="wallet_lock_wallet_disabled">Портфейлът е изключен</string>
     <string name="wallet_lock_try_again">Опитай отново след %1$d %2$s</string>
@@ -193,7 +193,7 @@
     <string name="verify_it_is_important">Важно е</string>
     <string name="verify_it_is_important_subtitle">Предстои да Ви покажем секретния ключ на портфейла ви.</string>
     <string name="verify_info_text_1">Тази фраза за възстановяване Ви дава достъп до средствата в този портфейл.</string>
-    <string name="verify_info_text_3">Тази фраза за възстановяване ще ви трябва за достъп до вашите средства, ако това устройство е загубено, повредено или ако Dash Wallet някога случайно бъде деинсталиран от това устройство.</string>
+    <string name="verify_info_text_3">Тази фраза за възстановяване ще ви трябва за достъп до вашите средства, ако това устройство е загубено, повредено или ако Pozoqo Wallet някога случайно бъде деинсталиран от това устройство.</string>
     <string name="verify_skip">Пропусни</string>
     <string name="verify_secure_now_btn">Подсигури сега</string>
     <string name="verify_secure_now_message">Ако загубите това устройство, ще загубите средствата си. Вземете своята фраза за възстановяване, така че да можете да възстановите портфейла си на друго устройство.</string>
@@ -224,7 +224,7 @@
     <string name="authenticate_switch_to_fingerprint">Използвайте пръстов отпечатък</string>
     <string name="authenticate_switch_to_pin">Използвай ПИН</string>
 
-    <string name="menu_buy_and_sell_title">Купи &amp; Продай Dash</string>
+    <string name="menu_buy_and_sell_title">Купи &amp; Продай Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Свържете се с борси от трета страна</string>
     <string name="menu_security_title">Сигурност</string>
     <string name="menu_security_subtitle">Преглед на парола, резервен портфейл ...</string>
@@ -245,14 +245,14 @@
     <string name="about_contact_support">Връзка с поддръжката</string>
     <string name="about_fork_disclaimer">Това е приложение с отворен код, разклонено от Bitcoin Wallet</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="block">Блок</string>
     <string name="time">Време</string>
     <string name="hash">Хеш</string>
     <string name="block_info">Информация за блока</string>
 
     <string name="scan_private_key">Сканирай частен ключ</string>
-    <string name="scan_private_key_intro_1">На път сте да усвоите средства от хартиен Dash портфейл.</string>
+    <string name="scan_private_key_intro_1">На път сте да усвоите средства от хартиен Pozoqo портфейл.</string>
     <string name="scan_private_key_intro_2">Това ще премести всички монети от него в портфейлът Ви на това устройство.</string>
     <string name="scan_private_key_intro_3">Когато транзакцията бъде потвърдена, другият портфейл ще бъде безполезен и не бива да се използва повторно от съображения за безопасност.</string>
     <string name="confirm">Потвърди</string>
@@ -290,7 +290,7 @@
     <string name="welcome_screen_subtitle_3">Имате пълен контрол и персонализиране на портфейла според  нужди Ви</string>
 
     <string name="sync_status_wait">Моля изчакайте синхронизирането да приключи</string>
-    <string name="sync_status_syncing_sub_title">с Dash блок верига</string>
+    <string name="sync_status_syncing_sub_title">с Pozoqo блок верига</string>
     <string name="sync_status_unable_to_connect">Не може да се свърже</string>
     <string name="sync_status_check_connection">Проверете връзката</string>
     <string name="sync_status_sync_title">Синхронизиране</string>

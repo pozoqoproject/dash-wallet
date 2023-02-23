@@ -12,20 +12,20 @@ import java.util.List;
 /**
  * @author Samuel Barbosa
  */
-public class DashRatesSecondFallback implements ExchangeRatesClient {
+public class PozoqoRatesSecondFallback implements ExchangeRatesClient {
 
-    private static DashRatesSecondFallback instance;
+    private static PozoqoRatesSecondFallback instance;
     private static final String VES_CURRENCY_CODE = "VES";
     private List<String> excludedRates = Arrays.asList("BTC", "BCH", "XAG", "XAU", "VEF");
 
-    public static DashRatesSecondFallback getInstance() {
+    public static PozoqoRatesSecondFallback getInstance() {
         if (instance == null) {
-            instance = new DashRatesSecondFallback();
+            instance = new PozoqoRatesSecondFallback();
         }
         return instance;
     }
 
-    private DashRatesSecondFallback() {
+    private PozoqoRatesSecondFallback() {
 
     }
 
@@ -33,9 +33,9 @@ public class DashRatesSecondFallback implements ExchangeRatesClient {
     @Override
     public List<ExchangeRate> getRates() throws Exception {
         List<BitPayRate> rates = BitPayClient.getInstance().getRates().body().getRates();
-        BigDecimal dashCentralPrice = DashCentralClient.getInstance().getDashBtcPrice().body().getRate();
+        BigDecimal dashCentralPrice = PozoqoCentralClient.getInstance().getPozoqoBtcPrice().body().getRate();
         BigDecimal poloniexPrice = PoloniexClient.getInstance().getRates().body().getRate();
-        BigDecimal dashVesPrice = LocalBitcoinsClient.getInstance().getRates().body().getDashVesPrice();
+        BigDecimal dashVesPrice = LocalBitcoinsClient.getInstance().getRates().body().getPozoqoVesPrice();
 
         if (rates == null || rates.isEmpty() || (dashCentralPrice == null && poloniexPrice == null)) {
             throw new IllegalStateException("Failed to fetch prices from Fallback2");

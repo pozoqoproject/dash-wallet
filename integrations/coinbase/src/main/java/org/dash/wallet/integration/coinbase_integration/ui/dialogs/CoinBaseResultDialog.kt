@@ -62,7 +62,7 @@ class CoinBaseResultDialog : DialogFragment() {
 
         val type = arguments?.getInt("Type")
         val coinbaseWallet = arguments?.getString(ARG_COINBASE_WALLET_NAME)
-        val dashToCoinbase = arguments?.getBoolean(ARG_DASH_TO_COINBASE) ?: false
+        val dashToCoinbase = arguments?.getBoolean(ARG_PZQ_TO_COINBASE) ?: false
         type?.let {
             when (type) {
                 Type.PURCHASE_ERROR.ordinal -> setPurchaseError()
@@ -74,8 +74,8 @@ class CoinBaseResultDialog : DialogFragment() {
                 )
                 Type.CONVERSION_ERROR.ordinal -> setConversionError()
                 Type.SWAP_ERROR.ordinal -> setSwapError()
-                Type.TRANSFER_DASH_SUCCESS.ordinal -> setTransferDashSuccess(dashToCoinbase)
-                Type.TRANSFER_DASH_ERROR.ordinal -> setTransferDashFailure()
+                Type.TRANSFER_PZQ_SUCCESS.ordinal -> setTransferPozoqoSuccess(dashToCoinbase)
+                Type.TRANSFER_PZQ_ERROR.ordinal -> setTransferPozoqoFailure()
             }
 
             binding.coinbaseBuyDialogPositiveButton.setOnClickListener {
@@ -183,7 +183,7 @@ class CoinBaseResultDialog : DialogFragment() {
         binding.coinbaseBuyDialogPositiveButton.setText(R.string.close)
     }
 
-    private fun setTransferDashSuccess(dashToCoinbase: Boolean) {
+    private fun setTransferPozoqoSuccess(dashToCoinbase: Boolean) {
         binding.coinbaseBuyDialogIcon.setImageResource(R.drawable.ic_success_green)
         binding.coinbaseBuyDialogTitle.setText(R.string.transfer_dash_successful)
         binding.coinbaseBuyDialogTitle.setTextAppearance(R.style.Headline5_Green)
@@ -196,7 +196,7 @@ class CoinBaseResultDialog : DialogFragment() {
         binding.coinbaseBuyDialogPositiveButton.setText(R.string.close)
     }
 
-    private fun setTransferDashFailure() {
+    private fun setTransferPozoqoFailure() {
         binding.coinbaseBuyDialogIcon.setImageResource(R.drawable.ic_error)
         binding.coinbaseBuyDialogTitle.setText(R.string.transfer_failed)
         val errorMessage = arguments?.getString(ARG_MESSAGE)
@@ -217,7 +217,7 @@ class CoinBaseResultDialog : DialogFragment() {
     companion object {
         const val ARG_MESSAGE: String = "ARG_RESPONSE_MESSAGE"
         const val ARG_COINBASE_WALLET_NAME: String = "ARG_COINBASE_WALLET_NAME"
-        const val ARG_DASH_TO_COINBASE: String = "ARG_DASH_TO_COINBASE"
+        const val ARG_PZQ_TO_COINBASE: String = "ARG_PZQ_TO_COINBASE"
         fun newInstance(
             type: Type,
             responseMessage: String?,
@@ -228,7 +228,7 @@ class CoinBaseResultDialog : DialogFragment() {
                 putInt("Type", type.ordinal)
                 putString(ARG_MESSAGE, responseMessage)
                 putString(ARG_COINBASE_WALLET_NAME, coinbaseWalletName)
-                putBoolean(ARG_DASH_TO_COINBASE, dashToCoinbase)
+                putBoolean(ARG_PZQ_TO_COINBASE, dashToCoinbase)
             }
             return CoinBaseResultDialog().apply {
                 arguments = args
@@ -243,8 +243,8 @@ class CoinBaseResultDialog : DialogFragment() {
         CONVERSION_SUCCESS,
         CONVERSION_ERROR,
         SWAP_ERROR,
-        TRANSFER_DASH_SUCCESS,
-        TRANSFER_DASH_ERROR
+        TRANSFER_PZQ_SUCCESS,
+        TRANSFER_PZQ_ERROR
     }
 
     interface CoinBaseResultDialogButtonsClickListener {

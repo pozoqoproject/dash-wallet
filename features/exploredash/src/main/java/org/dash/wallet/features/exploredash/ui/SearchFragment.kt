@@ -142,9 +142,9 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (!configuration.hasExploreDashInfoScreenBeenShown() && args.type == ExploreTopic.Merchants) {
+        if (!configuration.hasExplorePozoqoInfoScreenBeenShown() && args.type == ExploreTopic.Merchants) {
             safeNavigate(SearchFragmentDirections.exploreToInfo())
-            configuration.setHasExploreDashInfoScreenBeenShown(true)
+            configuration.setHasExplorePozoqoInfoScreenBeenShown(true)
         }
     }
 
@@ -456,15 +456,15 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     }
 
     private fun setupItemDetails() {
-        binding.itemDetails.setOnSendDashClicked { isPayingWithDash ->
-            if (isPayingWithDash){
-                viewModel.logEvent(AnalyticsConstants.Explore.MERCHANT_DETAILS_PAY_WITH_DASH)
+        binding.itemDetails.setOnSendPozoqoClicked { isPayingWithPozoqo ->
+            if (isPayingWithPozoqo){
+                viewModel.logEvent(AnalyticsConstants.Explore.MERCHANT_DETAILS_PAY_WITH_PZQ)
             }
 
-            deepLinkNavigate(DeepLinkDestination.SendDash)
+            deepLinkNavigate(DeepLinkDestination.SendPozoqo)
         }
-        binding.itemDetails.setOnReceiveDashClicked {
-            deepLinkNavigate(DeepLinkDestination.ReceiveDash)
+        binding.itemDetails.setOnReceivePozoqoClicked {
+            deepLinkNavigate(DeepLinkDestination.ReceivePozoqo)
         }
         binding.itemDetails.setOnBackButtonClicked {
             viewModel.backFromMerchantLocation()
@@ -761,7 +761,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         if (filters.payment.isNotEmpty()) {
             appliedFilterNames.add(
                 getString(
-                    if (filters.payment == PaymentMethod.DASH) {
+                    if (filters.payment == PaymentMethod.PZQ) {
                         R.string.explore_pay_with_dash
                     } else {
                         R.string.explore_pay_gift_card

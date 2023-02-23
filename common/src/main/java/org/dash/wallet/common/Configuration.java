@@ -101,12 +101,12 @@ public class Configuration {
 
     private static final int PREFS_DEFAULT_BTC_SHIFT = 0;
     public static final int PREFS_DEFAULT_BTC_PRECISION = 8;
-    public static final String PREFS_KEY_IS_DASH_TO_FIAT_DIRECTION = "is_dash_to_fiat_direction";
+    public static final String PREFS_KEY_IS_PZQ_TO_FIAT_DIRECTION = "is_dash_to_fiat_direction";
     public static final String PREFS_KEY_SHOW_NOTIFICATIONS_EXPLAINER = "show_notifications_explainer";
     public static final String PREFS_KEY_SHOW_TAX_CATEGORY_EXPLAINER = "show_tax_catagory_explainer";
     public static final String PREFS_KEY_SHOW_TAX_CATEGORY_INSTALLTIME = "show_tax_catagory_install_time";
 
-    // Explore Dash
+    // Explore Pozoqo
     public static final String PREFS_KEY_HAS_INFO_SCREEN_BEEN_SHOWN_ALREADY = "has_info_screen_been_shown";
     public static final String PREFS_KEY_HAS_LOCATION_DIALOG_BEEN_SHOWN = "has_location_dialog_been_shown";
     public static final String PREFS_KEY_EXPLORE_DATABASE_NAME = "explore_database_name";
@@ -471,12 +471,12 @@ public class Configuration {
         return prefs.getString(PREFS_KEY_LAST_UPHOLD_BALANCE, null);
     }
 
-    public Boolean isDashToFiatDirection() {
-        return prefs.getBoolean(PREFS_KEY_IS_DASH_TO_FIAT_DIRECTION, true);
+    public Boolean isPozoqoToFiatDirection() {
+        return prefs.getBoolean(PREFS_KEY_IS_PZQ_TO_FIAT_DIRECTION, true);
     }
 
-    public void setDashToFiatDirection(final Boolean isDashToFiatDirection) {
-        prefs.edit().putBoolean(PREFS_KEY_IS_DASH_TO_FIAT_DIRECTION, isDashToFiatDirection).apply();
+    public void setPozoqoToFiatDirection(final Boolean isPozoqoToFiatDirection) {
+        prefs.edit().putBoolean(PREFS_KEY_IS_PZQ_TO_FIAT_DIRECTION, isPozoqoToFiatDirection).apply();
     }
 
     public boolean getShowNotificationsExplainer() {
@@ -523,21 +523,21 @@ public class Configuration {
         prefs.edit().putLong(PREFS_KEY_SHOW_TAX_CATEGORY_INSTALLTIME, time).apply();
     }
 
-    // Explore Dash
+    // Explore Pozoqo
 
-    public boolean hasExploreDashInfoScreenBeenShown() {
+    public boolean hasExplorePozoqoInfoScreenBeenShown() {
         return prefs.getBoolean(PREFS_KEY_HAS_INFO_SCREEN_BEEN_SHOWN_ALREADY, false);
     }
 
-    public void setHasExploreDashInfoScreenBeenShown(boolean isShown){
+    public void setHasExplorePozoqoInfoScreenBeenShown(boolean isShown){
         prefs.edit().putBoolean(PREFS_KEY_HAS_INFO_SCREEN_BEEN_SHOWN_ALREADY, isShown).apply();
     }
 
-    public boolean hasExploreDashLocationDialogBeenShown() {
+    public boolean hasExplorePozoqoLocationDialogBeenShown() {
         return prefs.getBoolean(PREFS_KEY_HAS_LOCATION_DIALOG_BEEN_SHOWN, false);
     }
 
-    public void setHasExploreDashLocationDialogBeenShown(boolean isShown) {
+    public void setHasExplorePozoqoLocationDialogBeenShown(boolean isShown) {
         prefs.edit().putBoolean(PREFS_KEY_HAS_LOCATION_DIALOG_BEEN_SHOWN, isShown).apply();
     }
 

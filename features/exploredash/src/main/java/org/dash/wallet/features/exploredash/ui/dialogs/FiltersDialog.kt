@@ -128,10 +128,10 @@ class FiltersDialog: OffsetDialogFragment() {
     }
 
     private fun setupPaymentMethods() {
-        val isDashOn = viewModel.paymentMethodFilter.isEmpty() ||
-                    viewModel.paymentMethodFilter == PaymentMethod.DASH
-        dashPaymentOn = isDashOn
-        binding.dashOption.isChecked = isDashOn
+        val isPozoqoOn = viewModel.paymentMethodFilter.isEmpty() ||
+                    viewModel.paymentMethodFilter == PaymentMethod.PZQ
+        dashPaymentOn = isPozoqoOn
+        binding.dashOption.isChecked = isPozoqoOn
         binding.dashOption.setOnCheckedChangeListener { _, isChecked ->
             if (!isChecked && !binding.giftCardOption.isChecked) {
                 // shouldn't allow to uncheck both options
@@ -291,7 +291,7 @@ class FiltersDialog: OffsetDialogFragment() {
 
             if (!dashPaymentOn || !giftCardPaymentOn) {
                 paymentFilter = if (dashPaymentOn) {
-                    PaymentMethod.DASH
+                    PaymentMethod.PZQ
                 } else {
                     PaymentMethod.GIFT_CARD
                 }

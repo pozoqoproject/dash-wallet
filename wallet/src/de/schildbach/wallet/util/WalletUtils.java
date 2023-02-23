@@ -191,7 +191,7 @@ public class WalletUtils {
     public static void writeKeys(final Writer out, final List<ECKey> keys) throws IOException {
         final DateFormat format = Iso8601Format.newDateTimeFormatT();
 
-        out.write("# KEEP YOUR PRIVATE KEYS SAFE! Anyone who can read this can spend your Dash.\n");
+        out.write("# KEEP YOUR PRIVATE KEYS SAFE! Anyone who can read this can spend your Pozoqo.\n");
 
         for (final ECKey key : keys) {
             out.write(key.getPrivateKeyEncoded(Constants.NETWORK_PARAMETERS).toString());
@@ -393,7 +393,7 @@ public class WalletUtils {
             stringBuilder.append(",");
             // Sending Source / Blank for incoming transactions
             if (value.isNegative()) {
-                stringBuilder.append("DASH Wallet");
+                stringBuilder.append("PZQ Wallet");
             }
             stringBuilder.append(",");
             // Received Quantity / Blank for outgoing transactions
@@ -408,7 +408,7 @@ public class WalletUtils {
             stringBuilder.append(",");
             // Receiving Destination / Blank for outgoing transactions
             if (value.isPositive()) {
-                stringBuilder.append("DASH Wallet");
+                stringBuilder.append("PZQ Wallet");
             }
             stringBuilder.append(",");
 

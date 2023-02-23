@@ -27,7 +27,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import de.schildbach.wallet.adapter.BuyAndSellDashServicesAdapter
+import de.schildbach.wallet.adapter.BuyAndSellPozoqoServicesAdapter
 import de.schildbach.wallet.data.ServiceType
 import de.schildbach.wallet.ui.coinbase.CoinbaseActivity
 import de.schildbach.wallet_test.R
@@ -51,8 +51,8 @@ class BuyAndSellIntegrationsFragment : Fragment(R.layout.fragment_buy_sell_integ
 
     private val binding by viewBinding(FragmentBuySellIntegrationsBinding::bind)
     private val viewModel by viewModels<BuyAndSellViewModel>()
-    private val buyAndSellDashServicesAdapter: BuyAndSellDashServicesAdapter by lazy {
-        BuyAndSellDashServicesAdapter(viewModel.config.format.noCode()) { model ->
+    private val buyAndSellPozoqoServicesAdapter: BuyAndSellPozoqoServicesAdapter by lazy {
+        BuyAndSellPozoqoServicesAdapter(viewModel.config.format.noCode()) { model ->
             when (model.serviceType) {
                 ServiceType.UPHOLD -> onUpholdItemClicked()
                 ServiceType.COINBASE -> onCoinbaseItemClicked()
@@ -70,7 +70,7 @@ class BuyAndSellIntegrationsFragment : Fragment(R.layout.fragment_buy_sell_integ
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        log.info("starting Buy and Sell Dash fragment")
+        log.info("starting Buy and Sell Pozoqo fragment")
 
         binding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
@@ -82,14 +82,14 @@ class BuyAndSellIntegrationsFragment : Fragment(R.layout.fragment_buy_sell_integ
         }
 
         binding.dashServicesList.itemAnimator = null
-        binding.dashServicesList.adapter = buyAndSellDashServicesAdapter
+        binding.dashServicesList.adapter = buyAndSellPozoqoServicesAdapter
 
         viewModel.isDeviceConnectedToInternet.observe(viewLifecycleOwner) { isConnected ->
             binding.networkStatusStub.isVisible = !isConnected
         }
 
         viewModel.servicesList.observe(viewLifecycleOwner) {
-            buyAndSellDashServicesAdapter.submitList(it)
+            buyAndSellPozoqoServicesAdapter.submitList(it)
         }
 
         lifecycleScope.launchWhenResumed {

@@ -130,18 +130,18 @@ class ExploreViewModelTest {
     }
 
     @Test
-    fun filterByQueryAndDashPaymentTypeIsCorrect() {
+    fun filterByQueryAndPozoqoPaymentTypeIsCorrect() {
         runBlocking {
             val query = "merch"
             val bounds = GeoBounds.noBounds.apply { zoomLevel = ExploreViewModel.MIN_ZOOM_LEVEL + 1 }
 
             val dataSource = mock<ExploreDataSource> {
                 on {
-                    observePhysicalMerchants(eq(query), eq(""), eq(PaymentMethod.DASH), any())
+                    observePhysicalMerchants(eq(query), eq(""), eq(PaymentMethod.PZQ), any())
                 } doReturn flow { emit(merchants
                         .filter { it.name?.lowercase()?.startsWith(query) ?: false }
                         .filter { it.type != MerchantType.ONLINE }
-                        .filter { it.paymentMethod == PaymentMethod.DASH }
+                        .filter { it.paymentMethod == PaymentMethod.PZQ }
                 ) }
             }
 
@@ -157,19 +157,19 @@ class ExploreViewModelTest {
             val viewModel = ExploreViewModel(context, dataSource, locationState, dataSyncStatus, analyticsService)
             viewModel.setFilterMode(FilterMode.Nearby)
             viewModel.searchBounds = bounds
-            viewModel.paymentMethodFilter = PaymentMethod.DASH
+            viewModel.paymentMethodFilter = PaymentMethod.PZQ
             viewModel.submitSearchQuery(query)
 
-            // Should return active physical merchants matching query and Dash payment method
+            // Should return active physical merchants matching query and Pozoqo payment method
             val expected = merchants
                     .filter { it.name?.lowercase()?.startsWith(query) ?: false }
                     .filter { (it.type == MerchantType.PHYSICAL || it.type == MerchantType.BOTH) }
                     .filter { it.active != false }
-                    .filter { it.paymentMethod == PaymentMethod.DASH }
+                    .filter { it.paymentMethod == PaymentMethod.PZQ }
             val actual = viewModel.boundedSearchFlow.first()
 
             assertEquals(expected, actual)
-            verify(dataSource).observePhysicalMerchants(query, "", PaymentMethod.DASH, bounds)
+            verify(dataSource).observePhysicalMerchants(query, "", PaymentMethod.PZQ, bounds)
             verify(locationState).getRadiusBounds(0.0, 0.0, viewModel.radius)
             verifyNoMoreInteractions(dataSource)
         }

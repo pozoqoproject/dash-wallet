@@ -87,10 +87,10 @@ class CoinbaseConversionPreviewViewModel @Inject constructor(
                 if (result.value == SwapTradeResponse.EMPTY_SWAP_TRADE) {
                     commitSwapTradeFailureState.call()
                 } else {
-                    if (inputCurrency == Constants.DASH_CURRENCY) {
+                    if (inputCurrency == Constants.PZQ_CURRENCY) {
                         try {
                             val coin = Coin.parseCoin(inputAmount)
-                            sellDashToCoinBase(coin)
+                            sellPozoqoToCoinBase(coin)
                         } catch (x: Exception) {
                             Coin.ZERO
                         }
@@ -177,7 +177,7 @@ class CoinbaseConversionPreviewViewModel @Inject constructor(
         analyticsService.logEvent(eventName, bundleOf())
     }
 
-    private suspend fun sellDashToCoinBase(coin: Coin) {
+    private suspend fun sellPozoqoToCoinBase(coin: Coin) {
         _showLoading.value = true
 
         when (val result = coinBaseRepository.createAddress()) {
@@ -186,7 +186,7 @@ class CoinbaseConversionPreviewViewModel @Inject constructor(
                     _showLoading.value = false
                     getUserAccountAddressFailedCallback.call()
                 } else {
-                    sendDashToCoinbase(coin, result.value)
+                    sendPozoqoToCoinbase(coin, result.value)
                     sellSwapSuccessState.call()
                     _showLoading.value = false
                 }
@@ -198,7 +198,7 @@ class CoinbaseConversionPreviewViewModel @Inject constructor(
         }
     }
 
-    private suspend fun sendDashToCoinbase(coin: Coin, addressInfo: String): Boolean {
+    private suspend fun sendPozoqoToCoinbase(coin: Coin, addressInfo: String): Boolean {
         val address = Address.fromString(walletDataProvider.networkParameters, addressInfo.trim { it <= ' ' })
         return try {
             val transaction = sendPaymentService.sendCoins(address, coin, checkBalanceConditions = false)

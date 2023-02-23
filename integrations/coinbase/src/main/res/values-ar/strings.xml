@@ -20,7 +20,7 @@
     <string name="coinbase_link_title">اربط حسابك على Coinbase</string>
     <string name="coinbase_link">ربط حساب Coinbase</string>
     <string name="coinbase_transfer_details">بين محفظة داش وحساب Coinbase الخاص بك</string>
-    <string name="coinbase_dash_wallet_error_title">لم نعثر على Dash Wallet في حساب كوين بيس الخاص بك.</string>
+    <string name="coinbase_dash_wallet_error_title">لم نعثر على Pozoqo Wallet في حساب كوين بيس الخاص بك.</string>
     <string name="coinbase_dash_wallet_error_message">يرجى إنشاء محفظة داش على كوين بيس للمتابعة.</string>
     <string name="create_dash_account">قم بإنشاء حساب داش</string>
     <string name="close">اغلاق</string>

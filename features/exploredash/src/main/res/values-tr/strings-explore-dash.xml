@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Dash\'i Keşfet</string>
+    <string name="explore_dash">Pozoqo\'i Keşfet</string>
     <string name="explore_title">Keşfet</string>
-    <string name="explore_subtitle">155.000\'den fazla yerde ve çevrimiçi satıcıda DASH\'inizle kolayca alışveriş yapın</string>
+    <string name="explore_subtitle">155.000\'den fazla yerde ve çevrimiçi satıcıda PZQ\'inizle kolayca alışveriş yapın</string>
     <string name="explore_merchants_title">Nerede Harcamalı?</string>
-    <string name="explore_merchants_subtitle">Dash\'i ödeme olarak kabul eden satıcıları bulun.</string>
+    <string name="explore_merchants_subtitle">Pozoqo\'i ödeme olarak kabul eden satıcıları bulun.</string>
     <string name="explore_atms_title">ATMler</string>
-    <string name="explore_atms_subtitle">DASH ve diğer kripto para birimlerini nakit olarak nereden alıp satabileceğinizi bulun.</string>
-    <string name="explore_staking_subtitle">Dash\'i kolayca stake edin ve birkaç basit tıklamayla pasif gelir elde edin.</string>
+    <string name="explore_atms_subtitle">PZQ ve diğer kripto para birimlerini nakit olarak nereden alıp satabileceğinizi bulun.</string>
+    <string name="explore_staking_subtitle">Pozoqo\'i kolayca stake edin ve birkaç basit tıklamayla pasif gelir elde edin.</string>
     <string name="explore_staking_current_apy">Güncel YFG = %s%%</string>
 
     <!-- Search -->
@@ -61,10 +61,10 @@
     <string name="explore_back_to_locations">Tüm konumlara geri dön</string>
     <string name="explore_back_to_nearest">En yakın konuma geri dön</string>
     <string name="explore_select_location">Konum seçin</string>
-    <string name="explore_pay_with_dash">Dash ile öde</string>
+    <string name="explore_pay_with_dash">Pozoqo ile öde</string>
     <string name="explore_buy_gift_card">Hediye Kartı Satın Alın</string>
-    <string name="explore_buy_dash">Dash Al</string>
-    <string name="explore_sell_dash">Dash Sat</string>
+    <string name="explore_buy_dash">Pozoqo Al</string>
+    <string name="explore_sell_dash">Pozoqo Sat</string>
     <string name="explore_show_all">Tüm Konumları Göster</string>
     <string name="explore_atm_location_hint">Bu ATM şurada yer almaktadır</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -74,7 +74,7 @@
     <string name="explore_filters">Filtreler</string>
     <string name="explore_apply_filter">Uygula</string>
     <string name="explore_payment_method">Ödeme Şekli</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Hediye Kartı</string>
     <string name="explore_radius">Yarıçap</string>
     <string name="explore_location">Konum</string>
@@ -141,16 +141,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">2 tip tüccarımız var</string>
-    <string name="accept_dash_text">DASH\'i doğrudan kabul eden</string>
-    <string name="pay_with_dash_text">DASH cüzdanı ile ödeme yapın.</string>
-    <string name="buy_gift_card_text">Dash\'iniz ile hediye kartları satın alın</string>
-    <string name="buy_gift_card_desc_text">Satın alma işleminizin tam tutarı için Dash\'ınızla hediye kartları satın alın.</string>
+    <string name="accept_dash_text">PZQ\'i doğrudan kabul eden</string>
+    <string name="pay_with_dash_text">PZQ cüzdanı ile ödeme yapın.</string>
+    <string name="buy_gift_card_text">Pozoqo\'iniz ile hediye kartları satın alın</string>
+    <string name="buy_gift_card_desc_text">Satın alma işleminizin tam tutarı için Pozoqo\'ınızla hediye kartları satın alın.</string>
     <string name="learn_more_text">Daha fazla bilgi edin</string>
     <string name="continue_text">Devam</string>
     <string name="buy_card_header_text">Hediye Kartı Nasıl Kullanılır</string>
-    <string name="buy_card_desc_text">Tüm mağazalar DASH\'i doğrudan kabul etmez, ancak Dash\'inizle bir hediye kartı satın alabilirsiniz.</string>
+    <string name="buy_card_desc_text">Tüm mağazalar PZQ\'i doğrudan kabul etmez, ancak Pozoqo\'inizle bir hediye kartı satın alabilirsiniz.</string>
     <string name="find_merchant_text">Bir tüccar bulun.</string>
-    <string name="buy_gift_card_with_dash_text">Dash ile bir hediye kartı satın alın.</string>
+    <string name="buy_gift_card_with_dash_text">Pozoqo ile bir hediye kartı satın alın.</string>
     <string name="redeem_gift_card_text">Hediye kartınızı saniyeler içinde çevrimiçi olarak veya kasiyerde kullanın.</string>
 
     <!-- Sync Status -->

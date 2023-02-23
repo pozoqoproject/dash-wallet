@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Odkryj Dash</string>
+    <string name="explore_dash">Odkryj Pozoqo</string>
     <string name="explore_title">Odkryj</string>
     <string name="explore_subtitle">Rób zakupy z łatwością w ponad 155 000 sklepach i stronach internetowych.</string>
     <string name="explore_merchants_title">Gdzie Kupować?</string>
-    <string name="explore_merchants_subtitle">Znajdź sprzedawcę, który przyjmuje płatności w Dash. </string>
+    <string name="explore_merchants_subtitle">Znajdź sprzedawcę, który przyjmuje płatności w Pozoqo. </string>
     <string name="explore_atms_title">Bankomaty</string>
-    <string name="explore_atms_subtitle">Znajdź miejsce gdzie możesz kupić Dash i inne kryptowaluty.</string>
-    <string name="explore_staking_subtitle">Z łatwością ulokuj swoje monety Dash i zarabiaj pasywny dochód za pomocą kilku prostych kliknięć myszką. </string>
+    <string name="explore_atms_subtitle">Znajdź miejsce gdzie możesz kupić Pozoqo i inne kryptowaluty.</string>
+    <string name="explore_staking_subtitle">Z łatwością ulokuj swoje monety Pozoqo i zarabiaj pasywny dochód za pomocą kilku prostych kliknięć myszką. </string>
     <string name="explore_staking_current_apy">Obecne oprocentowanie w skali roku = %s%%</string>
 
     <!-- Search -->
@@ -65,10 +65,10 @@
     <string name="explore_back_to_locations">Wróć do wszystkich miejsc</string>
     <string name="explore_back_to_nearest">Wróć do najbliższego miejsca</string>
     <string name="explore_select_location">Wybierz miejsce</string>
-    <string name="explore_pay_with_dash">Płać za pomocą Dash</string>
+    <string name="explore_pay_with_dash">Płać za pomocą Pozoqo</string>
     <string name="explore_buy_gift_card">Kup Kartę Podarunkową</string>
-    <string name="explore_buy_dash">Kup Dash</string>
-    <string name="explore_sell_dash">Sprzedaj Dash</string>
+    <string name="explore_buy_dash">Kup Pozoqo</string>
+    <string name="explore_sell_dash">Sprzedaj Pozoqo</string>
     <string name="explore_show_all">Pokaż wszyskie miejsca</string>
     <string name="explore_atm_location_hint">Ten bankomat znajduje się w</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -78,7 +78,7 @@
     <string name="explore_filters">Filtry</string>
     <string name="explore_apply_filter">Zastosuj</string>
     <string name="explore_payment_method">Metody Płatności</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Karta Podarunkowa</string>
     <string name="explore_radius">Promień</string>
     <string name="explore_location">Miejsce</string>
@@ -149,16 +149,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Mamy 2 rodzaje sprzedawców</string>
-    <string name="accept_dash_text">Ci co akceptują Dash bezpośrednio</string>
-    <string name="pay_with_dash_text">Płać za pomocą portfela Dash</string>
-    <string name="buy_gift_card_text">Kup karty podarunkowe za pomocą Dash</string>
+    <string name="accept_dash_text">Ci co akceptują Pozoqo bezpośrednio</string>
+    <string name="pay_with_dash_text">Płać za pomocą portfela Pozoqo</string>
+    <string name="buy_gift_card_text">Kup karty podarunkowe za pomocą Pozoqo</string>
     <string name="buy_gift_card_desc_text">Kup karty podarunkowe na dokładną kwotę twojego zakupu</string>
     <string name="learn_more_text">Dowiedz się więcej</string>
     <string name="continue_text">Dalej</string>
     <string name="buy_card_header_text">Jak Używać Kart Podarunkowych</string>
-    <string name="buy_card_desc_text">Nie wszystkie sklepy akceptują Dash bezpośrednio, ale zawsze możesz użyć Dash aby kupić kartę podarunkową.</string>
+    <string name="buy_card_desc_text">Nie wszystkie sklepy akceptują Pozoqo bezpośrednio, ale zawsze możesz użyć Pozoqo aby kupić kartę podarunkową.</string>
     <string name="find_merchant_text">Znajdź sprzedawcę</string>
-    <string name="buy_gift_card_with_dash_text">Kup kartę podarunkową za pomocą Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Kup kartę podarunkową za pomocą Pozoqo.</string>
     <string name="redeem_gift_card_text">Wymień swoją kartę podarunkową w ciągu kilku sekund, online  lub bezpośrednio u kasjera.</string>
 
     <!-- Sync Status -->

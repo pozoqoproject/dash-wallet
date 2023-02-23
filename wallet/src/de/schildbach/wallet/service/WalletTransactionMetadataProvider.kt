@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022. Dash Core Group.
+ * Copyright (c) 2022. Pozoqo Core Group.
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -241,7 +241,7 @@ class WalletTransactionMetadataProvider @Inject constructor(
                             walletData.networkParameters,
                             ScriptPattern.extractHashFromP2SH(output.scriptPubKey)
                         )
-                    else -> null // for now ignore OP_RETURN (DashPay Expense?)
+                    else -> null // for now ignore OP_RETURN (PozoqoPay Expense?)
                 }
                 if (address != null) {
                     val metadata =

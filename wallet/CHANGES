@@ -1,4 +1,4 @@
-Dash Wallet
+Pozoqo Wallet
 v8.1.3
 * Fix Uphold Transfer Crash
 * Add Sync Explore DB button on About Screen (Testnet only)
@@ -11,7 +11,7 @@ v8.1.2
 * Fix inactivity notification crash on Android 12 and up
 * Fix Crowdnode APY calculation error
 * Show v2 transactions after restart or disconnect
-* Explore Dash DB improvements
+* Explore Pozoqo DB improvements
 
 v8.1.1
 * Capital letters not allowed when restoring a wallet
@@ -39,7 +39,7 @@ v8.0
 * Home Screen does not round balance, group transactions by date
 * Crowdnode fixes
 * Remove Liquid Support
-* Support Dash Core 18 network upgrade
+* Support Pozoqo Core 18 network upgrade
 * Build for Android 12
 
 v7.6.1
@@ -47,9 +47,9 @@ v7.6.1
 
 v7.6
 * Add support for Coinbase
-    * Buy DASH
-    * Convert other cryto currency to DASH
-    * Transfer DASH to/From Coinbase
+    * Buy PZQ
+    * Convert other cryto currency to PZQ
+    * Transfer PZQ to/From Coinbase
 * CrowdNode Improvements
     * Show current APY
     * Show messages about withdrawal limits
@@ -61,8 +61,8 @@ v7.6
 * Update Translations
 * Update checkpoints
 * Explore DB Sync Improvement
-* update to dashj 0.17.13 (minimal Dash Core 18 support)
-* refactoring of Home Screen to align with DashPay
+* update to dashj 0.17.13 (minimal Pozoqo Core 18 support)
+* refactoring of Home Screen to align with PozoqoPay
 
 v7.5.2
 * Fix CrowdNode issues
@@ -87,22 +87,22 @@ v7.4.9
 v7.4.8
 * Use dashj 0.17.11 (support version 3 transactions)
 * Show version 2 transactions when they are received
-* optimize Explore Dash database sync and show status
+* optimize Explore Pozoqo database sync and show status
 * Show warning on Lock Screen if 1 PIN attempt remains
 * Handle upgrades v6.x or earlier that have no PIN
 * Add push messaging support
 * Add export transaction history and show XPUB
-* Improve scanning clipboard for Dash Addresses
+* Improve scanning clipboard for Pozoqo Addresses
 * Fixes related to errors with clipboard data
 
 v7.4.7
-* Fix Explore Dash sync system (prevent downloads if explore.db in access its same as cloud)
-* Remove old Explore Dash data from database
+* Fix Explore Pozoqo sync system (prevent downloads if explore.db in access its same as cloud)
+* Remove old Explore Pozoqo data from database
 
 v7.4.6
 * Fix Scan QR Code crash on Android 6
 * Fix crash related to Unencrypted Wallets
-* Improve Autoloading of Updated Explore Dash Database System
+* Improve Autoloading of Updated Explore Pozoqo Database System
 * Fix Reset Wallet Crash
 * Fix startup crash
 * Fix About screen copy text
@@ -123,17 +123,17 @@ v7.4.3
 * Ask user to send a report if the wallet is missing
 
 v7.4.2
-* Fix crash when syncing Explore Dash database
+* Fix crash when syncing Explore Pozoqo database
 
 v7.4.1
-* add Explore Dash
+* add Explore Pozoqo
 * Better error support for Uphold
 * Close all dialogs on autologout
 * Minimum Android version is 6.0
 * Improvements on Enter Amount Screen
 
 v7.4.0
-* Beta Program for Explore Dash
+* Beta Program for Explore Pozoqo
 
 v7.3.5
 * The 7.3.4 build on Google Play left out several fixes
@@ -147,7 +147,7 @@ v7.3.4
 * Fix in app message links on Android 11
 
 v7.3.3
-* Use DashJ 0.17.9 (sync fixes for Android 6 and below)
+* Use PozoqoJ 0.17.9 (sync fixes for Android 6 and below)
 * Redesign Local Currency Screen
 * Allow changing of fiat currency on Send Flow
 * Fix missing close button after Liquid purchase
@@ -161,7 +161,7 @@ v7.3.2
 * Add network unavailable error handling for Liquid Screens
 * Use live exchange rates on BIP70 payment request flows
 * Disable autologout timer when linking Uphold/Liquid accounts
-* Use DashJ 0.17.8 which supports BIP69
+* Use PozoqoJ 0.17.8 which supports BIP69
 
 v7.3.1
 * Fix Uphold logout instructions
@@ -169,7 +169,7 @@ v7.3.1
 * Fix issue with onboarding (bug from 7.2.4)
 
 v7.3.0
-* Add Liquid Exchange Integration (supports Buy Dash with Credit Card)
+* Add Liquid Exchange Integration (supports Buy Pozoqo with Credit Card)
 
 v7.2.7
 * When paying via another app with BIP70, the Lock Screen does not appear (bug from 7.2.4)
@@ -182,7 +182,7 @@ v7.2.6
 * New interface for restoring a backup file during onboarding
 
 v7.2.5
-* Use DashJ 0.17.7 to support Dash Core 0.17
+* Use PozoqoJ 0.17.7 to support Pozoqo Core 0.17
 * Enable backup/restore on Android 10*
 * Remove backup restoration from other apps
 
@@ -196,7 +196,7 @@ v7.2.4
 
 v7.2.3
 * Add import private key from shared image
-* use DashJ 0.17.6
+* use PozoqoJ 0.17.6
 
 v7.2.2
 * Fix crashes on Import Private Key, Backup to File failures
@@ -212,10 +212,10 @@ v7.2.0
 * Update translations
 * Built for SDK 29 (Android 10)
 * Update dependencies
-* Use DashJ 0.17.5 (uses protobuf-javalite)
+* Use PozoqoJ 0.17.5 (uses protobuf-javalite)
 
 v7.1.0
-* Use DashJ 0.17.4 (full chainlock support, Dash Core 0.16 updates)
+* Use PozoqoJ 0.17.4 (full chainlock support, Pozoqo Core 0.16 updates)
 * BIP70: don't send tx if rejected by payment server
 * Save backup file without PIN (resolves issues when restoring backups in v7+)
 * Update Advanced Security Screen to support smaller devices
@@ -240,7 +240,7 @@ v7.0.9
 v7.0.8
 * Support restoration from non-english recovery phrases
 * Fix app start crash on new installs
-* Support better Uphold error handling (show more detailed messages).  The most common failure on transferring Dash is due to a required 24 hour delay after purchasing using a bank transfer
+* Support better Uphold error handling (show more detailed messages).  The most common failure on transferring Pozoqo is due to a required 24 hour delay after purchasing using a bank transfer
 
 v7.0.7
 * Fix layout issues on More and Settings Screens for other languages with longer text
@@ -249,9 +249,9 @@ v7.0.7
 * Fix blockchain service crashes on Android 8.1
 
 v7.0.6
-* Handle Dash payment requests and addresses in HTML clipboard format
+* Handle Pozoqo payment requests and addresses in HTML clipboard format
 * Properly format authentication dialog
-* Center Dash Logo on Home Screen
+* Center Pozoqo Logo on Home Screen
 * Add contact support to More menu
 * BIP70: add support for pay: uri's
 * Fix crash when importing private key
@@ -304,7 +304,7 @@ v6.6.4
   This caused many bugs on the Send and Request screens
 
 v6.6.3
-* Use DashJ 0.16.4
+* Use PozoqoJ 0.16.4
     * Reduces memory usage
     * Fixes several crashes
 * Fix several Fingerprint issues
@@ -312,7 +312,7 @@ v6.6.3
 * Update Translations
 
 v6.6.2
-* Use DashJ 0.16.2
+* Use PozoqoJ 0.16.2
     * Improves processing of ChainLocks and InstantSendLocks
     * Fixes several crashes
 * Add Log out command to Uphold screen
@@ -325,21 +325,21 @@ v6.6.1
 
 v6.6.0
 * Hide Settings, Diagnostics, Uphold when app is locked
-* Change price sourcing to use DashRetain (primary)
+* Change price sourcing to use PozoqoRetain (primary)
 * Upgrade gradle for building
 * Remove LeakCanary on debug builds
 * Add multidex support
 * Add Firebase In-App Messaging (notifications, app updates)
 
 v6.5.1
-* Use DashJ 0.16.1
+* Use PozoqoJ 0.16.1
 * Fix several crashes from resetting the blockchain and restoring backups
 * Update native dashjbls code for dashj 0.16.1
 * Network Monitor:  Fix displaying of Chainlocks/DMN Lists on blocks with transactions
 * Add bootstrap DMN List file to reduce bandwidth usage and speed up DMN sync
 
 v6.5.0
-* Use DashJ 0.16 (supports DIP8, Chainlocks, InstantSendLocks)
+* Use PozoqoJ 0.16 (supports DIP8, Chainlocks, InstantSendLocks)
 * Send screen changes when InstantSendLocks (Spork 20) are activated
 
 v6.4.5
@@ -361,7 +361,7 @@ v6.4.3
 * Fix Paper Wallet Sweep Crash from invalid electrum response
 * Support self-signed SSL certificates for connecting to electrum servers.
 * Reduces the likelyhood of slow sending
-* Update to DashJ 0.15.3
+* Update to PozoqoJ 0.15.3
     - Optimize handling of DMN Lists to speed up sending
 
 v6.4.2
@@ -373,19 +373,19 @@ v6.4.2
 * Won't put incorrect fiat values on transactions when the value is not available
 * Show "----" for the fiat value when those values cannot be determined
 * Simplify Settings Menu
-* Update to DashJ 0.15.2
+* Update to PozoqoJ 0.15.2
     - Resolve some spork 15 issues
 
 v6.4.1
-* Update to DashJ 0.15.1
-    - Improve connectivity to the Dash Network
+* Update to PozoqoJ 0.15.1
+    - Improve connectivity to the Pozoqo Network
     - DMN List fix
 * Fix fingerprint crash (Android 7)
 * Fix crash when restoring backup file from before May 2018
 * Fix crash when scanning QR code if the user denies camera access (Android 6)
 
 v6.4.0
-* Support Dash Core 0.13 (InstantSend, BLS, ...)
+* Support Pozoqo Core 0.13 (InstantSend, BLS, ...)
     with dashj 0.15 (dashj-core and dashj-bls)
 * Update UI for InstantSend / Autolocks
 * Fix rare bug when sending transactions (dust)
@@ -411,7 +411,7 @@ v6.2.1
 v6.2.0
 * Target API 28
 * Add Adaptive Icons
-* Use DashJ 0.14.7
+* Use PozoqoJ 0.14.7
 
 v6.1.2 (Hotfix)
 * Wipe Wallet after 8 incorrect PIN entries.
@@ -449,7 +449,7 @@ v5.18.3
 * If DNS seeders fail, use seed list
 
 v5.18.2
-* Update for Dash Core 0.12.3.x network upgrade
+* Update for Pozoqo Core 0.12.3.x network upgrade
 * Send transactions if at least 1 connected peer
 * Backup Recovery Phrase dialog, change OK to Dismiss
 * Fix file attachment issues with GMail app
@@ -465,7 +465,7 @@ v5.18.1
 v5.18
 * Lock Feature - for security and privacy
 * BIP44 support
-* Use latest DASH price for exchange rates
+* Use latest PZQ price for exchange rates
 * Allow sending coins from 0-conf transactions
 
 v5.17.6
@@ -498,7 +498,7 @@ v5.17.1
 * Fix crash on exchange rate retrieval (rare)
 
 v5.17.0
-* Dash Core 12.2 support
+* Pozoqo Core 12.2 support
 * Add backup site for exchange rates.
 * Fixes for Bugs.
 
@@ -516,7 +516,7 @@ v5.14.3
 v5.14.2
 * Fix crashing from recycle view
 * Fix crash on showing keyboard on Restore from recovery seed
-* Replace BTC with DASH on leftovers from last merge.
+* Replace BTC with PZQ on leftovers from last merge.
 * Fix Italian translation
 * Prevent another crash with numbers entered
 
@@ -535,7 +535,7 @@ v5.14
 v4.65.12.1N
 * Updated Translations
 v4.65.12.1M
-* Updated for Dash Core 12.1
+* Updated for Pozoqo Core 12.1
 
 v4.65.12E
 * Partial Support for QR Codes requesting InstantSend
@@ -597,7 +597,7 @@ v0.10.2
 * updated for RC2.
 
 v0.1.1
-* updated all icons for Dash
+* updated all icons for Pozoqo
 
 v0.1.0
 * First version
@@ -627,7 +627,7 @@ v1.0.1.5
 * Fixed menu item doubling on rotate in address screen - langerhans (https://github.com/langerhans/dogecoin-wallet-new)
 * replaced block explorer with blockr.io instead of the apparently dead dgc.cryptocoinexplorer.com
 * Added BTER as a backup for getting exchange rates
-* added mDASH as an exchange rate.
+* added mPZQ as an exchange rate.
 * added Disconnect feature back in
 * updated to bitcoin-wallet v3.39
 
@@ -1228,7 +1228,7 @@ v3.41-v3.43
 
 v3.40
 
-* Support for µDASH denomination, for people who are used to low valued currencies.
+* Support for µPZQ denomination, for people who are used to low valued currencies.
 * Always use BIP70 when sending payments directly via Bluetooth.
 * Small bugfixes.
 
@@ -1270,7 +1270,7 @@ v3.32
 
 v3.31
 
-* Default denomination has changed to millibitcoin (mDASH).
+* Default denomination has changed to millibitcoin (mPZQ).
 * Cross-calculated exchange rates for currencies without Bitcoin volume. Thanks to BitcoinAverage.
 * Better handling of errors when sending coins, specifically when funds are exceeded.
 * Labs: Uses BIP70 payment protocol for tap-to-pay and scan-to-pay, if enabled in the settings.
@@ -1306,7 +1306,7 @@ v3.26
 
 v3.25
 
-* support for mDASH denomination
+* support for mPZQ denomination
 * also use weighted exchange rates from BitcoinAverage
 * fixed issue with camera autofocus on some Samsung Galaxy devices
 

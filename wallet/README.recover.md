@@ -1,10 +1,10 @@
-Recovering Dash
+Recovering Pozoqo
 ===================
 
 ## PROLOGUE
 
-This document describes how you can use a backup file on a standard PC to recover your Dash.
-Normally, this shouldn't be needed. It is much preferred to just use **Options > Safety > Restore wallet** from within the Dash Wallet app if you can. This guide is only meant for rare cases:
+This document describes how you can use a backup file on a standard PC to recover your Pozoqo.
+Normally, this shouldn't be needed. It is much preferred to just use **Options > Safety > Restore wallet** from within the Pozoqo Wallet app if you can. This guide is only meant for rare cases:
 
 - Your Android device is destroyed or missing and you do not want or cannot get a new Android
   device.
@@ -125,7 +125,7 @@ succeeds, it will print the transaction hash of the created transaction. You can
 a block explorer to watch, or just open the destination wallet and watch from there. If your coins
 are confirmed, you're done and you can skip the next paragraph to EPILOGUE.
 
-You can also get a list of the private keys. If your wallet has a spending PIN set you need to decrypt it first, otherwise the private keys won't appear. Note that when you decrypt the wallet *the private keys can be accessed (and your Dash stolen) by anyone with access to the system*, including malware or other users. Unless you fully trust the security of the computer consider running it on an offline system with no network connectivity.
+You can also get a list of the private keys. If your wallet has a spending PIN set you need to decrypt it first, otherwise the private keys won't appear. Note that when you decrypt the wallet *the private keys can be accessed (and your Pozoqo stolen) by anyone with access to the system*, including malware or other users. Unless you fully trust the security of the computer consider running it on an offline system with no network connectivity.
 
     ./wallet-tool decrypt --wallet=/tmp/dash-wallet-decrypted-backup --password=<PIN>
 
@@ -145,8 +145,8 @@ You'll see each line contains a key in WIF (wallet import format), technically B
 datetime string after each key is the birthdate of that key which you can ignore for the purpose
 of this one-time recovery.
 
-Another option is importing each individual key into one of [Electrum Dash] (https://electrum.dash.org/#download)
-or [Dash Core] (https://www.dash.org/downloads/).
+Another option is importing each individual key into one of [Electrum Pozoqo] (https://electrum.dash.org/#download)
+or [Pozoqo Core] (https://www.dash.org/downloads/).
 
 As soon as you see your whole balance again, empty your entire wallet to the desired destination
 wallet. Please do not continue to use the imported wallet. Remember you just operated on

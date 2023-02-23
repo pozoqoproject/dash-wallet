@@ -244,7 +244,7 @@
     <string name="input_parser_io_error">تعذر قراءة البيانات:\n%s</string>
     <string name="input_parser_cannot_classify">تعذر تصنيف المدخل:\n%s</string>
     <string name="input_parser_invalid_bitcoin_uri">عنوان داش غير صالح:\n%s</string>
-    <string name="input_parser_invalid_address">هل حصلت على عنوان Dash غير صالح! \ n (هل تريد خلط mainnet / testnet؟)</string>
+    <string name="input_parser_invalid_address">هل حصلت على عنوان Pozoqo غير صالح! \ n (هل تريد خلط mainnet / testnet؟)</string>
     <string name="input_parser_unverifyable_paymentrequest">تعذر التحقق من طلب الدفع:\n%s</string>
     <string name="input_parser_invalid_paymentrequest">طلب دفع غير صالح:\n%s</string>
     <string name="input_parser_invalid_transaction">معاملة غير صالحة:\n%s</string>
@@ -328,7 +328,7 @@
     <string name="notification_coins_received_msg">تم إستلام %s</string>
     <string name="notification_peers_connected_msg">%dالأقران المتصلة</string>
     <string name="notification_inactivity_title">لا يزال لديك داش على هذا الجهاز!</string>
-    <string name="notification_inactivity_message">لا يزال لديك داش على هذا الجهاز! يرجى التأكد من كتابة عبارة الاسترداد قبل إلغاء تثبيت Dash Wallet أو ستفقد رصيدك من%s.</string>
+    <string name="notification_inactivity_message">لا يزال لديك داش على هذا الجهاز! يرجى التأكد من كتابة عبارة الاسترداد قبل إلغاء تثبيت Pozoqo Wallet أو ستفقد رصيدك من%s.</string>
     <string name="notification_inactivity_action_dismiss">ذكرني لاحقا</string>
     <string name="notification_inactivity_action_dismiss_forever">لا تذكرني</string>
     <string name="appwidget_wallet_balance_title">رصيد داش</string>

@@ -53,7 +53,7 @@ import org.dash.wallet.integrations.crowdnode.utils.CrowdNodeConstants
 @AndroidEntryPoint
 class PortalFragment : Fragment(R.layout.fragment_portal) {
     companion object {
-        private val NEGLIGIBLE_AMOUNT: Coin = CrowdNodeConstants.MINIMUM_DASH_DEPOSIT.div(50)
+        private val NEGLIGIBLE_AMOUNT: Coin = CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT.div(50)
     }
 
     private val binding by viewBinding(FragmentPortalBinding::bind)
@@ -126,9 +126,9 @@ class PortalFragment : Fragment(R.layout.fragment_portal) {
             requireActivity().finish()
         }
 
-        binding.walletBalanceDash.setFormat(viewModel.dashFormat)
-        binding.walletBalanceDash.setApplyMarkup(true)
-        binding.walletBalanceDash.setAmount(Coin.ZERO)
+        binding.walletBalancePozoqo.setFormat(viewModel.dashFormat)
+        binding.walletBalancePozoqo.setApplyMarkup(true)
+        binding.walletBalancePozoqo.setAmount(Coin.ZERO)
 
         binding.depositBtn.setOnClickListener {
             viewModel.logEvent(AnalyticsConstants.CrowdNode.PORTAL_DEPOSIT)
@@ -193,7 +193,7 @@ class PortalFragment : Fragment(R.layout.fragment_portal) {
         }
 
         viewModel.crowdNodeBalance.observe(viewLifecycleOwner) { balance ->
-            binding.walletBalanceDash.setAmount(balance)
+            binding.walletBalancePozoqo.setAmount(balance)
             updateFiatAmount(balance, viewModel.exchangeRate.value)
             setWithdrawalEnabled(balance)
             setMinimumEarningDepositReminder(balance, isConfirmed)
@@ -239,24 +239,24 @@ class PortalFragment : Fragment(R.layout.fragment_portal) {
     }
 
     private fun setMinimumEarningDepositReminder(balance: Coin, isConfirmed: Boolean) {
-        val balanceLessThanMinimum = balance < CrowdNodeConstants.MINIMUM_DASH_DEPOSIT
+        val balanceLessThanMinimum = balance < CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT
 
         if (balanceLessThanMinimum && isConfirmed) {
-            binding.minimumDashRequirement.isVisible = true
+            binding.minimumPozoqoRequirement.isVisible = true
 
             if (balance < NEGLIGIBLE_AMOUNT) {
-                binding.minimumDashRequirement.text = getString(
+                binding.minimumPozoqoRequirement.text = getString(
                     R.string.crowdnode_minimum_deposit,
-                    CrowdNodeConstants.DASH_FORMAT.format(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT)
+                    CrowdNodeConstants.PZQ_FORMAT.format(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT)
                 )
             } else {
-                binding.minimumDashRequirement.text = getString(
+                binding.minimumPozoqoRequirement.text = getString(
                     R.string.crowdnode_minimum_deposit_difference,
-                    CrowdNodeConstants.DASH_FORMAT.format(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT - balance)
+                    CrowdNodeConstants.PZQ_FORMAT.format(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT - balance)
                 )
             }
         } else {
-            binding.minimumDashRequirement.isVisible = false
+            binding.minimumPozoqoRequirement.isVisible = false
         }
     }
 
@@ -383,7 +383,7 @@ class PortalFragment : Fragment(R.layout.fragment_portal) {
             ).show(requireActivity()) {
                 if (it == true) {
                     viewModel.logEvent(AnalyticsConstants.CrowdNode.PORTAL_WITHDRAW_BUY)
-                    viewModel.buyDash()
+                    viewModel.buyPozoqo()
                 } else {
                     viewModel.logEvent(AnalyticsConstants.CrowdNode.PORTAL_WITHDRAW_CANCEL)
                 }

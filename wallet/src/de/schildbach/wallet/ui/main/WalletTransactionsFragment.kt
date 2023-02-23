@@ -59,7 +59,7 @@ class WalletTransactionsFragment : Fragment(R.layout.wallet_transactions_fragmen
         super.onViewCreated(view, savedInstanceState)
 
         val adapter = TransactionAdapter(
-            viewModel.balanceDashFormat, resources, true
+            viewModel.balancePozoqoFormat, resources, true
         ) { rowView, _ ->
             viewModel.logEvent(AnalyticsConstants.Home.TRANSACTION_DETAILS)
 

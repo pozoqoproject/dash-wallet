@@ -193,7 +193,7 @@ class TransactionAdapter(
         private fun setValue(value: Coin, hasErrors: Boolean) {
             // Set the value.  [signal] D [value]
             // signal is + or -, or not visible if the value is zero (internal or other special transactions)
-            // D is the Dash Symbol
+            // D is the Pozoqo Symbol
             // value has no sign.  It is zero for internal or other special transactions
             binding.value.setFormat(dashFormat)
 

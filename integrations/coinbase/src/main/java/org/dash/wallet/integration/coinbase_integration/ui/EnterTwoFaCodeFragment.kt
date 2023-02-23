@@ -102,16 +102,16 @@ class EnterTwoFaCodeFragment : Fragment(R.layout.enter_two_fa_code_fragment) {
     private fun setTransactionState(transactionType: TransactionType, state: TransactionState) {
        if (state.isTransactionSuccessful){
            when(transactionType){
-               TransactionType.BuyDash -> showTransactionStateDialog(CoinBaseResultDialog.Type.DEPOSIT_SUCCESS)
+               TransactionType.BuyPozoqo -> showTransactionStateDialog(CoinBaseResultDialog.Type.DEPOSIT_SUCCESS)
                TransactionType.BuySwap -> showTransactionStateDialog(CoinBaseResultDialog.Type.CONVERSION_SUCCESS)
-               TransactionType.TransferDash -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS)
+               TransactionType.TransferPozoqo -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS)
                else -> {}
            }
        } else {
            when(transactionType){
-               TransactionType.BuyDash -> showTransactionStateDialog(CoinBaseResultDialog.Type.DEPOSIT_ERROR, state.responseMessage)
-               TransactionType.BuySwap -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, state.responseMessage)
-               TransactionType.TransferDash -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, state.responseMessage)
+               TransactionType.BuyPozoqo -> showTransactionStateDialog(CoinBaseResultDialog.Type.DEPOSIT_ERROR, state.responseMessage)
+               TransactionType.BuySwap -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, state.responseMessage)
+               TransactionType.TransferPozoqo -> showTransactionStateDialog(CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, state.responseMessage)
                else -> {}
            }
        }
@@ -190,7 +190,7 @@ class EnterTwoFaCodeFragment : Fragment(R.layout.enter_two_fa_code_fragment) {
                 object : CoinBaseResultDialog.CoinBaseResultDialogButtonsClickListener {
                     override fun onPositiveButtonClick(type: CoinBaseResultDialog.Type) {
                         when (type) {
-                            CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR , CoinBaseResultDialog.Type.DEPOSIT_ERROR-> {
+                            CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR , CoinBaseResultDialog.Type.DEPOSIT_ERROR-> {
                                 viewModel.logRetry(type)
                                 viewModel.isRetryingTransfer(true)
                                 dismiss()
@@ -201,7 +201,7 @@ class EnterTwoFaCodeFragment : Fragment(R.layout.enter_two_fa_code_fragment) {
                                 dismiss()
                                 findNavController().popBackStack()
                             }
-                            CoinBaseResultDialog.Type.CONVERSION_SUCCESS, CoinBaseResultDialog.Type.DEPOSIT_SUCCESS, CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS -> {
+                            CoinBaseResultDialog.Type.CONVERSION_SUCCESS, CoinBaseResultDialog.Type.DEPOSIT_SUCCESS, CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS -> {
                                 viewModel.logClose(type)
                                 dismiss()
                                 requireActivity().setResult(Constants.RESULT_CODE_GO_HOME)
@@ -216,6 +216,6 @@ class EnterTwoFaCodeFragment : Fragment(R.layout.enter_two_fa_code_fragment) {
                     }
                 }
         }
-        transactionStateDialog.showNow(parentFragmentManager, "CoinBaseBuyDashDialog")
+        transactionStateDialog.showNow(parentFragmentManager, "CoinBaseBuyPozoqoDialog")
     }
 }

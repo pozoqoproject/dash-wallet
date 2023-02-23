@@ -51,7 +51,7 @@ import java.io.IOException
 import javax.inject.Inject
 
 enum class NavigationRequest {
-    BackupPassphrase, RestoreWallet, BuyDash, SendReport
+    BackupPassphrase, RestoreWallet, BuyPozoqo, SendReport
 }
 
 @HiltViewModel
@@ -81,7 +81,7 @@ class CrowdNodeViewModel @Inject constructor(
     val accountAddress: LiveData<Address>
         get() = _accountAddress
 
-    val primaryDashAddress
+    val primaryPozoqoAddress
         get() = crowdNodeApi.primaryAddress
 
     val needPassphraseBackUp
@@ -126,14 +126,14 @@ class CrowdNodeViewModel @Inject constructor(
 
     val shouldShowFirstDepositBanner: Boolean
         get() = !crowdNodeApi.hasAnyDeposits() &&
-                (crowdNodeBalance.value?.isLessThan(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT) ?: true)
+                (crowdNodeBalance.value?.isLessThan(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT) ?: true)
 
     init {
         walletDataProvider.observeBalance()
             .distinctUntilChanged()
             .onEach {
                 _dashBalance.postValue(it)
-                _hasEnoughBalance.postValue(it >= CrowdNodeConstants.MINIMUM_REQUIRED_DASH)
+                _hasEnoughBalance.postValue(it >= CrowdNodeConstants.MINIMUM_REQUIRED_PZQ)
             }
             .launchIn(viewModelScope)
 
@@ -171,8 +171,8 @@ class CrowdNodeViewModel @Inject constructor(
         navigationCallback.postValue(NavigationRequest.RestoreWallet)
     }
 
-    fun buyDash() {
-        navigationCallback.postValue(NavigationRequest.BuyDash)
+    fun buyPozoqo() {
+        navigationCallback.postValue(NavigationRequest.BuyPozoqo)
     }
 
     fun sendReport() {
@@ -284,7 +284,7 @@ class CrowdNodeViewModel @Inject constructor(
         clipboardManager.setPrimaryClip(
             ClipData.newPlainText(
                 "primary dash address",
-                primaryDashAddress.toString()
+                primaryPozoqoAddress.toString()
             )
         )
     }
@@ -332,7 +332,7 @@ class CrowdNodeViewModel @Inject constructor(
 
     fun getAccountUrl(): String {
         return CrowdNodeConstants.getFundsOpenUrl(if (signUpStatus == SignUpStatus.LinkedOnline) {
-            primaryDashAddress!!
+            primaryPozoqoAddress!!
         } else {
             _accountAddress.value!!
         })
@@ -363,7 +363,7 @@ class CrowdNodeViewModel @Inject constructor(
 
     fun shareConfirmationPaymentUrl() {
         val accountAddress = accountAddress.value ?: return
-        val amount = CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT
+        val amount = CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT
 
         analytics.logEvent(AnalyticsConstants.CrowdNode.LINK_EXISTING_SHARE_BUTTON, bundleOf())
         val paymentRequestUri = BitcoinURI.convertToBitcoinURI(accountAddress, amount, "", "")

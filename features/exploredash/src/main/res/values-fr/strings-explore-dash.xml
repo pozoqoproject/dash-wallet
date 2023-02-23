@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Explorez Dash</string>
+    <string name="explore_dash">Explorez Pozoqo</string>
     <string name="explore_title">Explorer</string>
     <string name="explore_subtitle">Dépensez facilement vos dashs dans plus de 155 000 magasins et vendeurs en ligne</string>
     <string name="explore_merchants_title">Où dépenser ?</string>
-    <string name="explore_merchants_subtitle">Trouvez des vendeurs qui acceptent les paiements avec Dash.</string>
+    <string name="explore_merchants_subtitle">Trouvez des vendeurs qui acceptent les paiements avec Pozoqo.</string>
     <string name="explore_atms_title">Distributeurs d\'espèces</string>
     <string name="explore_atms_subtitle">Trouvez où acheter ou vendre des dashs et d\'autres cryptomonnaies, contre des espèces.</string>
-    <string name="explore_staking_subtitle">Percevez facilement des gains Dash et gagnez un revenu passif après quelques simples clics.</string>
+    <string name="explore_staking_subtitle">Percevez facilement des gains Pozoqo et gagnez un revenu passif après quelques simples clics.</string>
     <string name="explore_staking_current_apy">APY actuel = %s%%</string>
 
     <!-- Search -->
@@ -63,9 +63,9 @@
     <string name="explore_back_to_locations">Retour à tous les endroits</string>
     <string name="explore_back_to_nearest">Retour à l\'endroit le plus proche</string>
     <string name="explore_select_location">Choisir un endroit</string>
-    <string name="explore_pay_with_dash">Payer avec Dash</string>
+    <string name="explore_pay_with_dash">Payer avec Pozoqo</string>
     <string name="explore_buy_gift_card">Acheter une carte-cadeau</string>
-    <string name="explore_buy_dash">Acheter Dash</string>
+    <string name="explore_buy_dash">Acheter Pozoqo</string>
     <string name="explore_sell_dash">Vendre des dashs</string>
     <string name="explore_show_all">Voir tous les endroits</string>
     <string name="explore_atm_location_hint">Ce distributeur est situé dans le</string>
@@ -76,7 +76,7 @@
     <string name="explore_filters">Filtres</string>
     <string name="explore_apply_filter">Appliquer</string>
     <string name="explore_payment_method">Méthode de paiement</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Carte-cadeau</string>
     <string name="explore_radius">Rayon</string>
     <string name="explore_location">Localisation</string>
@@ -145,16 +145,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Nous avons 2 types de vendeurs</string>
-    <string name="accept_dash_text">Accepte Dash directement</string>
-    <string name="pay_with_dash_text">Payez avec le portefeuille Dash.</string>
+    <string name="accept_dash_text">Accepte Pozoqo directement</string>
+    <string name="pay_with_dash_text">Payez avec le portefeuille Pozoqo.</string>
     <string name="buy_gift_card_text">Achetez des cartes-cadeau avec vos dashs</string>
     <string name="buy_gift_card_desc_text">Achetez des cartes-cadeau avec vos dashs pour le montant exact de vos achats.</string>
     <string name="learn_more_text">En savoir plus</string>
     <string name="continue_text">Continuer</string>
     <string name="buy_card_header_text">Comment utiliser une carte-cadeau</string>
-    <string name="buy_card_desc_text">Tous les magasins n\'acceptent pas Dash directement, mais vous pouvez acheter une carte-cadeau avec vos dashs.</string>
+    <string name="buy_card_desc_text">Tous les magasins n\'acceptent pas Pozoqo directement, mais vous pouvez acheter une carte-cadeau avec vos dashs.</string>
     <string name="find_merchant_text">Trouvez un vendeur.</string>
-    <string name="buy_gift_card_with_dash_text">Achetez une carte-cadeau avec Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Achetez une carte-cadeau avec Pozoqo.</string>
     <string name="redeem_gift_card_text">Profitez en ligne de votre carte-cadeau en quelques secondes ou auprès du responsable de la caisse.</string>
 
     <!-- Sync Status -->

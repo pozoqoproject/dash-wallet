@@ -74,10 +74,10 @@ public abstract class InputParser {
 
         public StringInputParser(final String input, boolean supportAnypayUrls) {
             if (supportAnypayUrls) {
-                // replaces Anypay scheme with the Dash one
+                // replaces Anypay scheme with the Pozoqo one
                 // ie "pay:?r=https://(...)" become "dash:?r=https://(...)"
                 if (input.startsWith(SendCoinsActivity.ANYPAY_SCHEME + ":")) {
-                    this.input = input.replaceFirst(SendCoinsActivity.ANYPAY_SCHEME, SendCoinsActivity.DASH_SCHEME);
+                    this.input = input.replaceFirst(SendCoinsActivity.ANYPAY_SCHEME, SendCoinsActivity.PZQ_SCHEME);
                     return;
                 }
             }
@@ -86,7 +86,7 @@ public abstract class InputParser {
 
         @Override
         public void parse() {
-            if (input.startsWith(SendCoinsActivity.DASH_SCHEME.toUpperCase() + ":-")) {
+            if (input.startsWith(SendCoinsActivity.PZQ_SCHEME.toUpperCase() + ":-")) {
                 try {
                     final byte[] serializedPaymentRequest = Qr.decodeBinary(input.substring(9));
 
@@ -104,7 +104,7 @@ public abstract class InputParser {
 
                     error(x, R.string.input_parser_invalid_paymentrequest, x.getMessage());
                 }
-            } else if (input.startsWith(SendCoinsActivity.DASH_SCHEME + ":")) {
+            } else if (input.startsWith(SendCoinsActivity.PZQ_SCHEME + ":")) {
                 try {
                     final BitcoinURI bitcoinUri = new BitcoinURI(null, input);
                     final Address address = AddressUtil.getCorrectAddress(bitcoinUri);

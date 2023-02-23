@@ -21,7 +21,7 @@
         </intent>
     </queries>
 
-    <application android:label="Dash in-app payment sample"
+    <application android:label="Pozoqo in-app payment sample"
         android:name="androidx.multidex.MultiDexApplication">
 
 		<activity

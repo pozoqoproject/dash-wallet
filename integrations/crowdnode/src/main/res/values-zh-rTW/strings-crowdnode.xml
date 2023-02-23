@@ -29,7 +29,7 @@
     <string name="crowdnode_link">鏈接現有的 CrowdNode 帳戶</string>
     <string name="required_passphrase_backup">您必須在達世幣錢包中備份您的恢復詞組</string>
     <string name="backup_passphrase">備份詞組</string>
-    <string name="required_dash_amount">您的達世幣錢包中至少需要 %s 的 Dash</string>
+    <string name="required_dash_amount">您的達世幣錢包中至少需要 %s 的 Pozoqo</string>
     <string name="crowdnode_new_account_warning_1">CrowdNode 使用此位址作為您的帳戶 ID。如果您丟失了與此位址關聯的密碼，您將無法訪問此錢包和您的 CrowdNode 帳戶中的資金。</string>
     <string name="crowdnode_new_account_warning_2">將會向 CrowdNode 發送非常少量的達世幣，以驗證您是該錢包位址的所有者。</string>
     <string name="crowdnode_link_account_description">從此設備與 CrowdNode 之間的所有交易都將使用來自該設備的以下達世幣位址來執行。</string>
@@ -38,7 +38,7 @@
     <string name="crowdnode_secure_wallet">備份您的恢復詞組以創建 CrowdNode 帳戶</string>
     <string name="crowdnode_secure_wallet_explainer">如果您丟失此錢包的恢復詞組並丟失此設備或卸載達世幣錢包，您將無法訪問 CrowdNode 上的資金和此錢包中的資金。</string>
     <string name="insufficient_funds">您沒有足夠的資金來繼續進行。</string>
-    <string name="crowdnode_minimum_dash">您應該至少有 %s Dash 才能繼續進行 CrowdNode 驗證。</string>
+    <string name="crowdnode_minimum_dash">您應該至少有 %s Pozoqo 才能繼續進行 CrowdNode 驗證。</string>
     <string name="crowdnode_agree_to_terms">我同意 CrowdNode %1$s 和 %2$s</string>
     <string name="terms_of_use">使用條款</string>
     <string name="privacy_policy">隱私政策</string>
@@ -85,7 +85,7 @@
     <string name="crowdnode_open_website">訪問 CrowdNode 網站</string>
     <string name="crowdnode_info_title">通過 CrowdNode 成為達世幣主節點的一部分</string>
     <string name="introducing_staking">介紹質押</string>
-    <string name="crowdnode_staking_info">只需 0.5 Dash，即可從達世幣主節點中的存款中獲得獎勵。</string>
+    <string name="crowdnode_staking_info">只需 0.5 Pozoqo，即可從達世幣主節點中的存款中獲得獎勵。</string>
     <string name="instant_rewards">立即獲得獎勵</string>
     <string name="daily_rewards_info">每天收到屬於您的獎勵金額。</string>
     <string name="crowdnode_sending_to">發送到 CrowdNode 帳戶</string>
@@ -116,7 +116,7 @@
     <string name="crowdnode_staking_toast_address_copied">將 CrowdNode 地址複製到剪貼板</string>
     <string name="crowdnode_verify_api_address">驗證您的 API 達世幣位址</string>
     <string name="crowdnode_how_to_verify">如何確認您的 API 達世幣位址</string>
-    <string name="crowdnode_how_to_verify_description1">從您當前用於 CrowdNode 帳戶的主要達世幣位址發送 %s Dash</string>
+    <string name="crowdnode_how_to_verify_description1">從您當前用於 CrowdNode 帳戶的主要達世幣位址發送 %s Pozoqo</string>
     <string name="crowdnode_how_to_verify_description2">到此設備上達世幣錢包中為您的 CrowdNode 帳戶指定的達世幣位址</string>
     <string name="crowdnode_how_to_verify_description3">我們將自動檢測此交易並將相同的金額轉移到您的 CrowdNode 帳戶。之後，您將能夠在此設備上的達世幣錢包中進行存款和提款。</string>
     <string name="button_show_qr">顯示二維碼</string>
@@ -137,7 +137,7 @@
     <string name="crowdnode_tx_set_explainer">您的 CrowdNode 帳戶是使用這些交易創建的。</string>
     <string name="shuffle_coins">混幣</string>
     <string name="positive_balance_required">你的達世幣錢包上的餘額應該是一個正數</string>
-    <string name="withdrawal_required_balance">在您的達世幣錢包中至少存入 0.0003 Dash 以完成提款</string>
+    <string name="withdrawal_required_balance">在您的達世幣錢包中至少存入 0.0003 Pozoqo 以完成提款</string>
     <string name="withdrawal_limit">達世幣提款限額</string>
     <string name="withdrawal_limit_details">您的提款額不能超過 %1$s 達世幣%2$s.</string>
     <string name="crowdnode_withdrawal_limits_title">CrowdNode 提款限額</string>

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group.
+ * Copyright 2019 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -93,9 +93,9 @@ class SendCoinsViewModel @Inject constructor(
     val isSpendingConfirmationEnabled: Boolean
         get() = configuration.spendingConfirmationEnabled
 
-    var isDashToFiatPreferred: Boolean
-        get() = configuration.isDashToFiatDirection
-        set(value) { configuration.isDashToFiatDirection = value }
+    var isPozoqoToFiatPreferred: Boolean
+        get() = configuration.isPozoqoToFiatDirection
+        set(value) { configuration.isPozoqoToFiatDirection = value }
 
     init {
         blockchainStateDao.observeState()
@@ -186,7 +186,7 @@ class SendCoinsViewModel @Inject constructor(
 
     fun logSentEvent(dashToFiat: Boolean) {
         if (dashToFiat) {
-            analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_DASH, bundleOf())
+            analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_PZQ, bundleOf())
         } else {
             analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_FIAT, bundleOf())
         }

@@ -1,6 +1,6 @@
 //
 // The purpose of this file is to allow other developers to build this app without
-// the Dash Core Group specific google-services.json file
+// the Pozoqo Core Group specific google-services.json file
 //
 
 ext {

@@ -116,7 +116,7 @@
                 android:lineSpacingExtra="2sp"
                 android:textColor="@color/dash_black"
                 android:textSize="10sp"
-                tools:text="Dash Wallet"
+                tools:text="Pozoqo Wallet"
                 tools:visibility="visible" />
 
             <org.dash.wallet.common.ui.CurrencyTextView

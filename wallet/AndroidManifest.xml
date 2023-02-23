@@ -136,7 +136,7 @@
             <intent-filter android:label="@string/send_coins_activity_title">
                 <action android:name="android.intent.action.VIEW" />
 
-                <data android:scheme="dash" />
+                <data android:scheme="pozoqo" />
                 <data android:scheme="darkcoin" />
                 <data android:scheme="pay" />
 
@@ -147,7 +147,7 @@
             <intent-filter android:label="@string/send_coins_activity_title">
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-                <data android:scheme="dash" />
+                <data android:scheme="pozoqo" />
                 <data android:scheme="darkcoin" />
                 <data android:scheme="pay" />
 

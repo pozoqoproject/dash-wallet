@@ -55,7 +55,7 @@ open class SendCoinsActivity : LockScreenActivity() {
         const val ACTION_SEND_FROM_WALLET_URI = "de.schildbach.wallet.action.SEND_FROM_WALLET_URI"
         const val INTENT_EXTRA_PAYMENT_INTENT = "paymentIntent"
         const val ANYPAY_SCHEME = "pay"
-        const val DASH_SCHEME = "dash"
+        const val PZQ_SCHEME = "dash"
 
         fun start(context: Context, paymentIntent: PaymentIntent?) {
             start(context, null, paymentIntent, false)
@@ -123,7 +123,7 @@ open class SendCoinsActivity : LockScreenActivity() {
         return if ((action == Intent.ACTION_VIEW || action == NfcAdapter.ACTION_NDEF_DISCOVERED) &&
             intentUri?.hasValidScheme() == true
         ) {
-            initStateFromDashUri(intentUri)
+            initStateFromPozoqoUri(intentUri)
         } else if (action == NfcAdapter.ACTION_NDEF_DISCOVERED && mimeType == PaymentProtocol.MIMETYPE_PAYMENTREQUEST) {
             val ndefMessage = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)?.get(0) as? NdefMessage
             val ndefMessagePayload = ndefMessage?.let {
@@ -153,7 +153,7 @@ open class SendCoinsActivity : LockScreenActivity() {
         }
     }
 
-    private suspend fun initStateFromDashUri(dashUri: Uri): PaymentIntent {
+    private suspend fun initStateFromPozoqoUri(dashUri: Uri): PaymentIntent {
         return suspendCancellableCoroutine { coroutine ->
             object : InputParser.StringInputParser(dashUri.toString(), true) {
                 override fun handlePaymentIntent(paymentIntent: PaymentIntent) {
@@ -255,5 +255,5 @@ open class SendCoinsActivity : LockScreenActivity() {
     }
 
     private fun Uri.hasValidScheme() =
-        this.scheme == DASH_SCHEME || this.scheme == ANYPAY_SCHEME
+        this.scheme == PZQ_SCHEME || this.scheme == ANYPAY_SCHEME
 }

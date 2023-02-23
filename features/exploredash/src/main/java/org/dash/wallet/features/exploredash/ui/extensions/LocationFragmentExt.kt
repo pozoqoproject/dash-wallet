@@ -56,7 +56,7 @@ fun Fragment.requestLocationPermission(
     configuration: Configuration,
     requestLauncher: ActivityResultLauncher<Array<String>>
 ) {
-    if (configuration.hasExploreDashLocationDialogBeenShown()) {
+    if (configuration.hasExplorePozoqoLocationDialogBeenShown()) {
         requestLauncher.launch(arrayOf(
             Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION
@@ -66,7 +66,7 @@ fun Fragment.requestLocationPermission(
             val result = showPermissionExplainerDialog(exploreTopic)
 
             if (result == true) {
-                configuration.setHasExploreDashLocationDialogBeenShown(true)
+                configuration.setHasExplorePozoqoLocationDialogBeenShown(true)
                 requestLauncher.launch(arrayOf(
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.ACCESS_FINE_LOCATION

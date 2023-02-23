@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">探索Dash</string>
+    <string name="explore_dash">探索Pozoqo</string>
     <string name="explore_title">探索</string>
-    <string name="explore_subtitle">使用您的Dash在超过155,000个地点和在线商户轻松购物</string>
+    <string name="explore_subtitle">使用您的Pozoqo在超过155,000个地点和在线商户轻松购物</string>
     <string name="explore_merchants_title">在哪里消费?</string>
-    <string name="explore_merchants_subtitle">查找接受Dash支付方式的商户.</string>
+    <string name="explore_merchants_subtitle">查找接受Pozoqo支付方式的商户.</string>
     <string name="explore_atms_title">自动提款机</string>
-    <string name="explore_atms_subtitle">查找在哪里购买或出售Dash和其他加密货币以换取现金.</string>
-    <string name="explore_staking_subtitle">只需点击几下, 即可轻松质押Dash并赚取被动收益.</string>
+    <string name="explore_atms_subtitle">查找在哪里购买或出售Pozoqo和其他加密货币以换取现金.</string>
+    <string name="explore_staking_subtitle">只需点击几下, 即可轻松质押Pozoqo并赚取被动收益.</string>
     <string name="explore_staking_current_apy">目前的年利率 = %s%%</string>
 
     <!-- Search -->
@@ -59,10 +59,10 @@
     <string name="explore_back_to_locations">返回到所有位置</string>
     <string name="explore_back_to_nearest">返回到最近的位置</string>
     <string name="explore_select_location">选择位置</string>
-    <string name="explore_pay_with_dash">用Dash支付</string>
+    <string name="explore_pay_with_dash">用Pozoqo支付</string>
     <string name="explore_buy_gift_card">购买礼品卡</string>
-    <string name="explore_buy_dash">购买Dash</string>
-    <string name="explore_sell_dash">出售Dash</string>
+    <string name="explore_buy_dash">购买Pozoqo</string>
+    <string name="explore_sell_dash">出售Pozoqo</string>
     <string name="explore_show_all">显示所有位置</string>
     <string name="explore_atm_location_hint">该自动贩卖机位于</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -72,7 +72,7 @@
     <string name="explore_filters">过滤器</string>
     <string name="explore_apply_filter">应用</string>
     <string name="explore_payment_method">支付方式</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">礼品卡</string>
     <string name="explore_radius">半径</string>
     <string name="explore_location">位置</string>
@@ -137,16 +137,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">我们有2种类型的商户</string>
-    <string name="accept_dash_text">直接接受Dash</string>
-    <string name="pay_with_dash_text">使用Dash钱包付款.</string>
-    <string name="buy_gift_card_text">使用Dash购买礼品卡</string>
-    <string name="buy_gift_card_desc_text">使用Dash购买与您购物金额相等的礼品卡.</string>
+    <string name="accept_dash_text">直接接受Pozoqo</string>
+    <string name="pay_with_dash_text">使用Pozoqo钱包付款.</string>
+    <string name="buy_gift_card_text">使用Pozoqo购买礼品卡</string>
+    <string name="buy_gift_card_desc_text">使用Pozoqo购买与您购物金额相等的礼品卡.</string>
     <string name="learn_more_text">了解更多</string>
     <string name="continue_text">继续</string>
     <string name="buy_card_header_text">如何使用礼品卡</string>
-    <string name="buy_card_desc_text">并非所有商店都直接接受Dash支付, 但您可以使用Dash购买礼品卡.</string>
+    <string name="buy_card_desc_text">并非所有商店都直接接受Pozoqo支付, 但您可以使用Pozoqo购买礼品卡.</string>
     <string name="find_merchant_text">查找商户.</string>
-    <string name="buy_gift_card_with_dash_text">使用Dash购买礼品卡.</string>
+    <string name="buy_gift_card_with_dash_text">使用Pozoqo购买礼品卡.</string>
     <string name="redeem_gift_card_text">在线上或收银台几秒内兑换您的礼品卡.</string>
 
     <!-- Sync Status -->

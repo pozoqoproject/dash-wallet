@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">สำรวจ Dash</string>
+    <string name="explore_dash">สำรวจ Pozoqo</string>
     <string name="explore_title">สำรวจ </string>
-    <string name="explore_subtitle">ซื้อสินค้าด้วย DASH ของคุณได้อย่างง่ายดายที่สถานที่และร้านค้าออนไลน์มากกว่า 155,000 แห่ง</string>
+    <string name="explore_subtitle">ซื้อสินค้าด้วย PZQ ของคุณได้อย่างง่ายดายที่สถานที่และร้านค้าออนไลน์มากกว่า 155,000 แห่ง</string>
     <string name="explore_merchants_title">จะใช้จ่ายที่ไหน?</string>
-    <string name="explore_merchants_subtitle">ค้นหาร้าค้าที่ยอมรับการชำระเงินด้วย Dash </string>
+    <string name="explore_merchants_subtitle">ค้นหาร้าค้าที่ยอมรับการชำระเงินด้วย Pozoqo </string>
     <string name="explore_atms_title">เอทีเอ็ม</string>
-    <string name="explore_atms_subtitle">ค้นหาสถานที่ซื้อหรือขาย Dash และ คริปโทเคเรนซีอื่น ๆ เป็นเงินสด</string>
-    <string name="explore_staking_subtitle"> Stake Dash ได้อย่างง่ายดายและได้รับรายได้แบบ passive income ด้วยการคลิกง่ายๆ</string>
+    <string name="explore_atms_subtitle">ค้นหาสถานที่ซื้อหรือขาย Pozoqo และ คริปโทเคเรนซีอื่น ๆ เป็นเงินสด</string>
+    <string name="explore_staking_subtitle"> Stake Pozoqo ได้อย่างง่ายดายและได้รับรายได้แบบ passive income ด้วยการคลิกง่ายๆ</string>
     <string name="explore_staking_current_apy">APY ปัจจุบัน = %s%%</string>
 
     <!-- Search -->
@@ -59,10 +59,10 @@
     <string name="explore_back_to_locations">กลับไปยังสถานที่ทั้งหมด</string>
     <string name="explore_back_to_nearest">กลับไปยังตำแหน่งที่ใกล้ที่สุด</string>
     <string name="explore_select_location">เลือกตำแหน่ง</string>
-    <string name="explore_pay_with_dash">จ่ายด้วย Dash</string>
+    <string name="explore_pay_with_dash">จ่ายด้วย Pozoqo</string>
     <string name="explore_buy_gift_card">ซื้อบัตรของขวัญ</string>
-    <string name="explore_buy_dash">ซื้อ Dash </string>
-    <string name="explore_sell_dash">ขาย Dash</string>
+    <string name="explore_buy_dash">ซื้อ Pozoqo </string>
+    <string name="explore_sell_dash">ขาย Pozoqo</string>
     <string name="explore_show_all">แสดงสถานที่ทั้งหมด</string>
     <string name="explore_atm_location_hint">ตู้เอทีเอ็มนี้ตั้งอยู่ใน</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -72,7 +72,7 @@
     <string name="explore_filters">ตัวกรอง</string>
     <string name="explore_apply_filter">นำมาใช้</string>
     <string name="explore_payment_method">วิธีการชำระเงิน</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">บัตรของขวัญ</string>
     <string name="explore_radius">รัศมี</string>
     <string name="explore_location">ตำแหน่ง</string>
@@ -137,16 +137,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">เรามีร้านค้า 2 ประเภท</string>
-    <string name="accept_dash_text">ยอมรับ Dash โดยตรง</string>
-    <string name="pay_with_dash_text">จ่ายผ่านกระเป๋าเงิน DASH </string>
-    <string name="buy_gift_card_text">ซื้อบัตรของขวัญด้วย Dash ของคุณ</string>
-    <string name="buy_gift_card_desc_text">ซื้อบัตรของขวัญด้วย Dash ของคุณสำหรับจำนวนที่แน่นอนของการซื้อของคุณ</string>
+    <string name="accept_dash_text">ยอมรับ Pozoqo โดยตรง</string>
+    <string name="pay_with_dash_text">จ่ายผ่านกระเป๋าเงิน PZQ </string>
+    <string name="buy_gift_card_text">ซื้อบัตรของขวัญด้วย Pozoqo ของคุณ</string>
+    <string name="buy_gift_card_desc_text">ซื้อบัตรของขวัญด้วย Pozoqo ของคุณสำหรับจำนวนที่แน่นอนของการซื้อของคุณ</string>
     <string name="learn_more_text">เรียนรู้เพิ่มเติม</string>
     <string name="continue_text">ดำเนินการต่อ</string>
     <string name="buy_card_header_text">การใช้บัตรของขวัญ</string>
-    <string name="buy_card_desc_text">ไม่ใช่ร้านค้าทั้งหมดที่ยอมรับ Dash โดยตรง แต่คุณสามารถซื้อบัตรของขวัญด้วย Dash ของคุณ</string>
+    <string name="buy_card_desc_text">ไม่ใช่ร้านค้าทั้งหมดที่ยอมรับ Pozoqo โดยตรง แต่คุณสามารถซื้อบัตรของขวัญด้วย Pozoqo ของคุณ</string>
     <string name="find_merchant_text">ค้นหาร้านค้า</string>
-    <string name="buy_gift_card_with_dash_text">ซื้อบัตรของขวัญด้วย Dash</string>
+    <string name="buy_gift_card_with_dash_text">ซื้อบัตรของขวัญด้วย Pozoqo</string>
     <string name="redeem_gift_card_text">แลกบัตรของขวัญของคุณทางออนไลน์ภายในไม่กี่วินาทีหรือที่แคชเชียร์</string>
 
     <!-- Sync Status -->

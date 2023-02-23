@@ -53,7 +53,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
     private val stakingLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Constants.USER_BUY_SELL_DASH) {
+        if (result.resultCode == Constants.USER_BUY_SELL_PZQ) {
             safeNavigate(ExploreFragmentDirections.exploreToBuySell())
         }
     }

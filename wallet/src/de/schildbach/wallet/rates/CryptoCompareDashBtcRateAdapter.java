@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * @author Samuel Barbosa
  */
-public class CryptoCompareDashBtcRateAdapter {
+public class CryptoComparePozoqoBtcRateAdapter {
 
 
     @ToJson
@@ -31,11 +31,11 @@ public class CryptoCompareDashBtcRateAdapter {
     }
 
     private Rate getPrice(JsonReader jsonReader) throws IOException {
-        Rate cryptoCompareDashBtcRate = null;
+        Rate cryptoComparePozoqoBtcRate = null;
         jsonReader.beginObject();
         while (jsonReader.hasNext()) {
             if (jsonReader.nextName().equalsIgnoreCase("PRICE")) {
-                cryptoCompareDashBtcRate = new Rate(
+                cryptoComparePozoqoBtcRate = new Rate(
                         new BigDecimal(jsonReader.nextString()));
 
             } else {
@@ -43,7 +43,7 @@ public class CryptoCompareDashBtcRateAdapter {
             }
         }
         jsonReader.endObject();
-        return cryptoCompareDashBtcRate;
+        return cryptoComparePozoqoBtcRate;
     }
 
 }

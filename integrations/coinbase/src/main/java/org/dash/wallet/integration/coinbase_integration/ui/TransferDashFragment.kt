@@ -48,26 +48,26 @@ import org.dash.wallet.common.util.GenericUtils
 import org.dash.wallet.common.util.safeNavigate
 import org.dash.wallet.integration.coinbase_integration.CoinbaseConstants
 import org.dash.wallet.integration.coinbase_integration.R
-import org.dash.wallet.integration.coinbase_integration.databinding.TransferDashFragmentBinding
+import org.dash.wallet.integration.coinbase_integration.databinding.TransferPozoqoFragmentBinding
 import org.dash.wallet.integration.coinbase_integration.ui.convert_currency.model.BaseServiceWallet
 import org.dash.wallet.integration.coinbase_integration.ui.convert_currency.model.SwapValueErrorType
 import org.dash.wallet.integration.coinbase_integration.ui.dialogs.CoinBaseResultDialog
 import org.dash.wallet.integration.coinbase_integration.viewmodels.EnterAmountToTransferViewModel
-import org.dash.wallet.integration.coinbase_integration.viewmodels.SendDashResponseState
-import org.dash.wallet.integration.coinbase_integration.viewmodels.TransferDashViewModel
+import org.dash.wallet.integration.coinbase_integration.viewmodels.SendPozoqoResponseState
+import org.dash.wallet.integration.coinbase_integration.viewmodels.TransferPozoqoViewModel
 import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @AndroidEntryPoint
-class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
+class TransferPozoqoFragment : Fragment(R.layout.transfer_dash_fragment) {
 
     companion object {
-        fun newInstance() = TransferDashFragment()
+        fun newInstance() = TransferPozoqoFragment()
     }
 
     private val enterAmountToTransferViewModel by activityViewModels<EnterAmountToTransferViewModel>()
-    private val transferDashViewModel by activityViewModels<TransferDashViewModel>()
-    private val binding by viewBinding(TransferDashFragmentBinding::bind)
+    private val transferPozoqoViewModel by activityViewModels<TransferPozoqoViewModel>()
+    private val binding by viewBinding(TransferPozoqoFragmentBinding::bind)
     private var loadingDialog: AdaptiveDialog? = null
     @Inject lateinit var securityFunctions: AuthenticationManager
     @Inject lateinit var confirmTransactionLauncher: ConfirmTransactionService
@@ -95,7 +95,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             }
         }
 
-        transferDashViewModel.observeLoadingState.observe(viewLifecycleOwner){
+        transferPozoqoViewModel.observeLoadingState.observe(viewLifecycleOwner){
             setLoadingState(it)
         }
 
@@ -103,8 +103,8 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             enterAmountToTransferViewModel.setOnTransferDirectionListener(binding.transferView.walletToCoinbase)
         }
 
-        transferDashViewModel.dashBalanceInWalletState.observe(viewLifecycleOwner){
-            binding.transferView.inputInDash = it
+        transferPozoqoViewModel.dashBalanceInWalletState.observe(viewLifecycleOwner){
+            binding.transferView.inputInPozoqo = it
         }
 
         enterAmountToTransferViewModel.localCurrencyExchangeRate.observe(viewLifecycleOwner){ rate ->
@@ -120,7 +120,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                 val coinBalance = enterAmountToTransferViewModel.dashBalanceInWalletState.value
                 binding.authLimitBanner.root.isVisible = false
                 binding.dashWalletLimitBanner.isVisible =
-                    transferDashViewModel.isInputGreaterThanWalletBalance(
+                    transferPozoqoViewModel.isInputGreaterThanWalletBalance(
                         coinInput,
                         coinBalance
                     )
@@ -129,20 +129,20 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                     guidePercent = if (binding.dashWalletLimitBanner.isVisible) 0.13f else 0.09f
                 }
 
-                if (!binding.dashWalletLimitBanner.isVisible && transferDashViewModel.isUserAuthorized()){
+                if (!binding.dashWalletLimitBanner.isVisible && transferPozoqoViewModel.isUserAuthorized()){
                     lifecycleScope.launch {
                         val isEmptyWallet= enterAmountToTransferViewModel.isMaxAmountSelected &&
                                 binding.transferView.walletToCoinbase
-                       transferDashViewModel.estimateNetworkFee(dashValue, emptyWallet = isEmptyWallet)?.let {
+                       transferPozoqoViewModel.estimateNetworkFee(dashValue, emptyWallet = isEmptyWallet)?.let {
                             securityFunctions.authenticate(requireActivity())?.let {
-                                transferDashViewModel.createAddressForAccount()
+                                transferPozoqoViewModel.createAddressForAccount()
                             }
                        }
                     }
                 }
             } else {
                 binding.dashWalletLimitBanner.isVisible = false
-                val error=transferDashViewModel.checkEnteredAmountValue(it.second)
+                val error=transferPozoqoViewModel.checkEnteredAmountValue(it.second)
                 binding.authLimitBanner.root.isVisible = error == SwapValueErrorType.UnAuthorizedValue
                 binding.dashWalletLimitBanner.isVisible = (error == SwapValueErrorType.MoreThanMax
                         || error==SwapValueErrorType.LessThanMin
@@ -165,12 +165,12 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                     }
                 }
                 else{
-                    transferDashViewModel.reviewTransfer(dashValue.toPlainString())
+                    transferPozoqoViewModel.reviewTransfer(dashValue.toPlainString())
                 }
             }
         }
 
-        transferDashViewModel.sendDashToCoinbaseError.observe(viewLifecycleOwner){
+        transferPozoqoViewModel.sendPozoqoToCoinbaseError.observe(viewLifecycleOwner){
             binding.dashWalletLimitBanner.isVisible = (it.exceptionMessageResource!=null || it.exceptionMessage?.isNotEmpty() == true)
 
             binding.topGuideLine.updateLayoutParams<ConstraintLayout.LayoutParams> {
@@ -185,7 +185,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             }
         }
 
-        transferDashViewModel.userAccountOnCoinbaseState.observe(viewLifecycleOwner){
+        transferPozoqoViewModel.userAccountOnCoinbaseState.observe(viewLifecycleOwner){
             enterAmountToTransferViewModel.coinbaseExchangeRate = it
 
             val fiatVal = it.coinBaseUserAccountData.balance?.amount?.let { amount ->
@@ -207,12 +207,12 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             ).show(requireActivity()) { }
         }
 
-        enterAmountToTransferViewModel.enteredConvertDashAmount.observe(viewLifecycleOwner){
+        enterAmountToTransferViewModel.enteredConvertPozoqoAmount.observe(viewLifecycleOwner){
             val dashInStr = dashFormat.optionalDecimals(0,6).format(it.second)
             val amountFiat = dashFormat.format(it.first).toString()
             val fiatSymbol = GenericUtils.currencySymbol(it.first.currencyCode)
 
-            val formatDashValue = "$dashInStr ${Constants.DASH_CURRENCY}"
+            val formatPozoqoValue = "$dashInStr ${Constants.PZQ_CURRENCY}"
 
             val formatFiatValue = if (GenericUtils.isCurrencyFirst(it.first)) {
                 "$fiatSymbol $amountFiat"
@@ -220,7 +220,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                 "$amountFiat $fiatSymbol"
             }
 
-            binding.amountReceived.text = getString(R.string.amount_to_transfer, formatDashValue, Constants.PREFIX_ALMOST_EQUAL_TO, formatFiatValue)
+            binding.amountReceived.text = getString(R.string.amount_to_transfer, formatPozoqoValue, Constants.PREFIX_ALMOST_EQUAL_TO, formatFiatValue)
             binding.amountReceived.isVisible = enterAmountToTransferViewModel.hasBalance
         }
 
@@ -239,7 +239,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
         }
 
         binding.authLimitBanner.root.setOnClickListener {
-            transferDashViewModel.logEvent(AnalyticsConstants.Coinbase.TRANSFER_AUTH_LIMIT)
+            transferPozoqoViewModel.logEvent(AnalyticsConstants.Coinbase.TRANSFER_AUTH_LIMIT)
             AdaptiveDialog.custom(
                 R.layout.dialog_withdrawal_limit_info,
                 null,
@@ -250,7 +250,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             ).show(requireActivity())
         }
 
-        transferDashViewModel.observeCoinbaseAddressState.observe(viewLifecycleOwner){ address ->
+        transferPozoqoViewModel.observeCoinbaseAddressState.observe(viewLifecycleOwner){ address ->
             val fiatVal = enterAmountToTransferViewModel.getFiat(dashValue.toPlainString())
             val amountFiat = dashFormat.format(fiatVal).toString()
             val fiatSymbol = GenericUtils.currencySymbol(fiatVal.currencyCode)
@@ -258,7 +258,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                     binding.transferView.walletToCoinbase
 
             lifecycleScope.launch {
-                val details = transferDashViewModel.estimateNetworkFee(dashValue, emptyWallet = isEmptyWallet)
+                val details = transferPozoqoViewModel.estimateNetworkFee(dashValue, emptyWallet = isEmptyWallet)
                 details?.amountToSend?.toPlainString()?.let{   amountStr ->
                     hideBanners()
                     val isTransactionConfirmed = confirmTransactionLauncher.showTransactionDetailsPreview(
@@ -266,7 +266,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                       details.totalAmount, null, null, null)
 
                     if (isTransactionConfirmed) {
-                      transferDashViewModel.logTransfer(enterAmountToTransferViewModel.isFiatSelected)
+                      transferPozoqoViewModel.logTransfer(enterAmountToTransferViewModel.isFiatSelected)
                       AdaptiveDialog.withProgress(getString(R.string.please_wait_title), requireActivity()) {
                           handleSend(dashValue, isEmptyWallet)
                       }
@@ -275,7 +275,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             }
         }
 
-        transferDashViewModel.onAddressCreationFailedCallback.observe(viewLifecycleOwner) {
+        transferPozoqoViewModel.onAddressCreationFailedCallback.observe(viewLifecycleOwner) {
             AdaptiveDialog.create(
                 R.drawable.ic_info_red,
                 getString(R.string.error),
@@ -284,22 +284,22 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
             ).show(requireActivity())
         }
 
-        transferDashViewModel.observeSendDashToCoinbaseState.observe(viewLifecycleOwner){
+        transferPozoqoViewModel.observeSendPozoqoToCoinbaseState.observe(viewLifecycleOwner){
             setTransactionState(it)
         }
 
-        transferDashViewModel.onBuildTransactionParamsCallback.observe(viewLifecycleOwner){
-            transferDashViewModel.logTransfer(enterAmountToTransferViewModel.isFiatSelected)
-            safeNavigate(TransferDashFragmentDirections.transferDashToTwoFaCode(it))
+        transferPozoqoViewModel.onBuildTransactionParamsCallback.observe(viewLifecycleOwner){
+            transferPozoqoViewModel.logTransfer(enterAmountToTransferViewModel.isFiatSelected)
+            safeNavigate(TransferPozoqoFragmentDirections.transferPozoqoToTwoFaCode(it))
         }
 
         monitorNetworkChanges()
 
-        transferDashViewModel.isDeviceConnectedToInternet.observe(viewLifecycleOwner){ hasInternet ->
+        transferPozoqoViewModel.isDeviceConnectedToInternet.observe(viewLifecycleOwner){ hasInternet ->
             setInternetAccessState(hasInternet)
         }
 
-        transferDashViewModel.onFetchUserDataOnCoinbaseFailedCallback.observe(viewLifecycleOwner){
+        transferPozoqoViewModel.onFetchUserDataOnCoinbaseFailedCallback.observe(viewLifecycleOwner){
             AdaptiveDialog.create(
                 R.drawable.ic_info_red,
                 getString(R.string.coinbase_dash_wallet_error_title),
@@ -324,13 +324,13 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
 
     private suspend fun handleSend(value: Coin, isEmptyWallet: Boolean): Boolean {
         try {
-            transferDashViewModel.sendDash(value, isEmptyWallet, true)
+            transferPozoqoViewModel.sendPozoqo(value, isEmptyWallet, true)
             return true
         } catch (ex: LeftoverBalanceException) {
             val result = MinimumBalanceDialog().showAsync(requireActivity())
 
             if (result == true) {
-                transferDashViewModel.sendDash(value, isEmptyWallet, false)
+                transferPozoqoViewModel.sendPozoqo(value, isEmptyWallet, false)
                 return true
             }
         }
@@ -354,28 +354,28 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
         }
     }
 
-    private fun setTransactionState(responseState: SendDashResponseState) {
+    private fun setTransactionState(responseState: SendPozoqoResponseState) {
         val pair: Pair<CoinBaseResultDialog.Type, String?> = when(responseState){
-            is SendDashResponseState.SuccessState -> {
-                Pair(if (responseState.isTransactionPending) CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS else CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, null)
+            is SendPozoqoResponseState.SuccessState -> {
+                Pair(if (responseState.isTransactionPending) CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS else CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, null)
             }
-            is SendDashResponseState.FailureState -> Pair(CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, responseState.failureMessage)
-            is SendDashResponseState.InsufficientMoneyState -> Pair(CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, getString(R.string.insufficient_money_to_transfer))
-            else -> Pair(CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR, null)
+            is SendPozoqoResponseState.FailureState -> Pair(CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, responseState.failureMessage)
+            is SendPozoqoResponseState.InsufficientMoneyState -> Pair(CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, getString(R.string.insufficient_money_to_transfer))
+            else -> Pair(CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR, null)
         }
 
         val transactionStateDialog = CoinBaseResultDialog.newInstance(pair.first, pair.second, dashToCoinbase = true).apply {
             onCoinBaseResultDialogButtonsClickListener = object : CoinBaseResultDialog.CoinBaseResultDialogButtonsClickListener {
                 override fun onPositiveButtonClick(type: CoinBaseResultDialog.Type) {
                     when(type){
-                        CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS -> {
-                            transferDashViewModel.logClose(type)
+                        CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS -> {
+                            transferPozoqoViewModel.logClose(type)
                             dismiss()
                             requireActivity().setResult(Constants.RESULT_CODE_GO_HOME)
                             requireActivity().finish()
                         }
                         else -> {
-                            transferDashViewModel.logRetry()
+                            transferPozoqoViewModel.logRetry()
                             dismiss()
                             findNavController().popBackStack()
                         }
@@ -383,7 +383,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
                 }
 
                 override fun onNegativeButtonClick(type: CoinBaseResultDialog.Type) {
-                    transferDashViewModel.logClose(type)
+                    transferPozoqoViewModel.logClose(type)
                 }
             }
         }
@@ -395,12 +395,12 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
     private fun setMinAmountErrorMessage() {
         binding.dashWalletLimitBanner.text = "${getString(
             R.string.entered_amount_is_too_low
-        )} ${GenericUtils.fiatToString(transferDashViewModel.minFaitAmount)}"
+        )} ${GenericUtils.fiatToString(transferPozoqoViewModel.minFaitAmount)}"
     }
 
     @SuppressLint("SetTextI18n")
     private fun setMaxAmountError() {
-        val fiatVal =  transferDashViewModel.userAccountOnCoinbaseState.value?.coinBaseUserAccountData?.balance?.amount?.let { amount ->
+        val fiatVal =  transferPozoqoViewModel.userAccountOnCoinbaseState.value?.coinBaseUserAccountData?.balance?.amount?.let { amount ->
             enterAmountToTransferViewModel.getCoinbaseBalanceInFiatFormat(amount)
         } ?: CoinbaseConstants.VALUE_ZERO
         binding.dashWalletLimitBanner.text = "${getString(R.string.entered_amount_is_too_high)} $fiatVal"
@@ -443,7 +443,7 @@ class TransferDashFragment : Fragment(R.layout.transfer_dash_fragment) {
 
     private fun monitorNetworkChanges(){
         lifecycleScope.launchWhenResumed {
-            transferDashViewModel.monitorNetworkStateChange()
+            transferPozoqoViewModel.monitorNetworkStateChange()
         }
     }
 }

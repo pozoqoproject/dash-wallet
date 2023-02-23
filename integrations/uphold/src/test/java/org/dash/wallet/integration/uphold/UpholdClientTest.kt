@@ -53,9 +53,9 @@ class UpholdClientTest {
           },
           "available": "45.00",
           "balance": "45.00",
-          "currency": "DASH",
+          "currency": "PZQ",
           "id": "024e51fc-5513-4d82-882c-9b22024280cc",
-          "label": "DASH card",
+          "label": "PZQ card",
           "lastTransactionAt": "2018-08-01T09:53:44.617Z",
           "normalized": [{
             "available": "4500.00",

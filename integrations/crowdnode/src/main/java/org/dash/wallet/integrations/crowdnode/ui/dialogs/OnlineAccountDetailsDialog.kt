@@ -45,7 +45,7 @@ class OnlineAccountDetailsDialog: OffsetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.primaryDashAddress.text = viewModel.primaryDashAddress.toString()
+        binding.primaryPozoqoAddress.text = viewModel.primaryPozoqoAddress.toString()
         binding.copyPrimaryAddressBtn.setOnClickListener {
             viewModel.copyPrimaryAddress()
             Toast.makeText(requireContext(), getString(R.string.copied), Toast.LENGTH_SHORT).show()

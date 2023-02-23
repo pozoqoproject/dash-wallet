@@ -75,7 +75,7 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
 
     init {
         getWithdrawalLimit()
-        setDashWalletBalance()
+        setPozoqoWalletBalance()
     }
 
     fun setBaseIdForFaitModelCoinBase(list:List<BaseIdForUSDData>){
@@ -86,11 +86,11 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
         _showLoading.value = true
 
         val source_asset =
-            if (dashToCrypt)_baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == Constants.DASH_CURRENCY }?.base_id ?: ""
+            if (dashToCrypt)_baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == Constants.PZQ_CURRENCY }?.base_id ?: ""
             else _baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == selectedCoinBaseAccount.coinBaseUserAccountData.currency?.code }?.base_id ?: ""
         val target_asset = if (dashToCrypt)_baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == selectedCoinBaseAccount.coinBaseUserAccountData.currency?.code }?.base_id ?: ""
         else
-            _baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == Constants.DASH_CURRENCY }?.base_id ?: ""
+            _baseIdForFaitModelCoinBase.value?.firstOrNull { it.base == Constants.PZQ_CURRENCY }?.base_id ?: ""
 
         val tradesRequest = TradesRequest(
             GenericUtils.fiatToStringWithoutCurrencyCode(valueToConvert),
@@ -110,12 +110,12 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
 
                     result.value.apply {
                         this.assetsBaseID = Pair(source_asset, target_asset)
-                        this.inputCurrencyName = if (dashToCrypt)"Dash"
+                        this.inputCurrencyName = if (dashToCrypt)"Pozoqo"
                         else
                             selectedCoinBaseAccount.coinBaseUserAccountData.currency?.name ?: ""
                         this.outputCurrencyName = if (dashToCrypt) selectedCoinBaseAccount.coinBaseUserAccountData.currency?.name ?: ""
                         else
-                            "Dash"
+                            "Pozoqo"
                         _swapTradeOrder.value = Event(this)
                     }
                 }
@@ -169,10 +169,10 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
         it.coinBaseUserAccountData.balance?.amount?.toDouble() != null &&
             !it.coinBaseUserAccountData.balance.amount.toDouble().isNaN() &&
             it.coinBaseUserAccountData.type != "fiat" &&
-            it.coinBaseUserAccountData.balance.currency != Constants.DASH_CURRENCY
+            it.coinBaseUserAccountData.balance.currency != Constants.PZQ_CURRENCY
         )
 
-    private fun setDashWalletBalance() {
+    private fun setPozoqoWalletBalance() {
         _dashWalletBalance.value = walletDataProvider.getWalletBalance()
     }
 
@@ -193,7 +193,7 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
     }
 
 
-    private val withdrawalLimitInDash: Double
+    private val withdrawalLimitInPozoqo: Double
         get() {
             return if (userPreference.coinbaseUserWithdrawalLimitAmount.isNullOrEmpty()) {
                 0.0
@@ -205,12 +205,12 @@ class CoinbaseConvertCryptoViewModel @Inject constructor(
                     Fiat.valueOf(userPreference.coinbaseSendLimitCurrency, 0)
                 }
                 val newRate = org.bitcoinj.utils.ExchangeRate(Coin.COIN, exchangeRate.fiat)
-                val amountInDash = newRate.fiatToCoin(fiatAmount)
-                amountInDash.toPlainString().toDoubleOrZero
+                val amountInPozoqo = newRate.fiatToCoin(fiatAmount)
+                amountInPozoqo.toPlainString().toDoubleOrZero
             }
         }
 
-    fun isInputGreaterThanLimit(amountInDash: Coin): Boolean {
-        return amountInDash.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInDash) > 0
+    fun isInputGreaterThanLimit(amountInPozoqo: Coin): Boolean {
+        return amountInPozoqo.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInPozoqo) > 0
     }
 }

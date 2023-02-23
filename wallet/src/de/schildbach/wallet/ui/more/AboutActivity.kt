@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group.
+ * Copyright 2019 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -79,7 +79,7 @@ class AboutActivity : LockScreenActivity() {
             }
         }
 
-        showExploreDashSyncStatus()
+        showExplorePozoqoSyncStatus()
         showFirebaseIds()
 
         setContentView(binding.root)
@@ -97,12 +97,12 @@ class AboutActivity : LockScreenActivity() {
         binding.fcmTokenItem.setOnClickListener { viewModel.copyFCMToken() }
     }
 
-    private fun showExploreDashSyncStatus() {
+    private fun showExplorePozoqoSyncStatus() {
         val formatFlags = DateUtils.FORMAT_SHOW_DATE or DateUtils.FORMAT_ABBREV_MONTH or DateUtils.FORMAT_SHOW_TIME
 
         viewModel.exploreRemoteTimestamp.observe(this) { timestamp ->
             binding.lastExploreUpdateLoadingIndicator.isVisible = false
-            binding.exploreDashLastServerUpdate.isVisible = true
+            binding.explorePozoqoLastServerUpdate.isVisible = true
 
             val formattedUpdateTime = if (timestamp <= 0L) {
                 getString(R.string.about_last_explore_dash_update_error)
@@ -110,11 +110,11 @@ class AboutActivity : LockScreenActivity() {
                 DateUtils.formatDateTime(applicationContext, timestamp, formatFlags)
             }
 
-            binding.exploreDashLastServerUpdate.text = formattedUpdateTime
+            binding.explorePozoqoLastServerUpdate.text = formattedUpdateTime
         }
 
         viewModel.exploreIsSyncing.observe(this) { isSyncing ->
-            binding.exploreDashLastDeviceSync.text = if (isSyncing) {
+            binding.explorePozoqoLastDeviceSync.text = if (isSyncing) {
                 "${getString(R.string.syncing)}…"
             } else if (viewModel.exploreIsSyncFailed) {
                 getString(

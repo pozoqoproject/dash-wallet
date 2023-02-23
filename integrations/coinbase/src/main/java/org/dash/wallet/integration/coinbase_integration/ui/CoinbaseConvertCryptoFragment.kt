@@ -165,7 +165,7 @@ class CoinbaseConvertCryptoFragment : Fragment(R.layout.fragment_coinbase_conver
             ).show(requireActivity())
         }
 
-        convertViewModel.userDashAccountEmptyError.observe(viewLifecycleOwner) {
+        convertViewModel.userPozoqoAccountEmptyError.observe(viewLifecycleOwner) {
             AdaptiveDialog.create(
                 R.drawable.ic_info_red,
                 getString(R.string.dont_have_any_dash),
@@ -205,7 +205,7 @@ class CoinbaseConvertCryptoFragment : Fragment(R.layout.fragment_coinbase_conver
         }
 
         binding.convertView.setOnSwapClicked {
-            convertViewModel.setOnSwapDashFromToCryptoClicked(it)
+            convertViewModel.setOnSwapPozoqoFromToCryptoClicked(it)
         }
 
         convertViewModel.selectedLocalExchangeRate.observe(viewLifecycleOwner) {
@@ -213,7 +213,7 @@ class CoinbaseConvertCryptoFragment : Fragment(R.layout.fragment_coinbase_conver
             setConvertViewInput()
         }
 
-        convertViewModel.enteredConvertDashAmount.observe(viewLifecycleOwner) { amount ->
+        convertViewModel.enteredConvertPozoqoAmount.observe(viewLifecycleOwner) { amount ->
             val hasAmount = !amount.isZero
             binding.youWillReceiveLabel.isVisible = hasAmount
             binding.youWillReceiveValue.isVisible = hasAmount
@@ -370,7 +370,7 @@ class CoinbaseConvertCryptoFragment : Fragment(R.layout.fragment_coinbase_conver
     @SuppressLint("SetTextI18n")
     private fun setMinAmountErrorMessage() {
         convertViewModel.selectedLocalExchangeRate.value?.let { rate ->
-            selectedCoinBaseAccount?.currencyToDashExchangeRate?.let { currencyToDashExchangeRate ->
+            selectedCoinBaseAccount?.currencyToPozoqoExchangeRate?.let { currencyToPozoqoExchangeRate ->
                 val currencyRate = ExchangeRate(Coin.COIN, rate.fiat)
                 val fiatAmount = Fiat.parseFiat(currencyRate.fiat.currencyCode, convertViewModel.minAllowedSwapAmount)
                 binding.limitDesc.text = "${getString(

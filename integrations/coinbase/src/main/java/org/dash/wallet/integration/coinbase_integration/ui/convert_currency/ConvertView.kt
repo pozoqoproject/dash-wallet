@@ -87,7 +87,7 @@ class ConvertView(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
 
     init {
 
-        binding.convertFromDashBalance.isVisible = input != null
+        binding.convertFromPozoqoBalance.isVisible = input != null
         updateUiWithSwap()
         updateSellSwapBtn()
         binding.swapBtn.setOnClickListener {
@@ -153,8 +153,8 @@ class ConvertView(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
     private fun setFromBtnData() {
         binding.convertFromBtn.setCryptoItemGroupVisibility(input != null)
         binding.walletIcon.isVisible = (input != null)
-        binding.convertFromDashBalance.isVisible = (input != null)
-        binding.convertFromDashFiatAmount.isVisible = (input != null)
+        binding.convertFromPozoqoBalance.isVisible = (input != null)
+        binding.convertFromPozoqoFiatAmount.isVisible = (input != null)
         input?.let {
             binding.convertFromBtn.setConvertItemServiceName(it.cryptoWalletService)
             binding.convertFromBtn.setConvertItemTitle(it.cryptoWalletName)
@@ -169,10 +169,10 @@ class ConvertView(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
                     Coin.ZERO
                 }
 
-                binding.convertFromDashBalance.text = "${dashFormat.minDecimals(0)
+                binding.convertFromPozoqoBalance.text = "${dashFormat.minDecimals(0)
                     .optionalDecimals(0,8).format(coin)} ${input?.currency}"
 
-                binding.convertFromDashFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} ${input?.faitAmount}"
+                binding.convertFromPozoqoFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} ${input?.faitAmount}"
             }
         }
     }
@@ -180,8 +180,8 @@ class ConvertView(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
     @SuppressLint("SetTextI18n")
     private fun setToBtnData() {
         binding.convertToBtn.setCryptoItemGroupVisibility(input != null)
-        binding.convertFromDashBalance.isVisible = (dashInput != null)
-        binding.convertFromDashFiatAmount.isVisible = (dashInput != null)
+        binding.convertFromPozoqoBalance.isVisible = (dashInput != null)
+        binding.convertFromPozoqoFiatAmount.isVisible = (dashInput != null)
         binding.walletIcon.isVisible = (dashInput != null)
         input?.let {
             binding.convertToBtn.setConvertItemServiceName(it.cryptoWalletService)
@@ -193,10 +193,10 @@ class ConvertView(context: Context, attrs: AttributeSet) : ConstraintLayout(cont
             dashInput?.let { dash ->
                 val currencyRate = ExchangeRate(Coin.COIN, currentExchangeRate.fiat)
                 val fiatAmount = GenericUtils.fiatToString(currencyRate.coinToFiat(dash))
-                binding.convertFromDashBalance.text = "${dashFormat.minDecimals(0)
-                    .optionalDecimals(0,8).format(dash)} DASH"
+                binding.convertFromPozoqoBalance.text = "${dashFormat.minDecimals(0)
+                    .optionalDecimals(0,8).format(dash)} PZQ"
 
-                binding.convertFromDashFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} $fiatAmount"
+                binding.convertFromPozoqoFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} $fiatAmount"
             }
         }
     }

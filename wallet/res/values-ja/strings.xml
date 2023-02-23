@@ -13,7 +13,7 @@
     <string name="blockchain_state_progress_stalled">同期が停滞しています</string>
     <string name="blockchain_state_progress_problem_storage">同期：ストレージに問題があります</string>
     <string name="blockchain_state_progress_problem_network">同期：ネットワークに問題があります</string>
-    <string name="wallet_address_fragment_clipboard_msg">Dashアドレスがクリップボードにコピーされました</string>
+    <string name="wallet_address_fragment_clipboard_msg">Pozoqoアドレスがクリップボードにコピーされました</string>
     <string name="wallet_address_dialog_fragment_hint">プライバシー保護のため、アドレスは支払いを受け取るごとに変化します。</string>
     <string name="wallet_balance_fragment_too_much">この額はポケットに入れて運ぶには多すぎます。一部をもっと安全な場所に移してください。</string>
     <string name="wallet_balance_fragment_replaying">再生中は残高情報は利用できません。</string>
@@ -39,25 +39,25 @@
     <string name="wallet_options_encrypt_keys_change">PINを変更する</string>
     <string name="wallet_options_safety">安全上の注意事項</string>
     <string name="wallet_low_storage_dialog_title">内部デバイスのストレージ容量が残りわずかです！</string>
-    <string name="wallet_low_storage_dialog_msg">Dashウォレットはトランザクションやブロックを記憶するのに内部ストレージを使用します。もし容量が不足した場合、動作しなくなりあなたのDashが危機にさらされるでしょう!\n\n不要なアプリを削除するためにアプリケーションマネージャを開きますか？</string>
+    <string name="wallet_low_storage_dialog_msg">Pozoqoウォレットはトランザクションやブロックを記憶するのに内部ストレージを使用します。もし容量が不足した場合、動作しなくなりあなたのPozoqoが危機にさらされるでしょう!\n\n不要なアプリを削除するためにアプリケーションマネージャを開きますか？</string>
     <string name="wallet_low_storage_dialog_button_apps">アプリの管理</string>
     <string name="wallet_timeskew_dialog_title">時刻の設定を確認してください！</string>
-    <string name="wallet_timeskew_dialog_msg">デバイスの時間が%d分ずれてます。 この問題の為、Dashのやり取りが出来なくなる可能性があります。\n\n正確な時間とタイムゾーンを設定してください。</string>
+    <string name="wallet_timeskew_dialog_msg">デバイスの時間が%d分ずれてます。 この問題の為、Pozoqoのやり取りが出来なくなる可能性があります。\n\n正確な時間とタイムゾーンを設定してください。</string>
     <string name="wallet_version_dialog_title">新バージョンが利用可能です！</string>
     <string name="wallet_version_dialog_msg">このバージョンでは重要なバグが修正されます。詳細を見るには、Google Playの詳細情報を見てください。</string>
     <string name="wallet_version_dialog_msg_deprecated">アップデートが表示されない場合、それはおそらくあなたのバージョンのAndroidはもうサポートされていないということです。</string>
     <string name="wallet_version_dialog_button_market">Google Play</string>
     <string name="wallet_version_dialog_button_binary">ダウンロード</string>
     <string name="wallet_old_sdk_dialog_title">Androidのバージョンが古すぎます</string>
-    <string name="wallet_old_sdk_dialog_message">次のDashウォレットのリリースの際、このデバイスはもうサポートされないかもしれません。場合によっては、このデバイスでのコインの利用が困難になるかもしれません。\n\n意図的にしているのでない限り、あなたのコインをすぐにでも移動させることをおすすめします。</string>
-    <string name="send_coins_activity_title">Dashの送金</string>
+    <string name="wallet_old_sdk_dialog_message">次のPozoqoウォレットのリリースの際、このデバイスはもうサポートされないかもしれません。場合によっては、このデバイスでのコインの利用が困難になるかもしれません。\n\n意図的にしているのでない限り、あなたのコインをすぐにでも移動させることをおすすめします。</string>
+    <string name="send_coins_activity_title">Pozoqoの送金</string>
     <string name="send_coins_fragment_request_payment_request_progress">%s から署名の取得中…</string>
     <string name="send_coins_fragment_request_payment_request_failed_title">署名の取得に失敗しました</string>
     <string name="send_coins_fragment_request_payment_request_wrong_signature">不正な署名です！</string>
     <string name="send_coins_fragment_payee_verified_by_unknown">不明</string>
     <string name="send_coins_fragment_receiving_address_label">へ送金する</string>
     <string name="send_coins_fragment_receiving_address_hint">アドレスもしくは名前を入力</string>
-    <string name="send_coins_fragment_receiving_address_error">無効なDashアドレスです！</string>
+    <string name="send_coins_fragment_receiving_address_error">無効なPozoqoアドレスです！</string>
     <string name="send_coins_fragment_receiving_address_own">自分自身に送金しようとしています！</string>
     <string name="send_coins_fragment_receiving_address_complex">複雑な\nアドレス</string>
     <string name="send_coins_fragment_pending">（%sが確認待ちです）</string>
@@ -109,20 +109,20 @@
     <string name="maintenance_dialog_state_decrypting">復号中…</string>
     <string name="maintenance_dialog_state_done">完了</string>
     <string name="maintenance_dialog_button_move">移動</string>
-    <string name="request_coins_activity_title">Dashのリクエスト</string>
+    <string name="request_coins_activity_title">Pozoqoのリクエスト</string>
     <string name="request_coins_fragment_amount_label">リクエストする額（省略可能）</string>
     <string name="request_coins_fragment_accept_bluetooth_payment">より信頼できる手順としてBluetooth経由での支払いを許可</string>
     <string name="request_coins_fragment_initiate_request_qr">このコードを送金者にスキャンさせてください。</string>
     <string name="request_coins_fragment_initiate_request_nfc">または、NFCが使用可能なデバイスアをタップしてください。</string>
-    <string name="request_coins_clipboard_msg">Dashのリクエストがクリップボードにコピーされました</string>
-    <string name="request_coins_no_local_app_msg">他のDashアプリが見付かりませんでした</string>
+    <string name="request_coins_clipboard_msg">Pozoqoのリクエストがクリップボードにコピーされました</string>
+    <string name="request_coins_no_local_app_msg">他のPozoqoアプリが見付かりませんでした</string>
     <string name="request_coins_options_local_app_title">ローカルアプリからのリクエスト</string>
     <string name="address_book_activity_title">アドレス帳</string>
     <string name="address_book_list_receiving_title">あなたのアドレス</string>
     <string name="address_book_list_receiving_random">古いアドレス</string>
     <string name="address_book_list_sending_title">送金先アドレス</string>
     <string name="address_book_empty_text">アドレス帳にまだ登録がありません</string>
-    <string name="address_book_context_send_title">アドレスへDashを送金</string>
+    <string name="address_book_context_send_title">アドレスへPozoqoを送金</string>
     <string name="address_book_context_edit_title">アドレスを編集</string>
     <string name="address_book_context_remove_title">アドレスを削除</string>
     <string name="address_book_context_copy_to_clipboard_title">クリップボードへコピー</string>
@@ -146,7 +146,7 @@
     <string name="transaction_row_message_purpose_raise_fee">このトランザクションは前の支払いのネットワーク手数料を増額します。</string>
     <string name="transaction_row_message_own_unbroadcasted">この支払はまだ送信されていません。</string>
     <string name="transaction_row_message_received_direct">この支払は直接届きました。利用可能とならないリスクがあります。</string>
-    <string name="transaction_row_message_received_unconfirmed_delayed">Dashネットワークが過負荷の可能性があるので、この支払の承認が遅れています。</string>
+    <string name="transaction_row_message_received_unconfirmed_delayed">Pozoqoネットワークが過負荷の可能性があるので、この支払の承認が遅れています。</string>
     <string name="transaction_row_message_received_unconfirmed_unlocked">この支払は現在承認なしで送信できます。</string>
     <string name="transaction_row_message_received_in_conflict">この支払は送信者によって無効にされるリスクが高まっています！できれば、承認されるまでお待ちください。</string>
     <string name="transaction_row_message_received_dead">この支払は送金者によって無効とされました。</string>
@@ -214,8 +214,8 @@
     <string name="export_keys_dialog_success"><![CDATA[<p>お客様のウォレットは、<tt>%s</tt>にバックアップされています。<p><b>バックアップがお客様のデバイス上にしか存在しない場合、同時に両方を失う危険性があります！</b></p><p>いずれの場合でも、バックアップパスワードを覚えているかを確認してください</p>]]>。</string>
     <string name="export_keys_dialog_failure">ウォレットをバックアップできませんでした:\n%s</string>
     <string name="export_keys_dialog_button_archive">アーカイブ</string>
-    <string name="export_keys_dialog_mail_subject">Dashウォレットのバックアップ</string>
-    <string name="export_keys_dialog_mail_text">添付した暗号化ファイルにはDashの秘密鍵が含まれています。いかなる時も安全に保管してくだしさい。暗号化パスワードを忘れないようにしてください！</string>
+    <string name="export_keys_dialog_mail_subject">Pozoqoウォレットのバックアップ</string>
+    <string name="export_keys_dialog_mail_text">添付した暗号化ファイルにはPozoqoの秘密鍵が含まれています。いかなる時も安全に保管してくだしさい。暗号化パスワードを忘れないようにしてください！</string>
     <string name="export_keys_dialog_mail_intent_chooser">ウォレットのアーカイブに利用するアプリケーション…</string>
     <string name="export_keys_dialog_mail_intent_failed">ウォレットのアーカイブに失敗しました。</string>
     <string name="import_export_keys_dialog_password">パスワード</string>
@@ -242,8 +242,8 @@
     <string name="scan_camera_permission_dialog_message">QRコードをスキャンするには、カメラを利用する権限を許可する必要があります。</string>
     <string name="input_parser_io_error">データを読込めませんでした:\n%s</string>
     <string name="input_parser_cannot_classify">入力を認識できません:\n%s</string>
-    <string name="input_parser_invalid_bitcoin_uri">無効なDash URI:\n%s</string>
-    <string name="input_parser_invalid_address">無効なDashアドレスです！\n（メインネット／テストネットの混同？）</string>
+    <string name="input_parser_invalid_bitcoin_uri">無効なPozoqo URI:\n%s</string>
+    <string name="input_parser_invalid_address">無効なPozoqoアドレスです！\n（メインネット／テストネットの混同？）</string>
     <string name="input_parser_unverifyable_paymentrequest">支払いリクエストの検証が出来ません:\n%s</string>
     <string name="input_parser_invalid_paymentrequest">無効な支払のリクエスト:\n%s</string>
     <string name="input_parser_invalid_transaction">無効なトランザクション:\n%s</string>
@@ -252,11 +252,11 @@
     <string name="preferences_category_labs">ラボ</string>
     <string name="preferences_precision_title">通貨単位の切り下げと切り上げ</string>
     <string name="preferences_precision_summary">総額の表示単位。これは計算に影響しません。</string>
-    <string name="preferences_precision_labels_8">DASH、小数点以下8桁</string>
-    <string name="preferences_precision_labels_6">DASH、小数点以下6桁</string>
-    <string name="preferences_precision_labels_4">DASH、小数点以下4桁</string>
-    <string name="preferences_precision_labels_2_3">mDASH、小数点以下2桁</string>
-    <string name="preferences_precision_labels_0_6">µDASH、小数点無し</string>
+    <string name="preferences_precision_labels_8">PZQ、小数点以下8桁</string>
+    <string name="preferences_precision_labels_6">PZQ、小数点以下6桁</string>
+    <string name="preferences_precision_labels_4">PZQ、小数点以下4桁</string>
+    <string name="preferences_precision_labels_2_3">mPZQ、小数点以下2桁</string>
+    <string name="preferences_precision_labels_0_6">µPZQ、小数点無し</string>
     <string name="preferences_own_name_title">自身の名前</string>
     <string name="preferences_own_name_summary">支払いリクエストに含める、あなた自身の名前。短いものにしてください。</string>
     <string name="preferences_send_coins_autoclose_title">送金ダイアローグを自動的に閉じる</string>
@@ -290,7 +290,7 @@
     <string name="report_issue_dialog_title_issue">問題を報告</string>
     <string name="report_issue_dialog_title_crash">直前のクラッシュを検知しました</string>
     <string name="report_issue_dialog_title_transaction">選択した支払いについての問題を報告</string>
-    <string name="report_issue_dialog_message_issue">発生した問題を再現できるように正確に記述して下さい。できれば英語をお使い下さい。あなたの問題に対して24時間以内にDashサポートからEメールでお返事します。</string>
+    <string name="report_issue_dialog_message_issue">発生した問題を再現できるように正確に記述して下さい。できれば英語をお使い下さい。あなたの問題に対して24時間以内にPozoqoサポートからEメールでお返事します。</string>
     <string name="report_issue_dialog_message_crash">今後、この問題を修正する手助けとして、クラッシュレポートを送信しますか？</string>
     <string name="report_issue_dialog_description">説明</string>
     <string name="report_issue_dialog_report">報告</string>
@@ -314,7 +314,7 @@
     <string name="about_license_title">ライセンス</string>
     <string name="about_source_title">ソースコード</string>
     <string name="about_category_credits">このアプリは以下を使用中です…</string>
-    <string name="about_credits_bitcoinj_title">dashj %s：Dashプロトコル実装</string>
+    <string name="about_credits_bitcoinj_title">pozoqoj %s：Pozoqoプロトコル実装</string>
     <string name="about_credits_zxing_title">ZXing：QRコード処理ライブラリー</string>
     <string name="about_credits_icon_title">このアプリは「bitboy」によるアイコンを使用しています</string>
     <string name="about_credits_scrypt_title">Scrypt：Will Glozer と Colin Percivalによって実装されました</string>
@@ -326,11 +326,11 @@
     <string name="about_community_googleplus_summary">このアプリについて議論する</string>
     <string name="notification_coins_received_msg">%sを受け取りました</string>
     <string name="notification_peers_connected_msg">%dピアが接続済</string>
-    <string name="notification_inactivity_title">あなたはまだこのデバイスにDashを保有しています！</string>
-    <string name="notification_inactivity_message">あなたはこのデバイスにまだDashを保有しています！Dashウォレットをアンイストールする前に必ず復元フレーズを書き留めて下さい。そうしないと、あなたの残高 %sが失われます。</string>
+    <string name="notification_inactivity_title">あなたはまだこのデバイスにPozoqoを保有しています！</string>
+    <string name="notification_inactivity_message">あなたはこのデバイスにまだPozoqoを保有しています！Pozoqoウォレットをアンイストールする前に必ず復元フレーズを書き留めて下さい。そうしないと、あなたの残高 %sが失われます。</string>
     <string name="notification_inactivity_action_dismiss">後で通知する</string>
     <string name="notification_inactivity_action_dismiss_forever">今後通知しない</string>
-    <string name="appwidget_wallet_balance_title">Dash残高</string>
+    <string name="appwidget_wallet_balance_title">Pozoqo残高</string>
 
     <!-- generic buttons -->
     <string name="button_ok">OK</string>
@@ -346,8 +346,8 @@
     <string name="button_copy_request">リクエストをコピー</string>
     <string name="button_paste">貼付け</string>
     <string name="button_set_as_default">既定として設定</string>
-    <string name="button_request_coins">Dashのリクエスト</string>
-    <string name="button_send_coins">Dashの送金</string>
+    <string name="button_request_coins">Pozoqoのリクエスト</string>
+    <string name="button_send_coins">Pozoqoの送金</string>
     <string name="button_pay">送金</string>
     <string name="button_scan">スキャン</string>
     <string name="button_settings">設定</string>
@@ -383,7 +383,7 @@
     <string name="payment_protocol_insufficient_funds_error_message">この取引を完了するのに十分な資金がありません</string>
 
 
-    <string name="select_a_service_to_buy_and_sell_dash">サービスを選択してDashを売買します。</string>
+    <string name="select_a_service_to_buy_and_sell_dash">サービスを選択してPozoqoを売買します。</string>
     <string name="select_a_service">サービスを選択する</string>
     <string name="activity_buy_and_sell_dash_filter">絞り込み</string>
     <string name="clear_filter">フィルターをクリアする</string>

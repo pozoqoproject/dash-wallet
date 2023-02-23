@@ -44,9 +44,9 @@ class EntryPointFragment : Fragment(R.layout.fragment_entry_point) {
             requireActivity().finish()
         }
 
-        binding.requiredDashTxt.text = getString(
+        binding.requiredPozoqoTxt.text = getString(
             R.string.required_dash_amount,
-            CrowdNodeConstants.MINIMUM_REQUIRED_DASH.toPlainString()
+            CrowdNodeConstants.MINIMUM_REQUIRED_PZQ.toPlainString()
         )
 
         binding.newAccountBtn.setOnClickListener {
@@ -75,13 +75,13 @@ class EntryPointFragment : Fragment(R.layout.fragment_entry_point) {
             }
         }
 
-        binding.requiredDashHint.setOnClickListener {
+        binding.requiredPozoqoHint.setOnClickListener {
             val dialog = AdaptiveDialog.create(
                 null,
                 getString(R.string.insufficient_funds),
                 getString(
                     R.string.crowdnode_minimum_dash,
-                    CrowdNodeConstants.MINIMUM_REQUIRED_DASH.toPlainString()
+                    CrowdNodeConstants.MINIMUM_REQUIRED_PZQ.toPlainString()
                 ),
                 getString(R.string.button_close),
                 getString(R.string.buy_dash)
@@ -89,7 +89,7 @@ class EntryPointFragment : Fragment(R.layout.fragment_entry_point) {
 
             dialog.show(requireActivity()) { result ->
                 if (result == true) {
-                    viewModel.buyDash()
+                    viewModel.buyPozoqo()
                 }
             }
         }

@@ -40,7 +40,7 @@ public class PoloniexClient extends RetrofitClient {
     }
 
     private interface PoloniexService {
-        @GET("public?command=returnOrderBook&currencyPair=BTC_DASH&depth=1")
+        @GET("public?command=returnOrderBook&currencyPair=BTC_PZQ&depth=1")
         Call<PoloniexResponse> getRate();
     }
 

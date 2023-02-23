@@ -33,7 +33,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Gửi đến địa chỉ</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Mua &amp; Bán Dash</string>
+    <string name="shortcut_buy_sell">Mua &amp; Bán Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Nhận</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -58,8 +58,8 @@
     <string name="perm_lock_close_app">Đóng</string>
 
     <string name="scan_to_pay_error_dialog_title">Quét để gửi</string>
-    <string name="scan_to_pay_error_dialog_message">Không phải một địa chỉ Dash hoặc URL yêu cầu trong bộ nhớ đệm:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Không phải một địa chỉ Dash hoặc URL yêu cầu trong bộ nhớ đệm.</string>
+    <string name="scan_to_pay_error_dialog_message">Không phải một địa chỉ Pozoqo hoặc URL yêu cầu trong bộ nhớ đệm:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Không phải một địa chỉ Pozoqo hoặc URL yêu cầu trong bộ nhớ đệm.</string>
     <string name="receive_title">Nhận</string>
     <string name="receive_enter_amount_message">Hãy xác định rõ số lượng cần nhận</string>
     <string name="receive_enter_amount_button">Hãy cung cấp số lượng</string>
@@ -104,13 +104,13 @@
     <string name="export_keys_dialog_title_to_seed">Xem câu phục hồi</string>
     <string name="import_keys_dialog_title_from_seed">Khôi phục với câu phục hồi</string>
     <string name="backup_to_seed_wallet_dialog_message">Đây là câu phục hồi của bạn. Hãy ghi nó xuống.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">ĐỪNG ĐỂ bất kỳ ai nhìn thấy câu phục hồi của bạn nếu không họ sẽ tiêu sạch số Dash của bạn đấy.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">ĐỪNG ĐỂ bất kỳ ai nhìn thấy câu phục hồi của bạn nếu không họ sẽ tiêu sạch số Pozoqo của bạn đấy.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Ví của bạn được bảo vệ bởi mã PIN chi tiêu. Hãy nhập mã PIN của bạn và bấm Hiển thị để xem câu phục hồi của bạn.</string>
     <string name="import_keys_from_seed_dialog_message">Hãy nhập câu phục hồi của bạn ở đây.</string>
     <string name="import_export_keys_dialog_password_phrase">Câu phục hồi ở đây.</string>
     <string name="preferences_report_issue_summary">Thu thập các thông tin về lỗi bạn gặp phải và gửi email về báo cáo lỗi này đến các nhà phát triển phần mềm.</string>
     <string name="navigation_configuration">Cấu hình</string>
-    <string name="request_coins_clipboard_address_msg">Địa chỉ Dash đã được copy vào bộ đệm</string>
+    <string name="request_coins_clipboard_address_msg">Địa chỉ Pozoqo đã được copy vào bộ đệm</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Hiển thị</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" không phải là một cụm từ khôi phục</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Cụm từ phục hồi phải có 12 từ</string>
@@ -121,7 +121,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Không phải trả phí. Sử dụng "không phí" chỉ khi bạn không quan tâm đến thời gian chờ xác thực.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Ứng dụng %s muốn nhận khoá công khai tổng thể của bạn. Nó có thể được sử dụng để theo dõi ví của bạn, nhưng nó không thể được dùng để tiêu Dash của bạn.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Ứng dụng %s muốn nhận khoá công khai tổng thể của bạn. Nó có thể được sử dụng để theo dõi ví của bạn, nhưng nó không thể được dùng để tiêu Pozoqo của bạn.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Ứng dụng %s đang yêu cầu một địa chỉ để nó có thể thanh toán cho bạn. Bạn có muốn cho phép điều này?</string>
 
@@ -132,7 +132,7 @@
     <string name="wallet_lock_unlock_dialog_title">Mở khoá ví</string>
     <string name="wallet_lock_unlock_dialog_message">Ví của bạn được bảo vệ bởi mã PIN chi tiêu. Hãy nhập mã PIN và bấm Mở Khoá để tiếp tục</string>
     <string name="wallet_lock_reset_wallet_title">Thiết lập lại ví</string>
-    <string name="wallet_lock_reset_wallet_message">Bạn chắc chứ? Ví của bạn sẽ bị xoá và tất cả số Dash trong đó sẽ bị mất.\n\nCách duy nhất để khôi phục số Dash đó là với một file backup hoặc có dòng chữ phục hồi.</string>
+    <string name="wallet_lock_reset_wallet_message">Bạn chắc chứ? Ví của bạn sẽ bị xoá và tất cả số Pozoqo trong đó sẽ bị mất.\n\nCách duy nhất để khôi phục số Pozoqo đó là với một file backup hoặc có dòng chữ phục hồi.</string>
 
     <string name="wallet_lock_wallet_disabled">Ví bị mất tác dụng</string>
     <string name="wallet_lock_try_again">Thử lại trong %1$d%2$s</string>
@@ -192,7 +192,7 @@
     <string name="verify_it_is_important">Điều này là quan trọng</string>
     <string name="verify_it_is_important_subtitle">Chúng tôi sẽ hiển thị cho bạn khoá bí mật trong ví của bạn.</string>
     <string name="verify_info_text_1">Câu phục hồi này là quyền truy cập đến tiền trong ví này của bạn.</string>
-    <string name="verify_info_text_3">Bạn cần cụm từ phục hồi để truy cập đến khoản tiền của bạn nếu thiết bị này bị mất, hỏng hoặc ví Dash Wallet vô tình bị gỡ bỏ khỏi thiết bị này.</string>
+    <string name="verify_info_text_3">Bạn cần cụm từ phục hồi để truy cập đến khoản tiền của bạn nếu thiết bị này bị mất, hỏng hoặc ví Pozoqo Wallet vô tình bị gỡ bỏ khỏi thiết bị này.</string>
     <string name="verify_skip">Bỏ qua</string>
     <string name="verify_secure_now_btn">Bảo mật ngay</string>
     <string name="verify_secure_now_message">Nếu bạn mất thiết bị này, bạn sẽ mất số tiền trong đó. Hãy thiết lập cụm từ phục hồi để bạn có thể khôi phục được ví trên một thiết bị khác.</string>
@@ -224,7 +224,7 @@
     <string name="authenticate_switch_to_fingerprint">Sử dụng vân tay</string>
     <string name="authenticate_switch_to_pin">Sử dụng mã PIN</string>
 
-    <string name="menu_buy_and_sell_title">Mua &amp; Bán Dash</string>
+    <string name="menu_buy_and_sell_title">Mua &amp; Bán Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Kết nối với sàn giao dịch của bên thứ ba</string>
     <string name="menu_security_title">Bảo mật</string>
     <string name="menu_security_subtitle">Xem mật khẩu, sao lưu ví...</string>
@@ -246,14 +246,14 @@
     <string name="about_contact_support">Liên hệ hỗ trợ</string>
     <string name="about_fork_disclaimer">Đây là một ứng dụng mã nguồn mở được xây dựng dựa trên ví Bitcoin</string>
     <string name="about_license">Giấy phép GNU General Public v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="block">Khối</string>
     <string name="time">Thời gian</string>
     <string name="hash">Băm</string>
     <string name="block_info">Thông tin khối</string>
 
     <string name="scan_private_key">Quét khoá riêng</string>
-    <string name="scan_private_key_intro_1">Bạn sắp quét tiền từ một ví giấy Dash.</string>
+    <string name="scan_private_key_intro_1">Bạn sắp quét tiền từ một ví giấy Pozoqo.</string>
     <string name="scan_private_key_intro_2">Việc này sẽ chuyển tất cả tiền từ ví đó vào ví của bạn trên thiết bị này.</string>
     <string name="scan_private_key_intro_3">Khi giao dịch được xác thực, ví kia trở nên không còn gì nữa và không nên tiếp tục sử dụng lại ví những lý do an toàn.</string>
     <string name="confirm">Xác nhận</string>
@@ -291,7 +291,7 @@
     <string name="welcome_screen_subtitle_3">Bạn có toàn quyền kiểm soát và tuỳ chỉnh ví dựa trên nhu cầu của mình</string>
 
     <string name="sync_status_wait">Vui lòng đợi quá trình đồng bộ hoàn thành</string>
-    <string name="sync_status_syncing_sub_title">với blockchain của Dash</string>
+    <string name="sync_status_syncing_sub_title">với blockchain của Pozoqo</string>
     <string name="sync_status_unable_to_connect">Không thể kết nối</string>
     <string name="sync_status_check_connection">Kiểm tra kết nối của bạn</string>
     <string name="sync_status_sync_title">Đồng bộ</string>

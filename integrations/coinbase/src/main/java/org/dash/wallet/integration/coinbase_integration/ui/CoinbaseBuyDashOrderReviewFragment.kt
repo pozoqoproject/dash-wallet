@@ -39,16 +39,16 @@ import org.dash.wallet.common.ui.viewBinding
 import org.dash.wallet.common.util.GenericUtils
 import org.dash.wallet.common.util.safeNavigate
 import org.dash.wallet.integration.coinbase_integration.R
-import org.dash.wallet.integration.coinbase_integration.databinding.FragmentCoinbaseBuyDashOrderReviewBinding
+import org.dash.wallet.integration.coinbase_integration.databinding.FragmentCoinbaseBuyPozoqoOrderReviewBinding
 import org.dash.wallet.integration.coinbase_integration.model.*
 import org.dash.wallet.integration.coinbase_integration.ui.dialogs.CoinBaseResultDialog
-import org.dash.wallet.integration.coinbase_integration.viewmodels.CoinbaseBuyDashOrderReviewViewModel
+import org.dash.wallet.integration.coinbase_integration.viewmodels.CoinbaseBuyPozoqoOrderReviewViewModel
 
 @ExperimentalCoroutinesApi
 @AndroidEntryPoint
-class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_buy_dash_order_review) {
-    private val binding by viewBinding(FragmentCoinbaseBuyDashOrderReviewBinding::bind)
-    private val viewModel by viewModels<CoinbaseBuyDashOrderReviewViewModel>()
+class CoinbaseBuyPozoqoOrderReviewFragment : Fragment(R.layout.fragment_coinbase_buy_dash_order_review) {
+    private val binding by viewBinding(FragmentCoinbaseBuyPozoqoOrderReviewBinding::bind)
+    private val viewModel by viewModels<CoinbaseBuyPozoqoOrderReviewViewModel>()
     private val amountViewModel by activityViewModels<EnterAmountViewModel>()
     private lateinit var selectedPaymentMethodId: String
     private var loadingDialog: AdaptiveDialog? = null
@@ -104,7 +104,7 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
         }
 
         arguments?.let {
-            CoinbaseBuyDashOrderReviewFragmentArgs.fromBundle(it).paymentMethod.apply {
+            CoinbaseBuyPozoqoOrderReviewFragmentArgs.fromBundle(it).paymentMethod.apply {
                 binding.contentOrderReview.paymentMethodName.text = this.name
                 val cardIcon = if (this.paymentMethodType == PaymentMethodType.Card) {
                     CardUtils.getCardIcon(this.account)
@@ -117,7 +117,7 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
                 selectedPaymentMethodId = this.paymentMethodId
             }
 
-            CoinbaseBuyDashOrderReviewFragmentArgs.fromBundle(it).placeBuyOrderUIModel.apply {
+            CoinbaseBuyPozoqoOrderReviewFragmentArgs.fromBundle(it).placeBuyOrderUIModel.apply {
                 updateOrderReviewUI()
             }
         }
@@ -135,8 +135,8 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
 
         viewModel.commitBuyOrderSuccessState.observe(viewLifecycleOwner) { params ->
             safeNavigate(
-                CoinbaseBuyDashOrderReviewFragmentDirections.coinbaseBuyDashOrderReviewToTwoFaCode(
-                    CoinbaseTransactionParams(params, TransactionType.BuyDash)
+                CoinbaseBuyPozoqoOrderReviewFragmentDirections.coinbaseBuyPozoqoOrderReviewToTwoFaCode(
+                    CoinbaseTransactionParams(params, TransactionType.BuyPozoqo)
                 )
             )
         }
@@ -154,7 +154,7 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
 
         binding.contentOrderReview.coinbaseFeeInfoContainer.setOnClickListener {
             viewModel.logEvent(AnalyticsConstants.Coinbase.BUY_QUOTE_FEE_INFO)
-            safeNavigate(CoinbaseBuyDashOrderReviewFragmentDirections.orderReviewToFeeInfo())
+            safeNavigate(CoinbaseBuyPozoqoOrderReviewFragmentDirections.orderReviewToFeeInfo())
         }
 
         viewModel.placeBuyOrderFailedCallback.observe(viewLifecycleOwner) {
@@ -179,8 +179,8 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
 
     private fun PlaceBuyOrderUIModel.updateOrderReviewUI() {
         newBuyOrderId = this.buyOrderId
-        binding.contentReviewBuyOrderDashAmount.dashAmount.text = this.dashAmount
-        binding.contentReviewBuyOrderDashAmount.message.text =
+        binding.contentReviewBuyOrderPozoqoAmount.dashAmount.text = this.dashAmount
+        binding.contentReviewBuyOrderPozoqoAmount.message.text =
             getString(R.string.you_will_receive_dash_on_your_dash_wallet, this.dashAmount)
         binding.contentOrderReview.purchaseAmount.text =
             getString(
@@ -231,7 +231,7 @@ class CoinbaseBuyDashOrderReviewFragment : Fragment(R.layout.fragment_coinbase_b
                 }
             }
         }
-        transactionStateDialog.showNow(parentFragmentManager, "CoinBaseBuyDashDialog")
+        transactionStateDialog.showNow(parentFragmentManager, "CoinBaseBuyPozoqoDialog")
     }
 
     override fun onResume() {

@@ -22,6 +22,6 @@ import com.google.gson.annotations.SerializedName
 data class CrowdNodeIsAddressInUse (
     @SerializedName("inUse")
     val isInUse : Boolean,
-    @SerializedName("DashAddress")
+    @SerializedName("PozoqoAddress")
     val primaryAddress : String?
 )

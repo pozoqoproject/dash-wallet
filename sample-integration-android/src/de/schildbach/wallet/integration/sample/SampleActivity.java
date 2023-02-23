@@ -48,7 +48,7 @@ import de.schildbach.wallet.integration.android.BitcoinIntegration;
 public class SampleActivity extends Activity {
     private static final long AMOUNT = 500000;
     private static final String[] DONATION_ADDRESSES_MAINNET = {
-            "XmCwQUBbu9oHnqR7w7L8C1tiTRXCQZgWo1",  //Hash Engineering donation DASH address
+            "XmCwQUBbu9oHnqR7w7L8C1tiTRXCQZgWo1",  //Hash Engineering donation PZQ address
             "XmCwQUBbu9oHnqR7w7L8C1tiTRXCQZgWo1"
     };
     private static final String[] DONATION_ADDRESSES_TESTNET = {
@@ -190,7 +190,7 @@ public class SampleActivity extends Activity {
             Intent chooserIntent = Intent.createChooser(walletUriIntent, "Select Wallet");
             startActivityForResult(chooserIntent, requestCode);
         } else {
-            Toast.makeText(this, "Dash Wallet not installed", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Pozoqo Wallet not installed", Toast.LENGTH_LONG).show();
         }
     }
 

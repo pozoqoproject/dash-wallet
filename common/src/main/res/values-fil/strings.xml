@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">Hindi Magagamit ang Network</string>
     <string name="network_unavailable_check_connection">Mangyaring suriin ang iyong koneksyon sa network</string>
     <string name="network_unavailable_balance_not_accurate">Ang balanse ay maaaring hindi tama dahil sa nawala na koneksyon</string>
-    <string name="buy_dash">Bumili ng Dash</string>
+    <string name="buy_dash">Bumili ng Pozoqo</string>
     <string name="copied">Kinopya</string>
     <string name="staking_title">Staking</string>
     <string name="email">Email</string>
     <string name="email_placeholder">hal. juandelacruz@gmail.com</string>
     <string name="error">Mali</string>
     <string name="select_a_coin">Pumili ng barya</string>
-    <string name="request_coins_share_dialog_title">Ipamahagi ang hiling na Dash...</string>
-    <string name="buy_with_fiat">Bumili ng Dash gamit ang fiat</string>
-    <string name="buy_and_convert">Bumili at i-convert ang Dash gamit ang isa pang crypto</string>
-    <string name="transfer_dash">Ilipat ang Dash</string>
+    <string name="request_coins_share_dialog_title">Ipamahagi ang hiling na Pozoqo...</string>
+    <string name="buy_with_fiat">Bumili ng Pozoqo gamit ang fiat</string>
+    <string name="buy_and_convert">Bumili at i-convert ang Pozoqo gamit ang isa pang crypto</string>
+    <string name="transfer_dash">Ilipat ang Pozoqo</string>
     <string name="login_error_title">Hindi makapag-log in sa iyong %s account</string>
     <string name="login_error_message">May naganap na error habang nagla-log in sa iyong%s account.</string>
     <string name="balance">Balanse:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">Debit/Credit card</string>
     <string name="max">Max</string>
     <string name="select_the_coin">Piliin ang barya</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Dash Wallet</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Pozoqo Wallet</string>
     <string name="from">mula kay:</string>
     <string name="to">para kay:</string>
     <string name="select_currency">Piliin ang Pera</string>
     <string name="send_coins_error_dusty_send">Ang halaga ay sobrang liit para maipadala</string>
     <string name="send_coins_error_insufficient_money">Hindi sapat na pondo</string>
 
-    <string name="empty_wallet_warning_title">Mukhang inubos mo ang laman ng iyong Dash Wallet</string>
-    <string name="empty_wallet_crowdnode_warning">Pakitandaan, hindi mo mai-withdraw ang iyong mga pondo mula sa CrowdNode patungo sa wallet na ito hanggang sa mapataas mo ang iyong balanse sa 0.0003 Dash.</string>
+    <string name="empty_wallet_warning_title">Mukhang inubos mo ang laman ng iyong Pozoqo Wallet</string>
+    <string name="empty_wallet_crowdnode_warning">Pakitandaan, hindi mo mai-withdraw ang iyong mga pondo mula sa CrowdNode patungo sa wallet na ito hanggang sa mapataas mo ang iyong balanse sa 0.0003 Pozoqo.</string>
     <string name="syncing">Nagsi-sync</string>
 </resources>

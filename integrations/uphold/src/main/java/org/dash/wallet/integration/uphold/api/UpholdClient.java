@@ -199,24 +199,24 @@ public class UpholdClient {
         return prefs.getString(UPHOLD_ACCESS_TOKEN, null);
     }
 
-    private void getCards(final Callback<String> callback, final Callback<UpholdCard> getDashCardCb) {
+    private void getCards(final Callback<String> callback, final Callback<UpholdCard> getPozoqoCardCb) {
         service.getCards().enqueue(new retrofit2.Callback<List<UpholdCard>>() {
             @Override
             public void onResponse(Call<List<UpholdCard>> call, Response<List<UpholdCard>> response) {
                 if (response.isSuccessful()) {
                     log.info("get cards success");
-                    dashCard = getDashCard(response.body());
+                    dashCard = getPozoqoCard(response.body());
                     if (dashCard == null) {
-                        log.info("Dash Card not available");
-                        createDashCard(callback, getDashCardCb);
+                        log.info("Pozoqo Card not available");
+                        createPozoqoCard(callback, getPozoqoCardCb);
                     } else {
                         if (dashCard.getAddress().getCryptoAddress() == null) {
-                            log.info("Dash Card has no addresses");
-                            createDashAddress(dashCard.getId());
+                            log.info("Pozoqo Card has no addresses");
+                            createPozoqoAddress(dashCard.getId());
                         }
                         callback.onSuccess(dashCard.getId());
-                        if (getDashCardCb != null) {
-                            getDashCardCb.onSuccess(dashCard);
+                        if (getPozoqoCardCb != null) {
+                            getPozoqoCardCb.onSuccess(dashCard);
                         }
                     }
                 } else {
@@ -233,52 +233,52 @@ public class UpholdClient {
         });
     }
 
-    private void createDashCard(final Callback<String> callback, final Callback<UpholdCard> getDashCardCb) {
+    private void createPozoqoCard(final Callback<String> callback, final Callback<UpholdCard> getPozoqoCardCb) {
         Map<String, String> body = new HashMap<>();
-        body.put("label", "Dash Card");
-        body.put("currency", "DASH");
+        body.put("label", "Pozoqo Card");
+        body.put("currency", "PZQ");
         service.createCard(body).enqueue(new retrofit2.Callback<UpholdCard>() {
             @Override
             public void onResponse(Call<UpholdCard> call, Response<UpholdCard> response) {
                 if (response.isSuccessful()) {
-                    log.info("Dash Card created successfully");
+                    log.info("Pozoqo Card created successfully");
                     dashCard = response.body();
                     String dashCardId = dashCard.getId();
                     callback.onSuccess(dashCardId);
-                    createDashAddress(dashCardId);
-                    if (getDashCardCb != null) {
-                        getDashCardCb.onSuccess(response.body());
+                    createPozoqoAddress(dashCardId);
+                    if (getPozoqoCardCb != null) {
+                        getPozoqoCardCb.onSuccess(response.body());
                     }
                 } else {
-                    log.error("Error creating Dash Card: " + response.message() + " code: " + response.code());
-                    callback.onError(new UpholdException("Error creating Dash Card", response.message(), response.code()), false);
+                    log.error("Error creating Pozoqo Card: " + response.message() + " code: " + response.code());
+                    callback.onError(new UpholdException("Error creating Pozoqo Card", response.message(), response.code()), false);
                 }
             }
 
             @Override
             public void onFailure(Call<UpholdCard> call, Throwable t) {
-                log.error("Error creating Dash Card " + t.getMessage());
+                log.error("Error creating Pozoqo Card " + t.getMessage());
             }
         });
     }
 
-    private void createDashAddress(String cardId) {
+    private void createPozoqoAddress(String cardId) {
         Map<String, String> body = new HashMap<>();
         body.put("network", "dash");
         service.createCardAddress(cardId, body).enqueue(new retrofit2.Callback<UpholdCryptoCardAddress>() {
             @Override
             public void onResponse(Call<UpholdCryptoCardAddress> call, Response<UpholdCryptoCardAddress> response) {
-                log.info("Dash Card address created");
+                log.info("Pozoqo Card address created");
             }
 
             @Override
             public void onFailure(Call<UpholdCryptoCardAddress> call, Throwable t) {
-                log.error("Error creating Dash Card address: " + t.getMessage());
+                log.error("Error creating Pozoqo Card address: " + t.getMessage());
             }
         });
     }
 
-    private UpholdCard getDashCard(List<UpholdCard> cards) {
+    private UpholdCard getPozoqoCard(List<UpholdCard> cards) {
         for (UpholdCard card : cards) {
             if (card.getCurrency().equalsIgnoreCase("dash")) {
                 return card;
@@ -287,7 +287,7 @@ public class UpholdClient {
         return null;
     }
 
-    public void getDashBalance(final Callback<BigDecimal> callback) {
+    public void getPozoqoBalance(final Callback<BigDecimal> callback) {
         getCards(new Callback<String>() {
             @Override
             public void onSuccess(String data) {
@@ -296,7 +296,7 @@ public class UpholdClient {
 
             @Override
             public void onError(Exception e, boolean otpRequired) {
-                log.error("Error loading Dash balance: " + e.getMessage());
+                log.error("Error loading Pozoqo balance: " + e.getMessage());
                 if (e instanceof UpholdException) {
                     UpholdException ue = (UpholdException) e;
                     if (ue.getCode() == 401) {
@@ -310,24 +310,24 @@ public class UpholdClient {
         }, new Callback<UpholdCard>() {
             @Override
             public void onSuccess(UpholdCard card) {
-                log.info("Dash balance loaded");
+                log.info("Pozoqo balance loaded");
                 callback.onSuccess(new BigDecimal(card.getAvailable()));
             }
 
             @Override
             public void onError(Exception e, boolean otpRequired) {
-                log.error("Error loading Dash balance: " + e.getMessage());
+                log.error("Error loading Pozoqo balance: " + e.getMessage());
                 callback.onError(e, otpRequired);
             }
         });
     }
 
-    public void createDashWithdrawalTransaction(String amount, String address,
+    public void createPozoqoWithdrawalTransaction(String amount, String address,
                                                 final Callback<UpholdTransaction> callback) {
         HashMap<String, Object> body = new HashMap<>();
         HashMap<String, String> denomination = new HashMap<>();
         denomination.put("amount", amount);
-        denomination.put("currency", "DASH");
+        denomination.put("currency", "PZQ");
         body.put("denomination", denomination);
         body.put("destination", address);
 
@@ -393,7 +393,7 @@ public class UpholdClient {
         return encryptionKey;
     }
 
-    public UpholdCard getCurrentDashCard() {
+    public UpholdCard getCurrentPozoqoCard() {
         return dashCard;
     }
 

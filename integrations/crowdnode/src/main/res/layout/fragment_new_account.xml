@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_background"
-            android:theme="@style/DashAddressBackground"
+            android:theme="@style/PozoqoAddressBackground"
             android:orientation="vertical"
             android:paddingStart="15dp"
             android:paddingEnd="5dp"

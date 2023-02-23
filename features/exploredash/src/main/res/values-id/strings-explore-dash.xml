@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Jelajahi Dash</string>
+    <string name="explore_dash">Jelajahi Pozoqo</string>
     <string name="explore_title">Jelajahi</string>
-    <string name="explore_subtitle">Berbelanja dengan mudah dengan DASH di lebih dari 155.000 lokasi dan pedagang online</string>
+    <string name="explore_subtitle">Berbelanja dengan mudah dengan PZQ di lebih dari 155.000 lokasi dan pedagang online</string>
     <string name="explore_merchants_title">Dimana harus Belanja?</string>
-    <string name="explore_merchants_subtitle">Temukan pedagang yang menerima Dash sebagai pembayaran.</string>
+    <string name="explore_merchants_subtitle">Temukan pedagang yang menerima Pozoqo sebagai pembayaran.</string>
     <string name="explore_atms_title">ATM</string>
-    <string name="explore_atms_subtitle">Temukan tempat untuk membeli atau menjual DASH dan mata uang kripto lainnya secara tunai.</string>
-    <string name="explore_staking_subtitle">Stake Dash dengan mudah dan dapatkan penghasilan pasif dengan beberapa klik yang mudah.</string>
+    <string name="explore_atms_subtitle">Temukan tempat untuk membeli atau menjual PZQ dan mata uang kripto lainnya secara tunai.</string>
+    <string name="explore_staking_subtitle">Stake Pozoqo dengan mudah dan dapatkan penghasilan pasif dengan beberapa klik yang mudah.</string>
     <string name="explore_staking_current_apy">APY Saat ini = %s%%</string>
 
     <!-- Search -->
@@ -59,10 +59,10 @@
     <string name="explore_back_to_locations">Kembali ke semua lokasi</string>
     <string name="explore_back_to_nearest">Kembali ke lokasi terdekat</string>
     <string name="explore_select_location">Pilih Lokasi</string>
-    <string name="explore_pay_with_dash">Bayar dengan Dash</string>
+    <string name="explore_pay_with_dash">Bayar dengan Pozoqo</string>
     <string name="explore_buy_gift_card">Beli Kartu Hadiah</string>
-    <string name="explore_buy_dash">Beli Dash</string>
-    <string name="explore_sell_dash">Jual Dash</string>
+    <string name="explore_buy_dash">Beli Pozoqo</string>
+    <string name="explore_sell_dash">Jual Pozoqo</string>
     <string name="explore_show_all">Tampilkan Semua Lokasi</string>
     <string name="explore_atm_location_hint">ATM ini terletak di</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$f</string>
@@ -72,7 +72,7 @@
     <string name="explore_filters">Menyaring</string>
     <string name="explore_apply_filter">Terapkan</string>
     <string name="explore_payment_method">Metode Pembayaran</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Kartu Hadiah</string>
     <string name="explore_radius">Radius</string>
     <string name="explore_location">Lokasi</string>
@@ -137,16 +137,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Kami memiliki 2 jenis pedagang</string>
-    <string name="accept_dash_text">Menerima DASH secara langsung</string>
-    <string name="pay_with_dash_text">Bayar dengan dompet DASH.</string>
-    <string name="buy_gift_card_text">Beli kartu hadiah dengan Dash Anda</string>
-    <string name="buy_gift_card_desc_text">Beli kartu hadiah dengan Dash untuk jumlah yang tepat dari pembelian Anda.</string>
+    <string name="accept_dash_text">Menerima PZQ secara langsung</string>
+    <string name="pay_with_dash_text">Bayar dengan dompet PZQ.</string>
+    <string name="buy_gift_card_text">Beli kartu hadiah dengan Pozoqo Anda</string>
+    <string name="buy_gift_card_desc_text">Beli kartu hadiah dengan Pozoqo untuk jumlah yang tepat dari pembelian Anda.</string>
     <string name="learn_more_text">Pelajari lebih lanjut</string>
     <string name="continue_text">Teruskan</string>
     <string name="buy_card_header_text">Cara Menggunakan Kartu Hadiah</string>
-    <string name="buy_card_desc_text">Tidak semua toko menerima DASH secara langsung, tetapi Anda dapat membeli kartu hadiah dengan Dash.</string>
+    <string name="buy_card_desc_text">Tidak semua toko menerima PZQ secara langsung, tetapi Anda dapat membeli kartu hadiah dengan Pozoqo.</string>
     <string name="find_merchant_text">Cari pedagang.</string>
-    <string name="buy_gift_card_with_dash_text">Beli kartu hadiah dengan Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Beli kartu hadiah dengan Pozoqo.</string>
     <string name="redeem_gift_card_text">Tukarkan kartu hadiah Anda secara online dalam hitungan detik atau di kasir.</string>
 
     <!-- Sync Status -->

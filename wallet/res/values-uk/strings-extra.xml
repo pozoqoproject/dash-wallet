@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Відправити на адресу</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Купити / Продати Dash</string>
+    <string name="shortcut_buy_sell">Купити / Продати Pozoqo</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Отримати</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Закрити</string>
 
     <string name="scan_to_pay_error_dialog_title">Сканувати для відправки</string>
-    <string name="scan_to_pay_error_dialog_message">Некоректна адреса Dash або URL запит у буфері обміну:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Некоректна адреса Dash або URL запит у буфері обміну.</string>
-    <string name="pay_to_confirm_address">Це адреса Dash, на яку ви хочете надіслати платіж?</string>
+    <string name="scan_to_pay_error_dialog_message">Некоректна адреса Pozoqo або URL запит у буфері обміну:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Некоректна адреса Pozoqo або URL запит у буфері обміну.</string>
+    <string name="pay_to_confirm_address">Це адреса Pozoqo, на яку ви хочете надіслати платіж?</string>
 
     <string name="receive_title">Отримати</string>
     <string name="receive_enter_amount_message">Вкажіть суму для отримання</string>
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">Розблокувати гаманець</string>
     <string name="wallet_lock_unlock_dialog_message">Ваш гаманець захищений PIN-кодом. Введіть PIN-код і натисніть Розблокувати, щоб продовжити.</string>
     <string name="wallet_lock_reset_wallet_title">Скидання гаманця</string>
-    <string name="wallet_lock_reset_wallet_message">Ви впевнені? Ваш гаманець буде видалено, а доступ до засобів втрачено.\n\nВаш гаманець Dash можна буде відновити лише за допомогою файлу відновлення або фрази відновлення.</string>
+    <string name="wallet_lock_reset_wallet_message">Ви впевнені? Ваш гаманець буде видалено, а доступ до засобів втрачено.\n\nВаш гаманець Pozoqo можна буде відновити лише за допомогою файлу відновлення або фрази відновлення.</string>
 
     <string name="wallet_lock_wallet_disabled">Гаманець вимкнено</string>
     <string name="wallet_lock_try_again">Спробуйте ще раз через %1$d%2$s</string>
@@ -187,11 +187,11 @@
     <string name="notification_synchronization_channel_name">Синхронізація</string>
     <string name="notification_synchronization_channel_description">Показує повідомлення, коли програма синхронізується з мережею.</string>
     <string name="notification_generic_channel_name">Загальні сповіщення</string>
-    <string name="notification_generic_channel_description">Інші події Dash Wallet</string>
+    <string name="notification_generic_channel_description">Інші події Pozoqo Wallet</string>
     <string name="notification_push_channel_name">Push-сповіщення</string>
-    <string name="notification_push_channel_description">Показує push-повідомлення, надіслані Dash</string>
+    <string name="notification_push_channel_description">Показує push-повідомлення, надіслані Pozoqo</string>
     <string name="notification_settings_title">Сповіщення</string>
-    <string name="notification_explainer_title">Dash Wallet хоче надсилати вам сповіщення</string>
+    <string name="notification_explainer_title">Pozoqo Wallet хоче надсилати вам сповіщення</string>
     <string name="notification_explainer_message">Сповіщення можуть включати сповіщення, звуки та піктограми. Їх можна налаштувати в налаштуваннях телефону.</string>
 
     <string name="net_type_indicator" />
@@ -218,7 +218,7 @@
     <string name="verify_it_is_important_subtitle">Зараз ми покажемо секретний ключ до вашого гаманця.</string>
     <string name="verify_info_text_1">Ця фраза відновлення - ваш доступ до коштів у цьому гаманці.</string>
     <string name="verify_info_text_2">Ми НЕ зберігаємо цю фразу відновлення.</string>
-    <string name="verify_info_text_3">Вам знадобиться ця фраза відновлення, щоб отримати доступ до своїх коштів, якщо цей пристрій буде втрачено, пошкоджено або якщо Dash Wallet буде випадково видалено з цього пристрою.</string>
+    <string name="verify_info_text_3">Вам знадобиться ця фраза відновлення, щоб отримати доступ до своїх коштів, якщо цей пристрій буде втрачено, пошкоджено або якщо Pozoqo Wallet буде випадково видалено з цього пристрою.</string>
     <string name="verify_skip">Пропустити</string>
     <string name="verify_secure_now_btn">Захистити</string>
     <string name="verify_secure_now_message">Якщо ви втратите цей пристрій, ви втратите свої кошти. Отримайте свою фразу відновлення, щоб ви могли відновити свій гаманець на іншому пристрої.</string>
@@ -264,10 +264,10 @@
     <string name="authenticate_switch_to_fingerprint">Використати відбиток пальця</string>
     <string name="authenticate_switch_to_pin">Використати PIN-код</string>
 
-    <string name="menu_buy_and_sell_title">Купити &amp; Продати Dash</string>
+    <string name="menu_buy_and_sell_title">Купити &amp; Продати Pozoqo</string>
     <string name="menu_buy_and_sell_subtitle">Підключитися до сторонніх бірж</string>
-    <string name="liquid_unavailable">Інтеграція Liquid з Dash Wallet більше недоступна</string>
-    <string name="liquid_unavailable_details">Якщо у вас виникли запитання щодо ваших збережень Dash у Liquid, зверніться до центру підтримки Liquid</string>
+    <string name="liquid_unavailable">Інтеграція Liquid з Pozoqo Wallet більше недоступна</string>
+    <string name="liquid_unavailable_details">Якщо у вас виникли запитання щодо ваших збережень Pozoqo у Liquid, зверніться до центру підтримки Liquid</string>
     <string name="menu_security_title">Безпека</string>
     <string name="menu_security_subtitle">Показати кодову фразу, зробити резервну копію гаманця.</string>
     <string name="menu_settings_title">Налаштування</string>
@@ -279,7 +279,7 @@
     <string name="menu_contact_support_title">Служба підтримки</string>
     <string name="menu_contact_support_subtitle">Повідомити про проблему</string>
     <string name="menu_explore_title">Дослідити</string>
-    <string name="menu_explore_subtitle">Купуйте з DASH у понад 155 000 магазинів</string>
+    <string name="menu_explore_subtitle">Купуйте з PZQ у понад 155 000 магазинів</string>
 
     <string name="tools_address_book">Адресна книга</string>
     <string name="tools_import_private_key">Імпорт приватного ключа</string>
@@ -289,9 +289,9 @@
     <string name="about_help_us_improve">Допоможіть нам стати кращими</string>
     <string name="about_contact_support">Служба підтримки</string>
     <string name="about_fork_disclaimer">Це додаток з відкритим кодом, заснований на Bitcoin Wallet</string>
-    <string name="about_copyright">Всі права захищено © 2023 Dash Core</string>
+    <string name="about_copyright">Всі права захищено © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="about_last_explore_dash_update_error">не можу отримати</string>
     <string name="about_last_explore_dash_sync_never">ніколи</string>
     <string name="block">Блок</string>
@@ -300,7 +300,7 @@
     <string name="block_info">Інформація про блок</string>
 
     <string name="scan_private_key">Сканувати приватний ключ</string>
-    <string name="scan_private_key_intro_1">Ви збираєтеся зняти кошти з іншого гаманця Dash.</string>
+    <string name="scan_private_key_intro_1">Ви збираєтеся зняти кошти з іншого гаманця Pozoqo.</string>
     <string name="scan_private_key_intro_2">Це перемістить усі монети з цього гаманця у ваш гаманець на цьому пристрої.</string>
     <string name="scan_private_key_intro_3">Коли ця транзакція буде підтверджена, гаманець буде непотрібним і не зможе бути повторно використаний з метою безпеки.</string>
     <string name="confirm">Підтверджую</string>
@@ -338,7 +338,7 @@
     <string name="welcome_screen_subtitle_3">Отримайте повний контроль і налаштуйте свій гаманець для своїх потреб</string>
 
     <string name="sync_status_wait">Будь ласка, зачекайте на завершення синхронізації</string>
-    <string name="sync_status_syncing_sub_title">З блокчейном Dash</string>
+    <string name="sync_status_syncing_sub_title">З блокчейном Pozoqo</string>
     <string name="sync_status_unable_to_connect">Не вдалось підключитись</string>
     <string name="sync_status_check_connection">Перевірте з\'єднання</string>
     <string name="sync_status_sync_title">Синхронізація</string>
@@ -359,9 +359,9 @@
     <string name="payment_request_paid_to">Оплачено</string>
 
     <string name="import_image_not_valid_qr_code">Недійсний  QR код</string>
-    <string name="import_image_please_use_valid_qr_code">Будь ласка, використовуйте дійсний QR-код Dash</string>
+    <string name="import_image_please_use_valid_qr_code">Будь ласка, використовуйте дійсний QR-код Pozoqo</string>
     <string name="import_image_no_private_key_copied">Приватний ключ не скопійовано</string>
-    <string name="import_image_import_valid_private_key">Скопіюйте дійсний приватний ключ, щоб імпортувати з нього Dash</string>
+    <string name="import_image_import_valid_private_key">Скопіюйте дійсний приватний ключ, щоб імпортувати з нього Pozoqo</string>
     <string name="import_image_invalid_private">Неправильний приватний ключ</string>
 
     <string name="today">Сьогодні</string>
@@ -377,7 +377,7 @@
     <string name="set_pin_error_missing_wallet_message">Гаманець відсутній. Будь ласка, зверніться до Служби підтримки.</string>
     <string name="wallet_encryption_error_title">Помилка при створенні гаманця</string>
     <string name="wallet_encryption_error_message">Під час створення гаманця виникла проблема. Будь ласка, зверніться до Служби підтримки.</string>
-    <string name="wallet_not_encrypted_error_message">З вашим гаманцем виникла проблема.\n\nЯкщо у вашому гаманці немає Dash, тоді видаліть та встановіть цю програму заново. Потім створіть новий гаманець.\n\nЯкщо у вас є фраза відновлення або резервна копія, тоді видаліть цю програму і встановіть її знову.\n\nВ інших випадках зверніться до Служби підтримки.</string>
+    <string name="wallet_not_encrypted_error_message">З вашим гаманцем виникла проблема.\n\nЯкщо у вашому гаманці немає Pozoqo, тоді видаліть та встановіть цю програму заново. Потім створіть новий гаманець.\n\nЯкщо у вас є фраза відновлення або резервна копія, тоді видаліть цю програму і встановіть її знову.\n\nВ інших випадках зверніться до Служби підтримки.</string>
 
     <string name="reset_wallet_title">Ви впевнені, що хочете скинути гаманець?</string>
     <string name="reset_wallet_message">Якщо ви скинете свій гаманець, єдиний спосіб отримати до нього доступ – це відновити гаманець за допомогою фрази відновлення.</string>

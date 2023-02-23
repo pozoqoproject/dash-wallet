@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Pozoqo Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -92,13 +92,13 @@ public class UpholdAccountActivity extends InteractionAwareActivity {
 
         findViewById(R.id.uphold_transfer_to_this_wallet_button).setOnClickListener(v -> {
             if (balance != null && receivingAddress != null) {
-                analytics.logEvent(AnalyticsConstants.Uphold.TRANSFER_DASH, Bundle.EMPTY);
+                analytics.logEvent(AnalyticsConstants.Uphold.TRANSFER_PZQ, Bundle.EMPTY);
                 openWithdrawals();
             }
         });
         findViewById(R.id.uphold_buy_dash_btn).setOnClickListener(v -> {
-            analytics.logEvent(AnalyticsConstants.Uphold.BUY_DASH, Bundle.EMPTY);
-            openBuyDashUrl();
+            analytics.logEvent(AnalyticsConstants.Uphold.BUY_PZQ, Bundle.EMPTY);
+            openBuyPozoqoUrl();
         });
 
         findViewById(R.id.uphold_logout).setOnClickListener(v -> openLogOutUrl());
@@ -141,7 +141,7 @@ public class UpholdAccountActivity extends InteractionAwareActivity {
         loadingDialog.setMessage(getString(R.string.loading));
         loadingDialog.show();
 
-        UpholdClient.getInstance().getDashBalance(new UpholdClient.Callback<BigDecimal>() {
+        UpholdClient.getInstance().getPozoqoBalance(new UpholdClient.Callback<BigDecimal>() {
             @Override
             public void onSuccess(BigDecimal data) {
                 if (isFinishing()) {
@@ -171,8 +171,8 @@ public class UpholdAccountActivity extends InteractionAwareActivity {
         });
     }
 
-    private void openBuyDashUrl() {
-        UpholdCard dashCard = UpholdClient.getInstance().getCurrentDashCard();
+    private void openBuyPozoqoUrl() {
+        UpholdCard dashCard = UpholdClient.getInstance().getCurrentPozoqoCard();
         if (dashCard != null) {
             final String url = String.format(UpholdConstants.CARD_URL_BASE, dashCard.getId());
             openUpholdUrl(url);

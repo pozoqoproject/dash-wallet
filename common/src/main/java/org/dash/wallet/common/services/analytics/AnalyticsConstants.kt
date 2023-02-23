@@ -28,8 +28,8 @@ object AnalyticsConstants {
         const val ENTER_DISCONNECTED = "uphold_enter_disconnected"
         const val DISCONNECT = "uphold_disconnect"
         const val LINK_ACCOUNT = "uphold_link_account"
-        const val TRANSFER_DASH = "uphold_transfer_dash"
-        const val BUY_DASH = "uphold_buy_dash"
+        const val TRANSFER_PZQ = "uphold_transfer_dash"
+        const val BUY_PZQ = "uphold_buy_dash"
     }
 
     object MoreMenu {
@@ -73,7 +73,7 @@ object AnalyticsConstants {
         const val SPECIFY_AMOUNT = "receive_specify_amount"
         const val SHARE = "receive_tab_share"
         const val ENTER_AMOUNT_MAX = "enter_amount_max"
-        const val ENTER_AMOUNT_DASH = "enter_amount_dash_amount"
+        const val ENTER_AMOUNT_PZQ = "enter_amount_dash_amount"
         const val ENTER_AMOUNT_FIAT = "enter_amount_fiat_amount"
         const val ENTER_AMOUNT_SEND = "enter_amount_send"
         const val ENTER_AMOUNT_RECEIVE = "enter_amount_receive"
@@ -121,7 +121,7 @@ object AnalyticsConstants {
         const val PAN_ATM_MAP = "explore_pan_atm_map"
         const val ZOOM_ATM_MAP = "explore_zoom_atm_map"
 
-        const val FILTER_MERCHANT_SELECT_DASH = "explore_filter_merch_select_dash"
+        const val FILTER_MERCHANT_SELECT_PZQ = "explore_filter_merch_select_dash"
         const val FILTER_MERCHANT_SELECT_GIFT_CARD = "explore_filter_merch_select_gift_card"
         const val FILTER_MERCHANT_SORT_BY_NAME = "explore_filter_merch_sort_by_name"
         const val FILTER_MERCHANT_SORT_BY_DISTANCE = "explore_filter_merch_sort_by_distance"
@@ -159,7 +159,7 @@ object AnalyticsConstants {
         const val MERCHANT_DETAILS_BACK_FROM_ALL_LOCATIONS = "explore_merchant_details_back_from_all"
         const val MERCHANT_DETAILS_BACK_TOP = "explore_merchant_details_back_top"
         const val MERCHANT_DETAILS_BACK_BOTTOM = "explore_merchant_details_back_bottom"
-        const val MERCHANT_DETAILS_PAY_WITH_DASH = "explore_merchant_details_pay_with_dash"
+        const val MERCHANT_DETAILS_PAY_WITH_PZQ = "explore_merchant_details_pay_with_dash"
         const val MERCHANT_DETAILS_SCROLL_UP = "explore_merchant_details_scroll_up"
     }
 
@@ -199,9 +199,9 @@ object AnalyticsConstants {
         const val ENTER_CONNECTED = "coinbase_enter_connected"
         const val ENTER_DISCONNECTED = "coinbase_enter_disconnected"
 
-        const val BUY_DASH = "coinbase_buy_dash"
-        const val CONVERT_DASH = "coinbase_convert_dash"
-        const val TRANSFER_DASH = "coinbase_transfer_dash"
+        const val BUY_PZQ = "coinbase_buy_dash"
+        const val CONVERT_PZQ = "coinbase_convert_dash"
+        const val TRANSFER_PZQ = "coinbase_transfer_dash"
         const val DISCONNECT = "coinbase_disconnect"
 
         const val BUY_CREATE_ACCOUNT = "coinbase_buy_b_create_dash_acc"
@@ -209,7 +209,7 @@ object AnalyticsConstants {
         const val BUY_CHANGE_PAYMENT_METHOD = "coinbase_buy_b_change_p_method"
         const val BUY_PAYMENT_METHOD = "coinbase_buy_p_method"
         const val BUY_ENTER_FIAT = "coinbase_buy_enter_amount_fiat"
-        const val BUY_ENTER_DASH = "coinbase_buy_enter_amount_dash"
+        const val BUY_ENTER_PZQ = "coinbase_buy_enter_amount_dash"
         const val BUY_CHANGE_FIAT_CURRENCY = "coinbase_buy_b_change_fiat_currency" // Currency selector isn't shown in Coinbase.
         const val BUY_CONTINUE = "coinbase_buy_b_continue"
         const val BUY_AUTH_LIMIT = "coinbase_buy_b_auth_limit"
@@ -228,13 +228,13 @@ object AnalyticsConstants {
         const val BUY_ERROR_CLOSE = "coinbase_buy_error_b_close"
 
         // ----------------- TODO: NMA-1209
-        const val SELL_DASH = "coinbase_sell_dash"
+        const val SELL_PZQ = "coinbase_sell_dash"
         const val SELL_CREATE_ACCOUNT = "coinbase_sell_b_create_dash_acc"
         const val SELL_ADD_PAYMENT_METHOD = "coinbase_sell_b_add_p_method"
         const val SELL_MAX = "coinbase_sell_b_max"
         const val SELL_CONTINUE = "coinbase_sell_b_get_quote"
         const val SELL_ENTER_AMOUNT_FIAT = "coinbase_sell_enter_amount_fiat"
-        const val SELL_ENTER_AMOUNT_DASH = "coinbase_sell_enter_amount_dash"
+        const val SELL_ENTER_AMOUNT_PZQ = "coinbase_sell_enter_amount_dash"
 
         const val SELL_QUOTE_TOP_BACK = "coinbase_sell_b_back"
         const val SELL_QUOTE_ANDROID_BACK = "coinbase_sell_b_back_android"
@@ -253,7 +253,7 @@ object AnalyticsConstants {
         const val CONVERT_SELECT_COIN = "coinbase_convert_b_select_coin"
         const val CONVERT_BUY_ON_COINBASE = "coinbase_convert_b_buy_on_coinbase"
         const val CONVERT_CONTINUE = "coinbase_convert_b_get_quote"
-        const val CONVERT_ENTER_DASH = "coinbase_convert_enter_amount_dash"
+        const val CONVERT_ENTER_PZQ = "coinbase_convert_enter_amount_dash"
         const val CONVERT_ENTER_CRYPTO = "coinbase_convert_enter_amount_crypto"
         const val CONVERT_ENTER_FIAT = "coinbase_convert_enter_amount_fiat"
 
@@ -271,7 +271,7 @@ object AnalyticsConstants {
         const val CONVERT_ERROR_CLOSE = "coinbase_convert_error_b_close"
 
         const val TRANSFER_CONTINUE = "coinbase_transfer_b_transfer"
-        const val TRANSFER_ENTER_DASH = "coinbase_transfer_enter_amount_dash"
+        const val TRANSFER_ENTER_PZQ = "coinbase_transfer_enter_amount_dash"
         const val TRANSFER_ENTER_FIAT = "coinbase_transfer_enter_amount_fiat"
         const val TRANSFER_AUTH_LIMIT = "coinbase_transfer_b_auth_balance"
 

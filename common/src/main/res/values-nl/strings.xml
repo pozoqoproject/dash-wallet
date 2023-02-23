@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">Netwerk niet beschikbaar</string>
     <string name="network_unavailable_check_connection">Controleer de netwerkverbinding</string>
     <string name="network_unavailable_balance_not_accurate">Het saldo is mogelijk niet correct vanwege de verbroken verbinding</string>
-    <string name="buy_dash">Koop Dash</string>
+    <string name="buy_dash">Koop Pozoqo</string>
     <string name="copied">Gekopieerd</string>
     <string name="staking_title">Staking</string>
     <string name="email">E-mail</string>
     <string name="email_placeholder">bijvoorbeeld jan@mail.com</string>
     <string name="error">Fout</string>
     <string name="select_a_coin">Selecteer een munt</string>
-    <string name="request_coins_share_dialog_title">Deel Dashverzoek...</string>
-    <string name="buy_with_fiat">Koop Dash met fiat geld</string>
-    <string name="buy_and_convert">Koop en converteer Dash met een andere cryptovaluta</string>
-    <string name="transfer_dash">Dash overzetten</string>
+    <string name="request_coins_share_dialog_title">Deel Pozoqoverzoek...</string>
+    <string name="buy_with_fiat">Koop Pozoqo met fiat geld</string>
+    <string name="buy_and_convert">Koop en converteer Pozoqo met een andere cryptovaluta</string>
+    <string name="transfer_dash">Pozoqo overzetten</string>
     <string name="login_error_title">Kan niet inloggen op je %s account</string>
     <string name="login_error_message">Er is een fout opgetreden tijdens het inloggen op je %s account.</string>
     <string name="balance">Saldo:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">Debit/Creditcard</string>
     <string name="max">Max</string>
     <string name="select_the_coin">Selecteer de munt</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Dash portemonnee</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Pozoqo portemonnee</string>
     <string name="from">van</string>
     <string name="to">naar</string>
     <string name="select_currency">Selecteer valuta</string>
     <string name="send_coins_error_dusty_send">bedrag is te klein om te versturen</string>
     <string name="send_coins_error_insufficient_money">Ontoereikende fondsen</string>
 
-    <string name="empty_wallet_warning_title">Het ziet er naar uit dat je je Dashportemonee leeg aan het maken bent</string>
-    <string name="empty_wallet_crowdnode_warning">Let op, je zal geen geld kunnen opnemen van CrowdNode naar deze portemonnee totdat je je saldo verhoogt tot 0,0003 Dash.</string>
+    <string name="empty_wallet_warning_title">Het ziet er naar uit dat je je Pozoqoportemonee leeg aan het maken bent</string>
+    <string name="empty_wallet_crowdnode_warning">Let op, je zal geen geld kunnen opnemen van CrowdNode naar deze portemonnee totdat je je saldo verhoogt tot 0,0003 Pozoqo.</string>
     <string name="syncing">Aan het synchroniseren</string>
 </resources>

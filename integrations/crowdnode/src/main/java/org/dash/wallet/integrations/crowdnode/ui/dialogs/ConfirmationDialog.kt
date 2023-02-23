@@ -53,13 +53,13 @@ class ConfirmationDialog: OffsetDialogFragment() {
 
         val accountAddress = viewModel.accountAddress.value
         requireNotNull(accountAddress)
-        val amount = CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT
+        val amount = CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT
 
         binding.description1.text = getString(
             R.string.crowdnode_how_to_verify_description1,
             amount.toFriendlyString()
         )
-        binding.primaryDashAddress.text = viewModel.primaryDashAddress.toString()
+        binding.primaryPozoqoAddress.text = viewModel.primaryPozoqoAddress.toString()
         binding.copyPrimaryAddressBtn.setOnClickListener {
             viewModel.copyPrimaryAddress()
             Toast.makeText(requireContext(), getString(R.string.copied), Toast.LENGTH_SHORT).show()

@@ -25,8 +25,8 @@ import kotlin.math.max
  * With these changes, it will be as if the wallet was fully synced, though the blockchain
  * sync is not yet complete.
  *
- * The result for the user is that Version 2 transactions sent from other Dash wallets (such as
- * Dash Core) will appear immediately in the transaction list, even if the wallet is still syncing.
+ * The result for the user is that Version 2 transactions sent from other Pozoqo wallets (such as
+ * Pozoqo Core) will appear immediately in the transaction list, even if the wallet is still syncing.
  * Previously these transactions would not appear (if the wallet was still syncing) until the v2
  * transaction appeared in a mined block.  For fully synced wallets, no difference will be noticed.
  *
@@ -134,7 +134,7 @@ class AllowLockTimeRiskAnalysis(
 
         // A common time difference is not part of dashj PeerGroup,so we will implement it here
         //
-        // In Dash Core, the last connected peers (200 max) are used to determine a median network
+        // In Pozoqo Core, the last connected peers (200 max) are used to determine a median network
         // time difference.  A time difference is calculated for each peer, then the median is used
         // to determine the network time when a transaction needs to be analyzed.
         private val networkTimeDifferences = LinkedList<Long>()

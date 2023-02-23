@@ -36,7 +36,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Adrese Gönder</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Dash Al / Sat</string>
+    <string name="shortcut_buy_sell">Pozoqo Al / Sat</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Al</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Kapat</string>
 
     <string name="scan_to_pay_error_dialog_title">Göndermek için Tara</string>
-    <string name="scan_to_pay_error_dialog_message">Panodaki Dash Adresi veya URL isteği geçerli değil:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Panodaki Dash Adresi veya URL isteği geçerli değil.</string>
-    <string name="pay_to_confirm_address">Bu, ödeme göndermek istediğiniz Dash adresi mi?</string>
+    <string name="scan_to_pay_error_dialog_message">Panodaki Pozoqo Adresi veya URL isteği geçerli değil:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Panodaki Pozoqo Adresi veya URL isteği geçerli değil.</string>
+    <string name="pay_to_confirm_address">Bu, ödeme göndermek istediğiniz Pozoqo adresi mi?</string>
 
     <string name="receive_title">Al</string>
     <string name="receive_enter_amount_message">Alınacak tutarı belirtin</string>
@@ -110,13 +110,13 @@
     <string name="export_keys_dialog_title_to_seed">Kurtarma Sözcük Grubunu Göster</string>
     <string name="import_keys_dialog_title_from_seed">Kurtarma sözcük grubundan geri yükle</string>
     <string name="backup_to_seed_wallet_dialog_message">Bu sizin kurtarma sözcük grubunuzdur. Lütfen bir yere yazınız.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Kurtarma sözcük grubunuzu kimselere ASLA göstermeyin, yoksa Dash\'lerinizi harcayabilirler.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Kurtarma sözcük grubunuzu kimselere ASLA göstermeyin, yoksa Pozoqo\'lerinizi harcayabilirler.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Cüzdanınız bir harcama PİN\'i ile korunur. PİN\'inizi girin ve Göster\'e tıklayarak kurtarma sözcük grubunuzu görüntüleyin.</string>
     <string name="import_keys_from_seed_dialog_message">Kurtarma sözcük grubunuzu girin.</string>
     <string name="import_export_keys_dialog_password_phrase">Kurtarma sözcük grubunuz buraya.</string>
     <string name="preferences_report_issue_summary">Sorununuz ile ilgili bilgi toplayın ve raporunuzu geliştiricilere e-posta yolu ile gönderin.</string>
     <string name="navigation_configuration">Yapılandırma</string>
-    <string name="request_coins_clipboard_address_msg">Dash adresi panoya kopyalandı</string>
+    <string name="request_coins_clipboard_address_msg">Pozoqo adresi panoya kopyalandı</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Göster</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" kurtarma cümlesi kelimesi değil</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Kurtarma cümlesi 12 kelime olmalı</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Ücret ödenmeyecek. Sadece onay süresi sizin için önemli değilse \'ücret yok\' seçeneğini kullanın.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">%s uygulaması size ait Ana Herkese Açık Anahtarı istiyor. Bunun sayesinde cüzdanınız takip edilebilir ama Dashlerinizi başka bir yere aktarmakta kullanılamaz.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">%s uygulaması size ait Ana Herkese Açık Anahtarı istiyor. Bunun sayesinde cüzdanınız takip edilebilir ama Pozoqolerinizi başka bir yere aktarmakta kullanılamaz.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">%s uygulaması size ödeme yapabilmek için bir adres talep ediyor. Onay veriyor musunuz?</string>
 
@@ -138,7 +138,7 @@
     <string name="wallet_lock_unlock_dialog_title">Cüzdanının kilidini aç</string>
     <string name="wallet_lock_unlock_dialog_message">Cüzdanınız bir harcama PIN kodu ile korunuyor. Devam etmek için PIN kodunuzu girin ve Kilidi Aça basın.</string>
     <string name="wallet_lock_reset_wallet_title">Cüzdanı Sıfırla</string>
-    <string name="wallet_lock_reset_wallet_message">Emin misiniz? Cüzdanınız silinecek ve tüm Dash\'iniz kaybolacak.\n\nDash\'inizi geri almanın tek yolu yedek dosyası veya kurtarma sözcükleridir.</string>
+    <string name="wallet_lock_reset_wallet_message">Emin misiniz? Cüzdanınız silinecek ve tüm Pozoqo\'iniz kaybolacak.\n\nPozoqo\'inizi geri almanın tek yolu yedek dosyası veya kurtarma sözcükleridir.</string>
 
     <string name="wallet_lock_wallet_disabled">Cüzdan devredışı</string>
     <string name="wallet_lock_try_again">%1$d %2$s içinde tekrar dene</string>
@@ -181,11 +181,11 @@
     <string name="notification_synchronization_channel_name">Eşleştirme</string>
     <string name="notification_synchronization_channel_description">Uygulama ağ ile eşleşirken bir bildirim gösterir.</string>
     <string name="notification_generic_channel_name">Genel bildirimler</string>
-    <string name="notification_generic_channel_description">Diğer Dash Cüzdan etkinlikleri</string>
+    <string name="notification_generic_channel_description">Diğer Pozoqo Cüzdan etkinlikleri</string>
     <string name="notification_push_channel_name">Push bildirimleri</string>
-    <string name="notification_push_channel_description">Dash tarafından size gönderilen push bildirimlerini gösterir</string>
+    <string name="notification_push_channel_description">Pozoqo tarafından size gönderilen push bildirimlerini gösterir</string>
     <string name="notification_settings_title">Bildirimler</string>
-    <string name="notification_explainer_title">Dash Cüzdanı size bildirim göndermek istiyor</string>
+    <string name="notification_explainer_title">Pozoqo Cüzdanı size bildirim göndermek istiyor</string>
     <string name="notification_explainer_message">Bildirimler, uyarıları, sesleri ve simge rozetlerini içerebilir. Bunlar telefon Ayarlarında yapılandırılabilir.</string>
 
     <string name="net_type_indicator" />
@@ -212,7 +212,7 @@
     <string name="verify_it_is_important_subtitle">Size cüzdanınızın gizli anahtarını göstermek üzereyiz.</string>
     <string name="verify_info_text_1">Bu kurtarma sözcük grubu cüzdanınızdaki paranıza erişmenizi sağlar.</string>
     <string name="verify_info_text_2">Bu kurtarma sözcük grubunu SAKLAMIYORUZ.</string>
-    <string name="verify_info_text_3">Bu cihazın kaybolması / hasar görmesi, Dash cüzdanının bu cihazdan yanlışlıkla silinmesi durumunda paranıza erişmek için bu kurtarma ifadesine ihtiyacınız olacaktır.</string>
+    <string name="verify_info_text_3">Bu cihazın kaybolması / hasar görmesi, Pozoqo cüzdanının bu cihazdan yanlışlıkla silinmesi durumunda paranıza erişmek için bu kurtarma ifadesine ihtiyacınız olacaktır.</string>
     <string name="verify_skip">Atla</string>
     <string name="verify_secure_now_btn">Şimdi Korumaya Al</string>
     <string name="verify_secure_now_message">Bu cihazı kaybederseniz, paranızı kaybedersiniz. Cüzdanınızı başka bir cihaza geri yükleyebilmeniz için kurtarma sözcük grubunuzu sahip olun.</string>
@@ -258,10 +258,10 @@
     <string name="authenticate_switch_to_fingerprint">Parmak izinizi kullanın</string>
     <string name="authenticate_switch_to_pin">PİN Kullan</string>
 
-    <string name="menu_buy_and_sell_title">Dash Al &amp; Sat</string>
+    <string name="menu_buy_and_sell_title">Pozoqo Al &amp; Sat</string>
     <string name="menu_buy_and_sell_subtitle">Üçüncü parti borsalara bağlanın</string>
-    <string name="liquid_unavailable">Dash Cüzdanı ile Liquid entegrasyonu artık yok</string>
-    <string name="liquid_unavailable_details">Liquid\'deki Dash varlıklarınızla ilgili herhangi bir sorunuz varsa, lütfen Liquid destek merkezi ile iletişime geçin.</string>
+    <string name="liquid_unavailable">Pozoqo Cüzdanı ile Liquid entegrasyonu artık yok</string>
+    <string name="liquid_unavailable_details">Liquid\'deki Pozoqo varlıklarınızla ilgili herhangi bir sorunuz varsa, lütfen Liquid destek merkezi ile iletişime geçin.</string>
     <string name="menu_security_title">Güvenlik</string>
     <string name="menu_security_subtitle">Kurtarma sözcük grubunu göster, cüzdanı yedekle...</string>
     <string name="menu_settings_title">Ayarlar</string>
@@ -273,7 +273,7 @@
     <string name="menu_contact_support_title">Destekle İletişime Geçin</string>
     <string name="menu_contact_support_subtitle">Sorun rapor et</string>
     <string name="menu_explore_title">Keşfet</string>
-    <string name="menu_explore_subtitle">155.000\'den fazla satıcıda DASH ile alışveriş yapın</string>
+    <string name="menu_explore_subtitle">155.000\'den fazla satıcıda PZQ ile alışveriş yapın</string>
 
     <string name="tools_address_book">Adres Rehberi</string>
     <string name="tools_import_private_key">Özel anahtar içeri al</string>
@@ -284,9 +284,9 @@
     <string name="about_review_and_rate">Uygulamamızı değerlendirip puanlayın</string>
     <string name="about_contact_support">Destekle İletişime Geçin</string>
     <string name="about_fork_disclaimer">Bu uygulama açık kaynak kodlu bir Bitcoin çatallanmasıdır</string>
-    <string name="about_copyright">Telif Hakkı © 2023 Dash Core</string>
+    <string name="about_copyright">Telif Hakkı © 2023 Pozoqo Core</string>
     <string name="about_license">GNU Genel Kamu Lisansı v3.0</string>
-    <string name="about_version_name">Dash Cüzdanı %s</string>
+    <string name="about_version_name">Pozoqo Cüzdanı %s</string>
     <string name="about_last_explore_device_sync">Son Explore cihaz senkronizasyonu</string>
     <string name="about_last_explore_server_update">Son Explore sunucu güncellemesi</string>
     <string name="about_firebase_installation_id">Firebase kurulum kimliği</string>
@@ -302,7 +302,7 @@
     <string name="block_info">Blok Bilgisi</string>
 
     <string name="scan_private_key">Özel Anahtarı Tara</string>
-    <string name="scan_private_key_intro_1">Bir Dash kağıt cüzdanından para aktarmak üzeresiniz.</string>
+    <string name="scan_private_key_intro_1">Bir Pozoqo kağıt cüzdanından para aktarmak üzeresiniz.</string>
     <string name="scan_private_key_intro_2">Bu işlem o cüzdandaki tüm parayı şuan kullandığınız cihazdaki cüzdanınıza aktaracaktır.</string>
     <string name="scan_private_key_intro_3">İşlem onaylandığında, diğer cüzdan değersiz olacaktır ve güvenlik nedeniyle yeniden kullanılmamalıdır.</string>
     <string name="confirm">Onayla</string>
@@ -340,7 +340,7 @@
     <string name="welcome_screen_subtitle_3">Tam kontrol sahibi olun ve cüzdanınızı ihtiyacınıza göre özelleştirin</string>
 
     <string name="sync_status_wait">Lütfen senkronizasyonun tamamlanmasını bekleyin</string>
-    <string name="sync_status_syncing_sub_title">Dash blok zinciri ile</string>
+    <string name="sync_status_syncing_sub_title">Pozoqo blok zinciri ile</string>
     <string name="sync_status_unable_to_connect">Bağlanılamıyor</string>
     <string name="sync_status_check_connection">Bağlantınızı kontrol edin</string>
     <string name="sync_status_sync_title">Senkronize Et</string>
@@ -361,9 +361,9 @@
     <string name="payment_request_paid_to">Ödeme yap</string>
 
     <string name="import_image_not_valid_qr_code">Geçerli bir QR kodu değil</string>
-    <string name="import_image_please_use_valid_qr_code">Lütfen geçerli bir Dash QR Kodu kullanın</string>
+    <string name="import_image_please_use_valid_qr_code">Lütfen geçerli bir Pozoqo QR Kodu kullanın</string>
     <string name="import_image_no_private_key_copied">Kopyalanan bir özel anahtar yok</string>
-    <string name="import_image_import_valid_private_key">Dash\'i içe aktarmak için geçerli bir özel anahtar kopyalayın</string>
+    <string name="import_image_import_valid_private_key">Pozoqo\'i içe aktarmak için geçerli bir özel anahtar kopyalayın</string>
     <string name="import_image_invalid_private">Geçersiz Özel Anahtar</string>
 
     <string name="today">Bugün</string>
@@ -379,7 +379,7 @@
     <string name="set_pin_error_missing_wallet_message">Cüzdan kayıp. Lütfen bunu Destek Masasına bildirin.</string>
     <string name="wallet_encryption_error_title">Cüzdan Oluşturma Hatası</string>
     <string name="wallet_encryption_error_message">Cüzdan oluşturulurken bir sorun oluştu. Lütfen bunu Destek Masasına bildirin.</string>
-    <string name="wallet_not_encrypted_error_message">Cüzdanınızla ilgili bir sorun var.\n\nBu cüzdanda Dash yoksa, bu uygulamayı kaldırıp yeniden yükleyin. Ardından yeni bir cüzdan oluşturun.\n\nBir kurtarma ifadeniz veya bir yedekleme dosyanız varsa, bu uygulamayı kaldırın ve yeniden yükleyin.\n\nAksi takdirde, lütfen bunu Destek Masasına bildirin.</string>
+    <string name="wallet_not_encrypted_error_message">Cüzdanınızla ilgili bir sorun var.\n\nBu cüzdanda Pozoqo yoksa, bu uygulamayı kaldırıp yeniden yükleyin. Ardından yeni bir cüzdan oluşturun.\n\nBir kurtarma ifadeniz veya bir yedekleme dosyanız varsa, bu uygulamayı kaldırın ve yeniden yükleyin.\n\nAksi takdirde, lütfen bunu Destek Masasına bildirin.</string>
 
     <string name="reset_wallet_title">Cüzdanı sıfırlamak istediğinizden emin misiniz?</string>
     <string name="reset_wallet_message">Cüzdanınızı sıfırlarsanız, ona erişmenin tek yolu, kurtarma ifadesiyle cüzdanı kurtarmaktır.</string>

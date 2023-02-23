@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022. Dash Core Group.
+ * Copyright (c) 2022. Pozoqo Core Group.
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -85,7 +85,7 @@ class TransactionExportTest {
             csvLines[0]
         )
         assertEquals(
-            "1970-01-01T00:00:00Z,Transfer-in,,DASH,DASH Wallet,0.01,DASH,DASH Wallet,,,,dd07f79a86185f3b5eeb2b19bdbc1d97eb9db0b887dcedb0fc30c622c43a27ba",
+            "1970-01-01T00:00:00Z,Transfer-in,,PZQ,PZQ Wallet,0.01,PZQ,PZQ Wallet,,,,dd07f79a86185f3b5eeb2b19bdbc1d97eb9db0b887dcedb0fc30c622c43a27ba",
             csvLines[1]
         )
 

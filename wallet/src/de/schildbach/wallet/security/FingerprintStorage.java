@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Dash Core Group.
+ * Copyright 2018 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -59,7 +59,7 @@ public class FingerprintStorage {
     private static final String FINGERPRINT_PREFS_NAME = "FINGERPRINT_HELPER_PREFS";
     private static final String ENCRYPTED_PASS_SHARED_PREF_KEY = "ENCRYPTED_PASS_PREFS_KEY";
     private static final String LAST_USED_IV_SHARED_PREF_KEY = "LAST_USED_IV_PREFS_KEY";
-    private static final String KEYSTORE_ALIAS = "DASH_WALLET_FINGERPRINT_KEYSTORE";
+    private static final String KEYSTORE_ALIAS = "PZQ_WALLET_FINGERPRINT_KEYSTORE";
 
     private final Context context;
     private KeyStore keyStore;

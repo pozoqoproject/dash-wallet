@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group.
+ * Copyright 2019 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -99,7 +99,7 @@ public class TxResourceMapper {
                 errorNameId = R.string.transaction_row_status_error_conflicting;
             } else if(confidence.getConfidenceType() != TransactionConfidence.ConfidenceType.BUILDING) {
                 //
-                // Handle errors from the Dash Network
+                // Handle errors from the Pozoqo Network
                 //
                 RejectedTransactionException exception = confidence.getRejectedTransactionException();
                 if (exception != null) {

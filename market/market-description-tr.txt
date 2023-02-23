@@ -1,29 +1,29 @@
 ﻿ANA AÇIKLAMA
 
-Dash Cüzdanı, Dash Core Group tarafından, Bitcoin'den daha iyi ödeme odaklı yenilikçi alternatifler sunan Dash - Dijital Para - için geliştirilmiş referans edilen cüzdandır.
+Pozoqo Cüzdanı, Pozoqo Core Group tarafından, Bitcoin'den daha iyi ödeme odaklı yenilikçi alternatifler sunan Pozoqo - Dijital Para - için geliştirilmiş referans edilen cüzdandır.
 
-Dash, diğer kripto para birimlerinin yaşadığı kusurları düzeltmeyi amaçlayan bir kripto para birimidir. Anlık işlemler, isteğe bağlı gizlilik özellikleri ve ağını genişletecek fonlama mekanizması anadüğümlerden oluşan bir ağa dayanır.
+Pozoqo, diğer kripto para birimlerinin yaşadığı kusurları düzeltmeyi amaçlayan bir kripto para birimidir. Anlık işlemler, isteğe bağlı gizlilik özellikleri ve ağını genişletecek fonlama mekanizması anadüğümlerden oluşan bir ağa dayanır.
 
-Sezgisel ve güvenli, Dash Wallet gösterge paneli dijital paranızı üzerinde tam kontrol sağlar. Mevcut en güvenli mobil cüzdan ile, anında ödemeler gönderin ve alın.
+Sezgisel ve güvenli, Pozoqo Wallet gösterge paneli dijital paranızı üzerinde tam kontrol sağlar. Mevcut en güvenli mobil cüzdan ile, anında ödemeler gönderin ve alın.
 
-Dash Cüzdani doğrudan Dash ağına bağlanır. Bu, saldırıya uğrayabilecek, çökebilecek veya heklenebilecek bir sunucunun olmadığı anlamına gelir - paranız her zaman güvendedir. Telefonunuz kaybolsa, hasar görse veya çalınsa bile kişisel kurtarma sözcük grubunuz ile paranızı kolayca kurtarabilirsiniz.
+Pozoqo Cüzdani doğrudan Pozoqo ağına bağlanır. Bu, saldırıya uğrayabilecek, çökebilecek veya heklenebilecek bir sunucunun olmadığı anlamına gelir - paranız her zaman güvendedir. Telefonunuz kaybolsa, hasar görse veya çalınsa bile kişisel kurtarma sözcük grubunuz ile paranızı kolayca kurtarabilirsiniz.
 
 Özellikler:
 
-* Çevrimiçi veya şahsen saniyeler içinde Dash ödemeleri gönderin ve alın
-* Dash kabul eden satıcı ve websitelere tek tuşla ödeme yapın
+* Çevrimiçi veya şahsen saniyeler içinde Pozoqo ödemeleri gönderin ve alın
+* Pozoqo kabul eden satıcı ve websitelere tek tuşla ödeme yapın
 * Biyometrik Kimlik Doğrulama ile hızlı ödeme yap
 * Kağıt cüzdanların taranması (örn. soğuk depolama için kullanılan)
-* Kullanıcıların Dash alıp satmasını sağlayan 3. parti entegrasyonları
+* Kullanıcıların Pozoqo alıp satmasını sağlayan 3. parti entegrasyonları
 * Basit kurtarma sözcük grupları, cihazınızın değişme veya kaybolma durumunda fonlarınızı kurtarmanızı sağlar.
 * Bir dizi özel güvenlik tercihini karşılamak için esnek ayarlar
-* Doğrudan Dash ağ istemcisi - hack edilenebilecek veya çökecek bir merkezi sunucu yok
+* Doğrudan Pozoqo ağ istemcisi - hack edilenebilecek veya çökecek bir merkezi sunucu yok
 
-Dash Cüzdanı açık kaynak kodlu ve ücretsizdir. Ağ ücretleri çoğu kripto para birimlerinden daha düşük olup merkezi maliyet yoktur. Saniyeler içinde dünyadaki herhangi birine herhangi bir miktarda para gönderin. İşletmenizde ödemeleri güvenilir ve anında kabul edin. Para bu şekilde olmalı.
+Pozoqo Cüzdanı açık kaynak kodlu ve ücretsizdir. Ağ ücretleri çoğu kripto para birimlerinden daha düşük olup merkezi maliyet yoktur. Saniyeler içinde dünyadaki herhangi birine herhangi bir miktarda para gönderin. İşletmenizde ödemeleri güvenilir ve anında kabul edin. Para bu şekilde olmalı.
 
 KATKIDA BULUN
 
-Dash Wallet açık kaynak kodlu ücretsiz bir yazılımdır. Lisans: GPLv3
+Pozoqo Wallet açık kaynak kodlu ücretsiz bir yazılımdır. Lisans: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Kaynak kodumuz GitHub'da mevcuttur:
@@ -32,8 +32,8 @@ https://github.com/dashevo/dash-wallet
 Tüm çeviriler Transifex aracılığıyla yönetilmektedir:
 https://www.transifex.com/dash/dash-mobile-wallets/
 
-Dash hakkında daha fazlası için
+Pozoqo hakkında daha fazlası için
 https://www.dash.org/
 
 v7.0.0 Yükseltme
-Dash Cüzdan v7.0, tüm cihazlarınızda sezgisel ve tanıdık bir şekilde kullanım kolaylığını artırmayı amaçlayan tamamen yeniden tasarlanmış bir deneyim getiriyor. Kullanıcıların kurtarma sözcük grubunu korumasının önemini vurgalmak ve güvenliğini artırmak için kurtarma sözcük grubu doğrulama sürecimizi yeniden tasarladık ki; eğer kullanıcılar 12-kelimelik kurtarma sözcük grubunu güvenli bir şekilde yazabilecek bir durumda değiller ise bunu sonra da yapabilecekler. Ayrıca sık kullanılan özelliklere daha hızlı erişebilmeleri için ana ekrana kısayollar ekledik. Kullanıcıların cüzdanlarını daha hızlı ve kolay yapılandırmasına yardımcı olmak için ayarlar menümüzü de uygulamada yeniden konumlandırıp düzenledik. Güvenlik ayarlarına gelince kullanıcılar artık daha geniş bir kontrole sahip olacak ve PİN kodlarının ne sıklıkta girilmesi gerektiğine karar verebilecekler.
+Pozoqo Cüzdan v7.0, tüm cihazlarınızda sezgisel ve tanıdık bir şekilde kullanım kolaylığını artırmayı amaçlayan tamamen yeniden tasarlanmış bir deneyim getiriyor. Kullanıcıların kurtarma sözcük grubunu korumasının önemini vurgalmak ve güvenliğini artırmak için kurtarma sözcük grubu doğrulama sürecimizi yeniden tasarladık ki; eğer kullanıcılar 12-kelimelik kurtarma sözcük grubunu güvenli bir şekilde yazabilecek bir durumda değiller ise bunu sonra da yapabilecekler. Ayrıca sık kullanılan özelliklere daha hızlı erişebilmeleri için ana ekrana kısayollar ekledik. Kullanıcıların cüzdanlarını daha hızlı ve kolay yapılandırmasına yardımcı olmak için ayarlar menümüzü de uygulamada yeniden konumlandırıp düzenledik. Güvenlik ayarlarına gelince kullanıcılar artık daha geniş bir kontrole sahip olacak ve PİN kodlarının ne sıklıkta girilmesi gerektiğine karar verebilecekler.

@@ -3,14 +3,14 @@
 
     <string name="uphold_account">Uphold</string>
     <string name="uphold_link_title">Dein Uphold Konto verknüpfen</string>
-    <string name="uphold_transfer_details">Von Uphold auf deine Dash Wallet</string>
-    <string name="uphold_buy_dash_activity_title">Dash mit Uphold kaufen/verkaufen</string>
-    <string name="uphold_buy_dash_with_uphold">Dash über den Uphold Account kaufen</string>
-    <string name="uphold_buy_dash_button">Dash kaufen</string>
+    <string name="uphold_transfer_details">Von Uphold auf deine Pozoqo Wallet</string>
+    <string name="uphold_buy_dash_activity_title">Pozoqo mit Uphold kaufen/verkaufen</string>
+    <string name="uphold_buy_dash_with_uphold">Pozoqo über den Uphold Account kaufen</string>
+    <string name="uphold_buy_dash_button">Pozoqo kaufen</string>
     <string name="uphold_transfer_to_this_wallet_button">Von Uphold transferieren</string>
     <string name="uphold_link_account">Uphold-Konto verknüpfen</string>
-    <string name="uphold_account_dash_balance">Das Dash-Guthaben des Uphold Accounts beträgt</string>
-    <string name="uphold_transfer_to_this_wallet">Dash vom Uphold Account an diese Wallet transferieren</string>
+    <string name="uphold_account_dash_balance">Das Pozoqo-Guthaben des Uphold Accounts beträgt</string>
+    <string name="uphold_transfer_to_this_wallet">Pozoqo vom Uphold Account an diese Wallet transferieren</string>
     <string name="uphold_withdrawal_deduct_fee_disclaimer">Die Gebühr wird vom angeforderten Betrag abgezogen.</string>
     <string name="uphold_withdrawal_instructions">Trage den Transaktionsbetrag ein</string>
     <string name="uphold_withdrawal_success_title">Erfolg</string>
@@ -23,9 +23,9 @@
     <string name="uphold_logout_explanation_text">Du musst dich mit deinem Browser von der Uphold-Webseite abmelden</string>
     <string name="uphold_go_to_website">Webseite besuchen</string>
     <string name="uphold_error">Uphold Fehler</string>
-    <string name="uphold_error_not_logged_in">Die Dash Wallet ist nicht mehr mit einem Uphold-Account verbunden. Auf der nächsten Seite musst du den Link Uphold-Account klicken.</string>
+    <string name="uphold_error_not_logged_in">Die Pozoqo Wallet ist nicht mehr mit einem Uphold-Account verbunden. Auf der nächsten Seite musst du den Link Uphold-Account klicken.</string>
     <string name="uphold_error_not_available">Der Uphold-Service ist nicht verfügbar. Versuche es später erneut.</string>
-    <string name="uphold_error_report_issue">Bitte teile dem Dash Wallet Support-Team diesen Fehler über die Option "Fehler melden" im Hauptmenü mit.</string>
+    <string name="uphold_error_report_issue">Bitte teile dem Pozoqo Wallet Support-Team diesen Fehler über die Option "Fehler melden" im Hauptmenü mit.</string>
 
     <string name="uphold_general_error_title">Fehler</string>
     <string name="uphold_api_error_title">Uphold Fehler</string>
@@ -39,8 +39,8 @@
     <string name="uphold_api_error_400_description">Uphold-Guthaben wurde für 24 Stunden gesperrt.\n\nDein Guthaben für diese Transaktion wird um %s bereitstehen.</string>
     <string name="uphold_api_error_400_locked">Uphold-Guthaben (%1$s %2$s) ist bis zu 65 Tage gesperrt.\n\nDein Guthaben für diese Transaktion wird am %3$s bereitstehen.</string>
     <string name="uphold_api_error_400_tx_insufficentfunds">Dein Guthaben reicht nicht aus, um diese Transaktion zu tätigen</string>
-    <string name="uphold_api_error_400_less_than_or_equal_to">Der zu überweisende Betrag sollte kleiner als %s DASH sein.</string>
-    <string name="uphold_api_error_400_greater_than_or_equal_to">Der zu überweisende Betrag sollte größer als %s DASH sein.</string>
+    <string name="uphold_api_error_400_less_than_or_equal_to">Der zu überweisende Betrag sollte kleiner als %s PZQ sein.</string>
+    <string name="uphold_api_error_400_greater_than_or_equal_to">Der zu überweisende Betrag sollte größer als %s PZQ sein.</string>
     <string name="uphold_api_error_400_tx_validation">Du kannst nicht so viel mit dieser App versenden (max. 3000$)</string>
     <string name="uphold_api_error_400_password_reset">Uphold-Guthaben wurde durch eine Passwortänderung gesperrt.\n\nDu musst bis %s warten, bevor du dein Guthaben versenden kannst.</string>
     <string name="uphold_api_error_400_authentication_change">Uphold-Guthaben wurde durch eine Änderung der Authentifizierungsmethode gesperrt.\n\nDu musst bis %s warten, bevor du dein Guthaben versenden kannst.</string>

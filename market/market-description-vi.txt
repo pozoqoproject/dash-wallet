@@ -1,29 +1,29 @@
 ﻿MAIN DESCRIPTION
 
-Ví Dash Wallet là ví tham khảo trên Android được duy trì bởi Dash Core Group cho tiền số Dash - một giải pháp sáng tạo để thay thế cho Bitcoin được thiêt kế đặc biệt cho mục đích làm phương tiện thanh toán.
+Ví Pozoqo Wallet là ví tham khảo trên Android được duy trì bởi Pozoqo Core Group cho tiền số Pozoqo - một giải pháp sáng tạo để thay thế cho Bitcoin được thiêt kế đặc biệt cho mục đích làm phương tiện thanh toán.
 
-Dash là một loại tiền số để khắc phục những khuyết điểm mà các loại tiền số khác phải chịu. Nó nhờ vào một mạng lưới các Masternode để cho phép những thứ như là tính năng riêng tư tuỳ chọn, giao dịch tức thời và một cơ chế cấp vốn trực tiếp để phát triển mạng lưới.
+Pozoqo là một loại tiền số để khắc phục những khuyết điểm mà các loại tiền số khác phải chịu. Nó nhờ vào một mạng lưới các Masternode để cho phép những thứ như là tính năng riêng tư tuỳ chọn, giao dịch tức thời và một cơ chế cấp vốn trực tiếp để phát triển mạng lưới.
 
-Trực quan và bảo mật, ví Dash cho bạn toàn quyền kiểm soát ví tiền kỹ thuật số của mình. Gửi và nhận Dash một cách tức thời, với ví trên di động an toàn nhất này.
+Trực quan và bảo mật, ví Pozoqo cho bạn toàn quyền kiểm soát ví tiền kỹ thuật số của mình. Gửi và nhận Pozoqo một cách tức thời, với ví trên di động an toàn nhất này.
 
-Ví Dash kết nối trực tiếp với mạng lưới Dash. Điều này có nghĩa là sẽ không có máy chủ để mà bị hack hoặc bị sập - khoản tiền của bạn luôn luôn được an toàn. Thậm chí nếu điện thoại của bạn bị mất, hỏng, hoặc bị ăn trộm thì bạn vẫn có thể dễ dàng khôi phục lại số tiền của mình bằng dòng chữ phục hồi của cá nhân bạn.
+Ví Pozoqo kết nối trực tiếp với mạng lưới Pozoqo. Điều này có nghĩa là sẽ không có máy chủ để mà bị hack hoặc bị sập - khoản tiền của bạn luôn luôn được an toàn. Thậm chí nếu điện thoại của bạn bị mất, hỏng, hoặc bị ăn trộm thì bạn vẫn có thể dễ dàng khôi phục lại số tiền của mình bằng dòng chữ phục hồi của cá nhân bạn.
 
 Các tính năng:
 
 * Gửi và nhận giao dịch dash trong vòng vài giây, trực tuyến hoặc trực tiếp
-* Thanh toán chỉ bằng một nút bấm để trả tiền cho các website và cửa hàng chấp nhận Dash
+* Thanh toán chỉ bằng một nút bấm để trả tiền cho các website và cửa hàng chấp nhận Pozoqo
 * Gửi tiền nhanh chóng với xác thực sinh trắc học
 * Quét ví giấy (ví dụ: từ ví giấy hay ví lưu trữ lạnh)
-* Tích hợp giải pháp của bên thứ 3 để cho phép người dùng mua và bán Dash
+* Tích hợp giải pháp của bên thứ 3 để cho phép người dùng mua và bán Pozoqo
 * Dòng chữ phục hồi đơn giản giúp bạn khôi phục lại số tiền của mình khi thiết bị bị mất, hỏng hoặc cần thay thế
 * Các thiết lập linh hoạt để thoả mãn nhiều mức độ tuỳ chọn bảo mật khác nhau
-* Phần mềm truy cập trực tiếp mạng lưới Dash - không có máy chủ trung tâm hoặc bị sập
+* Phần mềm truy cập trực tiếp mạng lưới Pozoqo - không có máy chủ trung tâm hoặc bị sập
 
-Ví Dash là mã nguồn mở và miễn phí. Phí dịch vụ thấp hơn các mạng lưới tiền số khác và không phải mất thêm chi phí cho các dịch vụ bổ sung tập trung nào. Có thể gửi bất cứ khoản tiền bao nhiêu cho bấy cứ ai ở mọi nơi trên thế giới chỉ trong vài giây. Chấp nhận thanh toán một cách tin cậy và tức thời tại doanh nghiệp của bạn. Đây chính là điều mà bất cứ đồng tiền nào cũng nên đạt được như vậy.
+Ví Pozoqo là mã nguồn mở và miễn phí. Phí dịch vụ thấp hơn các mạng lưới tiền số khác và không phải mất thêm chi phí cho các dịch vụ bổ sung tập trung nào. Có thể gửi bất cứ khoản tiền bao nhiêu cho bấy cứ ai ở mọi nơi trên thế giới chỉ trong vài giây. Chấp nhận thanh toán một cách tin cậy và tức thời tại doanh nghiệp của bạn. Đây chính là điều mà bất cứ đồng tiền nào cũng nên đạt được như vậy.
 
 ĐÓNG GÓP
 
-Ví Dash là mã nguồn mở và miễn phí. Giấy phép: GPLv3
+Ví Pozoqo là mã nguồn mở và miễn phí. Giấy phép: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Mã nguồn có thể tìm thấy ở GitHub:
@@ -32,8 +32,8 @@ https://github.com/dashevo/dash-wallet
 Tất cả các bản dịch được thực hiện thông qua Transifex:
 https://www.transifex.com/dash/dash-mobile-wallets/
 
-Bạn có thể tìm thêm thông tin về Dash tại
+Bạn có thể tìm thêm thông tin về Pozoqo tại
 https://www.dash.org/
 
 v7.0.0 Nâng cấp
-Ví Dash Wallet v7.0 mang đến với một trải nghiệm được thiết kế lại hoàn toàn để nâng cao sự dễ sử dụng theo một cách trực quan và tương tự như cách trên mọi loại thiết bị của bạn. Chúng tôi tái tưởng tượng quy trình kiểm tra câu phục hồi để làm nổi bật sự quan trọng của việc bảo đảm thông tin này cho việc khôi phục ví về sau, và người dùng bây giờ có thể quyết định khi nào họ muốn dành thời gian để ghi xuống 12 từ khoá cho câu phục hồi. Chúng tôi cũng đã thêm các lối tắt vào màn hình chính để truy cập những tính năng thường dùng đươci nhanh hơn và menu bây giờ được đặt lại vị trí trong ứng dụng và được tổ chức để giúp người dùng cấu hình ví của họ nhanh hơn và hiệu quả hơn. Người dùng giờ đây có nhiều quyền kiểm soát hơn cho các thiết lập bảo mật và khả năng quyết định họ nên thường xuyên nhập mã pin ra sao.
+Ví Pozoqo Wallet v7.0 mang đến với một trải nghiệm được thiết kế lại hoàn toàn để nâng cao sự dễ sử dụng theo một cách trực quan và tương tự như cách trên mọi loại thiết bị của bạn. Chúng tôi tái tưởng tượng quy trình kiểm tra câu phục hồi để làm nổi bật sự quan trọng của việc bảo đảm thông tin này cho việc khôi phục ví về sau, và người dùng bây giờ có thể quyết định khi nào họ muốn dành thời gian để ghi xuống 12 từ khoá cho câu phục hồi. Chúng tôi cũng đã thêm các lối tắt vào màn hình chính để truy cập những tính năng thường dùng đươci nhanh hơn và menu bây giờ được đặt lại vị trí trong ứng dụng và được tổ chức để giúp người dùng cấu hình ví của họ nhanh hơn và hiệu quả hơn. Người dùng giờ đây có nhiều quyền kiểm soát hơn cho các thiết lập bảo mật và khả năng quyết định họ nên thường xuyên nhập mã pin ra sao.

@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">Ağ Kullanılamıyor</string>
     <string name="network_unavailable_check_connection">Lütfen ağ bağlantınızı kontrol edin</string>
     <string name="network_unavailable_balance_not_accurate">Bağlantının kesilmesi nedeniyle bakiye doğru olmayabilir</string>
-    <string name="buy_dash">Dash Al</string>
+    <string name="buy_dash">Pozoqo Al</string>
     <string name="copied">Kopyalandı</string>
     <string name="staking_title">Staking</string>
     <string name="email">E-Posta</string>
     <string name="email_placeholder">Örneğin. johndoe@mail.com</string>
     <string name="error">Hata</string>
     <string name="select_a_coin">Bir koin seçin</string>
-    <string name="request_coins_share_dialog_title">Dash talebini paylaş...</string>
-    <string name="buy_with_fiat">Fiat ile Dash satın alın</string>
-    <string name="buy_and_convert">Başka bir kripto para kullanarak Dash satın alın</string>
-    <string name="transfer_dash">Transfer Dash</string>
+    <string name="request_coins_share_dialog_title">Pozoqo talebini paylaş...</string>
+    <string name="buy_with_fiat">Fiat ile Pozoqo satın alın</string>
+    <string name="buy_and_convert">Başka bir kripto para kullanarak Pozoqo satın alın</string>
+    <string name="transfer_dash">Transfer Pozoqo</string>
     <string name="login_error_title">%s hesabınızda oturum açılamıyor</string>
     <string name="login_error_message">%s hesabınızda oturum açılırken bir hata oluştu.</string>
     <string name="balance">Bakiye:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">Banka/Kredi kartı</string>
     <string name="max">Maksimum</string>
     <string name="select_the_coin">Koin seçin</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Dash Cüzdanı</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Pozoqo Cüzdanı</string>
     <string name="from">gelen</string>
     <string name="to">giden</string>
     <string name="select_currency">Para Birimini Seçin</string>
     <string name="send_coins_error_dusty_send">Bu miktar göndermek için çok düşüktür</string>
     <string name="send_coins_error_insufficient_money">Yetersiz bakiye</string>
 
-    <string name="empty_wallet_warning_title">Dash Cüzdanınızı boşaltıyor gibisiniz</string>
-    <string name="empty_wallet_crowdnode_warning">Bakiyenizi 0.0003 Dash\'in üstüne çıkmadan CrowdNode\'dan bu cüzdana para çekemeyeceğinizi lütfen unutmayın.</string>
+    <string name="empty_wallet_warning_title">Pozoqo Cüzdanınızı boşaltıyor gibisiniz</string>
+    <string name="empty_wallet_crowdnode_warning">Bakiyenizi 0.0003 Pozoqo\'in üstüne çıkmadan CrowdNode\'dan bu cüzdana para çekemeyeceğinizi lütfen unutmayın.</string>
     <string name="syncing">Senkronize ediliyor</string>
 </resources>

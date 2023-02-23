@@ -68,23 +68,23 @@ public final class Constants {
     static {
         switch (BuildConfig.FLAVOR) {
             case "prod": {
-                DNS_SEED = new String[]{"dnsseed.dash.org", "dnsseed.dashdot.io"};
+                DNS_SEED = new String[]{"dnsseed.pozoqo.tech", "129.151.165.124", "139.177.182.150", "185.185.80.62"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH;
                 NETWORK_PARAMETERS = MainNetParams.get();
                 IS_PROD_BUILD = true;
                 FILENAME_NETWORK_SUFFIX = "";
-                WALLET_NAME_CURRENCY_CODE = "dash";
+                WALLET_NAME_CURRENCY_CODE = "pozoqo";
                 org.dash.wallet.common.util.Constants.INSTANCE.setEXPLORE_GC_FILE_PATH("explore/explore.db");
                 SYNC_FLAGS.add(MasternodeSync.SYNC_FLAGS.SYNC_HEADERS_MN_LIST_FIRST);
                 break;
             }
             case "_testNet3": {
-                DNS_SEED = new String[]{"testnet-seed.dashdot.io", "95.183.51.146", "35.161.101.35", "54.91.130.170"};
+                DNS_SEED = new String[]{"testnet-seed.pozoqo.tech"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH_TESTNET;
                 NETWORK_PARAMETERS = TestNet3Params.get();
                 IS_PROD_BUILD = false;
                 FILENAME_NETWORK_SUFFIX = "-testnet";
-                WALLET_NAME_CURRENCY_CODE = "tdash";
+                WALLET_NAME_CURRENCY_CODE = "tpozoqo";
                 org.dash.wallet.common.util.Constants.INSTANCE.setEXPLORE_GC_FILE_PATH("explore/explore-testnet.db");
                 SYNC_FLAGS.add(MasternodeSync.SYNC_FLAGS.SYNC_HEADERS_MN_LIST_FIRST);
                 break;
@@ -155,9 +155,9 @@ public final class Constants {
     public static final long BACKUP_MAX_CHARS = 10000000;
 
     /** URL to fetch version alerts from. */
-    public static final HttpUrl VERSION_URL = HttpUrl.parse("https://wallet.schildbach.de/version");
+    public static final HttpUrl VERSION_URL = HttpUrl.parse("https://wallet.pozoqo.tech/version");
     /** URL to fetch dynamic fees from. */
-    public static final HttpUrl DYNAMIC_FEES_URL = HttpUrl.parse("https://wallet.schildbach.de/fees");
+    public static final HttpUrl DYNAMIC_FEES_URL = HttpUrl.parse("https://wallet.pozoqo.tech/fees");
 
     /** MIME type used for transmitting single transactions. */
     public static final String MIMETYPE_TRANSACTION = "application/x-dashtx";
@@ -169,7 +169,7 @@ public final class Constants {
     public static final int MAX_NUM_CONFIRMATIONS = 6;
 
     /** User-agent to use for network access. */
-    public static final String USER_AGENT = "Dash Wallet";
+    public static final String USER_AGENT = "Pozoqo Wallet";
 
     /** Default currency to use if all default mechanisms fail. */
     public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
@@ -178,7 +178,7 @@ public final class Constants {
     public static final String REPORT_EMAIL = BuildConfig.SUPPORT_EMAIL;
 
     /** Subject line for manually reported issues. */
-    public static final String REPORT_SUBJECT_BEGIN = "Android Dash Wallet:  ";
+    public static final String REPORT_SUBJECT_BEGIN = "Android Pozoqo Wallet:  ";
     public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 
     /** Subject line for crash reports. */
@@ -194,8 +194,8 @@ public final class Constants {
     public static final MonetaryFormat LOCAL_FORMAT = new MonetaryFormat().noCode().minDecimals(2).optionalDecimals();
     public static final BaseEncoding HEX = BaseEncoding.base16().lowerCase();
 
-    public static final String SOURCE_URL = "https://github.com/dashevo/dash-wallet";
-    public static final String BINARY_URL = "https://github.com/dashevo/dash-wallet/releases";
+    public static final String SOURCE_URL = "https://github.com/pozoqoproject/pozoqo-wallet";
+    public static final String BINARY_URL = "https://github.com/pozoqoproject/pozoqo-wallet/releases";
     public static final String MARKET_APP_URL = "market://details?id=%s";
     public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
 
@@ -250,10 +250,10 @@ public final class Constants {
 
     private static final Logger log = LoggerFactory.getLogger(Constants.class);
 
-    //Dash Specific
+    //Pozoqo Specific
     public static long EARLIEST_HD_SEED_CREATION_TIME = 1427610960L;
 
-    public static String WALLET_URI_SCHEME = "dashwallet";
+    public static String WALLET_URI_SCHEME = "pozoqowallet";
 
     public static boolean ENABLE_ZERO_FEES = false; //Enable Zero Fee's on TestNet only.
 

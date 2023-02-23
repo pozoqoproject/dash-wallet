@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * @author Samuel Barbosa
  */
-public class DashCentralRateAdapter {
+public class PozoqoCentralRateAdapter {
 
     @ToJson
     String toJson(Rate rate) {

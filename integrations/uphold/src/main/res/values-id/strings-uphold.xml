@@ -3,14 +3,14 @@
 
     <string name="uphold_account">Uphold</string>
     <string name="uphold_link_title">Tautkan akun Uphold anda</string>
-    <string name="uphold_transfer_details">Dari Uphold ke Dompet Dash anda</string>
-    <string name="uphold_buy_dash_activity_title">Beli/Jual Dash dengan Uphold</string>
-    <string name="uphold_buy_dash_with_uphold">Beli Dash dengan akun Uphold</string>
-    <string name="uphold_buy_dash_button">Beli Dash</string>
+    <string name="uphold_transfer_details">Dari Uphold ke Dompet Pozoqo anda</string>
+    <string name="uphold_buy_dash_activity_title">Beli/Jual Pozoqo dengan Uphold</string>
+    <string name="uphold_buy_dash_with_uphold">Beli Pozoqo dengan akun Uphold</string>
+    <string name="uphold_buy_dash_button">Beli Pozoqo</string>
     <string name="uphold_transfer_to_this_wallet_button">Transfer dari Uphold</string>
     <string name="uphold_link_account">Tautkan Akun Uphold</string>
-    <string name="uphold_account_dash_balance">Saldo Dash akun Uphold anda adalah</string>
-    <string name="uphold_transfer_to_this_wallet">Transfer Dash dari akun Uphold Anda ke dompet ini</string>
+    <string name="uphold_account_dash_balance">Saldo Pozoqo akun Uphold anda adalah</string>
+    <string name="uphold_transfer_to_this_wallet">Transfer Pozoqo dari akun Uphold Anda ke dompet ini</string>
     <string name="uphold_withdrawal_deduct_fee_disclaimer">Biaya akan dipotong dari jumlah yang diminta.</string>
     <string name="uphold_withdrawal_instructions">Masukkan jumlah yang akan ditransfer</string>
     <string name="uphold_withdrawal_success_title">Berhasil</string>
@@ -23,9 +23,9 @@
     <string name="uphold_logout_explanation_text">Anda juga harus keluar dari situs web Uphold menggunakan browser Anda</string>
     <string name="uphold_go_to_website">Pergi ke Situs Web</string>
     <string name="uphold_error">Uphold Error</string>
-    <string name="uphold_error_not_logged_in">Dash Wallet tidak lagi ditautkan ke akun Uphold Anda. Pada layar berikutnya tekan Tautkan akun Uphold.</string>
+    <string name="uphold_error_not_logged_in">Pozoqo Wallet tidak lagi ditautkan ke akun Uphold Anda. Pada layar berikutnya tekan Tautkan akun Uphold.</string>
     <string name="uphold_error_not_available">Layanan Uphold tidak tersedia. Silakan coba lagi nanti.</string>
-    <string name="uphold_error_report_issue">Silakan laporkan masalah ini ke tim dukungan Dash Wallet menggunakan "Laporkan Masalah" dari menu utama.</string>
+    <string name="uphold_error_report_issue">Silakan laporkan masalah ini ke tim dukungan Pozoqo Wallet menggunakan "Laporkan Masalah" dari menu utama.</string>
 
     <string name="uphold_general_error_title">Kesalahan</string>
     <string name="uphold_api_error_title">Kesalahan Uphold</string>
@@ -39,8 +39,8 @@
     <string name="uphold_api_error_400_description">Dana Uphold dikunci selama 24 jam.\n\nAnda akan memiliki cukup dana untuk transfer ini pada %s</string>
     <string name="uphold_api_error_400_locked">Dana Uphold (%1$s %2$s) dikunci hingga 65 hari.\n\nAnda akan memiliki dana yang cukup untuk transfer ini dengan %3$s.</string>
     <string name="uphold_api_error_400_tx_insufficentfunds">Anda tidak memiliki dana yang cukup untuk transfer ini</string>
-    <string name="uphold_api_error_400_less_than_or_equal_to">Jumlah yang akan ditransfer harus kurang dari %s DASH.</string>
-    <string name="uphold_api_error_400_greater_than_or_equal_to">Jumlah yang akan ditransfer harus lebih dari %s DASH.</string>
+    <string name="uphold_api_error_400_less_than_or_equal_to">Jumlah yang akan ditransfer harus kurang dari %s PZQ.</string>
+    <string name="uphold_api_error_400_greater_than_or_equal_to">Jumlah yang akan ditransfer harus lebih dari %s PZQ.</string>
     <string name="uphold_api_error_400_tx_validation">Tidak dapat mentransfer sebanyak itu dengan aplikasi ini (maks $3000)</string>
     <string name="uphold_api_error_400_password_reset">Dana Uphold terkunci karena perubahan kata sandi baru-baru ini.\n\nAnda harus menunggu sampai %s Anda dapat mentransfer dana.</string>
     <string name="uphold_api_error_400_authentication_change">Dana Uphold dikunci karena perubahan metode autentikasi baru-baru ini.\n\nAnda harus menunggu hingga %s sebelum anda dapat mentransfer dana.</string>

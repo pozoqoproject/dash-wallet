@@ -125,7 +125,7 @@ class EnterTwoFaCodeViewModel @Inject constructor(
             CoinBaseResultDialog.Type.CONVERSION_ERROR -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.CONVERT_ERROR_RETRY, bundleOf())
             }
-            CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR -> {
+            CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.TRANSFER_ERROR_RETRY, bundleOf())
             }
             else -> {}
@@ -146,10 +146,10 @@ class EnterTwoFaCodeViewModel @Inject constructor(
             CoinBaseResultDialog.Type.CONVERSION_ERROR -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.CONVERT_ERROR_CLOSE, bundleOf())
             }
-            CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS -> {
+            CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.TRANSFER_SUCCESS_CLOSE, bundleOf())
             }
-            CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR -> {
+            CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.TRANSFER_ERROR_CLOSE, bundleOf())
             }
             else -> {}

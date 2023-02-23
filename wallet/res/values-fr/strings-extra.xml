@@ -61,9 +61,9 @@
     <string name="perm_lock_close_app">Fermer</string>
 
     <string name="scan_to_pay_error_dialog_title">Scanner pour envoyer</string>
-    <string name="scan_to_pay_error_dialog_message">Adresse Dash invalide, ou URL de requête dans le presse-papiers invalide :\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Le presse-papiers ne contient pas d\'adresse Dash valide ni d\'URL de requête valide.</string>
-    <string name="pay_to_confirm_address">Est-ce l\'adresse Dash à laquelle vous voulez envoyer un paiement ?</string>
+    <string name="scan_to_pay_error_dialog_message">Adresse Pozoqo invalide, ou URL de requête dans le presse-papiers invalide :\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Le presse-papiers ne contient pas d\'adresse Pozoqo valide ni d\'URL de requête valide.</string>
+    <string name="pay_to_confirm_address">Est-ce l\'adresse Pozoqo à laquelle vous voulez envoyer un paiement ?</string>
 
     <string name="receive_title">Recevoir</string>
     <string name="receive_enter_amount_message">Indiquez le montant à recevoir</string>
@@ -116,7 +116,7 @@
     <string name="import_export_keys_dialog_password_phrase">La phrase de récupération va ici.</string>
     <string name="preferences_report_issue_summary">Collectez informations de votre problème et email aux développeurs.</string>
     <string name="navigation_configuration">Configuration</string>
-    <string name="request_coins_clipboard_address_msg">Adresse Dash copiée dans le presse-papiers</string>
+    <string name="request_coins_clipboard_address_msg">Adresse Pozoqo copiée dans le presse-papiers</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Afficher </string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" n\'est pas un mot de phrase de récupération</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">La phrase de récupération doit avoir 12 mots</string>
@@ -127,7 +127,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Aucuns frais ne seront payés. Utilisez “Sans frais” si le temps de confirmation ne vous importe pas.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">L\'application %s souhaiterait recevoir votre clé publique maîtresse. Elle peut être utilisée pour suivre l\'évolution de votre portefeuille, mais pas pour déplacer vos fonds Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">L\'application %s souhaiterait recevoir votre clé publique maîtresse. Elle peut être utilisée pour suivre l\'évolution de votre portefeuille, mais pas pour déplacer vos fonds Pozoqo.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">L\'application %s réclame une adresse pour vous payer. Donnez-vous votre autorisation ?</string>
 
@@ -184,11 +184,11 @@
     <string name="notification_synchronization_channel_name">Synchronisation</string>
     <string name="notification_synchronization_channel_description">Affiche une notification quand l\'application se synchronise au réseau.</string>
     <string name="notification_generic_channel_name">Notifications génériques</string>
-    <string name="notification_generic_channel_description">Autres événements Dash Wallet</string>
+    <string name="notification_generic_channel_description">Autres événements Pozoqo Wallet</string>
     <string name="notification_push_channel_name">Notifications</string>
-    <string name="notification_push_channel_description">Montre les notifications push envoyées à vous par Dash</string>
+    <string name="notification_push_channel_description">Montre les notifications push envoyées à vous par Pozoqo</string>
     <string name="notification_settings_title">Notifications</string>
-    <string name="notification_explainer_title">Dash Wallet aimerait vous envoyer des notifications</string>
+    <string name="notification_explainer_title">Pozoqo Wallet aimerait vous envoyer des notifications</string>
     <string name="notification_explainer_message">Les notifications peuvent inclure des alertes, des sons et des icônes. Cela peut être configuré dans les réglages du smartphone.</string>
 
     <string name="net_type_indicator" />
@@ -215,7 +215,7 @@
     <string name="verify_it_is_important_subtitle">Nous allons vous afficher la clé secrète de votre portefeuille.</string>
     <string name="verify_info_text_1">Cette phrase de récupération vous permet d\'accéder aux fonds de ce portefeuille.</string>
     <string name="verify_info_text_2">Nous ne stockons PAS cette phrase de récupération.</string>
-    <string name="verify_info_text_3">Vous aurez besoin de cette phrase de récupération pour accéder à vos fonds si votre appareil est perdu ou endommagé, ou si Dash Wallet en est désinstallé accidentellement.</string>
+    <string name="verify_info_text_3">Vous aurez besoin de cette phrase de récupération pour accéder à vos fonds si votre appareil est perdu ou endommagé, ou si Pozoqo Wallet en est désinstallé accidentellement.</string>
     <string name="verify_skip">Ignorer</string>
     <string name="verify_secure_now_btn">Sécuriser maintenant</string>
     <string name="verify_secure_now_message">Si vous perdez cet appareil, vous perdrez vos fonds. Veuillez noter votre phrase de récupération pour pouvoir restaurer votre portefeuille sur un autre appareil.</string>
@@ -263,8 +263,8 @@
 
     <string name="menu_buy_and_sell_title">Acheter &amp; vendre des dashs</string>
     <string name="menu_buy_and_sell_subtitle">Se connecter aux plateformes de change tierces</string>
-    <string name="liquid_unavailable">L\'intégration Liquid dans Dash Wallet n\'est plus disponible</string>
-    <string name="liquid_unavailable_details">Si vous avez des questions concernant vos fonds Dash détenus par Liquid, veuillez contacter le centre de soutien de Liquid</string>
+    <string name="liquid_unavailable">L\'intégration Liquid dans Pozoqo Wallet n\'est plus disponible</string>
+    <string name="liquid_unavailable_details">Si vous avez des questions concernant vos fonds Pozoqo détenus par Liquid, veuillez contacter le centre de soutien de Liquid</string>
     <string name="menu_security_title">Sécurité</string>
     <string name="menu_security_subtitle">Voir la phrase de récupération, sauvegarder le portefeuille…</string>
     <string name="menu_settings_title">Réglages</string>
@@ -276,7 +276,7 @@
     <string name="menu_contact_support_title">Contacter le service d\'aide</string>
     <string name="menu_contact_support_subtitle">Signaler un problème</string>
     <string name="menu_explore_title">Explorer</string>
-    <string name="menu_explore_subtitle">Achetez avec Dash chez plus de 155 000 vendeurs</string>
+    <string name="menu_explore_subtitle">Achetez avec Pozoqo chez plus de 155 000 vendeurs</string>
 
     <string name="tools_address_book">Carnet d\'adresses</string>
     <string name="tools_import_private_key">Importer une clé privée</string>
@@ -287,9 +287,9 @@
     <string name="about_review_and_rate">Commentez et notez l\'application</string>
     <string name="about_contact_support">Contacter le service d\'aide</string>
     <string name="about_fork_disclaimer">Ceci est une application open source forkée de Bitcoin Wallet</string>
-    <string name="about_copyright">Copyright © 2023 Dash Core</string>
+    <string name="about_copyright">Copyright © 2023 Pozoqo Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Pozoqo Wallet %s</string>
     <string name="about_last_explore_device_sync">Dernière synchro Explore de l\'appareil</string>
     <string name="about_last_explore_server_update">Dernière mise à jour Explore du serveur</string>
     <string name="about_firebase_installation_id">ID d\'installation Firebase</string>
@@ -305,7 +305,7 @@
     <string name="block_info">Info de bloc</string>
 
     <string name="scan_private_key">Scanner une clé privée</string>
-    <string name="scan_private_key_intro_1">Vous êtes sur le point de récupérer les fonds d\'un portefeuille papier Dash.</string>
+    <string name="scan_private_key_intro_1">Vous êtes sur le point de récupérer les fonds d\'un portefeuille papier Pozoqo.</string>
     <string name="scan_private_key_intro_2">Cela déplacera tous les fonds de ce portefeuille-là vers votre portefeuille sur cet appareil.</string>
     <string name="scan_private_key_intro_3">Quand la transaction sera confirmée, l\'autre portefeuille ne contiendra plus de fonds, et il ne devra pas être réutilisé pour des raisons de sécurité.</string>
     <string name="confirm">Confirmer</string>
@@ -343,7 +343,7 @@
     <string name="welcome_screen_subtitle_3">Gardez un contrôle complet et personnalisez votre portefeuille selon vos besoins</string>
 
     <string name="sync_status_wait">Veuillez attendre la fin de la synchronisation</string>
-    <string name="sync_status_syncing_sub_title">avec la blockchain Dash</string>
+    <string name="sync_status_syncing_sub_title">avec la blockchain Pozoqo</string>
     <string name="sync_status_unable_to_connect">Impossible de se connecter</string>
     <string name="sync_status_check_connection">Vérifier votre connexion</string>
     <string name="sync_status_sync_title">Synchronisation</string>
@@ -364,7 +364,7 @@
     <string name="payment_request_paid_to">Payé à</string>
 
     <string name="import_image_not_valid_qr_code">Le QR-code n\'est pas valide</string>
-    <string name="import_image_please_use_valid_qr_code">Veuillez utiliser un QR-code Dash valide</string>
+    <string name="import_image_please_use_valid_qr_code">Veuillez utiliser un QR-code Pozoqo valide</string>
     <string name="import_image_no_private_key_copied">Aucune clé privée copiée</string>
     <string name="import_image_import_valid_private_key">Copier une clé privée valide pour en importer les dashs</string>
     <string name="import_image_invalid_private">Clé privée invalide</string>

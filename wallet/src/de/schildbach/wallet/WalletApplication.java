@@ -261,7 +261,7 @@ public class WalletApplication extends MultiDexApplication
         CrashReporter.init(getCacheDir());
 
         Threading.uncaughtExceptionHandler = (thread, throwable) -> {
-            log.info("dashj uncaught exception", throwable);
+            log.info("pozoqoj uncaught exception", throwable);
             CrashReporter.saveBackgroundTrace(throwable, packageInfo);
         };
 
@@ -334,7 +334,7 @@ public class WalletApplication extends MultiDexApplication
     }
 
     public void finalizeInitialization() {
-        wallet.getContext().initDash(true, true, Constants.SYNC_FLAGS, Constants.VERIFY_FLAGS);
+        wallet.getContext().initPozoqo(true, true, Constants.SYNC_FLAGS, Constants.VERIFY_FLAGS);
 
         if (config.versionCodeCrossed(packageInfo.versionCode, VERSION_CODE_SHOW_BACKUP_REMINDER)
                 && !wallet.getImportedKeys().isEmpty()) {

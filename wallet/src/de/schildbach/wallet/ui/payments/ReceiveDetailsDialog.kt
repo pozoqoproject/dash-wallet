@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Pozoqo Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class ReceiveDetailsDialog : OffsetDialogFragment() {
     companion object {
-        private const val ARG_DASH_AMOUNT = "arg_dash_amount"
+        private const val ARG_PZQ_AMOUNT = "arg_dash_amount"
         private const val ARG_FIAT_AMOUNT = "arg_fiat_amount"
         private const val ARG_ADDRESS = "arg_address"
 
@@ -46,7 +46,7 @@ class ReceiveDetailsDialog : OffsetDialogFragment() {
             val dialog = ReceiveDetailsDialog()
             val bundle = Bundle()
             bundle.putSerializable(ARG_ADDRESS, address)
-            bundle.putSerializable(ARG_DASH_AMOUNT, dashAmount)
+            bundle.putSerializable(ARG_PZQ_AMOUNT, dashAmount)
             bundle.putSerializable(ARG_FIAT_AMOUNT, fiatAmount)
             dialog.arguments = bundle
             return dialog
@@ -65,7 +65,7 @@ class ReceiveDetailsDialog : OffsetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         requireArguments().apply {
             val address = getSerializable(ARG_ADDRESS) as Address
-            val dashAmount = getSerializable(ARG_DASH_AMOUNT) as Coin
+            val dashAmount = getSerializable(ARG_PZQ_AMOUNT) as Coin
             val fiatAmount = getSerializable(ARG_FIAT_AMOUNT) as Fiat?
 
             binding.receiveInfo.setInfo(address, dashAmount)

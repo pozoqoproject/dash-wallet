@@ -81,9 +81,9 @@ class SendCoinsFragment: Fragment(R.layout.send_coins_fragment) {
             viewModel.initPaymentIntent(args.paymentIntent)
 
             val intentAmount = args.paymentIntent.amount
-            var dashToFiat = viewModel.isDashToFiatPreferred
-            // If an amount is specified (in Dash), then set the active currency to Dash
-            // If amount is 0 Dash or not specified, then don't change the active currency
+            var dashToFiat = viewModel.isPozoqoToFiatPreferred
+            // If an amount is specified (in Pozoqo), then set the active currency to Pozoqo
+            // If amount is 0 Pozoqo or not specified, then don't change the active currency
             if (intentAmount != null && !intentAmount.isZero) {
                 dashToFiat = true
             }
@@ -128,7 +128,7 @@ class SendCoinsFragment: Fragment(R.layout.send_coins_fragment) {
         }
 
         enterAmountViewModel.amount.observe(viewLifecycleOwner) { viewModel.currentAmount = it }
-        enterAmountViewModel.dashToFiatDirection.observe(viewLifecycleOwner) { viewModel.isDashToFiatPreferred = it}
+        enterAmountViewModel.dashToFiatDirection.observe(viewLifecycleOwner) { viewModel.isPozoqoToFiatPreferred = it}
         enterAmountViewModel.onContinueEvent.observe(viewLifecycleOwner) {
             lifecycleScope.launch { authenticateOrConfirm() }
         }

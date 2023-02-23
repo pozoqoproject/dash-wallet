@@ -88,7 +88,7 @@
         android:layout_height="70dp"
         android:padding="1dp"
         android:background="@drawable/rounded_background"
-        android:theme="@style/DashQRLogo"
+        android:theme="@style/PozoqoQRLogo"
         app:layout_constraintTop_toTopOf="@+id/qr_preview_bg"
         app:layout_constraintBottom_toBottomOf="@+id/qr_preview_bg"
         app:layout_constraintStart_toStartOf="@+id/qr_preview_bg"

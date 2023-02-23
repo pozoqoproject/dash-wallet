@@ -60,7 +60,7 @@ class EnterAmountToTransferFragment : Fragment(R.layout.enter_amount_to_transfer
         viewModel.isMaxAmountSelected = false
         binding.currencyOptions.apply {
             pickedOptionIndex = 0
-            provideOptions(listOf(Constants.DASH_CURRENCY, viewModel.localCurrencyCode))
+            provideOptions(listOf(Constants.PZQ_CURRENCY, viewModel.localCurrencyCode))
         }
         binding.keyboardView.onKeyboardActionListener = keyboardActionListener
         formatTransferredAmount(CoinbaseConstants.VALUE_ZERO)

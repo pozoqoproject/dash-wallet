@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Dashを探求する</string>
+    <string name="explore_dash">Pozoqoを探求する</string>
     <string name="explore_title">探求する</string>
-    <string name="explore_subtitle">155,000以上の店舗やオンライン加盟店で、DASHを使って簡単にお買い物ができます。</string>
+    <string name="explore_subtitle">155,000以上の店舗やオンライン加盟店で、PZQを使って簡単にお買い物ができます。</string>
     <string name="explore_merchants_title">どこで使えますか。</string>
-    <string name="explore_merchants_subtitle">Dashでの支払いが可能な加盟店を探します。</string>
+    <string name="explore_merchants_subtitle">Pozoqoでの支払いが可能な加盟店を探します。</string>
     <string name="explore_atms_title">ATM</string>
-    <string name="explore_atms_subtitle">DASHやその他の仮想通貨を現金で売買できる場所を探します。</string>
-    <string name="explore_staking_subtitle">簡単にDashをステークし、数回のクリックでパッシブ収入を得ます。</string>
+    <string name="explore_atms_subtitle">PZQやその他の仮想通貨を現金で売買できる場所を探します。</string>
+    <string name="explore_staking_subtitle">簡単にPozoqoをステークし、数回のクリックでパッシブ収入を得ます。</string>
     <string name="explore_staking_current_apy">現在のAPY = %s%%</string>
 
     <!-- Search -->
@@ -59,10 +59,10 @@
     <string name="explore_back_to_locations">全ての店舗に戻る</string>
     <string name="explore_back_to_nearest">最寄りの店舗に戻る</string>
     <string name="explore_select_location">店舗を選択する</string>
-    <string name="explore_pay_with_dash">Dashで支払う</string>
+    <string name="explore_pay_with_dash">Pozoqoで支払う</string>
     <string name="explore_buy_gift_card">ギフトカードを購入する</string>
-    <string name="explore_buy_dash">Dashを購入する</string>
-    <string name="explore_sell_dash">Dashを売る</string>
+    <string name="explore_buy_dash">Pozoqoを購入する</string>
+    <string name="explore_sell_dash">Pozoqoを売る</string>
     <string name="explore_show_all">全ての店舗を表示する</string>
     <string name="explore_atm_location_hint">このATMは</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=%1$f,%2$fに位置しています。</string>
@@ -72,7 +72,7 @@
     <string name="explore_filters">フィルター</string>
     <string name="explore_apply_filter">申し込み</string>
     <string name="explore_payment_method">支払い方法</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">ギフトカード</string>
     <string name="explore_radius">Radius</string>
     <string name="explore_location">位置</string>
@@ -137,16 +137,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">2種類の加盟店があります。</string>
-    <string name="accept_dash_text">DASHを直接承認します</string>
-    <string name="pay_with_dash_text">DASHウォレットで支払い</string>
-    <string name="buy_gift_card_text">Dashでギフトカードを購入</string>
-    <string name="buy_gift_card_desc_text">Dashでギフトカードを購入し、購入金額と同額を支払います。</string>
+    <string name="accept_dash_text">PZQを直接承認します</string>
+    <string name="pay_with_dash_text">PZQウォレットで支払い</string>
+    <string name="buy_gift_card_text">Pozoqoでギフトカードを購入</string>
+    <string name="buy_gift_card_desc_text">Pozoqoでギフトカードを購入し、購入金額と同額を支払います。</string>
     <string name="learn_more_text">詳細はこちら</string>
     <string name="continue_text">続ける</string>
     <string name="buy_card_header_text">ギフトカードの使用方法</string>
-    <string name="buy_card_desc_text">全ての店舗でDASHが直接使えるとは限りませんが、Dashでギフトカードが購入できます。</string>
+    <string name="buy_card_desc_text">全ての店舗でPZQが直接使えるとは限りませんが、Pozoqoでギフトカードが購入できます。</string>
     <string name="find_merchant_text">加盟店を探す。</string>
-    <string name="buy_gift_card_with_dash_text">Dashでギフトカードを購入</string>
+    <string name="buy_gift_card_with_dash_text">Pozoqoでギフトカードを購入</string>
     <string name="redeem_gift_card_text">ギフトカードは、オンラインで数秒以内またはレジでご利用いただけます。</string>
 
     <!-- Sync Status -->

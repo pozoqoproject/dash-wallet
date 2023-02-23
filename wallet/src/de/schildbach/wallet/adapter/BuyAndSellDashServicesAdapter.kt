@@ -24,7 +24,7 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import de.schildbach.wallet.data.BuyAndSellDashServicesModel
+import de.schildbach.wallet.data.BuyAndSellPozoqoServicesModel
 import de.schildbach.wallet.data.ServiceStatus
 import de.schildbach.wallet_test.databinding.ItemServiceListBinding
 import org.bitcoinj.core.Coin
@@ -35,18 +35,18 @@ import de.schildbach.wallet_test.R
 import org.bitcoinj.utils.MonetaryFormat
 
 
-class BuyAndSellDashServicesAdapter(
+class BuyAndSellPozoqoServicesAdapter(
     val balanceFormat: MonetaryFormat,
-    val onClickListener: (BuyAndSellDashServicesModel) -> Unit
-) : ListAdapter<BuyAndSellDashServicesModel, BuyAndSellDashServicesAdapter.BuyAndSellDashServicesViewHolder>(
-    BuyAndSellDashDiffCallback()
+    val onClickListener: (BuyAndSellPozoqoServicesModel) -> Unit
+) : ListAdapter<BuyAndSellPozoqoServicesModel, BuyAndSellPozoqoServicesAdapter.BuyAndSellPozoqoServicesViewHolder>(
+    BuyAndSellPozoqoDiffCallback()
 ) {
-    class BuyAndSellDashDiffCallback : DiffUtil.ItemCallback<BuyAndSellDashServicesModel>() {
-        override fun areItemsTheSame(oldItem: BuyAndSellDashServicesModel, newItem: BuyAndSellDashServicesModel): Boolean {
+    class BuyAndSellPozoqoDiffCallback : DiffUtil.ItemCallback<BuyAndSellPozoqoServicesModel>() {
+        override fun areItemsTheSame(oldItem: BuyAndSellPozoqoServicesModel, newItem: BuyAndSellPozoqoServicesModel): Boolean {
             return oldItem.serviceType == oldItem.serviceType
         }
 
-        override fun areContentsTheSame(oldItem: BuyAndSellDashServicesModel, newItem: BuyAndSellDashServicesModel): Boolean {
+        override fun areContentsTheSame(oldItem: BuyAndSellPozoqoServicesModel, newItem: BuyAndSellPozoqoServicesModel): Boolean {
             return oldItem == newItem
         }
     }
@@ -54,20 +54,20 @@ class BuyAndSellDashServicesAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): BuyAndSellDashServicesViewHolder {
+    ): BuyAndSellPozoqoServicesViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemServiceListBinding.inflate(inflater, parent, false)
 
-        return BuyAndSellDashServicesViewHolder(binding)
+        return BuyAndSellPozoqoServicesViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: BuyAndSellDashServicesViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BuyAndSellPozoqoServicesViewHolder, position: Int) {
         val item = getItem(position)
         holder.bindData(item)
     }
 
-    inner class BuyAndSellDashServicesViewHolder(val binding: ItemServiceListBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bindData(data: BuyAndSellDashServicesModel?) {
+    inner class BuyAndSellPozoqoServicesViewHolder(val binding: ItemServiceListBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bindData(data: BuyAndSellPozoqoServicesModel?) {
             data?.let { service ->
                 binding.root.background = ContextCompat.getDrawable(binding.root.context,
                     if (service.isAvailable()) {

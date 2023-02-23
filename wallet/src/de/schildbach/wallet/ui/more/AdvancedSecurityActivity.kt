@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Pozoqo Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -82,10 +82,10 @@ class AdvancedSecurityActivity : BaseMenuActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val drawableDash = ResourcesCompat.getDrawable(resources,
+        val drawablePozoqo = ResourcesCompat.getDrawable(resources,
                 R.drawable.ic_dash_d_black, null)
-        drawableDash!!.setBounds(0, 0, 32, 32)
-        dashSymbol = ImageSpan(drawableDash, ImageSpan.ALIGN_BASELINE)
+        drawablePozoqo!!.setBounds(0, 0, 32, 32)
+        dashSymbol = ImageSpan(drawablePozoqo, ImageSpan.ALIGN_BASELINE)
 
         auto_logout_switch.setOnCheckedChangeListener { _, enabled ->
             if (configuration.autoLogoutEnabled != enabled) {

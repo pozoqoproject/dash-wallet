@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">เครือข่ายไม่พร้อมใช้งาน</string>
     <string name="network_unavailable_check_connection">โปรดตรวจสอบการเชื่อมต่อเครือข่ายของคุณ</string>
     <string name="network_unavailable_balance_not_accurate">ยอดเงินคงเหลืออาจไม่ถูกต้องเนื่องจากการเชื่อมต่อหายไป</string>
-    <string name="buy_dash">ซื้อ Dash </string>
+    <string name="buy_dash">ซื้อ Pozoqo </string>
     <string name="copied">คัดลอก</string>
     <string name="staking_title">Staking</string>
     <string name="email">อีเมล</string>
     <string name="email_placeholder">ตัวอย่างเช่น johndoe@mail.com</string>
     <string name="error">ผิดพลาด</string>
     <string name="select_a_coin">เลือกเหรียญ</string>
-    <string name="request_coins_share_dialog_title">แชร์คำขอสำหรับ Dash</string>
-    <string name="buy_with_fiat">ซื้อ Dash ด้วยเงินสด</string>
-    <string name="buy_and_convert">ซื้อและแลกเปลี่ยน Dash ด้วยคริปโตอื่น ๆ</string>
-    <string name="transfer_dash">โอน Dash</string>
+    <string name="request_coins_share_dialog_title">แชร์คำขอสำหรับ Pozoqo</string>
+    <string name="buy_with_fiat">ซื้อ Pozoqo ด้วยเงินสด</string>
+    <string name="buy_and_convert">ซื้อและแลกเปลี่ยน Pozoqo ด้วยคริปโตอื่น ๆ</string>
+    <string name="transfer_dash">โอน Pozoqo</string>
     <string name="login_error_title">ไม่สามารถเข้าสู่ระบบบัญชี %s  ของคุณได้</string>
     <string name="login_error_message">เกิดข้อผิดพลาดขณะลงชื่อเข้าใช้บัญชี %s ของคุณ</string>
     <string name="balance">ยอดคงเหลือ:</string>
@@ -68,8 +68,8 @@
     <string name="debit_credit_card">บัตรเดบิต/เครดิต</string>
     <string name="max">สูงสุด</string>
     <string name="select_the_coin">เลือกเหรียญ</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">กระเป๋าเงิน Dash </string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">กระเป๋าเงิน Pozoqo </string>
     <string name="from">จาก</string>
     <string name="to">ถึง</string>
     <string name="select_currency">เลือกสกุลเงิน</string>
@@ -77,6 +77,6 @@
     <string name="send_coins_error_insufficient_money">ยอดเงินไม่เพียงพอ</string>
 
     <string name="empty_wallet_warning_title">ดูเหมือนว่าคุณกำลังล้างกระเป๋าเงินของคุณ</string>
-    <string name="empty_wallet_crowdnode_warning">โปรดทราบว่าคุณจะไม่สามารถถอนเงินจาก CrowdNode ไปยังกระเป๋าเงินนี้ได้จนกว่าคุณจะเพิ่มยอดคงเหลือเป็น 0.0003 Dash</string>
+    <string name="empty_wallet_crowdnode_warning">โปรดทราบว่าคุณจะไม่สามารถถอนเงินจาก CrowdNode ไปยังกระเป๋าเงินนี้ได้จนกว่าคุณจะเพิ่มยอดคงเหลือเป็น 0.0003 Pozoqo</string>
     <string name="syncing">กำลังซิงค์</string>
 </resources>

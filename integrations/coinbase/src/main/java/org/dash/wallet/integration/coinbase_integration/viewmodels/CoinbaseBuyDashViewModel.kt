@@ -46,7 +46,7 @@ import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @HiltViewModel
-class CoinbaseBuyDashViewModel @Inject constructor(private val coinBaseRepository: CoinBaseRepositoryInt,
+class CoinbaseBuyPozoqoViewModel @Inject constructor(private val coinBaseRepository: CoinBaseRepositoryInt,
                                                    private val userPreference: Configuration,
                                                    var exchangeRates: ExchangeRatesProvider,
                                                    var networkState: NetworkStateInt,
@@ -86,13 +86,13 @@ class CoinbaseBuyDashViewModel @Inject constructor(private val coinBaseRepositor
                     AnalyticsConstants.Parameters.VALUE to paymentMethod.paymentMethodType.name
                 ))
                 analyticsService.logEvent(
-                    if (dashToFiat) AnalyticsConstants.Coinbase.BUY_ENTER_DASH
+                    if (dashToFiat) AnalyticsConstants.Coinbase.BUY_ENTER_PZQ
                     else AnalyticsConstants.Coinbase.BUY_ENTER_FIAT,
                     bundleOf()
                 )
 
                 viewModelScope.launch {
-                    placeBuyOrder(PlaceBuyOrderParams(dashAmount.toString(), Constants.DASH_CURRENCY, paymentMethod.paymentMethodId))
+                    placeBuyOrder(PlaceBuyOrderParams(dashAmount.toString(), Constants.PZQ_CURRENCY, paymentMethod.paymentMethodId))
                 }
             }
         }
@@ -144,15 +144,15 @@ class CoinbaseBuyDashViewModel @Inject constructor(private val coinBaseRepositor
         }
     }
 
-    fun isInputGreaterThanLimit(amountInDash: Coin): Boolean {
-        return amountInDash.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInDash) > 0
+    fun isInputGreaterThanLimit(amountInPozoqo: Coin): Boolean {
+        return amountInPozoqo.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInPozoqo) > 0
     }
 
     fun logEvent(eventName: String) {
         analyticsService.logEvent(eventName, bundleOf())
     }
 
-    private val withdrawalLimitInDash: Double
+    private val withdrawalLimitInPozoqo: Double
         get() {
             return if (userPreference.coinbaseUserWithdrawalLimitAmount.isNullOrEmpty()){
                 0.0
@@ -165,8 +165,8 @@ class CoinbaseBuyDashViewModel @Inject constructor(private val coinBaseRepositor
                 }
                 if( exchangeRate?.fiat!=null) {
                     val newRate = org.bitcoinj.utils.ExchangeRate(Coin.COIN, exchangeRate?.fiat)
-                    val amountInDash = newRate.fiatToCoin(fiatAmount)
-                    amountInDash.toPlainString().toDoubleOrZero
+                    val amountInPozoqo = newRate.fiatToCoin(fiatAmount)
+                    amountInPozoqo.toPlainString().toDoubleOrZero
                 }else{
                     0.0
                 }

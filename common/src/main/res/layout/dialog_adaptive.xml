@@ -52,7 +52,7 @@
         android:textAlignment="gravity"
         android:layout_weight="1"
         app:layout_constraintTop_toTopOf="@id/title"
-        tools:text="Please use a valid Dash QR code" />
+        tools:text="Please use a valid Pozoqo QR code" />
 
     <Button
         android:id="@+id/dialog_positive_button"

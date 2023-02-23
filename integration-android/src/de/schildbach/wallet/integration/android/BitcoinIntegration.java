@@ -258,13 +258,13 @@ public final class BitcoinIntegration {
     }
 
     private static void redirectToDownload(final Context context) {
-        Toast.makeText(context, "No Dash application found.\nPlease install Dash Wallet.", Toast.LENGTH_LONG)
+        Toast.makeText(context, "No Pozoqo application found.\nPlease install Pozoqo Wallet.", Toast.LENGTH_LONG)
                 .show();
 
         final Intent marketIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("market://details?id=hashengineering.darkcoin.wallet"));
+                Uri.parse("market://details?id=web.pozoqo.wallet"));
         final Intent binaryIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://github.com/dashevo/dash-wallet/releases"));
+                Uri.parse("https://github.com/pozoqoproject/pozoqo-wallet/releases"));
 
         final PackageManager pm = context.getPackageManager();
         if (pm.resolveActivity(marketIntent, 0) != null)

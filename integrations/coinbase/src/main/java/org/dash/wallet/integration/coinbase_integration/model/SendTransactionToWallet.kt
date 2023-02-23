@@ -105,14 +105,14 @@ data class SendTransactionToWalletParams(
     val idem: String?,
     val to: String?,
     val type: String?,
-    val description: String?="Dash Wallet App"
+    val description: String?="Pozoqo Wallet App"
 ): Parcelable
 
 sealed class TransactionType: Parcelable {
-    @Parcelize object BuyDash: TransactionType()
+    @Parcelize object BuyPozoqo: TransactionType()
     @Parcelize object SellSwap: TransactionType()
     @Parcelize object BuySwap: TransactionType()
-    @Parcelize object TransferDash: TransactionType()
+    @Parcelize object TransferPozoqo: TransactionType()
 }
 
 @Parcelize

@@ -62,7 +62,7 @@ class ToolsViewModel @Inject constructor(
     fun copyXpubToClipboard() {
         clipboardManager.setPrimaryClip(
             ClipData.newPlainText(
-                "Dash Wallet extended public key",
+                "Pozoqo Wallet extended public key",
                 xpub
             )
         )

@@ -315,7 +315,7 @@
     <string name="about_license_title">لیسانس</string>
     <string name="about_source_title">منبع کد</string>
     <string name="about_category_credits">این اپلیکیشن از کدهای زیر استفاده می‌کند...</string>
-    <string name="about_credits_bitcoinj_title">dashj%s، کاربست یک پروتکل دش</string>
+    <string name="about_credits_bitcoinj_title">pozoqoj%s، کاربست یک پروتکل دش</string>
     <string name="about_credits_zxing_title">ZXing یک کتابخانه پردازش کیوآر کد است.</string>
     <string name="about_credits_icon_title">این اپلیکیشن از یک آیکون «بیت‌بوی» استفاده می‌کند. </string>
     <string name="about_credits_scrypt_title">Scrypt، پیاده‌سازی شده توسط Will Glozer و Colin Percival</string>

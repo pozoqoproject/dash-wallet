@@ -78,7 +78,7 @@ class CryptoConvertItem @JvmOverloads constructor(
     }
 
     fun setCryptoItemArrowVisibility(isGroupVisible: Boolean) {
-        binding.convertFormDashArrow.isVisible = isGroupVisible
+        binding.convertFormPozoqoArrow.isVisible = isGroupVisible
     }
     fun setCryptoItemGroupVisibility(isGroupVisible: Boolean) {
         binding.fromDataGroup.isVisible = isGroupVisible
@@ -90,24 +90,24 @@ class CryptoConvertItem @JvmOverloads constructor(
     }
 
     fun setConvertItemTitle(title: String) {9
-        binding.convertFromDashTitle.text = title
+        binding.convertFromPozoqoTitle.text = title
     }
 
     fun setConvertItemServiceName(name: String) {
-        binding.convertFromDashSubtitle.text = name
+        binding.convertFromPozoqoSubtitle.text = name
     }
 
     fun setConvertItemTitle(@StringRes title: Int) {
-        binding.convertFromDashTitle.setText(title)
+        binding.convertFromPozoqoTitle.setText(title)
     }
 
     fun setConvertItemServiceName(@StringRes name: Int) {
-        binding.convertFromDashSubtitle.setText(name)
+        binding.convertFromPozoqoSubtitle.setText(name)
     }
 
     fun setConvertItemIcon(url: String?) {
         url?.let {
-            binding.convertFromDashIcon.load(it) {
+            binding.convertFromPozoqoIcon.load(it) {
                 crossfade(true)
                 scale(Scale.FILL)
                 placeholder(org.dash.wallet.common.R.drawable.ic_default_flag)
@@ -117,7 +117,7 @@ class CryptoConvertItem @JvmOverloads constructor(
     }
 
     fun setConvertItemIcon(cryptoCurrencyIcon: Drawable) {
-        binding.convertFromDashIcon.setImageDrawable(cryptoCurrencyIcon)
+        binding.convertFromPozoqoIcon.setImageDrawable(cryptoCurrencyIcon)
     }
 
     fun setConvertItemClickListener(listener: () -> Unit) {
@@ -125,23 +125,23 @@ class CryptoConvertItem @JvmOverloads constructor(
     }
 
     fun setIconConstraint(){
-        binding.convertFromDashIcon.updateLayoutParams<ConstraintLayout.LayoutParams> {
+        binding.convertFromPozoqoIcon.updateLayoutParams<ConstraintLayout.LayoutParams> {
             topToTop = ConstraintSet.PARENT_ID
             bottomToBottom = ConstraintSet.PARENT_ID
         }
     }
 
     fun setTitleConstraint(){
-        binding.convertFromDashTitle.updateLayoutParams<ConstraintLayout.LayoutParams> {
-            topToTop = binding.convertFromDashIcon.id
-            bottomToBottom = binding.convertFromDashIcon.id
+        binding.convertFromPozoqoTitle.updateLayoutParams<ConstraintLayout.LayoutParams> {
+            topToTop = binding.convertFromPozoqoIcon.id
+            bottomToBottom = binding.convertFromPozoqoIcon.id
         }
     }
 
     fun hideComponents(){
-        binding.convertFromDashSubtitle.isVisible = false
+        binding.convertFromPozoqoSubtitle.isVisible = false
         binding.selectTheCoinTitle.isVisible = false
-        binding.convertFormDashArrow.isVisible = false
+        binding.convertFormPozoqoArrow.isVisible = false
     }
 
     override fun setEnabled(enabled: Boolean) {

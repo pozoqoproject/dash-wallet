@@ -73,7 +73,7 @@ Download and install the required Android dependencies:
 
 Download the [Android NDK](https://developer.android.com/ndk/downloads/), then unpack it to your workspace directory. Point your `ANDROID_NDK_HOME` variable to the unpacked Android NDK directory.
 
-Finally, you can build Dash Wallet and sign it with your development key. Again in your workspace,
+Finally, you can build Pozoqo Wallet and sign it with your development key. Again in your workspace,
 use
 
 	# first time only
@@ -145,7 +145,7 @@ COINBASE_CLIENT_SECRET="<coinbase secret>"
 
 ### CONFIGURATION FOR SUPPORT EMAIL
 
-The default support email used by Dash Wallet will be an empty string.  However, this can be 
+The default support email used by Pozoqo Wallet will be an empty string.  However, this can be 
 customized.  `build.gradle` will assign a value `BuildConfig.SUPPORT_EMAIL` will be assigned 
 according to the following:
 
@@ -191,7 +191,7 @@ corrected manually.
 
 ### NFC (Near field communication)
 
-Dash Wallet supports reading Dash requests via NFC, either from a passive NFC tag or from
+Pozoqo Wallet supports reading Pozoqo requests via NFC, either from a passive NFC tag or from
 another NFC capable Android device that is requesting coins.
 
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with
@@ -204,30 +204,30 @@ Instructions for preparing an NFC tag with your address:
 
 - Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 
-- The tag needs to contain a Dash URI. You can construct one with the "Request coins" dialog,
+- The tag needs to contain a Pozoqo URI. You can construct one with the "Request coins" dialog,
   then share with messaging or email. You can also construct the URI manually. Mainnet example:
   `dash:XywwpkwZYAypoW2cCmdczh4kFcvWWb9ZZW`
 
 - The type of the message needs to be URI or URL (not Text).
 
 - If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone
-  could overwrite the tag with his own Dash address.
+  could overwrite the tag with his own Pozoqo address.
 
 
-### DASHJ
+### PZQJ
 
-Dash Wallet uses dashj for Dash specific logic.  This project is forked from [bitcoinj](https://bitcoinj.github.io/)
+Pozoqo Wallet uses dashj for Pozoqo specific logic.  This project is forked from [bitcoinj](https://bitcoinj.github.io/)
 
 
 ### EXCHANGE RATES
 
-Dash Wallet has four sources for exchange rates
-- Source 1: Dash Retail - https://rates2.dashretail.org/rates?source=dashretail
+Pozoqo Wallet has four sources for exchange rates
+- Source 1: Pozoqo Retail - https://rates2.dashretail.org/rates?source=dashretail
 - Source 2: *Currently disabled* - Spark
-- Source 3: *Currently disabled* - BitcoinAverage (BTC/all), CryptoCompare(DASH/BTC), DashCasa(DASH/VES)
-- Source 4: BitPay (BTC/all), Dash Central(DASH/BTC), Poloniex (DASH/BTC), Local Bitcoins (BTC/VES)
+- Source 3: *Currently disabled* - BitcoinAverage (BTC/all), CryptoCompare(PZQ/BTC), PozoqoCasa(PZQ/VES)
+- Source 4: BitPay (BTC/all), Pozoqo Central(PZQ/BTC), Poloniex (PZQ/BTC), Local Bitcoins (BTC/VES)
 
 ### SWEEPING WALLETS
 
-When sweeping wallets, Dash Wallet uses a set of Electrum servers and block explorers to query for
+When sweeping wallets, Pozoqo Wallet uses a set of Electrum servers and block explorers to query for
 unspent transaction outputs (UTXOs).

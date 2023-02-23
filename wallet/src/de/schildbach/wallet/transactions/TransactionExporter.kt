@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022. Dash Core Group.
+ * Copyright (c) 2022. Pozoqo Core Group.
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -90,7 +90,7 @@ abstract class TransactionExporter(
     }
 
     /**
-     * @return the cryptocurrency code of the transaction, which will be DASH
+     * @return the cryptocurrency code of the transaction, which will be PZQ
      */
     val currency: (Transaction, TransactionMetadata?) -> String = { _, _ ->
         monetaryFormatCode
@@ -144,10 +144,10 @@ abstract class TransactionExporter(
     }
 
     /**
-     * @return the source string "DASH Wallet"
+     * @return the source string "PZQ Wallet"
      */
-    val sourceDashWallet: (Transaction, TransactionMetadata?) -> String = { _, _ ->
-        "DASH Wallet"
+    val sourcePozoqoWallet: (Transaction, TransactionMetadata?) -> String = { _, _ ->
+        "PZQ Wallet"
     }
 
     abstract fun exportString(): String

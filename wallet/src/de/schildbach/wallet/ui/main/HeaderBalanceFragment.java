@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group.
+ * Copyright 2019 Pozoqo Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,7 +45,7 @@ public final class HeaderBalanceFragment extends Fragment {
     private TextView hideShowBalanceHint;
     private TextView caption;
     private View view;
-    private CurrencyTextView viewBalanceDash;
+    private CurrencyTextView viewBalancePozoqo;
     private CurrencyTextView viewBalanceLocal;
     private TextView syncingIndicator;
     private boolean showLocalBalance;
@@ -75,10 +75,10 @@ public final class HeaderBalanceFragment extends Fragment {
         showBalanceButton = view.findViewById(R.id.show_balance_button);
         syncingIndicator = view.findViewById(R.id.balance_syncing_indicator);
 
-        viewBalanceDash = view.findViewById(R.id.wallet_balance_dash);
-        viewBalanceDash.setApplyMarkup(false);
-        viewBalanceDash.setFormat(viewModel.getBalanceDashFormat());
-        viewBalanceDash.setAmount(Coin.ZERO);
+        viewBalancePozoqo = view.findViewById(R.id.wallet_balance_dash);
+        viewBalancePozoqo.setApplyMarkup(false);
+        viewBalancePozoqo.setFormat(viewModel.getBalancePozoqoFormat());
+        viewBalancePozoqo.setAmount(Coin.ZERO);
 
         viewBalanceLocal = view.findViewById(R.id.wallet_balance_local);
         viewBalanceLocal.setInsignificantRelativeSize(1);
@@ -137,7 +137,7 @@ public final class HeaderBalanceFragment extends Fragment {
         Coin balance = viewModel.getBalance().getValue();
 
         if (balance != null) {
-            viewBalanceDash.setAmount(balance);
+            viewBalancePozoqo.setAmount(balance);
 
             if (showLocalBalance) {
                 ExchangeRate exchangeRate = viewModel.getExchangeRate().getValue();
@@ -157,7 +157,7 @@ public final class HeaderBalanceFragment extends Fragment {
                 }
             }
         } else {
-            viewBalanceDash.setAmount(Coin.ZERO);
+            viewBalancePozoqo.setAmount(Coin.ZERO);
         }
 
         requireActivity().invalidateOptionsMenu();

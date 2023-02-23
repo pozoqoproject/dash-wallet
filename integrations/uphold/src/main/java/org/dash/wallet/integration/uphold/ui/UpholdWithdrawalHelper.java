@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Pozoqo Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,7 +55,7 @@ public class UpholdWithdrawalHelper {
 
     public void transfer(final AppCompatActivity activity, final String receivingAddress, BigDecimal value, final boolean deductFeeFromAmount) {
         final ProgressDialog progressDialog = showLoading(activity);
-        UpholdClient.getInstance().createDashWithdrawalTransaction(value.toPlainString(),
+        UpholdClient.getInstance().createPozoqoWithdrawalTransaction(value.toPlainString(),
                 receivingAddress, new UpholdClient.Callback<UpholdTransaction>() {
                     @Override
                     public void onSuccess(UpholdTransaction tx) {

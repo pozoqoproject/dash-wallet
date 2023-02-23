@@ -3,14 +3,14 @@
 
     <string name="uphold_account">Uphold</string>
     <string name="uphold_link_title">Połącz z kontem Uphold</string>
-    <string name="uphold_transfer_details">Z konta Uphold do Portfela Dash</string>
-    <string name="uphold_buy_dash_activity_title">Kup/Sprzedaj Dash przez Uphold</string>
-    <string name="uphold_buy_dash_with_uphold">Kup Dash na Uphold</string>
-    <string name="uphold_buy_dash_button">Kup Dash</string>
+    <string name="uphold_transfer_details">Z konta Uphold do Portfela Pozoqo</string>
+    <string name="uphold_buy_dash_activity_title">Kup/Sprzedaj Pozoqo przez Uphold</string>
+    <string name="uphold_buy_dash_with_uphold">Kup Pozoqo na Uphold</string>
+    <string name="uphold_buy_dash_button">Kup Pozoqo</string>
     <string name="uphold_transfer_to_this_wallet_button">Przelej z Uphold</string>
     <string name="uphold_link_account">Podlinkuj konto Uphold</string>
     <string name="uphold_account_dash_balance">Saldo twojego konta na Uphold wynosi</string>
-    <string name="uphold_transfer_to_this_wallet">Przelej Dash z twojego konta na Uphold do tego portfela</string>
+    <string name="uphold_transfer_to_this_wallet">Przelej Pozoqo z twojego konta na Uphold do tego portfela</string>
     <string name="uphold_withdrawal_deduct_fee_disclaimer">Od zażądanej kwoty zostanie potrącona opłata.</string>
     <string name="uphold_withdrawal_instructions">Wpisz kwotę jaką chcesz przelać.</string>
     <string name="uphold_withdrawal_success_title">Wszystko odbyło się pomyślnie.</string>
@@ -39,8 +39,8 @@
     <string name="uphold_api_error_400_description">Fundusze na Uphold są zablokowane na 24 godziny.\n\nBędziesz miał wystarczające środki na ten transfer za %s.</string>
     <string name="uphold_api_error_400_locked">Fundusze na Uphold  (%1$s %2$s) są zablokowane na 65 dni.\n\nBędziesz miał wystarczające środki na ten transfer %3$s</string>
     <string name="uphold_api_error_400_tx_insufficentfunds">Nie posiadasz wystarczających środków aby dokonać tej transakcji</string>
-    <string name="uphold_api_error_400_less_than_or_equal_to">Kwota transferu powinna być mniejsza niż %s DASH.</string>
-    <string name="uphold_api_error_400_greater_than_or_equal_to">Kwota transferu powinna być większa niż %s DASH.</string>
+    <string name="uphold_api_error_400_less_than_or_equal_to">Kwota transferu powinna być mniejsza niż %s PZQ.</string>
+    <string name="uphold_api_error_400_greater_than_or_equal_to">Kwota transferu powinna być większa niż %s PZQ.</string>
     <string name="uphold_api_error_400_tx_validation">Nie można dokonać transferu takiej sumy w tej aplikacji (maksymalna suma to $3000).</string>
     <string name="uphold_api_error_400_password_reset">Fundusze na Uphold są zablokowane z powodu niedawnej zmiany hasła.\n\nMuszisz poczekać %sza nim fundusze będą mogły zostać przelane.</string>
     <string name="uphold_api_error_400_authentication_change">Fundusze na Uphold są zablokowane z powodu niedawnej zmiany metody autentykacji.\n\nBędzisż musiał poczekać %s zanim transfery zostaną odblokowane. </string>

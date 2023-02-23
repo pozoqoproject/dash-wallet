@@ -8,17 +8,17 @@
     <string name="network_unavailable_title">Sieć jest niedostępna</string>
     <string name="network_unavailable_check_connection">Sprawdź połączenie z siecią</string>
     <string name="network_unavailable_balance_not_accurate">Saldo może być niedostępne z powodu utraty połączenia z siecią</string>
-    <string name="buy_dash">Kup Dash</string>
+    <string name="buy_dash">Kup Pozoqo</string>
     <string name="copied">Skopiowano</string>
     <string name="staking_title">Lokata</string>
     <string name="email">Email</string>
     <string name="email_placeholder">e.g. johndoe@mail.com</string>
     <string name="error">Błąd</string>
     <string name="select_a_coin">Wybierz monetę</string>
-    <string name="request_coins_share_dialog_title">Udostępnij prośbę o Dashy…</string>
-    <string name="buy_with_fiat">Kup Dash za normalne pieniądze</string>
-    <string name="buy_and_convert">Kup i przekonwertuj inną walutę krypto na Dash</string>
-    <string name="transfer_dash">Przetransferuj Dash</string>
+    <string name="request_coins_share_dialog_title">Udostępnij prośbę o Pozoqoy…</string>
+    <string name="buy_with_fiat">Kup Pozoqo za normalne pieniądze</string>
+    <string name="buy_and_convert">Kup i przekonwertuj inną walutę krypto na Pozoqo</string>
+    <string name="transfer_dash">Przetransferuj Pozoqo</string>
     <string name="login_error_title">Niemożliwe jest zalogowanie się do twojego %s konta</string>
     <string name="login_error_message">Wystąpił błąd podczas próby zalogowania się do twojego %s konta.</string>
     <string name="balance">Saldo:</string>
@@ -68,15 +68,15 @@
     <string name="debit_credit_card">Karta Debetowa/Kredytowa</string>
     <string name="max">Max</string>
     <string name="select_the_coin">Wybierz monetę</string>
-    <string name="dash">Dash</string>
-    <string name="dash_wallet_name">Portfel Dash</string>
+    <string name="dash">Pozoqo</string>
+    <string name="dash_wallet_name">Portfel Pozoqo</string>
     <string name="from">Od</string>
     <string name="to">Do</string>
     <string name="select_currency">Wybierz Walutę</string>
     <string name="send_coins_error_dusty_send">Kwota jest zbyt mała, aby wysłać</string>
     <string name="send_coins_error_insufficient_money">Niewystarczająca ilość funduszy</string>
 
-    <string name="empty_wallet_warning_title">Wygląda na to że opróżniasz swój portfel Dash</string>
-    <string name="empty_wallet_crowdnode_warning">Pamiętaj, że nie będziesz mógł wypłacić środków z CrowdNode do tego portfela, dopóki nie zwiększysz salda do min. 0,0003 Dash.</string>
+    <string name="empty_wallet_warning_title">Wygląda na to że opróżniasz swój portfel Pozoqo</string>
+    <string name="empty_wallet_crowdnode_warning">Pamiętaj, że nie będziesz mógł wypłacić środków z CrowdNode do tego portfela, dopóki nie zwiększysz salda do min. 0,0003 Pozoqo.</string>
     <string name="syncing">Synchronizowanie</string>
 </resources>

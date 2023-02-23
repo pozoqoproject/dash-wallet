@@ -16,14 +16,14 @@
   -->
 <resources>
     <!-- Explore screen -->
-    <string name="explore_dash">Prozkoumejte Dash</string>
+    <string name="explore_dash">Prozkoumejte Pozoqo</string>
     <string name="explore_title">Prozkoumat</string>
-    <string name="explore_subtitle">Nakupujte pomocí DASH snadno na více než 155 000 místech a u online obchodníků.</string>
+    <string name="explore_subtitle">Nakupujte pomocí PZQ snadno na více než 155 000 místech a u online obchodníků.</string>
     <string name="explore_merchants_title">Kde nakupovat?</string>
-    <string name="explore_merchants_subtitle">Najděte obchodníky, kteří přijímají Dash.</string>
+    <string name="explore_merchants_subtitle">Najděte obchodníky, kteří přijímají Pozoqo.</string>
     <string name="explore_atms_title">Bankomaty</string>
-    <string name="explore_atms_subtitle">Najděte, kde koupit nebo prodat DASH a další kryptoměny za hotovost.</string>
-    <string name="explore_staking_subtitle">Jednoduše Dash úročte a získejte pasivní příjem pomocí několika kliknutí.</string>
+    <string name="explore_atms_subtitle">Najděte, kde koupit nebo prodat PZQ a další kryptoměny za hotovost.</string>
+    <string name="explore_staking_subtitle">Jednoduše Pozoqo úročte a získejte pasivní příjem pomocí několika kliknutí.</string>
     <!-- Search -->
     <string name="explore_search_results">Výsledky vyhledávání</string>
     <string name="explore_physical_merchant">Fyzický obchodník</string>
@@ -63,10 +63,10 @@
     <string name="explore_back_to_locations">Zpět na všechna místa</string>
     <string name="explore_back_to_nearest">Zpět na nejbližší místo</string>
     <string name="explore_select_location">Vybrat místo</string>
-    <string name="explore_pay_with_dash">Platba pomocí Dash</string>
+    <string name="explore_pay_with_dash">Platba pomocí Pozoqo</string>
     <string name="explore_buy_gift_card">Nákup dárkového poukazu</string>
-    <string name="explore_buy_dash">Nákup Dash</string>
-    <string name="explore_sell_dash">Prodej Dash</string>
+    <string name="explore_buy_dash">Nákup Pozoqo</string>
+    <string name="explore_sell_dash">Prodej Pozoqo</string>
     <string name="explore_show_all">Zobrazit všechna místa</string>
     <string name="explore_atm_location_hint">Tento bankomat se nachází v</string>
     <string name="explore_maps_intent_uri">http://maps.google.com/maps?daddr=,%1$f,%2$f</string>
@@ -76,7 +76,7 @@
     <string name="explore_filters">Filtry</string>
     <string name="explore_apply_filter">Aplikovat</string>
     <string name="explore_payment_method">Platební metoda</string>
-    <string name="explore_payment_dash">Dash</string>
+    <string name="explore_payment_dash">Pozoqo</string>
     <string name="explore_payment_gift_card">Dárkový poukaz</string>
     <string name="explore_radius">Okruh</string>
     <string name="explore_location">Místo</string>
@@ -147,16 +147,16 @@
 
     <!-- Info screens -->
     <string name="explore_info_header_text">Máme 2 typy obchodníků</string>
-    <string name="accept_dash_text">Přijímá přímo DASH</string>
-    <string name="pay_with_dash_text">Platba pomocí DASH peněženky</string>
-    <string name="buy_gift_card_text">Nákup dárkových poukazů za Dash</string>
-    <string name="buy_gift_card_desc_text">Kupte si dárkové poukazy za Dash za přesnou částku vašeho nákupu.</string>
+    <string name="accept_dash_text">Přijímá přímo PZQ</string>
+    <string name="pay_with_dash_text">Platba pomocí PZQ peněženky</string>
+    <string name="buy_gift_card_text">Nákup dárkových poukazů za Pozoqo</string>
+    <string name="buy_gift_card_desc_text">Kupte si dárkové poukazy za Pozoqo za přesnou částku vašeho nákupu.</string>
     <string name="learn_more_text">Více informací</string>
     <string name="continue_text">Pokračovat</string>
     <string name="buy_card_header_text">Jak použít dárkový poukaz</string>
-    <string name="buy_card_desc_text">Ne všechny obchody přijímají přímo DASH, můžete si ale za Dash koupit dárkový poukaz.</string>
+    <string name="buy_card_desc_text">Ne všechny obchody přijímají přímo PZQ, můžete si ale za Pozoqo koupit dárkový poukaz.</string>
     <string name="find_merchant_text">Najít obchodníka.</string>
-    <string name="buy_gift_card_with_dash_text">Koupit dárkový poukaz za Dash.</string>
+    <string name="buy_gift_card_with_dash_text">Koupit dárkový poukaz za Pozoqo.</string>
     <string name="redeem_gift_card_text">Uplatněte dárkový poukaz online během několika sekund nebo u pokladny.</string>
 
     <!-- Sync Status -->

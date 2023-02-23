@@ -1,6 +1,6 @@
 # Translation Source Comparison Tool
-This will compare the english source files from the the iOS Dash Wallet 
-(stored on Transifex) to the android Dash Wallet app (stored locally) 
+This will compare the english source files from the the iOS Pozoqo Wallet 
+(stored on Transifex) to the android Pozoqo Wallet app (stored locally) 
 and generate a report.
 
 # Prerequisites

@@ -39,13 +39,13 @@ class CrowdNodeAPIConfirmationForwarded(
     params: NetworkParameters
 ): CoinsToAddressTxFilter(
     CrowdNodeConstants.getCrowdNodeAddress(params),
-    CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT,
+    CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT,
     includeFee = true
 )
 
 open class CrowdNodeAPIConfirmationTx(
     address: Address
-): CoinsToAddressTxFilter(address, CrowdNodeConstants.API_CONFIRMATION_DASH_AMOUNT)
+): CoinsToAddressTxFilter(address, CrowdNodeConstants.API_CONFIRMATION_PZQ_AMOUNT)
 
 class CrowdNodeAPIConfirmationHandler(
     private val apiAddress: Address,
