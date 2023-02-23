@@ -265,7 +265,7 @@ android {
     flavorDimensions "default"
     productFlavors {
         prod {
-            applicationId = "hashengineering.darkcoin.wallet"
+            applicationId = "web.pozoqo.wallet"
             def upholdClientId = props.getProperty("UPHOLD_CLIENT_ID")
             def upholdClientSecret = props.getProperty("UPHOLD_CLIENT_SECRET")
             if (upholdClientId == null) {
@@ -291,7 +291,7 @@ android {
 
         }
         _testNet3 {
-            applicationId = "hashengineering.darkcoin.wallet_test"
+            applicationId = "web.pozoqo.wallet_test"
             def imgurClientId = props.getProperty("UPHOLD_CLIENT_ID_SANDBOX")
             def imgurClientSecret = props.getProperty("UPHOLD_CLIENT_SECRET_SANDBOX")
             if (imgurClientId == null) {

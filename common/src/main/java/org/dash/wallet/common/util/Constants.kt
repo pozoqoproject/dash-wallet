@@ -42,7 +42,7 @@ object Constants {
             .optionalDecimals()
 
     lateinit var EXPLORE_GC_FILE_PATH: String
-    var DEEP_LINK_PREFIX = "android-app://hashengineering.darkcoin.wallet"
+    var DEEP_LINK_PREFIX = "android-app://web.pozoqo.wallet"
 
     const val PZQ_CURRENCY = "PZQ"
     const val USD_CURRENCY = "USD"

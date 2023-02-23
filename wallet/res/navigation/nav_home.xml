@@ -48,7 +48,7 @@
             android:name="active_tab"
             app:argType="integer" />
 
-        <deepLink app:uri="android-app://hashengineering.darkcoin.wallet/payments/{active_tab}"/>
+        <deepLink app:uri="android-app://web.pozoqo.wallet/payments/{active_tab}"/>
 
         <action
             android:id="@+id/payments_to_receive"
