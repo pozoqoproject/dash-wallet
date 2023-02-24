@@ -126,7 +126,7 @@ class MerchantViewHolder(val binding: MerchantRowBinding) : ExploreViewHolder(bi
             .into(binding.logoImg)
 
         when(merchant?.paymentMethod?.trim()?.lowercase()) {
-            PaymentMethod.PZQ -> binding.methodImg.setImageResource(R.drawable.ic_dash_pay)
+            PaymentMethod.DASH -> binding.methodImg.setImageResource(R.drawable.ic_dash_pay)
             PaymentMethod.GIFT_CARD -> binding.methodImg.setImageResource(R.drawable.ic_gift_card_rounded)
         }
     }

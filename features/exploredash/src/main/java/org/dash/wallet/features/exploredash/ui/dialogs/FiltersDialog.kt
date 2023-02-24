@@ -129,7 +129,7 @@ class FiltersDialog: OffsetDialogFragment() {
 
     private fun setupPaymentMethods() {
         val isPozoqoOn = viewModel.paymentMethodFilter.isEmpty() ||
-                    viewModel.paymentMethodFilter == PaymentMethod.PZQ
+                    viewModel.paymentMethodFilter == PaymentMethod.DASH
         dashPaymentOn = isPozoqoOn
         binding.dashOption.isChecked = isPozoqoOn
         binding.dashOption.setOnCheckedChangeListener { _, isChecked ->
@@ -291,7 +291,7 @@ class FiltersDialog: OffsetDialogFragment() {
 
             if (!dashPaymentOn || !giftCardPaymentOn) {
                 paymentFilter = if (dashPaymentOn) {
-                    PaymentMethod.PZQ
+                    PaymentMethod.DASH
                 } else {
                     PaymentMethod.GIFT_CARD
                 }

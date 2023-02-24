@@ -51,13 +51,13 @@ class StakingDialog : OffsetDialogFragment() {
         )
         binding.stakingFirstMinDepositMessage.text = getString(
             R.string.crowdnode_staking_info_message,
-            CrowdNodeConstants.PZQ_FORMAT.format(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT)
+            CrowdNodeConstants.DASH_FORMAT.format(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT)
         )
         binding.stakingApyTitle.text = getString(
             R.string.crowdnode_staking_apy_title,
             String.format(Locale.getDefault(), "%.1f", viewModel.getCrowdNodeAPY())
         )
-        binding.stakingConnectedPozoqoAddress.text = viewModel.accountAddress.value?.toBase58()
+        binding.stakingConnectedDashAddress.text = viewModel.accountAddress.value?.toBase58()
         binding.stakingConnectedAddressContainer.setOnClickListener {
             viewModel.accountAddress.value?.toBase58()?.copy(requireActivity(), "dash address")
             Toast.makeText(requireContext(), R.string.crowdnode_staking_toast_address_copied, Toast.LENGTH_SHORT).show()

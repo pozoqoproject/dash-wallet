@@ -626,7 +626,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
                     CrashReporter.saveBackgroundTrace(new RuntimeException(message), application.packageInfo());
                 }
 
-                wallet.getContext().initPozoqoSync(getDir("masternode", MODE_PRIVATE).getAbsolutePath());
+                wallet.getContext().initDashSync(getDir("masternode", MODE_PRIVATE).getAbsolutePath());
 
                 log.info("starting peergroup");
                 peerGroup = new PeerGroup(Constants.NETWORK_PARAMETERS, blockChain, headerChain);

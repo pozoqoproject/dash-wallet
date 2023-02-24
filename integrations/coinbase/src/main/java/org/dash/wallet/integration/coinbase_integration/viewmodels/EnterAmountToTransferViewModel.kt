@@ -35,7 +35,7 @@ import org.dash.wallet.common.services.ExchangeRatesProvider
 import org.dash.wallet.common.util.GenericUtils
 import org.dash.wallet.common.util.toBigDecimal
 import org.dash.wallet.integration.coinbase_integration.CoinbaseConstants
-import org.dash.wallet.integration.coinbase_integration.model.CoinbaseToPozoqoExchangeRateUIModel
+import org.dash.wallet.integration.coinbase_integration.model.CoinbaseToDashExchangeRateUIModel
 import java.math.BigDecimal
 import java.math.RoundingMode
 import java.text.DecimalFormat
@@ -51,8 +51,8 @@ class EnterAmountToTransferViewModel @Inject constructor(
     var blockchainStateProvider: BlockchainStateProvider
 ) : ViewModel() {
 
-    var coinbaseExchangeRate: CoinbaseToPozoqoExchangeRateUIModel? = null
-    private var maxAmountInPozoqoWalletFormatted: String = CoinbaseConstants.VALUE_ZERO
+    var coinbaseExchangeRate: CoinbaseToDashExchangeRateUIModel? = null
+    private var maxAmountInDashWalletFormatted: String = CoinbaseConstants.VALUE_ZERO
     private val dashFormat = MonetaryFormat().withLocale(GenericUtils.getDeviceLocale())
         .noCode().minDecimals(6).optionalDecimals()
     val decimalSeparator =
@@ -91,9 +91,9 @@ class EnterAmountToTransferViewModel @Inject constructor(
     val localCurrencyExchangeRate: LiveData<ExchangeRate>
         get() = _localCurrencyExchangeRate
 
-    private val _enteredConvertPozoqoAmount = MutableLiveData<Pair<Fiat, Coin>>()
-    val enteredConvertPozoqoAmount: LiveData<Pair<Fiat, Coin>>
-        get() = _enteredConvertPozoqoAmount
+    private val _enteredConvertDashAmount = MutableLiveData<Pair<Fiat, Coin>>()
+    val enteredConvertDashAmount: LiveData<Pair<Fiat, Coin>>
+        get() = _enteredConvertDashAmount
 
     private val _isBlockchainSynced = MutableLiveData<Boolean>()
     val isBlockchainSynced: LiveData<Boolean>
@@ -108,7 +108,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
     val keyboardStateCallback = MutableLiveData<Boolean>()
 
     init {
-        setPozoqoWalletBalance()
+        setDashWalletBalance()
         _localCurrencyCode.flatMapLatest { code ->
             exchangeRates.observeExchangeRate(code)
         }.onEach(_localCurrencyExchangeRate::postValue)
@@ -130,8 +130,8 @@ class EnterAmountToTransferViewModel @Inject constructor(
         _isBlockchainSyncFailed.postValue(state.syncFailed())
     }
 
-    private fun setPozoqoWalletBalance() {
-        maxAmountInPozoqoWalletFormatted = dashFormat.minDecimals(0)
+    private fun setDashWalletBalance() {
+        maxAmountInDashWalletFormatted = dashFormat.minDecimals(0)
             .optionalDecimals(0, 8).format(dashBalanceInWalletState.value).toString()
     }
 
@@ -182,7 +182,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
     val maxValue: String
         get() {
             val amount = if (_isTransferFromWalletToCoinbase.value) {
-                maxAmountInPozoqoWalletFormatted
+                maxAmountInDashWalletFormatted
             } else {
                 maxAmountCoinbaseAccount
             }
@@ -205,7 +205,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
             val cleanedValue = amount
                 .replace(',', '.') // TODO: the amount sometimes comes here with a comma as decimal separator.
                 // TODO: it's better to identify the root of this and replace in there to prevent this problem from appearing anywhere else.
-                .toBigDecimal() / uiModel.currencyToPozoqoExchangeRate.toBigDecimal()
+                .toBigDecimal() / uiModel.currencyToDashExchangeRate.toBigDecimal()
             cleanedValue.setScale(8, RoundingMode.HALF_UP).toPlainString()
         } ?: CoinbaseConstants.VALUE_ZERO
     }
@@ -214,7 +214,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
 
         return coinbaseExchangeRate?.let {
             val cleanedValue =
-                fiatValue.toBigDecimal() * it.currencyToPozoqoExchangeRate.toBigDecimal()
+                fiatValue.toBigDecimal() * it.currencyToDashExchangeRate.toBigDecimal()
             val plainValue = cleanedValue.setScale(8, RoundingMode.HALF_UP).toPlainString()
             try {
                 Coin.parseCoin(plainValue)
@@ -233,7 +233,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
                 .toPlainString() else cleanedValue
         }
 
-    private val amountInPozoqo: Coin
+    private val amountInDash: Coin
         get() {
             val scaledValue = scaleValue(inputValue)
             return if (scaledValue.isEmpty()){
@@ -261,17 +261,17 @@ class EnterAmountToTransferViewModel @Inject constructor(
     fun setBalanceForWallet() {
         if (hasBalance) {
             val dashAmt = if (isFiatSelected) {
-                amountInPozoqo
+                amountInDash
             } else {
                 toCoin(inputValue)
             }
-            val formatPozoqo = dashFormat.format(dashAmt).toString()
-            val rateApplied = applyCoinbaseExchangeRate(formatPozoqo)
+            val formatDash = dashFormat.format(dashAmt).toString()
+            val rateApplied = applyCoinbaseExchangeRate(formatDash)
             val fiatAmt = Fiat.parseFiat(localCurrencyCode, rateApplied)
 
-            _enteredConvertPozoqoAmount.value = Pair(fiatAmt, dashAmt)
+            _enteredConvertDashAmount.value = Pair(fiatAmt, dashAmt)
         } else {
-            _enteredConvertPozoqoAmount.value =
+            _enteredConvertDashAmount.value =
                 Pair(Fiat.parseFiat(localCurrencyCode, CoinbaseConstants.VALUE_ZERO), Coin.ZERO)
         }
     }
@@ -283,7 +283,7 @@ class EnterAmountToTransferViewModel @Inject constructor(
 
     private fun scaleValue(valueToScale: String): String {
         return coinbaseExchangeRate?.let {
-            val cleanedValue = valueToScale.toBigDecimal() * it.currencyToPozoqoExchangeRate.toBigDecimal()
+            val cleanedValue = valueToScale.toBigDecimal() * it.currencyToDashExchangeRate.toBigDecimal()
             cleanedValue.setScale(8, RoundingMode.HALF_UP).toPlainString()
         } ?: ""
     }

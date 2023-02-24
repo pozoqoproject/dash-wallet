@@ -31,7 +31,7 @@ import org.dash.wallet.common.ui.ConnectivityViewModel
 import org.dash.wallet.common.util.Constants
 import org.dash.wallet.common.util.GenericUtils
 import org.dash.wallet.integration.coinbase_integration.CoinbaseConstants
-import org.dash.wallet.integration.coinbase_integration.model.CoinbaseToPozoqoExchangeRateUIModel
+import org.dash.wallet.integration.coinbase_integration.model.CoinbaseToDashExchangeRateUIModel
 import org.dash.wallet.integration.coinbase_integration.model.CoinbaseTransactionParams
 import org.dash.wallet.integration.coinbase_integration.model.SendTransactionToWalletParams
 import org.dash.wallet.integration.coinbase_integration.model.TransactionType
@@ -46,7 +46,7 @@ import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @HiltViewModel
-class TransferPozoqoViewModel @Inject constructor(
+class TransferDashViewModel @Inject constructor(
     private val coinBaseRepository: CoinBaseRepositoryInt,
     val config: Configuration,
     private val walletDataProvider: WalletDataProvider,
@@ -77,24 +77,24 @@ class TransferPozoqoViewModel @Inject constructor(
 
     val onBuildTransactionParamsCallback = SingleLiveEvent<CoinbaseTransactionParams>()
 
-    private val _sendPozoqoToCoinbaseState = MutableLiveData<SendPozoqoResponseState>()
-    val observeSendPozoqoToCoinbaseState: LiveData<SendPozoqoResponseState>
-        get() = _sendPozoqoToCoinbaseState
+    private val _sendDashToCoinbaseState = MutableLiveData<SendDashResponseState>()
+    val observeSendDashToCoinbaseState: LiveData<SendDashResponseState>
+        get() = _sendDashToCoinbaseState
 
-    private val _userAccountDataWithExchangeRate = MutableLiveData<CoinbaseToPozoqoExchangeRateUIModel>()
-    val userAccountOnCoinbaseState: LiveData<CoinbaseToPozoqoExchangeRateUIModel>
+    private val _userAccountDataWithExchangeRate = MutableLiveData<CoinbaseToDashExchangeRateUIModel>()
+    val userAccountOnCoinbaseState: LiveData<CoinbaseToDashExchangeRateUIModel>
         get() = _userAccountDataWithExchangeRate
 
     val onFetchUserDataOnCoinbaseFailedCallback = SingleLiveEvent<Unit>()
 
-    private val _sendPozoqoToCoinbaseError = MutableLiveData<NetworkFeeExceptionState>()
-    val sendPozoqoToCoinbaseError: LiveData<NetworkFeeExceptionState>
-        get() = _sendPozoqoToCoinbaseError
+    private val _sendDashToCoinbaseError = MutableLiveData<NetworkFeeExceptionState>()
+    val sendDashToCoinbaseError: LiveData<NetworkFeeExceptionState>
+        get() = _sendDashToCoinbaseError
 
-    var minAllowedSwapPozoqoCoin: Coin = Coin.ZERO
+    var minAllowedSwapDashCoin: Coin = Coin.ZERO
     var minFaitAmount:Fiat = Fiat.valueOf(config.exchangeCurrencyCode, 0)
 
-    private var maxForPozoqoCoinBaseAccount: Coin = Coin.ZERO
+    private var maxForDashCoinBaseAccount: Coin = Coin.ZERO
 
     init {
         getWithdrawalLimitOnCoinbase()
@@ -135,7 +135,7 @@ class TransferPozoqoViewModel @Inject constructor(
         }
     }
 
-    private val withdrawalLimitInPozoqo: Double
+    private val withdrawalLimitInDash: Double
         get() {
             return if (config.coinbaseUserWithdrawalLimitAmount.isNullOrEmpty()) {
                 0.0
@@ -149,17 +149,17 @@ class TransferPozoqoViewModel @Inject constructor(
 
                 exchangeRate?.fiat?.let { fiat ->
                     val newRate = org.bitcoinj.utils.ExchangeRate(Coin.COIN, fiat)
-                    val amountInPozoqo = newRate.fiatToCoin(fiatAmount)
-                    amountInPozoqo.toPlainString().toDoubleOrZero
+                    val amountInDash = newRate.fiatToCoin(fiatAmount)
+                    amountInDash.toPlainString().toDoubleOrZero
                 } ?: 0.0
             }
         }
 
-    private fun calculateCoinbaseMinAllowedValue(account:CoinbaseToPozoqoExchangeRateUIModel){
+    private fun calculateCoinbaseMinAllowedValue(account:CoinbaseToDashExchangeRateUIModel){
         val minFaitValue = CoinbaseConstants.MIN_USD_COINBASE_AMOUNT.toBigDecimal() / account.currencyToUSDExchangeRate.toBigDecimal()
 
         val cleanedValue: BigDecimal =
-            minFaitValue * account.currencyToPozoqoExchangeRate.toBigDecimal()
+            minFaitValue * account.currencyToDashExchangeRate.toBigDecimal()
 
         val bd = cleanedValue.setScale(8, RoundingMode.HALF_UP)
 
@@ -169,7 +169,7 @@ class TransferPozoqoViewModel @Inject constructor(
             Coin.ZERO
         }
 
-        minAllowedSwapPozoqoCoin = coin
+        minAllowedSwapDashCoin = coin
 
         val formattedAmount = GenericUtils.formatFiatWithoutComma(minFaitValue.toString())
         minFaitAmount = try {
@@ -179,29 +179,29 @@ class TransferPozoqoViewModel @Inject constructor(
         }
     }
 
-    private fun calculateCoinbaseMaxAllowedValue(account:CoinbaseToPozoqoExchangeRateUIModel){
+    private fun calculateCoinbaseMaxAllowedValue(account:CoinbaseToDashExchangeRateUIModel){
         val maxCoinValue = try {
             Coin.parseCoin(account.coinBaseUserAccountData.balance?.amount)
         } catch (x: Exception) {
             Coin.ZERO
         }
-        maxForPozoqoCoinBaseAccount = maxCoinValue
+        maxForDashCoinBaseAccount = maxCoinValue
     }
 
 
-    private fun isInputGreaterThanCoinbaseWithdrawalLimit(amountInPozoqo: Coin): Boolean {
-        return amountInPozoqo.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInPozoqo) > 0
+    private fun isInputGreaterThanCoinbaseWithdrawalLimit(amountInDash: Coin): Boolean {
+        return amountInDash.toPlainString().toDoubleOrZero.compareTo(withdrawalLimitInDash) > 0
     }
 
-    fun checkEnteredAmountValue(amountInPozoqo: Coin): SwapValueErrorType {
+    fun checkEnteredAmountValue(amountInDash: Coin): SwapValueErrorType {
         return when {
-                (amountInPozoqo == minAllowedSwapPozoqoCoin || amountInPozoqo.isGreaterThan(minAllowedSwapPozoqoCoin)) &&
-                        maxForPozoqoCoinBaseAccount.isLessThan(minAllowedSwapPozoqoCoin) -> SwapValueErrorType.NotEnoughBalance
-                amountInPozoqo.isLessThan(minAllowedSwapPozoqoCoin) -> SwapValueErrorType.LessThanMin
-                amountInPozoqo.isGreaterThan(maxForPozoqoCoinBaseAccount) -> SwapValueErrorType.MoreThanMax.apply {
+                (amountInDash == minAllowedSwapDashCoin || amountInDash.isGreaterThan(minAllowedSwapDashCoin)) &&
+                        maxForDashCoinBaseAccount.isLessThan(minAllowedSwapDashCoin) -> SwapValueErrorType.NotEnoughBalance
+                amountInDash.isLessThan(minAllowedSwapDashCoin) -> SwapValueErrorType.LessThanMin
+                amountInDash.isGreaterThan(maxForDashCoinBaseAccount) -> SwapValueErrorType.MoreThanMax.apply {
                     amount = userAccountOnCoinbaseState.value?.coinBaseUserAccountData?.balance?.amount
                 }
-                isInputGreaterThanCoinbaseWithdrawalLimit(amountInPozoqo)-> {
+                isInputGreaterThanCoinbaseWithdrawalLimit(amountInDash)-> {
                     SwapValueErrorType.UnAuthorizedValue
                 }
                 else -> SwapValueErrorType.NOError
@@ -236,8 +236,8 @@ class TransferPozoqoViewModel @Inject constructor(
         }
     }
 
-    suspend fun sendPozoqo(dashValue: Coin, isEmptyWallet: Boolean, checkConditions: Boolean) {
-        _sendPozoqoToCoinbaseState.value = checkTransaction(dashValue, isEmptyWallet, checkConditions)
+    suspend fun sendDash(dashValue: Coin, isEmptyWallet: Boolean, checkConditions: Boolean) {
+        _sendDashToCoinbaseState.value = checkTransaction(dashValue, isEmptyWallet, checkConditions)
     }
 
     suspend fun estimateNetworkFee(value: Coin, emptyWallet: Boolean): SendPaymentService.TransactionDetails? {
@@ -247,17 +247,17 @@ class TransferPozoqoViewModel @Inject constructor(
 
              when (exception) {
                  is DustySendRequested -> {
-                     _sendPozoqoToCoinbaseError.value = NetworkFeeExceptionState(R.string.send_coins_error_dusty_send)
+                     _sendDashToCoinbaseError.value = NetworkFeeExceptionState(R.string.send_coins_error_dusty_send)
                  }
                  is InsufficientMoneyException -> {
-                     _sendPozoqoToCoinbaseError.value  =NetworkFeeExceptionState( R.string.send_coins_error_insufficient_money)
+                     _sendDashToCoinbaseError.value  =NetworkFeeExceptionState( R.string.send_coins_error_insufficient_money)
                  }
                  is CouldNotAdjustDownwards -> {
-                     _sendPozoqoToCoinbaseError.value  =NetworkFeeExceptionState( R.string.send_coins_error_dusty_send)
+                     _sendDashToCoinbaseError.value  =NetworkFeeExceptionState( R.string.send_coins_error_dusty_send)
 
                  }
                  else -> {
-                     _sendPozoqoToCoinbaseError.value  =NetworkFeeExceptionState( exceptionMessage =exception.toString())
+                     _sendDashToCoinbaseError.value  =NetworkFeeExceptionState( exceptionMessage =exception.toString())
                  }
              }
              return null
@@ -268,7 +268,7 @@ class TransferPozoqoViewModel @Inject constructor(
         coin: Coin,
         isEmptyWallet: Boolean,
         checkConditions: Boolean
-    ): SendPozoqoResponseState{
+    ): SendDashResponseState{
         return try {
             val transaction = sendPaymentService.sendCoins(
                 dashAddress, coin,
@@ -279,24 +279,24 @@ class TransferPozoqoViewModel @Inject constructor(
                 dashAddress.toBase58(),
                 ServiceName.Coinbase
             )
-            SendPozoqoResponseState.SuccessState(transaction.isPending)
+            SendDashResponseState.SuccessState(transaction.isPending)
         } catch(e: LeftoverBalanceException) {
             throw e
         } catch (e: InsufficientMoneyException) {
             e.printStackTrace()
-            SendPozoqoResponseState.InsufficientMoneyState
+            SendDashResponseState.InsufficientMoneyState
         } catch (e: Exception){
             e.printStackTrace()
             e.message?.let {
-                SendPozoqoResponseState.FailureState(it)
-            } ?: SendPozoqoResponseState.UnknownFailureState
+                SendDashResponseState.FailureState(it)
+            } ?: SendDashResponseState.UnknownFailureState
         }
     }
 
     fun reviewTransfer(dashValue: String) {
         val sendTransactionToWalletParams = SendTransactionToWalletParams(
             dashValue,
-            Constants.PZQ_CURRENCY,
+            Constants.DASH_CURRENCY,
             UUID.randomUUID().toString(),
             walletDataProvider.freshReceiveAddress().toBase58(),
             CoinbaseConstants.TRANSACTION_TYPE_SEND
@@ -304,7 +304,7 @@ class TransferPozoqoViewModel @Inject constructor(
 
         onBuildTransactionParamsCallback.value = CoinbaseTransactionParams(
             sendTransactionToWalletParams,
-            TransactionType.TransferPozoqo
+            TransactionType.TransferDash
         )
         transactionMetadataProvider.markAddressAsTransferInAsync(sendTransactionToWalletParams.to!!, ServiceName.Coinbase)
     }
@@ -314,7 +314,7 @@ class TransferPozoqoViewModel @Inject constructor(
         analyticsService.logEvent(if (isFiatSelected) {
             AnalyticsConstants.Coinbase.TRANSFER_ENTER_FIAT
         } else {
-            AnalyticsConstants.Coinbase.TRANSFER_ENTER_PZQ
+            AnalyticsConstants.Coinbase.TRANSFER_ENTER_DASH
         }, bundleOf())
     }
 
@@ -328,10 +328,10 @@ class TransferPozoqoViewModel @Inject constructor(
 
     fun logClose(type: CoinBaseResultDialog.Type) {
         when (type) {
-            CoinBaseResultDialog.Type.TRANSFER_PZQ_SUCCESS -> {
+            CoinBaseResultDialog.Type.TRANSFER_DASH_SUCCESS -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.TRANSFER_SUCCESS_CLOSE, bundleOf())
             }
-            CoinBaseResultDialog.Type.TRANSFER_PZQ_ERROR -> {
+            CoinBaseResultDialog.Type.TRANSFER_DASH_ERROR -> {
                 analyticsService.logEvent(AnalyticsConstants.Coinbase.TRANSFER_ERROR_CLOSE, bundleOf())
             }
             else -> {}
@@ -343,7 +343,7 @@ class TransferPozoqoViewModel @Inject constructor(
             when(val response = coinBaseRepository.getExchangeRateFromCoinbase()){
                 is ResponseResource.Success -> {
                     val userData = response.value
-                    if (userData == CoinbaseToPozoqoExchangeRateUIModel.EMPTY){
+                    if (userData == CoinbaseToDashExchangeRateUIModel.EMPTY){
                         onFetchUserDataOnCoinbaseFailedCallback.call()
                     } else {
                         _userAccountDataWithExchangeRate.value = userData
@@ -364,11 +364,11 @@ class TransferPozoqoViewModel @Inject constructor(
         get() = Address.fromString(walletDataProvider.networkParameters, (observeCoinbaseAddressState.value ?: observeCoinbaseUserAccountAddress.value?:"").trim { it <= ' ' })
 }
 
-sealed class SendPozoqoResponseState{
-    data class SuccessState(val isTransactionPending: Boolean): SendPozoqoResponseState()
-    object InsufficientMoneyState: SendPozoqoResponseState()
-    data class FailureState(val failureMessage: String): SendPozoqoResponseState()
-    object UnknownFailureState: SendPozoqoResponseState()
+sealed class SendDashResponseState{
+    data class SuccessState(val isTransactionPending: Boolean): SendDashResponseState()
+    object InsufficientMoneyState: SendDashResponseState()
+    data class FailureState(val failureMessage: String): SendDashResponseState()
+    object UnknownFailureState: SendDashResponseState()
 }
 
 data class NetworkFeeExceptionState(

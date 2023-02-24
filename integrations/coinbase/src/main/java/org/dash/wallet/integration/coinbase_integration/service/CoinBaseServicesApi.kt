@@ -31,7 +31,7 @@ interface CoinBaseServicesApi {
 
     @GET("v2/exchange-rates")
     suspend fun getExchangeRates(
-        @Query("currency")currency: String = Constants.PZQ_CURRENCY
+        @Query("currency")currency: String = Constants.DASH_CURRENCY
     ): CoinBaseExchangeRates?
 
     @GET("v2/payment-methods")

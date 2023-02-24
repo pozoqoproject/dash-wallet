@@ -155,7 +155,7 @@ class ItemDetails(context: Context, attrs: AttributeSet): LinearLayout(context, 
             itemAddress.isVisible = !isOnline
             showAllBtn.isVisible = !isOnline && isGrouped && merchant.physicalAmount > 1
 
-            val isPozoqo = merchant.paymentMethod?.trim()?.lowercase() == PaymentMethod.PZQ
+            val isPozoqo = merchant.paymentMethod?.trim()?.lowercase() == PaymentMethod.DASH
             val drawable = ResourcesCompat.getDrawable(
                 resources,
                 if (isPozoqo) R.drawable.ic_dash else R.drawable.ic_gift_card, null

@@ -150,7 +150,7 @@ class CoinbaseConversionPreviewFragment : Fragment(R.layout.fragment_coinbase_co
         }
 
         viewModel.commitSwapTradeSuccessState.observe(viewLifecycleOwner) { params ->
-            val walletName = if (swapTradeUIModel.inputCurrency == Constants.PZQ_CURRENCY) {
+            val walletName = if (swapTradeUIModel.inputCurrency == Constants.DASH_CURRENCY) {
                 swapTradeUIModel.inputCurrencyName
             } else {
                 swapTradeUIModel.outputCurrencyName
@@ -211,7 +211,7 @@ class CoinbaseConversionPreviewFragment : Fragment(R.layout.fragment_coinbase_co
         binding.contentOrderReview.inputAccountSubtitle.text = this.inputCurrency
         binding.contentOrderReview.convertOutputSubtitle.text = this.outputCurrency
 
-        if (this.inputCurrency == Constants.PZQ_CURRENCY) {
+        if (this.inputCurrency == Constants.DASH_CURRENCY) {
             binding.contentOrderReview.inputAccountHintLabel.setText(R.string.from_dash_wallet_on_this_device)
             binding.contentOrderReview.outputAccountHintLabel.setText(R.string.to_your_coinbase_account)
         } else {
@@ -283,7 +283,7 @@ class CoinbaseConversionPreviewFragment : Fragment(R.layout.fragment_coinbase_co
 
         transactionStateDialog = CoinBaseResultDialog.newInstance(
             type, responseMessage,
-            dashToCoinbase = swapTradeUIModel.inputCurrency == Constants.PZQ_CURRENCY
+            dashToCoinbase = swapTradeUIModel.inputCurrency == Constants.DASH_CURRENCY
         ).apply {
             this.onCoinBaseResultDialogButtonsClickListener = object : CoinBaseResultDialog.CoinBaseResultDialogButtonsClickListener {
                 override fun onPositiveButtonClick(type: CoinBaseResultDialog.Type) {
@@ -314,7 +314,7 @@ class CoinbaseConversionPreviewFragment : Fragment(R.layout.fragment_coinbase_co
                 }
             }
         }
-        transactionStateDialog?.showNow(parentFragmentManager, "CoinBaseBuyPozoqoDialog")
+        transactionStateDialog?.showNow(parentFragmentManager, "CoinBaseBuyDashDialog")
     }
 
     override fun onResume() {

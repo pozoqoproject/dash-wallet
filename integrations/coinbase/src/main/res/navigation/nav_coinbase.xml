@@ -28,7 +28,7 @@
 
         <action
             android:id="@+id/services_to_buy_dash"
-            app:destination="@id/coinbaseBuyPozoqoFragment"
+            app:destination="@id/coinbaseBuyDashFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/activity_stay"
             app:popExitAnim="@anim/slide_out_left" />
@@ -40,20 +40,20 @@
             app:popExitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/services_to_transfer_dash"
-            app:destination="@id/transferPozoqoFragment"
+            app:destination="@id/transferDashFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/activity_stay"
             app:popExitAnim="@anim/slide_out_left" />
     </fragment>
 
     <fragment
-        android:id="@+id/coinbaseBuyPozoqoFragment"
-        android:name="org.dash.wallet.integration.coinbase_integration.ui.CoinbaseBuyPozoqoFragment"
-        android:label="CoinbaseBuyPozoqoFragment"
+        android:id="@+id/coinbaseBuyDashFragment"
+        android:name="org.dash.wallet.integration.coinbase_integration.ui.CoinbaseBuyDashFragment"
+        android:label="CoinbaseBuyDashFragment"
         tools:layout="@layout/fragment_coinbase_buy_dash">
         <action
             android:id="@+id/buy_dash_to_order_review"
-            app:destination="@id/coinbaseBuyPozoqoOrderReviewFragment"
+            app:destination="@id/coinbaseBuyDashOrderReviewFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/activity_stay"
             app:popExitAnim="@anim/slide_out_left" />
@@ -65,9 +65,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/coinbaseBuyPozoqoOrderReviewFragment"
-        android:name="org.dash.wallet.integration.coinbase_integration.ui.CoinbaseBuyPozoqoOrderReviewFragment"
-        android:label="CoinbaseBuyPozoqoOrderReviewFragment"
+        android:id="@+id/coinbaseBuyDashOrderReviewFragment"
+        android:name="org.dash.wallet.integration.coinbase_integration.ui.CoinbaseBuyDashOrderReviewFragment"
+        android:label="CoinbaseBuyDashOrderReviewFragment"
         tools:layout="@layout/fragment_coinbase_buy_dash_order_review">
         <argument
             android:name="paymentMethod"
@@ -79,7 +79,7 @@
             android:id="@+id/orderReviewToFeeInfo"
             app:destination="@id/coinbaseFeeInfoDialog" />
         <action
-            android:id="@+id/coinbaseBuyPozoqoOrderReviewToTwoFaCode"
+            android:id="@+id/coinbaseBuyDashOrderReviewToTwoFaCode"
             app:destination="@id/enterTwoFaCodeFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/activity_stay"
@@ -141,13 +141,13 @@
             />
     </fragment>
     <fragment
-        android:id="@+id/transferPozoqoFragment"
-        android:name="org.dash.wallet.integration.coinbase_integration.ui.TransferPozoqoFragment"
+        android:id="@+id/transferDashFragment"
+        android:name="org.dash.wallet.integration.coinbase_integration.ui.TransferDashFragment"
         tools:layout="@layout/transfer_dash_fragment"
-        android:label="TransferPozoqo">
+        android:label="TransferDash">
 
         <action
-            android:id="@+id/transferPozoqoToTwoFaCode"
+            android:id="@+id/transferDashToTwoFaCode"
             app:destination="@id/enterTwoFaCodeFragment"
             />
     </fragment>

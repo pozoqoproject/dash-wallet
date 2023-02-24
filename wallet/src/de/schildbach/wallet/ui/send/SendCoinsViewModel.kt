@@ -186,7 +186,7 @@ class SendCoinsViewModel @Inject constructor(
 
     fun logSentEvent(dashToFiat: Boolean) {
         if (dashToFiat) {
-            analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_PZQ, bundleOf())
+            analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_DASH, bundleOf())
         } else {
             analytics.logEvent(AnalyticsConstants.SendReceive.ENTER_AMOUNT_FIAT, bundleOf())
         }

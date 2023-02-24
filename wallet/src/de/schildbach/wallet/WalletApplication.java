@@ -334,7 +334,7 @@ public class WalletApplication extends MultiDexApplication
     }
 
     public void finalizeInitialization() {
-        wallet.getContext().initPozoqo(true, true, Constants.SYNC_FLAGS, Constants.VERIFY_FLAGS);
+        wallet.getContext().initDash(true, true, Constants.SYNC_FLAGS, Constants.VERIFY_FLAGS);
 
         if (config.versionCodeCrossed(packageInfo.versionCode, VERSION_CODE_SHOW_BACKUP_REMINDER)
                 && !wallet.getImportedKeys().isEmpty()) {

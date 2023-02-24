@@ -50,7 +50,7 @@ import java.text.DecimalFormatSymbols
 @ExperimentalCoroutinesApi
 class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
     companion object {
-        private const val ARG_PZQ_TO_FIAT = "dash_to_fiat"
+        private const val ARG_DASH_TO_FIAT = "dash_to_fiat"
         private const val DECIMAL_SEPARATOR = '.'
 
         @JvmStatic
@@ -113,7 +113,7 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                             } else {
 
                                 maxAmount.toBigDecimal() *
-                                    userAccountData.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal()
+                                    userAccountData.cryptoCurrencyToDashExchangeRate.toBigDecimal()
                             }.setScale(8, RoundingMode.HALF_UP).toString()
 
                         applyNewValue(cleanedValue, viewModel.selectedPickerCurrencyCode)
@@ -135,8 +135,8 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
         if (viewModel.dashToCrypto.value == true) {//from wallet -> coinbase
             viewModel.selectedCryptoCurrencyAccount.value?.let { account ->
                 val cleanedValue =
-                    viewModel.maxForPozoqoWalletAmount.toBigDecimal() /
-                        account.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal()
+                    viewModel.maxForDashWalletAmount.toBigDecimal() /
+                        account.cryptoCurrencyToDashExchangeRate.toBigDecimal()
                 return cleanedValue.setScale(8, RoundingMode.HALF_UP).toString()
             }
         } else {  // coinbase -> wallet
@@ -148,9 +148,9 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
     private fun resetViewSelection(it: CoinBaseUserAccountDataUIModel?) {
         it?.coinBaseUserAccountData?.balance?.currency?.let { currencyCode ->
             currencyConversionOptionList = if (viewModel.dashToCrypto.value == true)
-                listOf(Constants.PZQ_CURRENCY, viewModel.selectedLocalCurrencyCode, currencyCode)
+                listOf(Constants.DASH_CURRENCY, viewModel.selectedLocalCurrencyCode, currencyCode)
             else
-                listOf(currencyCode, viewModel.selectedLocalCurrencyCode, Constants.PZQ_CURRENCY)
+                listOf(currencyCode, viewModel.selectedLocalCurrencyCode, Constants.DASH_CURRENCY)
             binding.currencyOptions.apply {
                 pickedOptionIndex = 0
                 provideOptions(currencyConversionOptionList)
@@ -182,7 +182,7 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                                     .setScale(8, RoundingMode.HALF_UP).toString()
                             } else {
 
-                                val bd = viewModel.toPozoqoValue(valueToBind, userAccountData, true)
+                                val bd = viewModel.toDashValue(valueToBind, userAccountData, true)
                                 val coin = try {
                                     Coin.parseCoin(bd.toString())
                                 } catch (x: Exception) {
@@ -203,7 +203,7 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                                     )
                                     .setScale(8, RoundingMode.HALF_UP).toString()
                             } else {
-                                val bd = viewModel.toPozoqoValue(valueToBind, userAccountData)
+                                val bd = viewModel.toDashValue(valueToBind, userAccountData)
                                 val coin = try {
                                     Coin.parseCoin(bd.toString())
                                 } catch (x: Exception) {
@@ -221,14 +221,14 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                             if (pickedCurrencyOption == userAccountData.coinBaseUserAccountData.balance?.currency) {
                                 (
                                     valueToBind.toBigDecimal() /
-                                        userAccountData.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal()
+                                        userAccountData.cryptoCurrencyToDashExchangeRate.toBigDecimal()
                                     )
                                     .setScale(8, RoundingMode.HALF_UP).toString()
                             } else {
 
                                 (
                                     valueToBind.toBigDecimal() /
-                                        userAccountData.currencyToPozoqoExchangeRate.toBigDecimal()
+                                        userAccountData.currencyToDashExchangeRate.toBigDecimal()
                                     )
                                     .setScale(8, RoundingMode.HALF_UP).toString()
                             }
@@ -399,19 +399,19 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                 selectedCurrencyCodeExchangeRate?.let { rate ->
 
                     val dashAmount = when {
-                        (it.coinBaseUserAccountData.balance?.currency == currencyCode && it.coinBaseUserAccountData.balance.currency != Constants.PZQ_CURRENCY) -> {
+                        (it.coinBaseUserAccountData.balance?.currency == currencyCode && it.coinBaseUserAccountData.balance.currency != Constants.DASH_CURRENCY) -> {
                             val bd =
-                                viewModel.toPozoqoValue(balance, it, true)
+                                viewModel.toDashValue(balance, it, true)
                             try {
                                 Coin.parseCoin(bd.toString())
                             } catch (x: Exception) {
                                 Coin.ZERO
                             }
                         }
-                        (viewModel.selectedLocalCurrencyCode == currencyCode && it.coinBaseUserAccountData.balance?.currency != Constants.PZQ_CURRENCY) -> {
+                        (viewModel.selectedLocalCurrencyCode == currencyCode && it.coinBaseUserAccountData.balance?.currency != Constants.DASH_CURRENCY) -> {
                             // USD
                             val bd =
-                                viewModel.toPozoqoValue(balance, it)
+                                viewModel.toDashValue(balance, it)
                             try {
                                 Coin.parseCoin(bd.toString())
                             } catch (x: Exception) {
@@ -420,7 +420,7 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                         }
 
                         else -> {
-                            // PZQ
+                            // DASH
                             val formattedValue = GenericUtils.formatFiatWithoutComma(balance)
                             try {
                                 Coin.parseCoin(formattedValue)
@@ -430,11 +430,11 @@ class ConvertViewFragment : Fragment(R.layout.fragment_convert_currency) {
                         }
                     }
 
-                    viewModel.setEnteredConvertPozoqoAmount(dashAmount)
+                    viewModel.setEnteredConvertDashAmount(dashAmount)
                 }
             }
         } else {
-            viewModel.setEnteredConvertPozoqoAmount(Coin.ZERO)
+            viewModel.setEnteredConvertDashAmount(Coin.ZERO)
         }
 
         checkTheUserEnteredValue(hasBalance)

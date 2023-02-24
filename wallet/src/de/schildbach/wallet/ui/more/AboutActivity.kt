@@ -102,7 +102,7 @@ class AboutActivity : LockScreenActivity() {
 
         viewModel.exploreRemoteTimestamp.observe(this) { timestamp ->
             binding.lastExploreUpdateLoadingIndicator.isVisible = false
-            binding.explorePozoqoLastServerUpdate.isVisible = true
+            binding.exploreDashLastServerUpdate.isVisible = true
 
             val formattedUpdateTime = if (timestamp <= 0L) {
                 getString(R.string.about_last_explore_dash_update_error)
@@ -110,11 +110,11 @@ class AboutActivity : LockScreenActivity() {
                 DateUtils.formatDateTime(applicationContext, timestamp, formatFlags)
             }
 
-            binding.explorePozoqoLastServerUpdate.text = formattedUpdateTime
+            binding.exploreDashLastServerUpdate.text = formattedUpdateTime
         }
 
         viewModel.exploreIsSyncing.observe(this) { isSyncing ->
-            binding.explorePozoqoLastDeviceSync.text = if (isSyncing) {
+            binding.exploreDashLastDeviceSync.text = if (isSyncing) {
                 "${getString(R.string.syncing)}…"
             } else if (viewModel.exploreIsSyncFailed) {
                 getString(

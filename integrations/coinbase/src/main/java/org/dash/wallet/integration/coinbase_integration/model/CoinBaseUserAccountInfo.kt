@@ -100,10 +100,10 @@ data class CoinBaseBalance(
 data class CoinBaseUserAccountDataUIModel(
     override val coinBaseUserAccountData: CoinBaseUserAccountData,
     val currencyToCryptoCurrencyExchangeRate: String,
-    override val currencyToPozoqoExchangeRate: String,
-    val cryptoCurrencyToPozoqoExchangeRate: String,
+    override val currencyToDashExchangeRate: String,
+    val cryptoCurrencyToDashExchangeRate: String,
     override val currencyToUSDExchangeRate: String,
-) : CoinbaseToPozoqoExchangeRateUIModel(coinBaseUserAccountData, currencyToPozoqoExchangeRate,currencyToUSDExchangeRate), Parcelable
+) : CoinbaseToDashExchangeRateUIModel(coinBaseUserAccountData, currencyToDashExchangeRate,currencyToUSDExchangeRate), Parcelable
 
 fun CoinBaseUserAccountDataUIModel.getCoinBaseExchangeRateConversion(
     currentExchangeRate: ExchangeRate
@@ -121,12 +121,12 @@ fun CoinBaseUserAccountDataUIModel.getCoinBaseExchangeRateConversion(
 }
 
 @Parcelize
-open class CoinbaseToPozoqoExchangeRateUIModel (
+open class CoinbaseToDashExchangeRateUIModel (
     open val coinBaseUserAccountData: CoinBaseUserAccountData,
-    open val currencyToPozoqoExchangeRate: String,
+    open val currencyToDashExchangeRate: String,
     open val currencyToUSDExchangeRate: String,
 ): Parcelable {
     companion object {
-        val EMPTY = CoinbaseToPozoqoExchangeRateUIModel(CoinBaseUserAccountData.EMPTY, "","")
+        val EMPTY = CoinbaseToDashExchangeRateUIModel(CoinBaseUserAccountData.EMPTY, "","")
     }
 }

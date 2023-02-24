@@ -22,7 +22,7 @@ import androidx.room.Ignore
 import androidx.room.Index
 
 object PaymentMethod {
-    const val PZQ = "dash"
+    const val DASH = "pozoqo"
     const val GIFT_CARD = "gift card"
 }
 

@@ -45,7 +45,7 @@ class TransferView(context: Context, attrs: AttributeSet) : ConstraintLayout(con
 
     private var onTransferDirectionBtnClicked: (() -> Unit)? = null
 
-    var inputInPozoqo: Coin = Coin.ZERO
+    var inputInDash: Coin = Coin.ZERO
 
     var exchangeRate: ExchangeRate? = null
     var balanceOnCoinbase: BaseServiceWallet? = null
@@ -110,9 +110,9 @@ class TransferView(context: Context, attrs: AttributeSet) : ConstraintLayout(con
     fun setSyncing(isSyncing: Boolean) {
         binding.convertFromBtn.setSyncingVisibility(isSyncing)
         binding.loadingProgressContainer.isVisible = isSyncing
-        binding.convertFromPozoqoBalance.isVisible = !isSyncing
-        binding.convertFromPozoqoFiatAmount.isVisible = !isSyncing
-        binding.walletIcon.isVisible = !isSyncing && binding.convertFromPozoqoBalance.text.isNotEmpty()
+        binding.convertFromDashBalance.isVisible = !isSyncing
+        binding.convertFromDashFiatAmount.isVisible = !isSyncing
+        binding.walletIcon.isVisible = !isSyncing && binding.convertFromDashBalance.text.isNotEmpty()
         if (!isSyncing) {
             updateAmount()
         }
@@ -148,13 +148,13 @@ class TransferView(context: Context, attrs: AttributeSet) : ConstraintLayout(con
     private fun updateAmount(){
         if (walletToCoinbase){
             exchangeRate?.let { rate ->
-                val fiatAmount = GenericUtils.fiatToString(rate.coinToFiat(inputInPozoqo))
-                binding.convertFromPozoqoBalance.text = "${dashFormat
-                    .format(inputInPozoqo)} ${Constants.PZQ_CURRENCY}"
-                binding.convertFromPozoqoFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} $fiatAmount"
-                if (inputInPozoqo.isGreaterThan(Coin.ZERO)){
-                    binding.convertFromPozoqoBalance.isVisible = true
-                    binding.convertFromPozoqoFiatAmount.isVisible = true
+                val fiatAmount = GenericUtils.fiatToString(rate.coinToFiat(inputInDash))
+                binding.convertFromDashBalance.text = "${dashFormat
+                    .format(inputInDash)} ${Constants.DASH_CURRENCY}"
+                binding.convertFromDashFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} $fiatAmount"
+                if (inputInDash.isGreaterThan(Coin.ZERO)){
+                    binding.convertFromDashBalance.isVisible = true
+                    binding.convertFromDashFiatAmount.isVisible = true
                     binding.walletIcon.isVisible = true
                 }
             }
@@ -169,13 +169,13 @@ class TransferView(context: Context, attrs: AttributeSet) : ConstraintLayout(con
                         Coin.ZERO
                     }
 
-                    val formatPozoqo = dashFormat.minDecimals(2)
+                    val formatDash = dashFormat.minDecimals(2)
                         .format(coin).toString()
-                    binding.convertFromPozoqoBalance.text = "$formatPozoqo ${Constants.PZQ_CURRENCY}"
-                    binding.convertFromPozoqoFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} ${it.faitAmount}"
+                    binding.convertFromDashBalance.text = "$formatDash ${Constants.DASH_CURRENCY}"
+                    binding.convertFromDashFiatAmount.text = "${Constants.PREFIX_ALMOST_EQUAL_TO} ${it.faitAmount}"
 
-                    binding.convertFromPozoqoBalance.isVisible = true
-                    binding.convertFromPozoqoFiatAmount.isVisible = true
+                    binding.convertFromDashBalance.isVisible = true
+                    binding.convertFromDashFiatAmount.isVisible = true
 
                     binding.walletIcon.isVisible = balance.isNotEmpty()
 

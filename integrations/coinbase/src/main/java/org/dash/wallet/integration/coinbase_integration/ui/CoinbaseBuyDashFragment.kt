@@ -40,17 +40,17 @@ import org.dash.wallet.common.ui.viewBinding
 import org.dash.wallet.common.util.GenericUtils
 import org.dash.wallet.common.util.safeNavigate
 import org.dash.wallet.integration.coinbase_integration.R
-import org.dash.wallet.integration.coinbase_integration.databinding.FragmentCoinbaseBuyPozoqoBinding
+import org.dash.wallet.integration.coinbase_integration.databinding.FragmentCoinbaseBuyDashBinding
 import org.dash.wallet.integration.coinbase_integration.databinding.KeyboardHeaderViewBinding
-import org.dash.wallet.integration.coinbase_integration.viewmodels.CoinbaseBuyPozoqoViewModel
+import org.dash.wallet.integration.coinbase_integration.viewmodels.CoinbaseBuyDashViewModel
 
 @AndroidEntryPoint
 @ExperimentalCoroutinesApi
-class CoinbaseBuyPozoqoFragment : Fragment(R.layout.fragment_coinbase_buy_dash) {
-    private val binding by viewBinding(FragmentCoinbaseBuyPozoqoBinding::bind)
-    private val viewModel by viewModels<CoinbaseBuyPozoqoViewModel>()
+class CoinbaseBuyDashFragment : Fragment(R.layout.fragment_coinbase_buy_dash) {
+    private val binding by viewBinding(FragmentCoinbaseBuyDashBinding::bind)
+    private val viewModel by viewModels<CoinbaseBuyDashViewModel>()
     private val amountViewModel by activityViewModels<EnterAmountViewModel>()
-    private val args by navArgs<CoinbaseBuyPozoqoFragmentArgs>()
+    private val args by navArgs<CoinbaseBuyDashFragmentArgs>()
     private var loadingDialog: AdaptiveDialog? = null
     private lateinit var fragment: EnterAmountFragment
 
@@ -104,7 +104,7 @@ class CoinbaseBuyPozoqoFragment : Fragment(R.layout.fragment_coinbase_buy_dash) 
 
         viewModel.placeBuyOrder.observe(viewLifecycleOwner) { placeBuyOrderEvent ->
             placeBuyOrderEvent.getContentIfNotHandled()?.let {
-                safeNavigate(CoinbaseBuyPozoqoFragmentDirections.buyPozoqoToOrderReview(
+                safeNavigate(CoinbaseBuyDashFragmentDirections.buyDashToOrderReview(
                     binding.paymentMethodPicker.paymentMethods[binding.paymentMethodPicker.selectedMethodIndex], it))
             }
         }

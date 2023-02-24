@@ -203,7 +203,7 @@ class TransferFragment : Fragment(R.layout.fragment_transfer) {
             binding.messageBanner.isVisible = true
             binding.bannerMessageText.text = getString(
                 R.string.crowdnode_first_deposit,
-                CrowdNodeConstants.PZQ_FORMAT.format(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT)
+                CrowdNodeConstants.DASH_FORMAT.format(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT)
             )
             binding.messageBanner.setOnClickListener {
                 StakingDialog().show(parentFragmentManager, "staking")
@@ -222,7 +222,7 @@ class TransferFragment : Fragment(R.layout.fragment_transfer) {
     private suspend fun continueTransfer(value: Coin, isWithdraw: Boolean) {
         if (!isWithdraw) {
             if (viewModel.shouldShowFirstDepositBanner &&
-                value.isLessThan(CrowdNodeConstants.MINIMUM_PZQ_DEPOSIT)
+                value.isLessThan(CrowdNodeConstants.MINIMUM_DASH_DEPOSIT)
             ) {
                 showErrorBanner()
                 return

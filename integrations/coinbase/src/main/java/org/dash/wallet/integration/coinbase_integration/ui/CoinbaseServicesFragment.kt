@@ -68,7 +68,7 @@ class CoinbaseServicesFragment : Fragment(R.layout.fragment_coinbase_services) {
             viewModel.disconnectCoinbaseAccount()
         }
 
-        binding.buyPozoqoBtn.setOnClickListener {
+        binding.buyDashBtn.setOnClickListener {
             sharedViewModel.paymentMethodsUiState.observe(viewLifecycleOwner) { uiState ->
                 // New value received
                 when (uiState) {
@@ -82,8 +82,8 @@ class CoinbaseServicesFragment : Fragment(R.layout.fragment_coinbase_services) {
                                 showBuyingNotAllowedError()
                             }
                         } else {
-                            viewModel.logEvent(AnalyticsConstants.Coinbase.BUY_PZQ)
-                            safeNavigate(CoinbaseServicesFragmentDirections.servicesToBuyPozoqo(paymentMethodsArray))
+                            viewModel.logEvent(AnalyticsConstants.Coinbase.BUY_DASH)
+                            safeNavigate(CoinbaseServicesFragmentDirections.servicesToBuyDash(paymentMethodsArray))
                         }
                     }
                     is PaymentMethodsUiState.Error -> {
@@ -102,19 +102,19 @@ class CoinbaseServicesFragment : Fragment(R.layout.fragment_coinbase_services) {
             }
         }
 
-        binding.convertPozoqoBtn.setOnClickListener {
-            viewModel.logEvent(AnalyticsConstants.Coinbase.CONVERT_PZQ)
+        binding.convertDashBtn.setOnClickListener {
+            viewModel.logEvent(AnalyticsConstants.Coinbase.CONVERT_DASH)
             safeNavigate(CoinbaseServicesFragmentDirections.servicesToConvertCrypto(true))
         }
 
-        binding.transferPozoqoBtn.setOnClickListener {
-            viewModel.logEvent(AnalyticsConstants.Coinbase.TRANSFER_PZQ)
-            safeNavigate(CoinbaseServicesFragmentDirections.servicesToTransferPozoqo())
+        binding.transferDashBtn.setOnClickListener {
+            viewModel.logEvent(AnalyticsConstants.Coinbase.TRANSFER_DASH)
+            safeNavigate(CoinbaseServicesFragmentDirections.servicesToTransferDash())
         }
 
-        binding.walletBalancePozoqo.setFormat(viewModel.balanceFormat)
-        binding.walletBalancePozoqo.setApplyMarkup(false)
-        binding.walletBalancePozoqo.setAmount(Coin.ZERO)
+        binding.walletBalanceDash.setFormat(viewModel.balanceFormat)
+        binding.walletBalanceDash.setApplyMarkup(false)
+        binding.walletBalanceDash.setAmount(Coin.ZERO)
 
         viewModel.exchangeRate.observe(
             viewLifecycleOwner
@@ -134,7 +134,7 @@ class CoinbaseServicesFragment : Fragment(R.layout.fragment_coinbase_services) {
         viewModel.user.observe(
             viewLifecycleOwner
         ) {
-            binding.walletBalancePozoqo.setAmount(Coin.parseCoin(it.balance?.amount))
+            binding.walletBalanceDash.setAmount(Coin.parseCoin(it.balance?.amount))
             if (currentExchangeRate != null) {
                 setLocalFaitAmount(it.balance?.amount ?: "0")
             }
@@ -143,7 +143,7 @@ class CoinbaseServicesFragment : Fragment(R.layout.fragment_coinbase_services) {
         viewModel.latestUserBalance.observe(
             viewLifecycleOwner
         ) {
-            binding.walletBalancePozoqo.setAmount(Coin.parseCoin(it))
+            binding.walletBalanceDash.setAmount(Coin.parseCoin(it))
             if (currentExchangeRate != null) {
                 setLocalFaitAmount(it ?: "0")
             }

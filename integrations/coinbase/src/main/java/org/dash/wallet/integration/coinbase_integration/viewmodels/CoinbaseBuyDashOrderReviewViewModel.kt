@@ -39,7 +39,7 @@ import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @HiltViewModel
-class CoinbaseBuyPozoqoOrderReviewViewModel @Inject constructor(
+class CoinbaseBuyDashOrderReviewViewModel @Inject constructor(
     private val coinBaseRepository: CoinBaseRepositoryInt,
     private val walletDataProvider: WalletDataProvider,
     val networkState: NetworkStateInt,

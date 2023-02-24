@@ -49,7 +49,7 @@ import java.math.RoundingMode
 import javax.inject.Inject
 
 enum class CurrencyInputType {
-    Pozoqo,
+    Dash,
     Crypto,
     Fiat
 }
@@ -75,11 +75,11 @@ class ConvertViewViewModel @Inject constructor(
 
     var minAllowedSwapAmount: String = CoinbaseConstants.MIN_USD_COINBASE_AMOUNT
 
-    var maxForPozoqoWalletAmount: String = "0"
+    var maxForDashWalletAmount: String = "0"
     val onContinueEvent = SingleLiveEvent<SwapRequest>()
 
-    var minAllowedSwapPozoqoCoin: Coin = Coin.ZERO
-    private var maxForPozoqoCoinBaseAccount: Coin = Coin.ZERO
+    var minAllowedSwapDashCoin: Coin = Coin.ZERO
+    private var maxForDashCoinBaseAccount: Coin = Coin.ZERO
 
 
     private val _selectedCryptoCurrencyAccount = MutableLiveData<CoinBaseUserAccountDataUIModel?>()
@@ -100,9 +100,9 @@ class ConvertViewViewModel @Inject constructor(
             _selectedPickerCurrencyCode.value = value
         }
 
-    private val _enteredConvertPozoqoAmount = MutableLiveData<Coin>()
-    val enteredConvertPozoqoAmount: LiveData<Coin>
-        get() = _enteredConvertPozoqoAmount
+    private val _enteredConvertDashAmount = MutableLiveData<Coin>()
+    val enteredConvertDashAmount: LiveData<Coin>
+        get() = _enteredConvertDashAmount
 
     private val _enteredConvertCryptoAmount = MutableLiveData<Pair<String, String>>()
     val enteredConvertCryptoAmount: LiveData<Pair<String, String>>
@@ -112,12 +112,12 @@ class ConvertViewViewModel @Inject constructor(
     val selectedLocalExchangeRate: LiveData<ExchangeRate>
         get() = _selectedLocalExchangeRate
 
-    val userPozoqoAccountEmptyError = SingleLiveEvent<Unit>()
+    val userDashAccountEmptyError = SingleLiveEvent<Unit>()
 
     val validSwapValue = SingleLiveEvent<String>()
 
     init {
-        setPozoqoWalletBalance()
+        setDashWalletBalance()
         _selectedLocalCurrencyCode.flatMapLatest { code ->
             exchangeRates.observeExchangeRate(code)
         }.onEach(_selectedLocalExchangeRate::postValue)
@@ -131,7 +131,7 @@ class ConvertViewViewModel @Inject constructor(
         this._selectedLocalExchangeRate.value = selectedLocalExchangeRate.value?.currencyCode?.let {
             val cleanedValue =
                 1.toBigDecimal() /
-                    account.currencyToPozoqoExchangeRate.toBigDecimal()
+                    account.currencyToDashExchangeRate.toBigDecimal()
             val bd = cleanedValue.setScale(8, RoundingMode.HALF_UP)
             ExchangeRate(
                 it,
@@ -144,7 +144,7 @@ class ConvertViewViewModel @Inject constructor(
         val minFaitValue = CoinbaseConstants.MIN_USD_COINBASE_AMOUNT.toBigDecimal() / account.currencyToUSDExchangeRate.toBigDecimal()
 
         val cleanedValue: BigDecimal =
-            minFaitValue * account.currencyToPozoqoExchangeRate.toBigDecimal()
+            minFaitValue * account.currencyToDashExchangeRate.toBigDecimal()
 
         minAllowedSwapAmount = minFaitValue.toString()
         val bd = cleanedValue.setScale(8, RoundingMode.HALF_UP)
@@ -155,10 +155,10 @@ class ConvertViewViewModel @Inject constructor(
             Coin.ZERO
         }
 
-        minAllowedSwapPozoqoCoin = coin
+        minAllowedSwapDashCoin = coin
 
         val value =
-            (maxCoinBaseAccountAmount.toBigDecimal() * account.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal())
+            (maxCoinBaseAccountAmount.toBigDecimal() * account.cryptoCurrencyToDashExchangeRate.toBigDecimal())
                 .setScale(8, RoundingMode.HALF_UP)
 
         val maxCoinValue = try {
@@ -167,14 +167,14 @@ class ConvertViewViewModel @Inject constructor(
             Coin.ZERO
         }
 
-        maxForPozoqoCoinBaseAccount = maxCoinValue
+        maxForDashCoinBaseAccount = maxCoinValue
     }
 
-    fun setEnteredConvertPozoqoAmount(value: Coin) {
-        _enteredConvertPozoqoAmount.value = value
+    fun setEnteredConvertDashAmount(value: Coin) {
+        _enteredConvertDashAmount.value = value
         if (!value.isZero) {
             _selectedCryptoCurrencyAccount.value?.let {
-                val cryptoCurrency = (value.toBigDecimal() / it.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal())
+                val cryptoCurrency = (value.toBigDecimal() / it.cryptoCurrencyToDashExchangeRate.toBigDecimal())
                         .setScale(8, RoundingMode.HALF_UP).toString()
 
                 _enteredConvertCryptoAmount.value =
@@ -193,20 +193,20 @@ class ConvertViewViewModel @Inject constructor(
     fun checkEnteredAmountValue(checkSendingConditions: Boolean): SwapValueErrorType {
         val coin = try {
             if (dashToCrypto.value == true) {
-                Coin.parseCoin(maxForPozoqoWalletAmount)
+                Coin.parseCoin(maxForDashWalletAmount)
             } else {
-                maxForPozoqoCoinBaseAccount
+                maxForDashCoinBaseAccount
             }
         } catch (x: Exception) {
             Coin.ZERO
         }
 
-        _enteredConvertPozoqoAmount.value?.let {
+        _enteredConvertDashAmount.value?.let {
             return when {
                 it.isZero -> SwapValueErrorType.NOError
-                (it == minAllowedSwapPozoqoCoin || it.isGreaterThan(minAllowedSwapPozoqoCoin)) &&
-                    coin.isLessThan(minAllowedSwapPozoqoCoin) -> SwapValueErrorType.NotEnoughBalance
-                it.isLessThan(minAllowedSwapPozoqoCoin) -> SwapValueErrorType.LessThanMin
+                (it == minAllowedSwapDashCoin || it.isGreaterThan(minAllowedSwapDashCoin)) &&
+                    coin.isLessThan(minAllowedSwapDashCoin) -> SwapValueErrorType.NotEnoughBalance
+                it.isLessThan(minAllowedSwapDashCoin) -> SwapValueErrorType.LessThanMin
                 it.isGreaterThan(coin) -> SwapValueErrorType.MoreThanMax.apply {
                     amount = maxCoinBaseAccountAmount
                 }
@@ -219,10 +219,10 @@ class ConvertViewViewModel @Inject constructor(
         return SwapValueErrorType.NOError
     }
 
-    fun setOnSwapPozoqoFromToCryptoClicked(dashToCrypto: Boolean) {
+    fun setOnSwapDashFromToCryptoClicked(dashToCrypto: Boolean) {
         if (dashToCrypto) {
             if (walletDataProvider.getWalletBalance().isZero) {
-                userPozoqoAccountEmptyError.call()
+                userDashAccountEmptyError.call()
                 return
             }
         }
@@ -232,7 +232,7 @@ class ConvertViewViewModel @Inject constructor(
     fun clear() {
         _selectedCryptoCurrencyAccount.value = null
         _dashToCrypto.value = false
-        _enteredConvertPozoqoAmount.value = Coin.ZERO
+        _enteredConvertDashAmount.value = Coin.ZERO
         _enteredConvertCryptoAmount.value = Pair("", "")
     }
 
@@ -268,14 +268,14 @@ class ConvertViewViewModel @Inject constructor(
                     else -> {
                         val cleanedValue =
                             enteredConvertAmount.toBigDecimal() /
-                                    it.currencyToPozoqoExchangeRate.toBigDecimal()
+                                    it.currencyToDashExchangeRate.toBigDecimal()
                         val bd = cleanedValue.setScale(8, RoundingMode.HALF_UP)
 
                         Fiat.parseFiat(rate.fiat.currencyCode, bd.toString())
                     }
                 }
 
-                val bd = toPozoqoValue(enteredConvertAmount, it)
+                val bd = toDashValue(enteredConvertAmount, it)
                 val coin = try {
                     Coin.parseCoin(bd.toString())
                 } catch (x: Exception) {
@@ -287,24 +287,24 @@ class ConvertViewViewModel @Inject constructor(
         return null
     }
 
-    fun toPozoqoValue(
+    fun toDashValue(
         valueToBind: String,
         userAccountData: CoinBaseUserAccountDataUIModel,
         fromCrypto: Boolean = false
     ): BigDecimal {
         val convertedValue = if (fromCrypto) {
             valueToBind.toBigDecimal() *
-                    userAccountData.cryptoCurrencyToPozoqoExchangeRate.toBigDecimal()
+                    userAccountData.cryptoCurrencyToDashExchangeRate.toBigDecimal()
         } else {
             valueToBind.toBigDecimal() *
-                    userAccountData.currencyToPozoqoExchangeRate.toBigDecimal()
+                    userAccountData.currencyToDashExchangeRate.toBigDecimal()
         }.setScale(8, RoundingMode.HALF_UP)
         return convertedValue
     }
 
-    private fun setPozoqoWalletBalance() {
+    private fun setDashWalletBalance() {
         val balance = walletDataProvider.getWalletBalance()
-        maxForPozoqoWalletAmount = dashFormat.minDecimals(0)
+        maxForDashWalletAmount = dashFormat.minDecimals(0)
             .optionalDecimals(0, 8).format(balance).toString()
     }
 
@@ -326,8 +326,8 @@ class ConvertViewViewModel @Inject constructor(
         val account = selectedCryptoCurrencyAccount.value
 
         return when {
-            (account?.coinBaseUserAccountData?.balance?.currency?.lowercase() == Constants.PZQ_CURRENCY.lowercase()) -> {
-                CurrencyInputType.Pozoqo
+            (account?.coinBaseUserAccountData?.balance?.currency?.lowercase() == Constants.DASH_CURRENCY.lowercase()) -> {
+                CurrencyInputType.Dash
             }
             (account?.coinBaseUserAccountData?.balance?.currency?.lowercase() == currencyCode.lowercase()) -> {
                 CurrencyInputType.Crypto
@@ -335,7 +335,7 @@ class ConvertViewViewModel @Inject constructor(
             (selectedLocalCurrencyCode.lowercase() == currencyCode.lowercase()) -> {
                 CurrencyInputType.Fiat
             }
-            else -> CurrencyInputType.Pozoqo
+            else -> CurrencyInputType.Dash
         }
     }
 
@@ -344,7 +344,7 @@ class ConvertViewViewModel @Inject constructor(
             when(inputType) {
                 CurrencyInputType.Crypto -> AnalyticsConstants.Coinbase.CONVERT_ENTER_CRYPTO
                 CurrencyInputType.Fiat -> AnalyticsConstants.Coinbase.CONVERT_ENTER_FIAT
-                else -> AnalyticsConstants.Coinbase.CONVERT_ENTER_PZQ
+                else -> AnalyticsConstants.Coinbase.CONVERT_ENTER_DASH
             },
             bundleOf()
         )

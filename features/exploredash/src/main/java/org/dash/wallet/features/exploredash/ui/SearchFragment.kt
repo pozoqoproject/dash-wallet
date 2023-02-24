@@ -458,7 +458,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     private fun setupItemDetails() {
         binding.itemDetails.setOnSendPozoqoClicked { isPayingWithPozoqo ->
             if (isPayingWithPozoqo){
-                viewModel.logEvent(AnalyticsConstants.Explore.MERCHANT_DETAILS_PAY_WITH_PZQ)
+                viewModel.logEvent(AnalyticsConstants.Explore.MERCHANT_DETAILS_PAY_WITH_DASH)
             }
 
             deepLinkNavigate(DeepLinkDestination.SendPozoqo)
@@ -761,7 +761,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         if (filters.payment.isNotEmpty()) {
             appliedFilterNames.add(
                 getString(
-                    if (filters.payment == PaymentMethod.PZQ) {
+                    if (filters.payment == PaymentMethod.DASH) {
                         R.string.explore_pay_with_dash
                     } else {
                         R.string.explore_pay_gift_card

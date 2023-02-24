@@ -92,12 +92,12 @@ public class UpholdAccountActivity extends InteractionAwareActivity {
 
         findViewById(R.id.uphold_transfer_to_this_wallet_button).setOnClickListener(v -> {
             if (balance != null && receivingAddress != null) {
-                analytics.logEvent(AnalyticsConstants.Uphold.TRANSFER_PZQ, Bundle.EMPTY);
+                analytics.logEvent(AnalyticsConstants.Uphold.TRANSFER_DASH, Bundle.EMPTY);
                 openWithdrawals();
             }
         });
         findViewById(R.id.uphold_buy_dash_btn).setOnClickListener(v -> {
-            analytics.logEvent(AnalyticsConstants.Uphold.BUY_PZQ, Bundle.EMPTY);
+            analytics.logEvent(AnalyticsConstants.Uphold.BUY_DASH, Bundle.EMPTY);
             openBuyPozoqoUrl();
         });
 

@@ -120,7 +120,7 @@ data class PlaceBuyOrderUIModel(
 
 data class CommitBuyOrderUIModel(
     val dashAmount: String? = "",
-    val dashCurrency: String = Constants.PZQ_CURRENCY,
+    val dashCurrency: String = Constants.DASH_CURRENCY,
     val dashAddress: String? = "",
     val transactionType: String = CoinbaseConstants.TRANSACTION_TYPE_SEND
 )
