@@ -199,17 +199,17 @@ class AmountView(context: Context, attrs: AttributeSet) : ConstraintLayout(conte
         binding.resultCurrencyToggle.isVisible = showCurrencySelector && dashToFiat
 
         if (dashToFiat) {
-            binding.inputSymbolPozoqo.isVisible = isCurrencySymbolFirst
-            binding.inputSymbolPozoqoPostfix.isVisible = !isCurrencySymbolFirst
+            binding.inputSymbolDash.isVisible = isCurrencySymbolFirst
+            binding.inputSymbolDashPostfix.isVisible = !isCurrencySymbolFirst
 
-            binding.resultSymbolPozoqo.isVisible = false
-            binding.resultSymbolPozoqoPostfix.isVisible = false
+            binding.resultSymbolDash.isVisible = false
+            binding.resultSymbolDashPostfix.isVisible = false
         } else {
-            binding.resultSymbolPozoqo.isVisible = isCurrencySymbolFirst
-            binding.resultSymbolPozoqoPostfix.isVisible = !isCurrencySymbolFirst
+            binding.resultSymbolDash.isVisible = isCurrencySymbolFirst
+            binding.resultSymbolDashPostfix.isVisible = !isCurrencySymbolFirst
 
-            binding.inputSymbolPozoqo.isVisible = false
-            binding.inputSymbolPozoqoPostfix.isVisible = false
+            binding.inputSymbolDash.isVisible = false
+            binding.inputSymbolDashPostfix.isVisible = false
         }
     }
 

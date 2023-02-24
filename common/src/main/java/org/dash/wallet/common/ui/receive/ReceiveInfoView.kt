@@ -61,7 +61,7 @@ class ReceiveInfoView(context: Context, attrs: AttributeSet?) : ConstraintLayout
 
             val qrPreviewScale = attrsArray.getFloat(R.styleable.ReceiveInfoView_ri_qr_code_scale, 1.0f)
             (binding.qrPreviewBg.layoutParams as LayoutParams).matchConstraintPercentWidth = qrPreviewScale
-            (binding.qrPozoqoLogo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 4.8f)
+            (binding.qrDashLogo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 4.8f)
         } finally {
             attrsArray.recycle()
         }
